@@ -1,0 +1,40 @@
+/* ------------------------------------------------ */
+/* 11. Theme Pages */
+/* ------------------------------------------------ */
+
+.theme {}
+.theme h1 {}
+
+.theme table {font-size: 18px;}
+.theme td {padding: 20px;}
+.theme tr {}
+.theme td small {color: #777; display: block; padding-top: 10px;}
+.theme p.theme-intro {font-size: 28px; line-height: 32px; margin-bottom: 10px; }
+.theme .theme-name { font-weight: bold; }
+.theme h3.theme-feature {text-align: center; font-size: 44px; line-height: 50px; margin-bottom: 10px; margin-top: 50px;}
+.theme p.theme-feature-info {text-align: center; color: #999; max-width: 80%; margin: 0 auto 30px auto;}
+
+.theme ol, 
+.theme ul {font-size: 16px; line-height: 18px;}
+.theme ol li {list-style-type: decimal; padding: 0 0 10px 0; margin: 0 0 5px 20px; color: #666;}
+.theme ul li {list-style-type: circle; padding: 0 0 5px 5px; margin: 0 0 5px 20px; color: #666;}
+.theme-meta {display: block; background: #EFEFEF; font-size: 14px !important; padding: 10px 20px; color: #999 !important; margin-bottom: 30px;}
+
+.theme a.table-button {text-align: center; font-size: 14px; line-height: 14px;text-transform: uppercase; display: block; border: none !important; padding: 10px 5px; background: $color-main-link; color: #FFF !important;  text-decoration: none; min-width: 90px;}
+.theme a.table-button:hover { background: #EC3D80;}
+
+.theme-options {text-align: left;}
+.theme-options a {text-align: center; font-size: 14px; line-height: 14px; text-transform: uppercase; display: block; border: none !important; text-decoration: none;}
+.theme-options .theme-options-down a {float: left; padding: 10px 20px; background: $color-main-link; color: #FFF !important; margin-right: 10px;}
+.theme-options .theme-options-demo a {float: left;padding: 8px  20px; border: 2px solid $color-main-link !important; color: $color-main-link !important; margin-right: 10px;}
+.theme-options .theme-options-docu a {float: left; padding: 8px  20px; border: 2px solid $color-main-link !important; color: $color-main-link !important;}
+
+.theme-options .theme-options-down a:hover {background: #EC3D80;}
+.theme-options .theme-options-demo a:hover, .theme-options .theme-options-docu a:hover {border: 2px solid #EC3D80 !important; color: #EC3D80 !important;}
+
+.theme table td {font-size: 18px; line-height: 20px;}
+.theme table td small {font-size: 16px; line-height: 18px;}
+.theme table svg#heart-yes {fill: $color-main-link; width: 24px; height: 24px;}
+.theme table svg#heart-no {fill: #CCC; width: 24px; height: 24px;}
+
+.theme img.browser-right {width: 1240px !important; height: auto !important; right: -40px;}

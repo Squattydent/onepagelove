@@ -1,0 +1,134 @@
+/* ------------------------------------------------ */
+/* 05. Main Containers */
+/* ------------------------------------------------ */
+
+/* Hierarchy */
+#container-outer {}
+	#header-top-outer {}
+		#header-top {}
+	#header-bottom-outer {}
+		#header-bottom {}			
+	#container {}
+		#content {}
+	#footer-top-container {}
+		#footer-top {}
+	#footer-container {}
+		#footer {}
+		#footer-bottom {}
+		
+/* Widths, margins, padding */		
+#container-outer {
+	width: 100%
+	}
+	#header-top-outer {
+		width: 100%; 
+		height: 40px; 
+		margin: 0; 
+		padding: 0; 
+		display: block;
+		}
+		#header-top {
+			width: 1280px; 
+			margin:0 auto; 
+			padding: 0;}
+			#header-top-left {
+				float: left;
+				width: 840px; 
+				margin: 0; 
+				padding: 0;
+				}
+			#header-top-right {
+				float: right;
+				width: 400px; 
+				margin: 0; 
+				padding: 0;
+				}			
+	#header-bottom-outer {
+		width: 100%; 
+		height: 60px; 
+		margin: 0; 
+		padding: 0; 
+		display: block;
+		}
+		#header-bottom {
+			width: 1280px; 
+			margin:0 auto; 
+			padding: 0;
+			color: #FFF;
+			}	
+			#header-bottom-left {
+				float: left;
+				width: 840px; 
+				height: 60px;
+				margin: 0; 
+				padding: 0;		
+				}
+			#header-bottom-right {
+				float: right;
+				width: 400px; 
+				margin: 0; 
+				padding: 0;
+				}									
+	#container {
+		width: 1280px; 
+		margin: 0 auto; 
+		padding: 20px 0px 40px 0;
+		}
+		#content {
+			width: 1320px; /* 40px greater than #container with hidden overflow from parent */
+			padding:0; 
+			margin: 0; 
+			overflow: visible !important;
+			}
+		#content .single-container {
+			width: 1200px; /* 80px less than #container as 40px padding */
+            margin: 20px 0 40px 0;
+			padding: 40px; 
+			height: auto;			
+			}
+		#content .review {
+			width: 1280px; /* same as #container with no padding */
+			margin-top: 20px;
+			padding: 0px; /* different to single with big screenshot touching edge */			
+			}		
+	#footer-top-container {
+		width: 100%; 
+		margin: 0 0 0 0;
+		}
+		#footer-top {
+			width: 1280px; 			
+			margin: 0 auto; 
+			padding: 0; 
+			height: 130px;
+			}
+	#footer-container {
+		width: 100%; 
+		margin: 0;
+		}
+		#footer {
+			width: 1280px; 
+			margin: 0 auto; 
+			padding: 40px 0 25px 0;
+			}
+
+/* Archives */
+.archive-header-info {float: left; width: 840px; margin-right: 40px;}
+.archive-header-ad {float: left; width: 400px;}
+.browsing .browsing-nav {width: 1280px;}
+	
+/* Reviews */
+.review .review-meta {width: 1200px;}
+.review .review-meta-right {float: right; width: 320px; vertical-align: top;}
+.review .review-meta-left {}
+.review .review-screenshot img {width: 1280px; height: auto;}
+
+/* Themes */
+.theme img.theme-feature-right {right: 0px; position: relative; max-width: 800px}
+.theme img.theme-feature-left {left: -40px; position: relative; max-width: 800px}
+
+/* Favorites */
+.notice {width: 1240px; padding: 15px 20px; margin-bottom: 40px;}
+
+/* Dashboard */
+.dashboard-section {display: block; margin-bottom: 30px; margin-top: 20px;}
+

@@ -1,0 +1,68 @@
+/* ------------------------------------------------ */
+/* 08. Reviews */
+/* ------------------------------------------------ */
+
+.review {font-size: 14px;line-height: 18px; border: none; border-bottom: 1px solid #ccc;}
+.review .review-meta {display: block; float: left; padding: 40px; color: #666;} 
+.review .review-meta-left { margin-right: 20px;}
+.review .review-meta-right {padding: 20px 20px 0 20px; margin-left: 40px; }
+.review .review-meta .review-type {text-transform: uppercase; font-size: 12px; color: #999;}
+.review .review-meta .review-title {}
+.review .review-meta .review-title a {border: none;}
+.review .review-meta .review-title .fav-add {display: inline-block; height: 28px; width: 28px;}
+.review .review-meta .review-title .fav-remove {display: inline-block; height: 28px; width: 28px;}
+.review .review-meta .review-title svg.heart-add {height: 28px; width: 28px;}
+.review .review-meta .review-title svg.heart-remove {height: 28px; width: 28px;}
+.review .review-meta .review-title h1 {font-size: 38px; line-height: 42px; margin-bottom: 20px; color: #222;}
+.review .review-meta .review-content {font-size: 22px; line-height: 28px; margin-bottom: 20px; color: #999;}
+.review .review-meta .review-content #oplBuild blockquote {font-size: 20px; font-style: italic;color: #AAA !important;}
+
+/* Review Posts Tags + Cats */
+.review .review-meta .review-tags a, 
+.review .review-meta .review-cats a {color: #AAA; border: 1px solid #ccc; text-transform: capitalize;}
+.review .review-meta .review-tags a:hover, 
+.review .review-meta .review-cats a:hover { color: $color-main-link;border: 1px solid $color-main-link;}
+.review .review-meta .review-cats {line-height: 30px; margin-bottom: 20px;}
+.review .review-meta .review-cats strong,
+.review .review-meta .review-tags strong {display: block; font-size: 10px; text-transform: uppercase; line-height: 10px; margin-bottom: 5px;}
+.review .review-meta .review-tags {line-height: 35px;}
+.review .review-meta .review-tags a, 
+.review .review-meta .review-cats a {height: 30px; padding: 4px 9px;text-decoration: none; margin: 0 5px 30px 0 !important; white-space: nowrap; background: none;}
+
+/* Meta Box */
+.review .review-meta .review-launch {margin-bottom: 20px;}
+.review .review-meta .review-date {margin-bottom: 10px;}
+.review .review-meta .review-unique {margin-bottom: 10px;}
+.review .review-meta .review-price {margin-bottom: 10px;}
+.review .review-meta .review-developer {margin-bottom: 10px;}
+.review .review-meta .review-comments {margin-bottom: 10px;}
+.review .review-meta .review-screenshot-download {margin-bottom: 20px;}
+.review .review-screenshot img {}
+.review .review-screenshot a.noBorder:hover {opacity: 1;}
+
+/* Comments */
+.review #comments {padding: 40px 40px 20px 40px;}
+
+/* Similar */
+.similar-title {margin: 40px 0 40px 0;}
+
+/* Floating pagination: arrows on sides of browser */
+.floating-pagi a {display: block;position: fixed;top: 50%; width: 60px; height: 60px; outline: none;}
+.floating-pagi .floating-pagi-next a {left: 30px; -webkit-transform: rotate(-180deg);-moz-transform: rotate(-180deg);-ms-transform: rotate(-180deg);-o-transform: rotate(-180deg);filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+.floating-pagi .floating-pagi-prev a {right: 30px; }
+.floating-pagi svg {width: 60px; height: 60px;}
+.floating-pagi svg {fill: #999;}
+.floating-pagi:hover svg {fill: $color-main-link;}
+.floating-pagi a:hover {border: none; text-decoration: none;}
+
+/* Review notice */
+.single-container .review-notice {
+	font-size: 18px; 
+	line-height: 24px; 
+	background: #ffc3da; 
+	color: $color-darker-link; 
+	border: 1px solid #feb0ce; 
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+

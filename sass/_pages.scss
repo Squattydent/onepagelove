@@ -1,0 +1,34 @@
+/* ------------------------------------------------ */
+/* 09. Pages & Resource Posts */
+/* ------------------------------------------------ */
+
+.single-container {border: none; border-bottom: 1px solid #ccc;}
+.single-container p {margin: 0 0 20px 0; padding: 0;}
+.single-container h1 {padding: 0; margin-bottom: 30px;}
+.single-container h2 {padding: 0; margin-bottom: 30px;}
+.single-container h3 {margin: 40px 0 20px 0;}
+.single-container h3.h3-top-page {margin-top: 0;}
+.single-container h4 {font-weight: bold;font-size: 20px; line-height: 24px; color: #555555; margin: 30px 0 10px 0; }
+.block-right {padding: 20px 20px 0 20px; float: right; vertical-align: top; display: block; width: 300px; height: auto; margin: 0 0 40px 40px;}
+
+/* Images */
+.single-container img.alignnone {width: 100%; height: auto;}
+
+/* Lists */
+.single-container ul {margin: 20px 0 20px 0; padding-left: 30px; } 
+.single-container ol {margin: 20px 0 20px 0; padding-left: 30px; }
+.single-container ol li {list-style-type: decimal-leading-zero; padding: 0 0 10px 10px;}
+.single-container ul li {list-style-type: circle; padding: 0 0 10px 10px;}
+
+.single-container #comments {padding: 0;}
+
+/* Roundups */
+a.roundup-buy, 
+a.roundup-demo {text-align: center; font-size: 14px; line-height: 14px; text-transform: uppercase; float: left;}
+a.roundup-buy {min-width: 120px; padding: 10px 20px; margin-right: 10px;margin-bottom: 20px;}
+a.roundup-demo {width: 116px; padding: 8px 0; margin-right: 0; margin-top: -28px;}
+a.roundup-demo:hover {}
+	
+/* Page With Ad */	
+.page-template-page-with-ad-php .archive-description {margin-bottom: 0px;}
+.page-template-page-with-ad-php #content .single-container {margin-top: 0px;}

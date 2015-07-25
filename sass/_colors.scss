@@ -1,0 +1,154 @@
+/* ------------------------------------------------ */
+/* 04. Color Scheme */
+/* ------------------------------------------------ */
+
+/* Backgrounds */
+html                  {background: #E2E2E2;}
+#header-top-outer     {background: #141414;} 
+#header-bottom-outer  {background: #1E1E1E;} 
+#footer-top-container {background: #141414;} 
+#footer-container     {background: #1A1A1A;}
+#footer-bottom        {border-top: 1px solid #222; box-shadow: 0 -1px 0 #151515;}
+.review {background: #FFF;}
+.single-container {background: #FFF;}
+
+/* Links */
+a {color:$color-main-link;text-decoration:none;}
+a:hover {color:$color-main-link;text-decoration:none;}
+.single-container p a, 
+.review p a {color:$color-main-link;border-bottom: 1px dotted $color-main-link;text-decoration:none;}
+.single-container p a:hover, 
+.review a:hover {color:$color-main-link;border-bottom: 1px solid $color-main-link;text-decoration:none;}
+a.noBorder {border: none !important;}
+a.noBorder:hover {opacity: 0.95;}
+
+/* Header Top Navigation */
+#header-top-left ul li a {color: #555;} /* parent link color */
+#header-top-left ul li a:hover {color: $color-main-link;} /* parent link color on hover */
+#header-top-left li:hover a {color: #fff;} /* parent link color when hovering on dropdown */
+#header-top-left ul li ul {background: #141414} /* dropdown background */
+#header-top-left ul li ul li a {color: #777 !important;} /* dropdown list item link color*/
+#header-top-left li:hover li a:hover {background: $color-main-link !important; color: #FFF !important;} /* dropdown list item background & link color on hover */
+
+/* Header Top Account */
+#header-top-right ul.account-logged-in li a {color: #777;} /* parent link color */
+#header-top-right ul.account-logged-in li a:hover {color: $color-main-link;} /* parent link color on hover */
+#header-top-right ul.account-logged-in li:hover a {color: #fff;} /* parent link color when hovering on dropdown */
+#header-top-right ul.account-logged-in li ul {background: #141414} /* dropdown background */
+#header-top-right ul.account-logged-in li ul li a {color: #969da1 !important;} /* dropdown list item link color*/
+#header-top-right ul.account-logged-in li:hover li a:hover {background: $color-main-link !important; color: #FFF !important;} /* dropdown list item background & link color on hover */
+
+#header-top-right ul.account-logged-out li.account-login a {background: #333; color: #999;}
+#header-top-right ul.account-logged-out li.account-join a {background: $color-main-link; color: #FFF;}
+
+/* Header Bottom Navigation */
+#header-bottom-left ul li a {color: #999;} /* parent link color */
+#header-bottom-left ul li a:hover {color: #CCC;} /* parent link color on hover */
+#header-bottom-left li:hover a {color: #CCC} /* parent link color when hovering on dropdown */
+#header-bottom-left ul li ul {background: #1E1E1E;} /* dropdown background */
+#header-bottom-left ul li ul li a {color: #777 !important;} /* dropdown list item link color*/
+#header-bottom-left li:hover li a:hover {background: $color-main-link !important; color: #FFF !important;} /* dropdown list item background & link color on hover */
+
+/* Header Search */
+#header-bottom-right .search {background: #F2f2f2;}
+#header-bottom-right .search-field {color: #CCC;}
+#header-bottom-right .search-field:focus {color: #666;}
+
+/* Archives */
+.archive-header {}
+.archive-header-info {text-shadow:0 1px 0 #FFF; color: #333;}
+.archive-title {}
+.archive-title h1 {color: #333;}
+.archive-description {color: #777;}
+
+/* Thumbs */
+.thumb {background: #FFF; border-bottom: 1px solid #ccc;}
+.thumb .thumb-label-loved {background: $color-main-link; color: #FFF;}
+.thumb .thumb-label-template {background: #11c1f4; text-transform: uppercase; color: #FFF;}
+.thumb .thumb-label-free {background: #11c1f4; text-transform: uppercase; color: #FFF;}
+.thumb-details {background: $color-main-link; }
+.thumb-details .thumb-details-overview {color: #FFF; text-shadow: 0 1px 0 #EC3D80; }
+.thumb-details .thumb-details-overview .thumb-details-date {color: #feb3d0; text-shadow: 0 1px 0 #f75d98;}
+.thumb .thumb-info .thumb-title .thumb-name	svg.heart-add {fill: #CCCCCC; }
+.thumb .thumb-info .thumb-title .thumb-name	svg.heart-remove {fill: $color-main-link;}
+.thumb .thumb-info .thumb-title .thumb-name h2 {color: #444; }
+.thumb .thumb-info .thumb-title .thumb-name h2 a {color: #444;}
+.thumb .thumb-info .thumb-title .thumb-name h2 a:hover {color: $color-main-link;}
+SVG.thumb-launch-svg {max-width: 18px; height: auto; fill: #999;}
+SVG.thumb-launch-svg:hover {fill: $color-main-link;}
+.thumb .thumb-info .thumb-title .thumb-cat {color: #CCC;}
+.thumb .thumb-info .thumb-title .thumb-cat a {color: #999;}
+.thumb .thumb-info .thumb-title .thumb-cat a:hover {color: #333;}
+
+/* Reviews */
+.review .review-meta-right,
+.review .review-meta-mobile {background: #f8f8f8;}
+.review .review-meta .review-title svg.heart-add {fill: #CCCCCC;}
+.review .review-meta .review-title svg.heart-remove {fill: $color-main-link;}
+.review .postLinkReview a:hover, 
+.review .postInfo .postLinkLaunch a:hover {background: $color-main-link;}
+.review .postInfo .postLinks a {background: $color-main-link; color: #FFF; border-bottom: 1px solid #EC3D80; text-shadow: 0 1px 0 #EC3D80;}
+.review .postInfo .postLinks a:hover {background: #EC3D80; color: #FFF;}
+.similar-title {color: #333;}
+
+/* Pages */
+.single-container h1 {color: #222;}
+.single-container p {color: #666;}
+.single-container ul, 
+.single-container ol {color: #666;}
+.single-container h3 {color: #444;}
+.block-right {background: #f8f8f8;}
+
+/* Pagination */
+.pagination a {padding:10px 20px;text-decoration:none;text-shadow: none; text-transform: uppercase; font-size: 11px;}
+.pagination a {background:$color-main-link;color:#fff;}
+.pagination a:hover {background:$color-main-link;}
+
+/* Pagination Numbered */
+.browsing a {border: 1px solid #ccc;color: #999;}
+.browsing a:hover {border: 1px solid $color-main-link;color: $color-main-link;}
+.browsing .current {border: 1px solid $color-main-link;color: $color-main-link;}
+
+/* Launch Website Buttons */
+.review-launch {}
+.review-launch a {text-decoration: none;  vertical-align: top;display: block; width: 100%; color: #FFF; height: 40px; padding:20px 0px 0px 0px; text-align: center;text-decoration:none;text-shadow: none;  text-transform: uppercase; font-size: 16px; line-height: 20px;  background:$color-main-link; }
+.review-launch {margin-top: 0px !important; padding: 0;}
+.review-launch svg {fill: #FFF; width: 20px; height: 20px;}
+.review-launch a:hover {color: #FFF; background: #EC3D80; border: none; }
+
+/* Footer */
+#footer-top {color: #FFF;}	
+.footer-promo-title {color: #DDD;}
+.footer-promo-info {color: #666;}
+.footer-promo-buttons a { background: #222; padding: 6px 8px; color: #666; text-transform: uppercase; text-shadow: none; }
+#mc-embedded-subscribe { background: #222; color: #666; text-transform: uppercase; text-shadow: none;}
+.footer-promo-buttons a:hover {background: $color-main-link;color: #FFF; }
+#mc-embedded-subscribe:hover {background: $color-main-link; color: #FFF; }
+#mc-embedded-subscribe {border: none;}
+.footer-column h3 {color: #DDD;}
+.footer-column ul li a:hover, 
+.footer-column a:hover {color: $color-main-link !important; }
+
+/* Round Ups */
+a.roundup-buy {color: #FFF !important; background: $color-main-link;}
+a.roundup-buy:hover {color: #FFF !important; background: #EC3D80;}
+a.roundup-demo {border: 2px solid $color-main-link !important; color: $color-main-link !important;}
+a.roundup-demo:hover {border: 2px solid #EC3D80 !important; color: #EC3D80 !important;}
+
+/* Favorites */
+.favorites-demo {color: #333;}
+.favorites-demo .favorites-demo-col {color: #666;}
+
+/* Misc */
+hr {border-bottom: 2px dotted #DDD;}
+code {background: #F8F8F8;}
+del {color: #CCC;}
+blockquote {border-left: 1px solid #EEE;}
+blockquote p {color: #AAA !important;}
+.notice {background: #ffc3da; border: 1px solid #feb0ce; color: #EC3D80;}
+.dashboard-section {color: #333;}
+
+/* Text Select */
+::selection {background: $color-main-link; color: #FFF; text-shadow: none; }
+::-moz-selection {background: $color-main-link; color: #FFF; text-shadow: none;}
+

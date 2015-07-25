@@ -1,0 +1,427 @@
+/* ------------------------------------------------ */
+/* Global Responsive */
+/* ------------------------------------------------ */
+
+#header-top-mid,
+.mobile-navigation,
+.review .review-meta-mobile {display: none;}
+
+/* Temporary WooCommerce Removal stuff */
+p.myaccount_user,
+.myaccount_address,
+.addresses,
+.woocommerce h2
+{display: none;}
+
+/* ------------------------------------------------ */
+/* Big Screens */
+/* ------------------------------------------------ */
+@media screen and (min-width: 1580px) {
+.single-container {min-height: 800px;}	
+}	
+
+/* ------------------------------------------------ */
+/* Notebooks */
+/* ------------------------------------------------ */
+@media screen and (max-width: 1480px) {
+.floating-pagi .floating-pagi-next a {left: 10px;}
+.floating-pagi .floating-pagi-prev a {right: 10px;}	
+}
+
+/* ------------------------------------------------ */
+/* Smaller Desktops & Notebooks */
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 1430px) {
+
+/* Widths, margins, padding */		
+#container-outer {
+	width: 100%
+	}
+	#header-top-outer {
+		width: 100%; 
+		height: 40px; 
+		margin: 0; 
+		padding: 0; 
+		display: block;
+		}
+		#header-top {
+			width: 96%; 
+			margin:0 auto; 
+			padding: 0;}
+			#header-top-left {
+				float: left;
+				width: 70%; 
+				margin: 0; 
+				padding: 0;
+				}
+			#header-top-right {
+				float: right;
+				width: 30%; 
+				margin: 0; 
+				padding: 0;
+				}			
+	#header-bottom-outer {
+		width: 100%; 
+		height: 60px; 
+		margin: 0; 
+		padding: 0; 
+		display: block;
+		}
+		#header-bottom {
+			width: 96%; 
+			margin:0 auto; 
+			padding: 0;
+			color: #FFF;
+			}	
+			#header-bottom-left {
+				float: left;
+				width: 70%; 
+				height: 60px;
+				margin: 0; 
+				padding: 0;		
+				}
+			#header-bottom-right {
+				float: right;
+				width: 30%;  
+				margin: 0; 
+				padding: 0;
+				}			
+	#container {
+		width: 100%; 
+		margin: 0; 
+		padding: 20px 0 40px 0;
+		overflow: hidden;
+		}
+		#content {
+			width: 96%; 
+			padding:0 2%; 
+			margin: 0 auto; 
+			overflow: hidden !important;
+			}
+		#content .single-container {
+			width: 94%;  
+            margin: 20px auto 40px auto;
+			padding: 40px 3% 40px 3%; 
+			height: auto;			
+			}
+		#content .review {
+			width: 100%;   
+            margin: 20px 0 40px 0;
+			padding: 0px; /* different to single with big screenshot touching edge */			
+			}		
+	#footer-top-container {
+		width: 100%; 
+		margin: 0 0 0 0;
+		}
+		#footer-top {
+			width: 96%; 			
+			margin: 0 auto; 
+			padding: 0; 
+			height: 130px;
+			}
+	#footer-container {
+		width: 100%; 
+		margin: 0;
+		}
+		#footer {
+			width: 96%; 
+			margin: 0 auto; 
+			padding: 40px 0;
+			}
+		#footer-bottom {
+			width: 96%; 
+			margin: 0 auto; 
+			padding: 30px 0;
+			}
+
+/* Header */			
+#header-bottom-left  ul li a {padding: 20px 35px 20px 5px;;}
+#header-bottom-right .search-field-holder {width: 85%;}
+		
+/* Archives */
+.archive-header-info {width: 70%; margin-right: 0;}
+.archive-header-ad {width: 30%; overflow: hidden;}
+.archive-container {width: 104%;}
+.browsing .browsing-nav {width: 100%;}	
+
+.notice {width: 94%; padding: 1.5% 2%;}
+
+/* Thumbs */
+.thumb {width: 30.5%; margin: 0 2% 2% 0;}
+
+/* Reviews */
+.review .review-meta {width: 92%; padding: 4%;}
+.review .review-meta-right {float: right; width: 300px; }
+.review .review-meta-left {}
+.review .review-screenshot img {width: 100%; height: auto;}	
+
+/* Roundups */
+.single-content img {width: 100%; height: auto;}
+.single-content img.alignleft {width: 300px; height: auto;}
+
+/* Favorites */
+.favorites-demo .favorites-demo-col {float: left; width: 32%; margin-right: 2%;}
+.favorites-demo .favorites-demo-col img {width: 100%; height: auto; }
+.favorites-demo .favorites-demo-col-right {margin-right: 0;}
+
+/* Footer */
+
+/* Hiding */	
+.made-up-class
+{display: none;}	
+
+}
+
+/* ------------------------------------------------ */
+/* Join page improvemnt */
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 1050px) {
+	
+.gform_wrapper {max-width: 45% !important;	width: 45% !important;	float: left;
+	padding: 0 !important; 
+	margin: 0 !important;}
+
+}
+
+/* ------------------------------------------------ */
+/* Mobile with dropdown left nav */
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 840px) {
+	
+/* Widths, margins, padding */		
+#container-outer {
+	width: 100%
+	}
+	#header-top-outer {
+		width: 100%; 
+		height: 40px; 
+		margin: 0; 
+		padding: 0; 
+		display: block;
+		}
+		#header-top {
+			width: 96%; 
+		    height: 40px; 
+			margin:0 auto; 
+			padding: 0;
+			}
+			#header-top-left {
+			    float: left;
+				width: 47%; 
+				height: 40px; 
+				margin: 0; 
+				padding: 0;
+				}
+			#header-top-mid {
+			    float: left;
+				width: 6%;	
+				margin: 0;
+				height: 24px; 
+				padding: 8px 0;				
+				text-align: center;						
+				}				
+			#header-top-right {
+				float: left;
+				width: 47%; 
+				height: 40px; 
+				margin: 0; 
+				padding: 0;			
+				}			
+	#container {
+
+		}
+		#content {
+
+			}
+		#content .single-container {
+	
+			}
+		#content .review {
+	
+			}		
+	#footer-top-container {
+		width: 100%; 
+		margin: 0 0 0 0;
+		}
+		#footer-top {
+			width: 96%; 			
+			margin: 0 auto; 
+			padding: 0; 
+			height: auto;
+			}
+	#footer-container {
+		width: 100%; 
+		margin: 0;
+		}
+		#footer {
+			width: 90%; 
+			margin: 0 auto; 
+			padding: 40px 0;
+			}
+		#footer-bottom {
+			width: 90%; 
+			margin: 0 auto; 
+			padding: 30px 0;
+			}
+			
+/* New Navigation Big Dropdown */
+#toggle-mobile-navigation {position: relative;}
+#mobile-nav-button {float: left; position: absolute; margin: 12px 0 0 0;}
+#mobile-nav-button SVG {fill: #777;}
+
+#header-top-mid .header-logo-heart {margin: 0 auto; height: 22px; width: 22px; background: url('https://onepagelove.com/wp-content/uploads/2014/01/one-page-love-heart-logo.png') left top no-repeat; background-size:22px 22px; }
+#header-top-mid .header-logo-heart a {height: 22px; width: 22px; display: block; padding: 0;}
+
+.mobile-navigation {position: relative; clear: both; width: 96%; padding: 0 2% 0 2%; float: none; text-shadow: none; margin:0; }
+.mobile-navigation ul {overflow: auto; width: 100% !important; height: auto; margin: 0; padding: 0px; list-style: none; text-shadow: none; }
+.mobile-navigation ul li {display: block; position: relative; float: none;  margin: 0; padding: 0;border: none; }
+.mobile-navigation li ul {margin-left: 0;}
+.mobile-navigation ul li a {display: block; margin: 0 !important;  border: none; text-decoration: none; height: 16px; padding: 13px 0 11px 0; white-space: nowrap;} 
+.mobile-navigation ul li a:hover {text-decoration: none;}
+.mobile-navigation ul li ul {width: 100%; padding: 0; } /* Child menu background set at top of stylesheet */
+.mobile-navigation ul li ul li {width: 100%;} /* Child list item background set at top of stylesheet */
+.mobile-navigation ul li ul li:hover {padding: 0;}
+.mobile-navigation ul li ul li:last-child {border-bottom: none;}
+.mobile-navigation ul li ul li a {height: 16px; padding: 13px 0 11px 2%;}
+.mobile-navigation ul li ul li ul li {display: none;}
+
+.mobile-navigation {background: #141414;}
+.mobile-navigation ul {background: #141414; border-top: 1px solid #222;  box-shadow: 0 -1px 0 #000;}
+.mobile-navigation ul li {border-bottom: 1px solid #000;  box-shadow: 0 1px 0 #222;}
+.mobile-navigation ul li a {color: #CCC; font-weight: 600;} /* parent link color */
+.mobile-navigation ul li a:hover {color: #FD6CA3;} /* parent link color on hover */
+.mobile-navigation li:hover a {color: #DDD;} /* parent link color when hovering on dropdown */
+.mobile-navigation ul li ul {background: #141414} /* dropdown background */
+.mobile-navigation ul li ul li a {color: #999 !important; font-weight: 300; letter-spacing: 0px;} /* dropdown list item link color*/
+.mobile-navigation li:hover li a:hover {color: #FD6CA3 !important;} /* dropdown list item background & link color on hover */
+
+#header-bottom-outer {display: none !important;}
+
+/* Search in big nav */
+.header-search {clear: both; float: none; width: 360px; display: block; position: absolute; top: 50px; margin-left: 20px; z-index: 10000; border-bottom: 1px solid #000;  box-shadow: 0 1px 0 #222; padding-bottom: 20px;}
+.search {width: 345px;}			
+
+/* Archives */
+.archive-header-info {width: 100%}
+.archive-header-ad {display: none;}
+.browsing .browsing-nav {width: 100%;}		
+.browsing .browsing-nav-left {width: 50%;}	
+.browsing .browsing-nav-right {width: 50%;}	
+
+/* Thumbs */
+.thumb {width: 45%; margin: 0 4% 4% 0;}
+
+/* Reviews */
+.review .review-meta {}
+.review .review-ad {display: none;}	
+
+.review-launch a {width: 100%;}
+.review #comments {padding: 10px 10px 0 10px;}	
+.floating-pagi a {width: 30px; height: 30px;}
+.floating-pagi svg {width: 30px; height: 30px;}
+
+/* Resources */
+.single-container #comments {padding: 0;}
+
+/* Roundups */
+.single-content img {width: 760px; height: auto;}
+.single-content img.alignleft {width: 360px; height: auto;}
+.single-container .block-right {display: none;}
+
+/* Pages */
+.page-template-page-with-ad-php #content .single-container {margin-top: 20px;}
+
+/* Themes */
+.theme td {padding: 10px;}
+.theme .theme-options a {margin-bottom: 10px;}
+.theme img.browser-right {width: 800px !important; height: auto !important; right: -20px;}
+
+/* Join */
+.join-benefits {width: 90%; padding: 4% 4%; float: none; margin-bottom: 40px;}
+.gform_wrapper {max-width: 100% !important;	width: 100% !important; float: none;}
+
+/* Footer */
+.footer-promo {top: -20px; min-height: 105px; height: auto; padding: 45px 0 0 230px;}
+.footer-promo-title {margin-bottom: 10px; width: 80%}
+.footer-promo-info {margin-bottom: 10px;width: 80%}
+.footer-promo-buttons {width: 80%; line-height: 30px;}
+#footer .footer-column {width: 33%;}
+.col-four {clear: both;}
+
+/* Hiding */	
+#header-top-left .header-logo,
+#header-top-left ul,
+li#nav-sm,
+#toggle-mobile-navigation,
+.browsing .browsing-nav-mid,
+.review-screenshot-download
+{display: none;}	
+
+/* Unhide */
+li#nav-ho,
+#mobile-nav-button,
+.header-search,
+#header-top-mid,
+.mobile-navigation 
+{display: block}
+
+/* Z-index */
+#header-top-mid {z-index: 20000}
+#mobile-nav-button {z-index: 20000}
+#header-top-left .mobile-navigation {z-index: 10000;}
+#header-top-left ul {z-index: 5000;}
+}
+
+/* ------------------------------------------------ */
+/* Reviews meta issue */
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 650px) {
+	
+/* Reviews */
+.review .review-meta {}
+.review .review-meta-left {float: none; width: 95%; padding: 0; vertical-align: top; margin: 0; margin-bottom: 40px; }
+.review .review-meta-right {float: none; width: 90%; margin: 0 auto; margin-bottom: 4% }
+.review .review-ad {display: none;}	
+}
+
+/* ------------------------------------------------ */
+/* Top menu Subscribe item issue */
+/* ------------------------------------------------ */
+
+@media screen and (min-width: 840px) and (max-width: 960px) {
+	li.nav-pop {display: none !important;}
+}	
+
+/* ------------------------------------------------ */
+/* Smaller Mobile */
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 500px) {
+	
+/* Thumbs */
+.thumb {width: 95%; margin: 0 0 10% 0;}
+.favorites-demo .favorites-demo-col {float: none; width: 98%; margin-right: 0;}
+
+/* Footer */
+#footer .footer-column {width: 50%;}
+.col-three {clear: both;}
+.col-four {clear: none;}
+.col-five {clear: both;}
+	
+}
+
+/* ------------------------------------------------ */
+/* Smallest Mobile */
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 400px) {
+	
+.footer-promo {display: none;}
+
+	
+}
+
