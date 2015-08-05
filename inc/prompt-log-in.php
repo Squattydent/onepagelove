@@ -12,7 +12,7 @@
 
 		<div class="archive-header-ad">
 
-			<?php include ("ad-carbon.php"); ?>
+			<?php include ("inc/ad-primary.php"); ?>
 
 		</div><!--  /.archive-header-ad -->
 

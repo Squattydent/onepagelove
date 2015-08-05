@@ -150,7 +150,7 @@ echo '';
 
  <div class="review-ad">
 
-  <div class="review-ad-holder"><?php include ('ad-carbon.php'); ?></div>
-	<div class="review-ad-holder"><?php echo adManager::ad_zone( 1 ); ?></div>
+  <div class="review-ad-holder"><?php include ("inc/ad-primary.php"); ?></div>
+	<div class="review-ad-holder"><?php include ("inc/ad-secondary.php"); ?></div>
 
  </div><!-- /.review-ad -->

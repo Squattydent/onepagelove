@@ -21,7 +21,7 @@ Template Name: Freebies
 
 	<div class="archive-header-ad">
 
-		<?php include ("inc/ad-carbon.php"); ?>
+		<?php include ("inc/ad-primary.php"); ?>
 
 	</div><!--  /.archive-header-ad -->
 	

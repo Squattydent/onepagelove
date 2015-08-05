@@ -8,8 +8,8 @@
        <div class="block-right">
 
 
-			  <div class="review-ad-holder"><?php include ('inc/ad-carbon.php'); ?></div>
-			  <div class="review-ad-holder"><?php echo adManager::ad_zone( 1 ); ?></div>
+			  <div class="review-ad-holder"><?php include ("inc/ad-primary.php"); ?></div>
+			  <div class="review-ad-holder"><?php include ("inc/ad-secondary.php"); ?></div>
 
 			
 			<div class="clear"></div>
