@@ -1,6 +1,6 @@
 <?php 
 /* 
-Template Name: Page With Ad
+Template Name: Page With Header
 */ 
 ?>
 
@@ -16,12 +16,6 @@ Template Name: Page With Ad
 			<div class="archive-description"><?php $page_tagline = get_post_meta($post->ID, "page_tagline", true); echo $page_tagline; ?></div>
  	
 		 </div><!--  /.archive-header-info -->
-
-		<div class="archive-header-ad">
-	
-			<?php include ("inc/ad-primary.php"); ?>
-	
-		</div><!--  /.archive-header-ad -->
 		
 		<div class="clear"></div>
 		
@@ -31,9 +25,13 @@ Template Name: Page With Ad
 
 	      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	      <?php the_content('Read more...'); ?>
-	
-	      <div class="clear"></div>
+	      <div class="single-content">		
+
+		      <?php the_content('Read more...'); ?>
+		
+		      <div class="clear"></div>
+
+	      </div>
 	
 	      <?php endwhile; else: ?>
 		

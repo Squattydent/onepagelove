@@ -72,7 +72,7 @@
 	#container {
 		width: 1280px; 
 		margin: 0 auto; 
-		padding: 20px 0px 40px 0;
+		padding:40px 0px 40px 0;
 		}
 		#content {
 			width: 1320px; /* 40px greater than #container with hidden overflow from parent */
@@ -91,30 +91,7 @@
 			margin-top: 20px;
 			padding: 0px; /* different to single with big screenshot touching edge */			
 			}		
-	#footer-top-container {
-		width: 100%; 
-		margin: 0 0 0 0;
-		}
-		#footer-top {
-			width: 1280px; 			
-			margin: 0 auto; 
-			padding: 0; 
-			height: 130px;
-			}
-	#footer-container {
-		width: 100%; 
-		margin: 0;
-		}
-		#footer {
-			width: 1280px; 
-			margin: 0 auto; 
-			padding: 40px 0 25px 0;
-			}
 
-/* Archives */
-.archive-header-info {float: left; width: 840px; margin-right: 40px;}
-.archive-header-ad {float: left; width: 400px;}
-.browsing .browsing-nav {width: 1280px;}
 	
 /* Reviews */
 .review .review-meta {width: 1200px;}

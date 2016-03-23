@@ -13,18 +13,12 @@ Template Name: Dashboard
 		 <div class="archive-header-info">
 	
 			<div class="archive-title">
-				<h1><?php echo adManager::ad_zone( 8 ); ?> <?php global $current_user; get_currentuserinfo(); echo '' . $current_user->display_name . "\n"; ?></h1>
+				<h1><?php include("inc/random-naming-hello.php"); ?> <?php global $current_user; get_currentuserinfo(); echo '' . $current_user->display_name . "\n"; ?></h1>
 			</div><!--  /.archive-title -->
 			
-			<div class="archive-description">We're still in the early stages of the new feature roll out, right now you can just view your <a href="<?php print get_home_url(); ?>/favorites">Favorites</a> and <a href="<?php print get_home_url(); ?>/freebies">Freebies</a>. We're currently busy with a job board and advanced search filter! So this dashboard will look very different and more personalized in the future. Until then, here are the recent <a href="<?php print get_home_url(); ?>/gallery/most-loved">Most Loved</a> awards:</div>
+			<div class="archive-description">We're still in the early stages of the new feature roll out, right now you can just view your <a href="<?php print get_home_url(); ?>/favorites">Favorites</a> and <a href="<?php print get_home_url(); ?>/freebies">Freebies</a>. Until then, here are the recent <a href="<?php print get_home_url(); ?>/gallery/most-loved">Most Loved</a> awards:</div>
  	
 		 </div><!--  /.archive-header-info -->
-
-		<div class="archive-header-ad">
-	
-			<?php include ("inc/ad-primary.php"); ?>
-	
-		</div><!--  /.archive-header-ad -->
 		
 		<div class="clear"></div>
 		

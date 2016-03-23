@@ -1,17 +1,54 @@
-/* ------------------------------------------------ */
-/* 07. Archives */
-/* ------------------------------------------------ */
+//-------------------------------------------------------------------------------
+// Archive Container
+//-------------------------------------------------------------------------------
+.archive-container {
+	@media screen and (max-width: $bp-desksm) {
+		width: 104%;
+	}
+}
 
-/* Header */
-.archive-header {}
-.archive-header-info {}
-	.archive-title {padding-top: 15px; margin-bottom: 10px;}
-	.archive-title h1 {}
-	.archive-description {margin-bottom: 40px;}
-	.archive-description a {}
-.archive-header-ad {}
+//-------------------------------------------------------------------------------
+// Archive Header
+//-------------------------------------------------------------------------------
 
-/* Thumbs */
+.archive-header {
+	display: flex;
+	align-items: center;	
+	// background: $test1;
+	margin-bottom: 30px;
+		@media screen and (max-width: $bp-tablet) {
+			margin-bottom: 10px; 
+			}
+	.archive-header-info {
+		// background: $test2;
+		width: 98% !important;
+		margin-right: 0;
+		text-align: center;
+		padding: 0;
+		@media screen and (max-width: $bp-mobile) {
+			text-align: left;
+		}	
+		.archive-title {
+			margin-bottom: 10px;
+			// background: $test3;
+		}
+		.archive-description {
+			max-width: 80%;
+			margin-right: auto;
+			margin-left: auto;
+			@media screen and (max-width: $bp-tablet) {
+				max-width: none;
+			}
+		}
+	}
+
+}
+
+
+//-------------------------------------------------------------------------------
+// Archive Thumbs
+//-------------------------------------------------------------------------------
+
 .thumb {position: relative; width:400px; height: auto; display: inline-block;  margin: 0 36px 40px 0; text-shadow: none; padding: 0px; vertical-align: top; border: none;}
 .thumb p {margin: 0; padding: 0;}
 
@@ -34,18 +71,25 @@
 .thumb .thumb-info .thumb-title .thumb-name h2 {padding: 0; font-size: 18px; line-height: 20px; margin-bottom: 4px;}
 .thumb .thumb-info .thumb-title .thumb-name h2 a {}
 .thumb .thumb-info .thumb-title .thumb-name h2 a:hover {text-decoration: none;}
-SVG.thumb-launch-svg {max-width: 18px; height: auto; margin-bottom: -3px;}
+SVG.thumb-launch-svg {
+	max-width: 18px; 
+	height: auto; 
+	margin-bottom: -3px; 
+	// float: right; requested from users
+}
 SVG.thumb-launch-svg:hover {}
-.thumb .thumb-info .thumb-title .thumb-cat {font-size: 11px; margin-bottom: 12px; letter-spacing: 0.25px;}
+.thumb .thumb-info .thumb-title .thumb-cat {font-size: 11px; margin-bottom: 12px; letter-spacing: 0.25px; text-overflow: ellipsis; max-width: 360px;white-space: nowrap;overflow: hidden;}
 .thumb .thumb-info .thumb-title .thumb-cat a {text-decoration: none;}
 .thumb .thumb-info .thumb-title .thumb-cat a:hover {}
 
-/* Pagination Numbered */
+//-------------------------------------------------------------------------------
+// Archive Pagination
+//-------------------------------------------------------------------------------
 .browsing {clear: both;}
 .browsing a, 
 .browsing .current {font-size: 18px;line-height: 18px; padding: 5px; text-decoration: none; letter-spacing: 0;}
 .browsing {margin: 20px 0}
-.browsing .browsing-nav {}
+.browsing .browsing-nav {width: 1280px;}
 .browsing .browsing-nav-left {float: left; width: 20%;text-align: left;}
 .browsing .browsing-nav-mid {float: left;width: 60%; text-align: center; }
 .browsing .browsing-nav-mid a, 

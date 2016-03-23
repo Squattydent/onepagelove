@@ -37,60 +37,11 @@ p.myaccount_user,
 /* Widths, margins, padding */		
 #container-outer {
 	width: 100%
-	}
-	#header-top-outer {
-		width: 100%; 
-		height: 40px; 
-		margin: 0; 
-		padding: 0; 
-		display: block;
-		}
-		#header-top {
-			width: 96%; 
-			margin:0 auto; 
-			padding: 0;}
-			#header-top-left {
-				float: left;
-				width: 70%; 
-				margin: 0; 
-				padding: 0;
-				}
-			#header-top-right {
-				float: right;
-				width: 30%; 
-				margin: 0; 
-				padding: 0;
-				}			
-	#header-bottom-outer {
-		width: 100%; 
-		height: 60px; 
-		margin: 0; 
-		padding: 0; 
-		display: block;
-		}
-		#header-bottom {
-			width: 96%; 
-			margin:0 auto; 
-			padding: 0;
-			color: #FFF;
-			}	
-			#header-bottom-left {
-				float: left;
-				width: 70%; 
-				height: 60px;
-				margin: 0; 
-				padding: 0;		
-				}
-			#header-bottom-right {
-				float: right;
-				width: 30%;  
-				margin: 0; 
-				padding: 0;
-				}			
+	}		
 	#container {
 		width: 100%; 
 		margin: 0; 
-		padding: 20px 0 40px 0;
+		padding: 40px 0 40px 0;
 		overflow: hidden;
 		}
 		#content {
@@ -110,39 +61,10 @@ p.myaccount_user,
             margin: 20px 0 40px 0;
 			padding: 0px; /* different to single with big screenshot touching edge */			
 			}		
-	#footer-top-container {
-		width: 100%; 
-		margin: 0 0 0 0;
-		}
-		#footer-top {
-			width: 96%; 			
-			margin: 0 auto; 
-			padding: 0; 
-			height: 130px;
-			}
-	#footer-container {
-		width: 100%; 
-		margin: 0;
-		}
-		#footer {
-			width: 96%; 
-			margin: 0 auto; 
-			padding: 40px 0;
-			}
-		#footer-bottom {
-			width: 96%; 
-			margin: 0 auto; 
-			padding: 30px 0;
-			}
 
-/* Header */			
-#header-bottom-left  ul li a {padding: 20px 35px 20px 5px;;}
-#header-bottom-right .search-field-holder {width: 85%;}
+
 		
 /* Archives */
-.archive-header-info {width: 70%; margin-right: 0;}
-.archive-header-ad {width: 30%; overflow: hidden;}
-.archive-container {width: 104%;}
 .browsing .browsing-nav {width: 100%;}	
 
 .notice {width: 94%; padding: 1.5% 2%;}
@@ -157,15 +79,13 @@ p.myaccount_user,
 .review .review-screenshot img {width: 100%; height: auto;}	
 
 /* Roundups */
-.single-content img {width: 100%; height: auto;}
+.single-content img {max-width: 100%; height: auto;}
 .single-content img.alignleft {width: 300px; height: auto;}
 
 /* Favorites */
 .favorites-demo .favorites-demo-col {float: left; width: 32%; margin-right: 2%;}
 .favorites-demo .favorites-demo-col img {width: 100%; height: auto; }
 .favorites-demo .favorites-demo-col-right {margin-right: 0;}
-
-/* Footer */
 
 /* Hiding */	
 .made-up-class
@@ -189,7 +109,7 @@ p.myaccount_user,
 /* Mobile with dropdown left nav */
 /* ------------------------------------------------ */
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: $bp-tablet) {
 	
 /* Widths, margins, padding */		
 #container-outer {
@@ -214,6 +134,18 @@ p.myaccount_user,
 				height: 40px; 
 				margin: 0; 
 				padding: 0;
+
+				#mobile-nav-button {
+					float: left; 
+					position: absolute; 
+					margin: 12px 0 0 0;
+
+					svg {
+						fill: #777;
+					} 
+				}
+
+
 				}
 			#header-top-mid {
 			    float: left;
@@ -231,7 +163,7 @@ p.myaccount_user,
 				padding: 0;			
 				}			
 	#container {
-
+		padding-top: 20px;
 		}
 		#content {
 
@@ -242,40 +174,15 @@ p.myaccount_user,
 		#content .review {
 	
 			}		
-	#footer-top-container {
-		width: 100%; 
-		margin: 0 0 0 0;
-		}
-		#footer-top {
-			width: 96%; 			
-			margin: 0 auto; 
-			padding: 0; 
-			height: auto;
-			}
-	#footer-container {
-		width: 100%; 
-		margin: 0;
-		}
-		#footer {
-			width: 90%; 
-			margin: 0 auto; 
-			padding: 40px 0;
-			}
-		#footer-bottom {
-			width: 90%; 
-			margin: 0 auto; 
-			padding: 30px 0;
-			}
+
 			
 /* New Navigation Big Dropdown */
 #toggle-mobile-navigation {position: relative;}
-#mobile-nav-button {float: left; position: absolute; margin: 12px 0 0 0;}
-#mobile-nav-button SVG {fill: #777;}
 
 #header-top-mid .header-logo-heart {margin: 0 auto; height: 22px; width: 22px; background: url('https://onepagelove.com/wp-content/uploads/2014/01/one-page-love-heart-logo.png') left top no-repeat; background-size:22px 22px; }
 #header-top-mid .header-logo-heart a {height: 22px; width: 22px; display: block; padding: 0;}
 
-.mobile-navigation {position: relative; clear: both; width: 96%; padding: 0 2% 0 2%; float: none; text-shadow: none; margin:0; }
+.mobile-navigation {position: relative; clear: both; width: 96%; padding: 0 2% 0 2%; float: none; text-shadow: none; margin:0;}
 .mobile-navigation ul {overflow: auto; width: 100% !important; height: auto; margin: 0; padding: 0px; list-style: none; text-shadow: none; }
 .mobile-navigation ul li {display: block; position: relative; float: none;  margin: 0; padding: 0;border: none; }
 .mobile-navigation li ul {margin-left: 0;}
@@ -305,8 +212,6 @@ p.myaccount_user,
 .search {width: 345px;}			
 
 /* Archives */
-.archive-header-info {width: 100%}
-.archive-header-ad {display: none;}
 .browsing .browsing-nav {width: 100%;}		
 .browsing .browsing-nav-left {width: 50%;}	
 .browsing .browsing-nav-right {width: 50%;}	
@@ -314,20 +219,16 @@ p.myaccount_user,
 /* Thumbs */
 .thumb {width: 45%; margin: 0 4% 4% 0;}
 
-/* Reviews */
-.review .review-meta {}
-.review .review-ad {display: none;}	
-
 .review-launch a {width: 100%;}
-.review #comments {padding: 10px 10px 0 10px;}	
+.review .comments-tweet-email {padding: 10px 10px 0 10px;}	
 .floating-pagi a {width: 30px; height: 30px;}
 .floating-pagi svg {width: 30px; height: 30px;}
 
 /* Resources */
-.single-container #comments {padding: 0;}
+.single-container .comments-tweet-email {padding: 0;}
 
 /* Roundups */
-.single-content img {width: 760px; height: auto;}
+.single-content img {max-width: 100%; height: auto;}
 .single-content img.alignleft {width: 360px; height: auto;}
 .single-container .block-right {display: none;}
 
@@ -343,13 +244,7 @@ p.myaccount_user,
 .join-benefits {width: 90%; padding: 4% 4%; float: none; margin-bottom: 40px;}
 .gform_wrapper {max-width: 100% !important;	width: 100% !important; float: none;}
 
-/* Footer */
-.footer-promo {top: -20px; min-height: 105px; height: auto; padding: 45px 0 0 230px;}
-.footer-promo-title {margin-bottom: 10px; width: 80%}
-.footer-promo-info {margin-bottom: 10px;width: 80%}
-.footer-promo-buttons {width: 80%; line-height: 30px;}
-#footer .footer-column {width: 33%;}
-.col-four {clear: both;}
+
 
 /* Hiding */	
 #header-top-left .header-logo,
@@ -375,18 +270,6 @@ li#nav-ho,
 #header-top-left ul {z-index: 5000;}
 }
 
-/* ------------------------------------------------ */
-/* Reviews meta issue */
-/* ------------------------------------------------ */
-
-@media screen and (max-width: 650px) {
-	
-/* Reviews */
-.review .review-meta {}
-.review .review-meta-left {float: none; width: 95%; padding: 0; vertical-align: top; margin: 0; margin-bottom: 40px; }
-.review .review-meta-right {float: none; width: 90%; margin: 0 auto; margin-bottom: 4% }
-.review .review-ad {display: none;}	
-}
 
 /* ------------------------------------------------ */
 /* Top menu Subscribe item issue */
@@ -406,22 +289,6 @@ li#nav-ho,
 .thumb {width: 95%; margin: 0 0 10% 0;}
 .favorites-demo .favorites-demo-col {float: none; width: 98%; margin-right: 0;}
 
-/* Footer */
-#footer .footer-column {width: 50%;}
-.col-three {clear: both;}
-.col-four {clear: none;}
-.col-five {clear: both;}
-	
 }
 
-/* ------------------------------------------------ */
-/* Smallest Mobile */
-/* ------------------------------------------------ */
-
-@media screen and (max-width: 400px) {
-	
-.footer-promo {display: none;}
-
-	
-}
 

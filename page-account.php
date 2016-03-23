@@ -16,12 +16,6 @@ Template Name: Account
 			<div class="archive-description">Simply edit your details below then hit the update button.</div>
  	
 		 </div><!--  /.archive-header-info -->
-
-		<div class="archive-header-ad">
-	
-			<?php include ("inc/ad-primary.php"); ?>
-	
-		</div><!--  /.archive-header-ad -->
 		
 		<div class="clear"></div>
 		
@@ -31,16 +25,27 @@ Template Name: Account
 
 	      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	      <?php the_content('Read more...'); ?>
-	
-	     <hr />
-	
- 	     <h3>Clear your favorites list</h3>
+	      <div class="single-content">
 
-         <p>Warning, clicking the link below will instantly clear all your favorites:</p>
-	
-	     <p><?php wpfp_clear_list_link() ?></p>
-	
+			      <?php the_content('Read more...'); ?>
+			
+			     <hr />
+			
+		 	     <h3>Clear your favorites list</h3>
+
+		         <p>Warning, clicking the link below will instantly clear all your favorites:</p>
+			
+			     <p><?php wpfp_clear_list_link() ?></p>
+
+			     <hr/>
+
+			     <h3>Delete Account</h3>
+
+		         <p>We're still working on this feature, please just email <a href="mailto:support@onepagelove.com">support@onepagelove.com</a> and we'll prioritise it!</p>
+			
+
+			</div>
+			
 	      <?php endwhile; else: ?>
 		
 	       <p>Sorry, no posts matched your criteria.</p>

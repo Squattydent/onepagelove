@@ -16,12 +16,6 @@ Template Name: Theme
 			<div class="archive-description"><?php $page_tagline = get_post_meta($post->ID, "page_tagline", true); echo $page_tagline; ?></div>
  	
 		 </div><!--  /.archive-header-info -->
-
-		<div class="archive-header-ad">
-	
-			<?php include ("inc/ad-primary.php"); ?>
-	
-		</div><!--  /.archive-header-ad -->
 		
 		<div class="clear"></div>
 		

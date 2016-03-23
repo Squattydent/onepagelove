@@ -6,10 +6,6 @@
 body 
 {font-family: "proxima-nova", Arial, sans-serif; font-weight: 300; font-style: normal;}
 
-/* Ad Network Font Override: Proxima Nova */
-#carbonads
-{font-family: "proxima-nova", Arial, sans-serif !important;}
-
 /* Heading Font: Proxima Nova Soft */
 .header-logo a,
 .archive-title,
@@ -62,7 +58,7 @@ Proxima Nova
 #header-top-right ul.account-logged-in li a {font-weight: 600;}
 
 /* Header Bottom Navigation */
-#header-bottom-left ul li a {font-size: 18px; line-height: 18px; letter-spacing: 0; font-weight: 500;}
+#header-bottom-left ul li a {font-size: 16px; line-height: 16px; letter-spacing: 0; font-weight: 500;}
 #header-bottom-left ul li ul a {font-size: 14px; line-height: 14px; letter-spacing: 0; font-weight: 500;}
 
 /* Search */

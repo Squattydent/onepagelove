@@ -18,12 +18,6 @@ Template Name: Freebies
 		We're planning on filling this section up properly soon, until then enjoy our first icon set freebie. Also don't forget to check out the <a href="<?php print get_home_url(); ?>/templates/free-templates">Free One Page Templates</a> category.</div> 
 	
 	 </div><!--  /.archive-header-info -->
-
-	<div class="archive-header-ad">
-
-		<?php include ("inc/ad-primary.php"); ?>
-
-	</div><!--  /.archive-header-ad -->
 	
 	<div class="clear"></div>
 		

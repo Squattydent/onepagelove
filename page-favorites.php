@@ -15,15 +15,9 @@ Template Name: Favorites
 			<div class="archive-title"><h1><?php global $current_user; get_currentuserinfo(); echo '' . $current_user->display_name . "'s\n"; ?> Favorites</h1>
 			</div><!--  /.archive-title -->
 			
-			<div class="archive-description"><?php echo adManager::ad_zone( 9 ); ?></div>
+			<div class="archive-description"><?php include("inc/random-naming-favorites.php"); ?></div>
  	
 		 </div><!--  /.archive-header-info -->
-
-		<div class="archive-header-ad">
-	
-			<?php include ("inc/ad-primary.php"); ?>
-	
-		</div><!--  /.archive-header-ad -->
 		
 		<div class="clear"></div>
 		

@@ -1,26 +1,115 @@
-/* ------------------------------------------------ */
-/* 09. Pages & Resource Posts */
-/* ------------------------------------------------ */
-
-.single-container {border: none; border-bottom: 1px solid #ccc;}
-.single-container p {margin: 0 0 20px 0; padding: 0;}
-.single-container h1 {padding: 0; margin-bottom: 30px;}
-.single-container h2 {padding: 0; margin-bottom: 30px;}
-.single-container h3 {margin: 40px 0 20px 0;}
-.single-container h3.h3-top-page {margin-top: 0;}
-.single-container h4 {font-weight: bold;font-size: 20px; line-height: 24px; color: #555555; margin: 30px 0 10px 0; }
-.block-right {padding: 20px 20px 0 20px; float: right; vertical-align: top; display: block; width: 300px; height: auto; margin: 0 0 40px 40px;}
-
-/* Images */
-.single-container img.alignnone {width: 100%; height: auto;}
+// ------------------------------------------------
+// 09. Pages
+// ------------------------------------------------ 
 
 /* Lists */
-.single-container ul {margin: 20px 0 20px 0; padding-left: 30px; } 
-.single-container ol {margin: 20px 0 20px 0; padding-left: 30px; }
-.single-container ol li {list-style-type: decimal-leading-zero; padding: 0 0 10px 10px;}
-.single-container ul li {list-style-type: circle; padding: 0 0 10px 10px;}
+.single-container {
+	border: none; 
+	border-bottom: 1px solid #ccc;
 
-.single-container #comments {padding: 0;}
+		h1 {
+			padding: 0; 
+			margin-bottom: 30px;
+		}
+
+	.single-content {
+
+		h2 {
+			padding: 0; 
+			margin-bottom: 30px;
+		}
+
+		h3 {
+			margin: 40px 0 20px 0;
+		}
+
+		h3.h3-top-page {
+			margin-top: 0;
+		}
+
+		h4 {
+			font-weight: bold;
+			font-size: 20px; 
+			line-height: 24px; 
+			color: #555555; 
+			margin: 30px 0 10px 0; 
+			background: #111;
+		}
+
+		p {
+			margin: 0 0 20px 0; 
+			padding: 0;
+		}
+
+		ul {
+			margin: 20px 0 20px 0; 
+			padding-left: 30px; 
+
+			li {
+				list-style-type: circle; 
+				padding: 0 0 10px 10px;
+			}
+		} 
+
+		ol {
+			margin: 20px 0 20px 0; 
+			padding-left: 30px; 
+
+			li {
+				list-style-type: decimal-leading-zero; 
+				padding: 0 0 10px 10px;
+			}
+		}
+
+		img.alignnone {
+			max-width: 100%; 
+			height: auto;
+		}
+
+		iframe {
+			max-width: 100%;
+		}
+
+	}
+
+	.block-right {
+		padding: $spacing-medium $spacing-medium 0 $spacing-medium; 
+		float: right; 
+		vertical-align: top; 
+		display: block; 
+		width: 300px; 
+		height: auto; 
+		margin: 0 0 $spacing-big $spacing-big;
+		font-size: 0.875rem;
+		line-height: 1.125rem; 
+
+		ul {
+			
+			font-size: 0.875rem;
+		    line-height: 1.125rem; 
+			margin-bottom: $spacing-medium;
+
+			li {
+				margin-bottom: $spacing-small;
+
+				a {
+					color: $color-main-link;
+					border-bottom: none;
+				}
+
+				a:hover {
+					color: $color-main-link;
+					border-bottom: 1px solid $color-main-link;
+				}
+			}
+
+		}
+
+	}
+
+
+}
+	
 
 /* Roundups */
 a.roundup-buy, 
@@ -30,5 +119,9 @@ a.roundup-demo {width: 116px; padding: 8px 0; margin-right: 0; margin-top: -28px
 a.roundup-demo:hover {}
 	
 /* Page With Ad */	
-.page-template-page-with-ad-php .archive-description {margin-bottom: 0px;}
-.page-template-page-with-ad-php #content .single-container {margin-top: 0px;}
+// .page-template-page-with-ad-php .archive-description {margin-bottom: 0px;}
+// .page-template-page-with-ad-php #content .single-container {margin-top: 0px;}
+
+
+// Temp fix
+

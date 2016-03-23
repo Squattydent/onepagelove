@@ -7,35 +7,29 @@
 
        <div class="block-right">
 
+       <ul>
+         <li><strong>Published:</strong> <?php echo get_the_date(); ?></li>
+         <li><strong>Category:</strong> <?php the_category(', ', 'parents' ); ?></li>
+       </ul>
 
 			  <div class="review-ad-holder"><?php include ("inc/ad-primary.php"); ?></div>
-			  <div class="review-ad-holder"><?php include ("inc/ad-secondary.php"); ?></div>
 
-			
-			<div class="clear"></div>
+        <?php include ("inc/meta-jobs-panda.php"); ?>
+
+        <div class="clear"></div>
 						
-         
-            <p><strong>Date:</strong> <?php echo get_the_date(); ?><br />
-			<strong>Category:</strong> <?php the_category(', ', 'parents' ); ?><br />
-			<strong>Comments:</strong> <a href="<?php the_permalink(); ?>#disqus_thread">Comments</a></p>
          
        </div><!-- /.block-right -->
 
        <div class="single-title"><h1><?php the_title(); ?></h1></div>
              
-       <div class="single-content">
+      <div class="single-content">
                
 			   <?php include ('inc/floating-pagination.php'); ?>
                
-               <?php the_content(''); ?>
+          <?php the_content(''); ?>
                
-               </div><!-- /single-content -->
-
-			   	<div id="comments">
-
-				    <?php comments_template(); ?>
-
-				</div><!-- /#comments -->
+      </div><!-- /single-content -->
                
    </div><!-- /.single-container -->
    

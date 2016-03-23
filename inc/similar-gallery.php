@@ -13,7 +13,7 @@
 			$args=array(
 				'category__in' => $category_ids,
 				'post__not_in' => array($post->ID),
-				'showposts'=>6,
+				'showposts'=>12,
 				'caller_get_posts'=>1
 			);
 			$my_query = new wp_query($args);

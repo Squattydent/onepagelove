@@ -34,7 +34,16 @@
 							        }                
 							        elseif (in_category('Squarespace Templates')) {
 							        echo 'One Page Squarespace Template Review';              
-							        }  																								
+							        }  	
+							        elseif (in_category('Unbounce Templates')) {
+							        echo 'One Page Unbounce Template Review';              
+							        } 							        		
+							        elseif (in_category('Joomla Templates')) {
+							        echo 'One Page Joomla Template Review';              
+							        }  
+									elseif (in_category('Bundle Deals')) {
+							        echo 'Bundle Deal Review';              
+							        } 		        							        																					
 									else {
 						          	echo 'Unique One Page Website Review';						
 									};
@@ -114,11 +123,14 @@
                    
              </div><!-- /.review-screenshot -->
 
-		   	<div id="comments">
+         	<div class="review-notes">
+         		
+				<?php include ('inc/review-author.php'); ?>
+				
+	            <div class="clear"></div>
 
-			    <?php comments_template(); ?>
-
-			</div><!-- /#comments -->
+         	</div>
+            
 
 </div><!-- /.review --> 
 

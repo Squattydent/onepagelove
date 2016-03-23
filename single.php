@@ -1,6 +1,6 @@
 <?php
 $post = $wp_query->post;
-if ( in_category((array("Blog","Resources","Interviews","Round Ups"))) ) {
+if ( in_category((array("Blog","Resources","Interviews","Round Ups","Sponsored"))) ) {
 include(TEMPLATEPATH . '/single-other.php');
 
 } else {

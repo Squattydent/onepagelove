@@ -21,7 +21,7 @@
       <div class="thumb-image">
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
           <?php 
-          if ( in_category(array("Blog","Resources","Interviews","Round Ups"))) { //  
+          if ( in_category(array("Blog","Resources","Interviews","Round Ups","Sponsored"))) { //  
             the_post_thumbnail();   
           } else {
           	$string = get_the_content();   
@@ -61,7 +61,10 @@
 											}
 											elseif (in_category('Muse Templates')) {
 								          	echo 'Muse Template';							
-											}											
+											}		
+											elseif (in_category('Joomla Templates')) {
+								          	echo 'Joomla Template';							
+											}										
 											elseif (in_category('WordPress Themes')) {
 								          	echo 'WordPress Theme';							
 											}											

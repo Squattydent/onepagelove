@@ -27,16 +27,16 @@ a.roundup-demo,
 .theme-options a,
 #header-bottom-right .search,
 .opl-ad-img img,
-#carbonads .carbon-img img,
+.opl-ad-img-premium img,
 .gform_body input,
 .gform_wrapper .gfield_password_strength,
 .gform_wrapper .gform_footer input[type=submit],
 .join-benefits,
 .gform_body textarea  
-{-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+{border-radius: $rounded-corners;}
 
 ul.account-logged-out li a
-{-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
+{border-radius: $rounded-buttons;}
 
 /* Rounded Corners 4px top edges only */
 .thumb .thumb-image img,

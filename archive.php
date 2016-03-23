@@ -15,7 +15,7 @@
 			
       		// Gallery Home			
 			elseif (is_category('Gallery')) {
-          	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' unique one page website designs';	
+          	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' unique One Page websites';	
 			}		
 
 	      		// Most loved			
@@ -128,7 +128,12 @@
 	          	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';							
 	          	echo ' Tutorials';		
 				}	
-								
+
+      		// Sponsored			
+			elseif (is_category('Sponsored')) {
+	        echo 'You are browsing posts by One Page Love Sponsors';														
+			}
+
       		// Remaining One Page Gallery categories			
 			elseif (is_archive()) {
           	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' One Page ';							
@@ -142,12 +147,6 @@
 			<div class="archive-description"><?php echo category_description( $category_id ); ?></div>
  	
 		 </div><!--  /.archive-header-info -->
-
-		<div class="archive-header-ad">
-	
-			<?php include ("inc/ad-primary.php"); ?>
-	
-		</div><!--  /.archive-header-ad -->
 		
 		<div class="clear"></div>
 		
