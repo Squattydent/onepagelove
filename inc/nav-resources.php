@@ -8,7 +8,7 @@
   <li><a href="<?php print get_home_url(); ?>/resources/round-ups" title="Round Ups of design and development resources for your inspiration">Round Ups</a></li>        
   <li><a href="<?php print get_home_url(); ?>/resources/interviews" title="Browse Interviews with creators of One Page Websites">Interviews</a></li>
   <li><a href="<?php print get_home_url(); ?>/freebies" title="Free stuff!">Freebies</a></li> 
-  <li><a href="https://onepagelove.com/go/audit" title="Premium One Page Website Review">Review Service</a></li> 
+  <li><a href="https://onepagelove.com/go/feedback" title="Premium One Page Website Review">Review Service</a></li> 
 </ul>
 
 

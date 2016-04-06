@@ -86,7 +86,6 @@
 									  </li> 
 
 									  <li><a href="<?php print get_home_url(); ?>/freebies" title="Free stuff!">Freebies</a></li> 									  	
-									  <li><a href="<?php print get_home_url(); ?>/submit" title="Submit One Page Websites">Submit</a></li>	
 
 									  <li><a href="<?php print get_home_url(); ?>/blog">Blog</a></li> 
 
@@ -125,8 +124,8 @@
 											 else { ?>
 
 												<ul class="account-logged-out">
-													<li class="account-login"><a href="<?php print get_home_url(); ?>/wp-login.php">Log In</a></li>	
-													<li class="account-join"><a href="<?php print get_home_url(); ?>/join">Join Free</a></li>		
+													<li class="account-login"><a href="<?php print get_home_url(); ?>/submit">Submit</a></li>	
+													<li class="account-join"><a href="https://onepagelove.com/go/feedback" title="Premium One Page Website Review">Get Feedback</a></li>		
 												</ul>	
 		
 
@@ -250,11 +249,7 @@
 		
 		             <li class="nav-wide"><a href="#">Resources</a>
 						<?php include('inc/nav-resources.php'); ?>	
-				 	 </li>		
-
-				 	 <li>
-				 	 	<a href="https://jobs.onepagelove.com">Jobs</a>
-				 	 </li>		
+				 	 </li>			
 											   
 		             <li><a href="#">Subscribe</a>
 						<?php include('inc/nav-subscribe.php'); ?>
