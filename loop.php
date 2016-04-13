@@ -38,15 +38,6 @@
 	
 		                <div class="thumb-name">
 									<h2>
-										
-										<?php if ( is_user_logged_in() ) { ?>
-
-										   <?php if (function_exists('wpfp_link')) { wpfp_link(); } ?> 
-
-										 <?php } 
-										 else { ?>
-
-										 <?php } ?>
 
 										<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 										

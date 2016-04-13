@@ -50,14 +50,7 @@
 									?>
 					
 								</div>                 
-				                <div class="review-title"><h1><?php if ( is_user_logged_in() ) { ?>
-
-								   <?php if (function_exists('wpfp_link')) { wpfp_link(); } ?> 
-
-								 <?php } 
-								 else { ?>
-
-								 <?php } ?> <?php the_title(); ?></h1></div> 
+				                <div class="review-title"><h1><?php the_title(); ?></h1></div> 
                 
 				                <div class="review-content">
                    
