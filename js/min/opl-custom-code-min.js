@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#content .single-content").fitVids()});
+function toggleNav(){var t=document.getElementById("toggle-mobile-navigation"),e=document.getElementById("mobile-nav-button-link");"block"==t.style.display?t.style.display="none":t.style.display="block"}$(document).ready(function(){$("#content .single-content").fitVids()});

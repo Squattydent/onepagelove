@@ -8,20 +8,16 @@
 // 05. Pagination
 // 06. Exclude pages from search results
 // 07. Allow media permissions for contributors
-// 08. Hide Admin Toolbar
-// 09. Log in redirect
-// 10. Auto log in after register
-// 11. Truncation
-// 12. Custom Login Page Logo
-// 13. Next New Code
-// 14. Enqueue Scripts and Styles
+// 08. Truncation
+// 09. Enqueue Scripts and Styles
+// 10. WordPress Clean-up
 
 // -------------------------------------------------------------
 // 00. Defining
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.5.1' );
+define( 'OPL_THEME_VERSION' , '6.6.6' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -271,45 +267,7 @@ function allow_contributor_uploads() {
 }
 
 // -------------------------------------------------------------
-// 08. Hide Admin Toolbar
-// -------------------------------------------------------------
-
-add_action('after_setup_theme', 'remove_admin_bar');
-
-function remove_admin_bar() {
-if (!current_user_can('administrator') && !is_admin()) {
-  show_admin_bar(false);
-}
-}
-
-// -------------------------------------------------------------
-// 09. Log in redirect
-// -------------------------------------------------------------
-
-function admin_default_page() {
-  return './dashboard';
-}
-add_filter('login_redirect', 'admin_default_page');
-
-
-// -------------------------------------------------------------
-// 10. Auto log in after register
-// -------------------------------------------------------------
-
-add_action( 'gform_user_registered', 'pi_gravity_registration_autologin', 10, 4 );
-function pi_gravity_registration_autologin( $user_id, $user_config, $entry, $password ) {
-	$user = get_userdata( $user_id );
-	$user_login = $user->user_login;
-	$user_password = $password;
-    wp_signon( array(
-		'user_login' => $user_login,
-		'user_password' =>  $user_password,
-		'remember' => false
-    ) );
-}
-
-// -------------------------------------------------------------
-// 11. Truncation
+// 08. Truncation
 // -------------------------------------------------------------
 
 function limit_text($text, $limit) {
@@ -322,49 +280,32 @@ function limit_text($text, $limit) {
     }
 
 // -------------------------------------------------------------
-// 12. Custom Login Page Logo
+// 09. Enqueue Scripts and Styles
 // -------------------------------------------------------------
 
-function my_login_logo() { ?>
-    <style type="text/css">
-        body.login div#login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/one-page-love-heart-logo.png);
-            padding-bottom: 30px;
-        }
-    </style>
-<?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
-
-
-// -------------------------------------------------------------
-// 13. Log in with username or email
-// -------------------------------------------------------------
-
-
-// -------------------------------------------------------------
-// 14. Next New Code
-// -------------------------------------------------------------
-
-
-// -------------------------------------------------------------
-// 15. Enqueue Scripts and Styles
-// -------------------------------------------------------------
-
-add_action('wp_enqueue_scripts', 'opl_enqueue_scripts');
 function opl_enqueue_scripts(){
-	// Dont run in admin
-	if(is_admin()) return;
 	
-	// Load styles
-	wp_enqueue_style( 'opl-stylesheet', get_stylesheet_uri(), array(), OPL_THEME_VERSION ); // OPL Stylesheet			
+    // Main Stylesheet
+	wp_register_style( 'opl-stylesheet', get_template_directory_uri().'/css/style.css', array(), OPL_THEME_VERSION ); 	
+    wp_enqueue_style( 'opl-stylesheet' );   
+	
+	// Script: FitVids
+    wp_register_script('opl-fitvids',    get_template_directory_uri().'/js/jquery.fitvids.js', array(), OPL_THEME_VERSION ); 
+    wp_enqueue_script('opl-fitvids');
 
-	// Use default jQuery
-	wp_enqueue_script( 'jquery' );
-	
-	// OPL Scripts
-	wp_enqueue_script('opl-nav-toggle', get_template_directory_uri().'/js/nav-toggle.js');     // Sidr Navigation	
-    wp_enqueue_script('opl-fitvids',    get_template_directory_uri().'/js/jquery.fitvids.js'); // FitVids
-    wp_enqueue_script('opl-custom-js',  get_template_directory_uri().'/js/opl-custom-code.js');// Custom Code  
+    // Script: Custom Code
+    wp_register_script('opl-custom-js',  get_template_directory_uri().'/js/opl-custom-code.js', array(), OPL_THEME_VERSION ); 
+    wp_enqueue_script('opl-custom-js');
 
 }
+
+add_action('wp_enqueue_scripts', 'opl_enqueue_scripts');
+
+// -------------------------------------------------------------
+// 10. WordPress Clean-up
+// -------------------------------------------------------------
+
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );# Remove Smileys embedded in head
+remove_action( 'wp_print_styles', 'print_emoji_styles' );     # Remove Smileys embedded in head
+
 ?>

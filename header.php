@@ -24,10 +24,6 @@
 <!-- Google Tracking Code -->
 <meta name="google-site-verification" content="nitxY7qwsSPA9sdMZB48BxmsU3lsE0Fl2pN5Q_A342s" />
 
-<!-- Favicon -->
-<link rel="shortcut icon" href="https://onepagelove.com/favicon.ico" />
-<link rel="apple-touch-icon" href="https://onepagelove.wpengine.com/apple-touch-icon.png" />
-
 <?php wp_head(); ?>
 
 <!-- Analytics  -->
