@@ -81,9 +81,9 @@
 					            </svg>
 			     			 </a>
 			         </div><!-- /#mobile-nav-button -->
-			  
 			
 	                 <div class="header-logo">
+
 						<div class="header-logo-heart"><a href="<?php print get_home_url(); ?>" title="Go to the home page"></a></div>
 						<div class="header-logo-name"><a href="<?php print get_home_url(); ?>" title="Go to the home page">One Page Love</a></div>		
 					 </div><!-- /.header-logo -->
@@ -101,9 +101,9 @@
 									  </li> 
 
 									  <li><a href="<?php print get_home_url(); ?>/freebies" title="Free stuff!">Freebies</a></li> 									  	
-
 									  <li><a href="<?php print get_home_url(); ?>/blog">Blog</a></li> 
 
+									  <li><a href="<?php print get_home_url(); ?>/hosting" title="Hosting Recommendations">Hosting</a></li> 
 																			
 						            </ul><!-- end of main menu -->
 						
