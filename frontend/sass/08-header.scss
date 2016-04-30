@@ -1,6 +1,6 @@
-/* ------------------------------------------------ */
-/* 06. Header */
-/* ------------------------------------------------ */
+//-------------------------------------------------------------------------------
+// Header - Top Left - Logo + Meta Nav
+//-------------------------------------------------------------------------------
 
 /* Logo */
 #header-top-left .header-logo {float: left; height: 30px; margin: 6px 15px 0 0; }
@@ -27,31 +27,68 @@
 #header-top-left  ul li ul li a {height: 16px; padding: 13px 20px 11px 20px;}
 #header-top-left  ul li ul li ul li {display: none;}
 
-/* Account */
-#header-top-right .header-account {text-align: right;}
+#header-top-left ul li a {color: #555;} /* parent link color */
+#header-top-left ul li a:hover {color: $color-main-link;} /* parent link color on hover */
+#header-top-left li:hover a {color: #fff;} /* parent link color when hovering on dropdown */
+#header-top-left ul li ul {background: #141414} /* dropdown background */
+#header-top-left ul li ul li a {color: #777 !important;} /* dropdown list item link color*/
+#header-top-left li:hover li a:hover {background: $color-main-link !important; color: #FFF !important;} /* dropdown list item background & link color on hover */
 
-/* Account: Logged Out */
-#header-top-right ul.account-logged-out {margin-top:12px;}
-#header-top-right ul.account-logged-out li {display: inline-block; margin-left: 10px; }
-#header-top-right ul.account-logged-out li a {padding: 2px 4px; text-transform: uppercase;}
+//-------------------------------------------------------------------------------
+// Header - Top Right - Buttons
+//-------------------------------------------------------------------------------
 
-/* Account: Logged In */
-#header-top-right {position: relative; }
-#header-top-right .account-name {display: inline; position: relative; top: 6px; margin-right: 6px; vertical-align: top;}
-#header-top-right .account-gravatar {display: inline; height: 24px; width: 24px; vertical-align: top;}
-#header-top-right .account-gravatar img {width: 24px;height: 24px;border-radius: 12px;-webkit-border-radius: 12px;-moz-border-radius: 12px;}
-#header-top-right  ul.account-logged-in {width: 300px;margin: 0; padding: 0; list-style: none; text-shadow: none; text-align: right; position: absolute; right: 0px;}
-#header-top-right  ul.account-logged-in li {display: block; position: relative; float: right;  margin: 0; padding: 0;border: none; }
-#header-top-right  ul.account-logged-in li ul {display: none; right: 0px;}
-#header-top-right  ul.account-logged-in li a {display: block; margin: 0 !important;  border: none; text-decoration: none; height: 24px; padding: 8px 0 8px 0; white-space: nowrap;} 
-#header-top-right  ul.account-logged-in li a:hover {text-decoration: none;}
-#header-top-right  ul.account-logged-in li:hover a {background-position: 0 0px; }
-#header-top-right  ul.account-logged-in li:hover ul {display: block; position: absolute;}
-#header-top-right  ul.account-logged-in li:hover li {float: none;}
-#header-top-right  ul.account-logged-in li ul li {width: 130px; padding: 0; background-clip: padding-box;} 
-#header-top-right  ul.account-logged-in li ul li:hover {padding: 0;}
-#header-top-right  ul.account-logged-in li ul li a {height: 16px; padding: 13px 20px 11px 20px;}
-#header-top-right  ul.account-logged-in li ul li ul li {display: none;}
+#header-top-right {
+
+	position: relative;
+	text-align: right;
+
+	ul.account-logged-out {
+
+		margin-top:12px;
+
+		li {
+
+			display: inline-block; 
+			margin-left: 10px; 
+
+			a {
+				padding: 2px 4px; 
+				text-transform: uppercase;
+			}
+
+		}
+
+		li.account-login a {
+			background: #333; 
+			color: #999;
+		}
+
+		li.account-join a {
+			background: $color-main-link; 
+			color: #FFF;
+		}
+	}
+
+}
+
+
+// Hide submit on mobile
+@media screen and (max-width: $bp-mobilesm) {
+
+	li.account-login {display: none !important;}
+}
+
+//-------------------------------------------------------------------------------
+// Header - Bottom Left - Main Nav
+//-------------------------------------------------------------------------------
+
+#header-bottom-left ul li a {color: #999;} /* parent link color */
+#header-bottom-left ul li a:hover {color: #CCC;} /* parent link color on hover */
+#header-bottom-left li:hover a {color: #CCC} /* parent link color when hovering on dropdown */
+#header-bottom-left ul li ul {background: #1E1E1E;} /* dropdown background */
+#header-bottom-left ul li ul li a {color: #777 !important;} /* dropdown list item link color*/
+#header-bottom-left li:hover li a:hover {background: $color-main-link !important; color: #FFF !important;} /* dropdown list item background & link color on hover */
 
 /* Bottom Navigation */
 #header-bottom-left  ul {margin: 0; padding: 0; list-style: none; text-shadow: none;}
@@ -71,6 +108,24 @@
 #header-bottom-left  ul li.nav-wide ul li {width: 190px; display: inline-block;}
 #header-bottom-left  ul li.nav-wider ul {width: 488px;}
 #header-bottom-left  ul li.nav-wider ul li {width: 160px; display: inline-block;}
+
+// Descrease spacing
+@media screen and (max-width: 1030px) {
+
+	#header-bottom-left  ul li a {
+		padding: 20px 15px 20px 5px;
+	}	
+}
+
+
+//-------------------------------------------------------------------------------
+// Header - Bottom Right - Search
+//-------------------------------------------------------------------------------
+
+#header-bottom-right .search {background: #F2f2f2;}
+#header-bottom-right .search-field {color: #CCC;}
+#header-bottom-right .search-field:focus {color: #666;}
+
 
 /* Search */
 #header-bottom-right .search {height:24px; padding: 8px 4% 7px 2%; overflow: hidden; width: 94%; margin: 10px 0 0 0;}
@@ -147,17 +202,6 @@ svg.svg-search-icon {width: 18px !important; height: 18px  !important; fill: #BB
 
 
 
-// Descrease spacing
-@media screen and (max-width: 1030px) {
 
-	#header-bottom-left  ul li a {
-		padding: 20px 15px 20px 5px;
-	}	
-}
 
-// Hide submit on mobile
-@media screen and (max-width: 350px) {
-
-	li.account-login {display: none !important;}
-}
 

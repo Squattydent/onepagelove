@@ -1,24 +1,4 @@
 //-------------------------------------------------------------------------------
-// Setting the rems globally
-//-------------------------------------------------------------------------------
-
-body.single-post { // shound be html
-  font-size: $font-normal;
-}
-  // @media screen and (min-width: 1440px) {
-  //    body.single-post { 
-  //     font-size: $font-large; 
-  //    }
-  //  }
-  @media screen and (max-width: 500px) {
-    body.single-post { 
-      font-size: $font-small;
-    }
-  }
-
-
-
-//-------------------------------------------------------------------------------
 // Review Containers
 //-------------------------------------------------------------------------------
 

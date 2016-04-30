@@ -8,7 +8,7 @@
 	
 		              <div class="review-meta-right">
            
-						   <?php include ('inc/review-meta.php'); ?>
+						   <?php include ('frontend/inc/review-meta.php'); ?>
            
 		              </div><!-- /.review-meta-right -->	
               
@@ -99,7 +99,7 @@
              
              <div class="review-screenshot">
                        
-						   <?php include ('inc/floating-pagination.php'); ?>
+						   <?php include ('frontend/inc/pagination-floating.php'); ?>
                  
                            <a href="<?php print get_post_meta($post->ID, 'site_url', true) ?>" target="_blank" class="noBorder"><?php
            		        		//Get post meta
@@ -118,7 +118,7 @@
 
          	<div class="review-notes">
          		
-				<?php include ('inc/review-author.php'); ?>
+				<?php include ('frontend/inc/review-author.php'); ?>
 				
 	            <div class="clear"></div>
 
@@ -132,6 +132,6 @@
 <?php wp_reset_query(); ?>
  <?php endif; ?>
 
-<?php include ('inc/similar-gallery.php'); ?>
+<?php include ('frontend/inc/similar-gallery.php'); ?>
 
 <?php get_footer(); ?>

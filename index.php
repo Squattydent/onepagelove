@@ -6,7 +6,7 @@
 
 				 <div class="archive-header-info">
 
-					<div class="archive-title">The ultimate showcase of <?php include("inc/random-naming-intro.php"); ?> One Page websites.</div>
+					<div class="archive-title">The ultimate showcase of <?php include("frontend/inc/random-naming-intro.php"); ?> One Page websites.</div>
 
 					<div class="archive-description">
 						<p>Browse <a href="<?php print get_home_url(); ?>/gallery" title="Browse Beautiful One Page Websites">One Page Websites</a>, 
@@ -26,7 +26,7 @@
 
 			 <div class="archive-header-info">
 
-				<div class="archive-title"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo 'You are browsing page '.$paged.' of '.$wp_query->max_num_pages.' in our '; ?> <?php include("inc/random-naming-archives.php"); ?></div>
+				<div class="archive-title"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo 'You are browsing page '.$paged.' of '.$wp_query->max_num_pages.' in our '; ?> <?php include("frontend/inc/random-naming-archives.php"); ?></div>
 
 				<div class="archive-description">
 					<p>Your are browsing all categories. Browse just the <a href="<?php print get_home_url(); ?>/gallery" title="Browse One Page Websites"> Gallery</a> or  
@@ -55,6 +55,6 @@
 
    </div><!--  /.archive-container -->
 
-   <?php include ("inc/pagination.php"); ?>
+   <?php include ("frontend/inc/pagination.php"); ?>
 
 <?php get_footer(); ?>

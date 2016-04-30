@@ -1,0 +1,127 @@
+//-------------------------------------------------------------------------------
+// Spacing references
+//-------------------------------------------------------------------------------
+
+$spacing-big			: 2.5rem; 	 // 40px
+$spacing-m-b			: 1.875rem;  // 30px
+$spacing-medium			: 1.25rem; 	 // 20px
+$spacing-s-m  			: 0.9375rem; // 15px
+$spacing-small  		: 0.625rem;  // 10px
+$spacing-tiny   		: 0.3125rem; // 5px
+
+$container-standard		: 1280px;
+
+//-------------------------------------------------------------------------------
+// Font Base
+//-------------------------------------------------------------------------------
+
+// REMS based off 16px body font
+// 60px = 6vw if view point is 1000px
+
+$base-large				: 18px; 
+$base-normal			: 16px; // aka standard
+$base-small				: 14px;
+
+//-------------------------------------------------------------------------------
+// Font Sizes
+//-------------------------------------------------------------------------------
+
+// 12px = 0.75rem
+// 13px = 0.8125rem
+// 14px = 0.875rem
+// 15px = 0.9375rem
+// 16px = 1rem (base)
+// 18px = 1.125rem
+// 20px = 1.25rem
+
+
+
+//-------------------------------------------------------------------------------
+// Font families
+//-------------------------------------------------------------------------------
+
+$font-fam-prox			: "proxima-nova", Arial, sans-serif;
+$font-fam-prox-soft		: "proxima-nova-soft", "Arial Rounded MT", Arial, sans-serif;
+$font-fam-bloc			: Palatino Linotype, Palatino, Georgia, Serif;
+
+//-------------------------------------------------------------------------------
+// Breakpoints
+//-------------------------------------------------------------------------------
+
+$bp-desksm 		 	 	: 1430px;
+$bp-notebook 		 	: 1040px;
+$bp-tablet 			 	: 840px;
+$bp-mobile 			 	: 500px;
+$bp-mobilesm 		 	: 400px;
+
+//-------------------------------------------------------------------------------
+// Colors
+//-------------------------------------------------------------------------------
+
+// Backgrounds
+$color-browser-bg    	: #E2E2E2;
+$color-header-top    	: #141414;
+$color-header-bottom 	: #1E1E1E;
+$color-page-bg       	: #FFFFFF;
+$color-footer-top    	: #141414;
+$color-footer-bottom 	: #1A1A1A;
+$color-code			 	: #F8F8F8;
+
+// Fonts
+$color-body-font     	: #999999;
+$color-white     		: #FFFFFF;
+$color-main-link     	: #FD6CA3; // Pink from logo
+$color-darker-link   	: #EC3D80;
+$color-darkest-link  	: #D52468;
+$color-blue-link     	: #11C1f4;
+
+// Testing
+$test1		 		 	: #ff33cc;
+$test2		 			: #cc33ff;
+$test3		 			: #33ccff;
+$test4		 			: #ccff33;
+$test5		 			: #ffcc33;
+
+
+
+//-------------------------------------------------------------------------------
+// Misc
+//-------------------------------------------------------------------------------
+
+$review-heart 			: 1.75rem; // 28px
+$review-body-color		: #777777;
+$review-meta-color		: #666666;
+$review-testi-color		: #AAAAAA;
+
+//-------------------------------------------------------------------------------
+// Rounded Corners
+//-------------------------------------------------------------------------------
+
+$rounded-corners	 	: 4px;
+$rounded-buttons	 	: 2px;
+
+//-------------------------------------------------------------------------------
+// Extends
+//-------------------------------------------------------------------------------
+
+%font-global {
+	font-family: $font-fam-prox;
+	font-size: 100%;
+	font-size: 0.75rem;
+	line-height: 0.75rem;
+	text-decoration: none;
+	text-shadow: none;	
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 0px;
+}
+
+%font-heading {
+	font-family: $font-fam-prox-soft;
+	font-weight: 700;
+	letter-spacing: -1px;
+} 
+
+%font-bloc {
+	font-family: $font-fam-bloc;
+} 

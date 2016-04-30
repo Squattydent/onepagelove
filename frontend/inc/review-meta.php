@@ -175,11 +175,5 @@
 
 </ul>
 
-
- <div class="review-ad">
-
-  <div class="review-ad-holder"><?php include ("ad-primary.php"); ?></div>
-
- </div><!-- /.review-ad -->
-
- <?php include ("meta-jobs-panda.php"); ?>
+<?php include ("review-meta-ad.php"); ?>
+<?php include ("review-meta-panda.php"); ?>

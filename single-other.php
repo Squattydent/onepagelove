@@ -12,9 +12,8 @@
          <li><strong>Category:</strong> <?php the_category(', ', 'parents' ); ?></li>
        </ul>
 
-			  <div class="review-ad-holder"><?php include ("inc/ad-primary.php"); ?></div>
-
-        <?php include ("inc/meta-jobs-panda.php"); ?>
+			  <?php include ("frontend/inc/review-meta-ad.php"); ?>
+        <?php include ("frontend/inc/review-meta-panda.php"); ?>
 
         <div class="clear"></div>
 						
@@ -25,7 +24,7 @@
              
       <div class="single-content">
                
-			   <?php include ('inc/floating-pagination.php'); ?>
+			   <?php include ('frontend/inc/pagination-floating.php'); ?>
                
           <?php the_content(''); ?>
                
@@ -38,6 +37,6 @@
 <?php wp_reset_query(); ?>
  <?php endif; ?>
 
-<?php include ('inc/similar-other.php'); ?>
+<?php include ('frontend/inc/similar-other.php'); ?>
 
 <?php get_footer(); ?>

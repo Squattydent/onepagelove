@@ -1,13 +1,6 @@
-
-/* ------------------------------------------------ */
-/* 13. Misc */
-/* ------------------------------------------------ */
-
-// no idea what this is haha
-.small-screen {display: none;}
-
-// Hides the big OPL heart placed after body open tag for social sharing.
-#promo {display: none;}
+//-------------------------------------------------------------------------------
+// Everything here will be eliminated after removal of a few sections
+//-------------------------------------------------------------------------------
 
 /* Search */
 .results-search {width: 260px; display: block;}
@@ -26,15 +19,14 @@
 .favorites-demo .favorites-demo-col img {margin-bottom: 20px; }
 .favorites-demo .favorites-demo-col-right {margin-right: 0;}
 
-/* Join */
-.join-benefits {width: 330px; background: #f5f5f5; float: right; vertical-align: top; padding: 20px 10px 20px 20px;}
-.join-benefits h3 {margin-top: 0;}
-table.join-table {text-align: left; color: #666;}
-table.join-table td {font-size: 18px; line-height: 20px; padding: 5px 10px 10px 0; margin: 0; vertical-align: top;}
-table.join-table svg.heart-list {fill: $color-main-link; width: 18px; height: 18px; margin-top: 2px;}
 
 
-// Freebies
+//-------------------------------------------------------------------------------
+// Favorites
+//-------------------------------------------------------------------------------
+.favorites-demo {color: #333;}
+.favorites-demo .favorites-demo-col {color: #666;}
 
-h3.freebie-icons {margin-top: 0; padding-top: 0;}
 
+/* Dashboard */
+.dashboard-section {display: block; margin-bottom: 30px; margin-top: 20px;}

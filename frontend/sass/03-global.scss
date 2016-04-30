@@ -1,0 +1,290 @@
+//-------------------------------------------------------------------------------
+// Setting the rems globally
+//-------------------------------------------------------------------------------
+
+html {
+  font-size: $base-normal;
+}
+//  @media screen and (min-width: 1440px) {
+//   html { 
+//    font-size: $font-large; 
+//   }
+//   }
+//  @media screen and (max-width: 500px) {
+//  html { 
+//    font-size: $font-small;
+//  }
+// }
+
+
+//-------------------------------------------------------------------------------
+// The big boys
+//-------------------------------------------------------------------------------
+
+html, 
+body {
+  height: 100%; 
+  -webkit-tap-highlight-color: rgba(0,0,0,0); // disable webkit tap highlight
+}
+
+body {
+  @extend %font-global;
+  padding: 0;
+  margin: 0;
+}
+
+
+//-------------------------------------------------------------------------------
+// The usual suspects
+//-------------------------------------------------------------------------------
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  border: 0;
+}
+
+a img {
+  border: none;
+  vertical-align: top;
+}
+
+p {
+  margin: 0 0 0.9375rem 0; // 15px
+}
+
+.relative {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+
+// removes yellowing on forms
+*:focus, textarea, input {
+  outline: none;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 $spacing-medium $spacing-medium 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 $spacing-medium $spacing-medium;
+}
+
+.aligncenter {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.alignnone {
+  float: none;
+  margin-bottom: $spacing-medium ;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  display: block;
+  margin: $spacing-big 0;
+  border-bottom: 2px dotted #DDD;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+del {
+  text-decoration: line-through;
+  color: #CCC;
+}
+
+blockquote {
+  @extend %font-bloc;
+  margin: $spacing-big 0 $spacing-big 0px;
+  padding: 0 $spacing-medium 0 $spacing-medium;
+  border-left: 1px solid #EEE;
+}
+blockquote p {
+	color: #AAA !important;
+}
+
+i, em {
+  font-style: italic;
+}
+
+code {
+  display: block;
+  padding: $spacing-medium;
+  overflow: hidden;
+  background: $color-code;
+}
+
+// Text Select 
+::selection {
+  background: $color-main-link; 
+  color: $color-white    ; 
+  text-shadow: none; 
+}
+::-moz-selection {
+  background: $color-main-link; 
+  color: $color-white    ; 
+  text-shadow: none;
+}
+
+// Highlights notice within paragraph text
+.notice {
+	background: #ffc3da; 
+	border: 1px solid #feb0ce; 
+	color: #EC3D80;
+	width: 1240px; 
+	padding: $spacing-s-m $spacing-medium ; 
+	margin-bottom: $spacing-big;
+}
+
+//-------------------------------------------------------------------------------
+// Background Colors
+//-------------------------------------------------------------------------------
+
+html                  {background: $color-browser-bg;}
+#header-top-outer     {background: $color-header-top;} 
+#header-bottom-outer  {background: $color-header-bottom;} 
+#footer-top-container {background: $color-footer-top ;} 
+#footer-container     {background: $color-footer-bottom;}
+.review               {background: $color-page-bg;}
+.single-container     {background: $color-page-bg;}
+
+//-------------------------------------------------------------------------------
+// Link Colors
+//-------------------------------------------------------------------------------
+
+a {
+  color:$color-main-link;
+  text-decoration:none;
+}
+a:hover {
+  color:$color-main-link;
+  text-decoration:none;
+}
+.single-container p a, 
+.review p a {
+  color:$color-main-link;
+  border-bottom: 1px dotted $color-main-link;
+  text-decoration:none;
+}
+.single-container p a:hover, 
+.review a:hover {
+  color:$color-main-link;
+  border-bottom: 1px solid $color-main-link;
+  text-decoration:none;
+}
+a.noBorder {
+  border: none !important;
+}
+a.noBorder:hover {
+  opacity: 0.95;
+}
+
+//-------------------------------------------------------------------------------
+// CSS3 Transitions
+//-------------------------------------------------------------------------------
+
+.thumb .thumb-image img       {transition:1s;}
+.thumb .thumb-image img:hover {transition:.1s;}
+
+//-------------------------------------------------------------------------------
+// Z-index 
+//-------------------------------------------------------------------------------
+
+.thumb .thumb-inner             {z-index: 100;}
+.thumb .thumb-image             {z-index: 200;}
+.thumb .thumb-label             {z-index: 400;}
+#header-top-left ul                       {z-index: 500;}
+#header-top-right ul.account-logged-in    {z-index: 500;}
+#header-bottom-left ul                    {z-index: 500;}
+.floating-pagi a                {z-index: 1000;}
+
+//-------------------------------------------------------------------------------
+// Promo 
+//-------------------------------------------------------------------------------
+
+// Hides the big OPL heart placed after body open tag for social sharing.
+#promo {display: none;}
+
+//-------------------------------------------------------------------------------
+// General Styles - still sorting
+//-------------------------------------------------------------------------------
+
+/* Rounded Corners 4px */
+.thumb, 
+.browsing a, 
+.browsing .current, 
+.block-right,
+.review,
+.review .review-meta .review-tags a, 
+.review .review-meta .review-cats a,
+.review-launch a,
+.review .review-meta-right,
+.single-container,
+.single-container img.alignleft,
+.single-container img.alignright,
+a.roundup-buy, 
+a.roundup-demo,
+.results-search .search,
+#mce-FNAME, 
+#mce-EMAIL,
+.name-tag,
+.footer-promo-buttons a,
+#mc-embedded-subscribe,
+.theme a.table-button,
+.theme-options a,
+#header-bottom-right .search,
+.opl-ad-img img,
+.opl-ad-img-premium img,
+.gform_body input,
+.gform_wrapper .gfield_password_strength,
+.gform_wrapper .gform_footer input[type=submit],
+.join-benefits,
+.gform_body textarea  
+{border-radius: $rounded-corners;}
+
+ul.account-logged-out li a
+{border-radius: $rounded-buttons;}
+
+/* Rounded Corners 4px top edges only */
+.thumb .thumb-image img,
+.thumb-details {
+-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-top-right: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+}
+
+/* Rounded Corners 4px bottom edges only */
+#header-top-left ul li ul,
+#header-bottom-left ul li ul,
+#header-top-right ul.account-logged-in li ul {
+-webkit-border-bottom-right-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-moz-border-radius-bottomright: 4px;
+-moz-border-radius-bottomleft: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+overflow:hidden;
+}

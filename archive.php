@@ -165,6 +165,6 @@
 
 </div><!--  /.archive-container -->
 
-	<?php include ("inc/pagination.php"); ?>
+	<?php include ("frontend/inc/pagination.php"); ?>
 
 <?php get_footer(); ?>

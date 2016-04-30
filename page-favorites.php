@@ -15,7 +15,7 @@ Template Name: Favorites
 			<div class="archive-title"><h1><?php global $current_user; get_currentuserinfo(); echo '' . $current_user->display_name . "'s\n"; ?> Favorites</h1>
 			</div><!--  /.archive-title -->
 			
-			<div class="archive-description"><?php include("inc/random-naming-favorites.php"); ?></div>
+			<div class="archive-description"><?php include("frontend/inc/random-naming-favorites.php"); ?></div>
  	
 		 </div><!--  /.archive-header-info -->
 		
@@ -38,7 +38,7 @@ Template Name: Favorites
 <?php } 
 else { ?>
 
-<?php include ("inc/prompt-log-in.php"); ?>
+<?php include ("frontend/inc/prompt-log-in.php"); ?>
 
 <?php } ?>
 	

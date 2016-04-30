@@ -96,7 +96,7 @@
 							              
 								      <li><a href="#">About</a>
 						              
-  							  		   	<?php include('inc/nav-about.php'); ?>	
+  							  		   	<?php include('frontend/inc/nav-about.php'); ?>	
 						           
 									  </li> 
 
@@ -189,13 +189,13 @@
 
 					<li><a href="#">Resources</a>
 
-						<?php include('incl/nav-resources.php'); ?>	
+						<?php include('frontend/inc/nav-resources.php'); ?>	
 
 					</li>		
 
 					<li><a href="#">Subscribe to One Page Love</a>
 
-						<?php include('incl/nav-subscribe.php'); ?>
+						<?php include('frontend/inc/nav-subscribe.php'); ?>
 
 					</li>														
 
@@ -215,7 +215,7 @@
 				<ul>
 				
 				    <li class="nav-wide" id="nav-trending"><a href="#">Trending</a>
-						<?php include('inc/nav-popular.php'); ?>	
+						<?php include('frontend/inc/nav-popular.php'); ?>	
 				 	 </li>	
 	
 					<li class="nav-wider"><a href="#">Gallery</a>
@@ -241,11 +241,11 @@
 		             </li> 
 		
 		             <li class="nav-wide"><a href="#">Resources</a>
-						<?php include('inc/nav-resources.php'); ?>	
+						<?php include('frontend/inc/nav-resources.php'); ?>	
 				 	 </li>			
 											   
 		             <li><a href="#">Subscribe</a>
-						<?php include('inc/nav-subscribe.php'); ?>
+						<?php include('frontend/inc/nav-subscribe.php'); ?>
 		             </li>
 	
 	           </ul>
