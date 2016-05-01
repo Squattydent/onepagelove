@@ -130,6 +130,18 @@ table.join-table {text-align: left; color: #666;}
 table.join-table td {font-size: 18px; line-height: 20px; padding: 5px 10px 10px 0; margin: 0; vertical-align: top;}
 table.join-table svg.heart-list {fill: $color-main-link; width: 18px; height: 18px; margin-top: 2px;}	
 
+@media screen and (max-width: 1050px) {
+	
+	.gform_wrapper {
+		max-width: 45% !important;	
+		width: 45% !important;	
+		float: left;
+		padding: 0 !important; 
+		margin: 0 !important;
+	}
+
+}
+
 // ------------------------------------------------
 // Freebies Page
 // ------------------------------------------------ 

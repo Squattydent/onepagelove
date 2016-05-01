@@ -367,6 +367,10 @@
 			height: $size-search; 
 			vertical-align: top;
 
+			@media screen and (max-width: $bp-desksm ) {
+				width: 85%;
+			}
+
 			.search-field {
 				color: $color-search-text;
 				background: none; 
@@ -387,66 +391,6 @@
 
 }
 
-@media screen and (max-width: $bp-desksm ) {
-	#header-bottom-right .search-field-holder {width: 85%;}
-}
 
 
-//-------------------------------------------------------------------------------
-// Media query clean-up
-//-------------------------------------------------------------------------------
-
-
-@media screen and (max-width: 1430px) {
-	#header-top-outer {
-		width: 100%; 
-		height: 40px; 
-		margin: 0; 
-		padding: 0; 
-		display: block;
-		}
-		#header-top {
-			width: 96%; 
-			margin:0 auto; 
-			padding: 0;}
-			#header-top-left {
-				float: left;
-				width: 70%; 
-				margin: 0; 
-				padding: 0;
-				}
-			#header-top-right {
-				float: right;
-				width: 30%; 
-				margin: 0; 
-				padding: 0;
-				}		
-	#header-bottom-outer {
-		width: 100%; 
-		height: 60px; 
-		margin: 0; 
-		padding: 0; 
-		display: block;
-		}
-		#header-bottom {
-			width: 96%; 
-			margin:0 auto; 
-			padding: 0;
-			color: #FFF;
-			}	
-			#header-bottom-left {
-				float: left;
-				width: 70%; 
-				height: 60px;
-				margin: 0; 
-				padding: 0;		
-			}
-			#header-bottom-right {
-				float: right;
-				width: 30%;  
-				margin: 0; 
-				padding: 0;
-			}			
-
-}
 
