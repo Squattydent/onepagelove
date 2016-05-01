@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
+
 <head>
+
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
 <title>One Page Love</title>
@@ -56,6 +58,7 @@
 </script>
 
 </head>
+
 <body <?php body_class(); ?>>
 
 <!-- Hidden Promo Logo -->  
@@ -69,142 +72,78 @@
 		
 	    	<div id="header-top-left">		
 		
-		 			 <!-- Navigation Icon/Button -->
-			         <div id="mobile-nav-button">
-			     			 <a id="mobile-nav-button-link" href="javascript:toggleNav();"> 
-			     			   <svg class="svg-mobile-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="13px" viewBox="0 0 20 13" enable-background="new 0 0 20 13" xml:space="preserve">
-					             <g>
-					             	<path d="M1.5,3h17C19.328,3,20,2.329,20,1.5S19.328,0,18.5,0h-17C0.671,0,0,0.671,0,1.5S0.671,3,1.5,3z"/>
-					             	<path d="M18.5,5h-17C0.671,5,0,5.671,0,6.5C0,7.328,0.671,8,1.5,8h17C19.328,8,20,7.328,20,6.5C20,5.671,19.328,5,18.5,5z"/>
-					             	<path d="M18.5,10h-17C0.671,10,0,10.672,0,11.5S0.671,13,1.5,13h17c0.828,0,1.5-0.672,1.5-1.5S19.328,10,18.5,10z"/>
-					             </g>
-					            </svg>
-			     			 </a>
-			         </div><!-- /#mobile-nav-button -->
-			
-	                 <div class="header-logo">
-
-						<div class="header-logo-heart"><a href="<?php print get_home_url(); ?>" title="Go to the home page"></a></div>
-						<div class="header-logo-name"><a href="<?php print get_home_url(); ?>" title="Go to the home page">One Page Love</a></div>		
-					 </div><!-- /.header-logo -->
-					
-							<div class="header-left-navigation">
-											
-						            <ul>
-							
-						              <li><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a>			
-							              
-								      <li><a href="#">About</a>
-						              
-  							  		   	<?php include('frontend/inc/nav-about.php'); ?>	
-						           
-									  </li> 
-
-									  <li><a href="<?php print get_home_url(); ?>/freebies" title="Free stuff!">Freebies</a></li> 									  	
-									  <li><a href="<?php print get_home_url(); ?>/blog">Blog</a></li> 
-
-									  <li><a href="<?php print get_home_url(); ?>/hosting" title="Hosting Recommendations">Hosting</a></li> 
-																			
-						            </ul><!-- end of main menu -->
-						
-								</div><!-- /.header-left-navigation -->
-
-						        </div><!-- /.header-top-left -->	
-						
-								<div id="header-top-mid">
-									<div class="header-logo-heart"><a href="<?php print get_home_url(); ?>" title="Go to the home page"></a></div>
-								</div>					
-						
-	    						<div id="header-top-right">						
-						
-									<div class="header-account">
-					
-										<ul class="account-logged-out">
-											<li class="account-login"><a href="<?php print get_home_url(); ?>/submit">Submit</a></li>	
-											<li class="account-join"><a href="https://onepagelove.com/go/feedback" title="Premium One Page Website Review">Get Feedback</a></li>		
-										</ul>	
-
-					                </div><!-- /.header-account -->
+				<div id="mobile-nav-button">
+					<a id="mobile-nav-button-link" href="javascript:toggleNav();"> 
+						<svg class="svg-mobile-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="13px" viewBox="0 0 20 13" enable-background="new 0 0 20 13" xml:space="preserve">
+					        <g>
+					         	<path d="M1.5,3h17C19.328,3,20,2.329,20,1.5S19.328,0,18.5,0h-17C0.671,0,0,0.671,0,1.5S0.671,3,1.5,3z"/>
+					         	<path d="M18.5,5h-17C0.671,5,0,5.671,0,6.5C0,7.328,0.671,8,1.5,8h17C19.328,8,20,7.328,20,6.5C20,5.671,19.328,5,18.5,5z"/>
+					         	<path d="M18.5,10h-17C0.671,10,0,10.672,0,11.5S0.671,13,1.5,13h17c0.828,0,1.5-0.672,1.5-1.5S19.328,10,18.5,10z"/>
+					        </g>
+				        </svg>
+					</a>
+				</div>
 				
-						        </div><!-- /.header-top-right -->
+				<div class="header-logo">
+
+					<div class="header-logo-heart"><a href="<?php print get_home_url(); ?>" title="Go to the home page"></a></div>
+					<div class="header-logo-name"><a href="<?php print get_home_url(); ?>" title="Go to the home page">One Page Love</a></div>	
+
+				</div>
+						
+				<div class="header-left-navigation">
+
+					<ul>
+
+						<li><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a>			
+						<li><a href="#">About</a>
+							<?php include('frontend/inc/nav-about.php'); ?>	
+						</li> 
+						<li><a href="<?php print get_home_url(); ?>/freebies" title="Free stuff!">Freebies</a></li> 									  	
+						<li><a href="<?php print get_home_url(); ?>/blog">Blog</a></li> 
+						<li><a href="<?php print get_home_url(); ?>/hosting" title="Hosting Recommendations">Hosting</a></li> 
+											
+					</ul>
+
+				</div>
+
+			</div><!-- /#header-top-left -->
+						
+			<div id="header-top-mid">
+
+				<div class="header-logo-heart"><a href="<?php print get_home_url(); ?>" title="Go to the home page"></a></div>
+
+			</div>					
+						
+			<div id="header-top-right">						
+	
+				<div class="header-account">
+
+					<ul class="account-logged-out">
+
+						<li class="account-login"><a href="<?php print get_home_url(); ?>/submit">Submit</a></li>	
+						<li class="account-join"><a href="https://onepagelove.com/go/feedback" title="Premium One Page Website Review">Get Feedback</a></li>		
+					</ul>	
+
+                </div>
+
+	        </div><!-- /#header-top-right -->
 											            
-						        <div class="clear"></div>
+			<div class="clear"></div>
 			
-	   </div><!-- /#header-top -->
+		</div><!-- /#header-top -->
 
 	</div><!-- /#header-top-outer -->
 	
-		<div id="toggle-mobile-navigation">
+	<div id="toggle-mobile-navigation">
 
-			<div class="mobile-navigation">
+		<div class="mobile-navigation">
 
-				<ul>
-										
-					<li><a href="#">Browse</a>
+			<?php include('frontend/inc/nav-mobile.php'); ?>	
 
-						<ul>
+		</div>
 
-							<li><a href="<?php print get_home_url(); ?>">Home</a>	
-							<li><a href="<?php print get_home_url(); ?>/about">About OPL</a></li>  
-							<li><a href="<?php print get_home_url(); ?>/gallery">Gallery</a></li>		
-							<li><a href="<?php print get_home_url(); ?>/templates">Templates</a></li>	
-							<li><a href="<?php print get_home_url(); ?>/resources">Resources</a></li>	
-							<li><a href="<?php print get_home_url(); ?>/what-exactly-is-a-one-page-website">What is One Page?</a></li>           
-							<li><a href="<?php print get_home_url(); ?>/submit">Submit</a></li>		
-							<li><a href="<?php print get_home_url(); ?>/awards">Award Banners</a></li>        	
-							<li><a href="<?php print get_home_url(); ?>/roadmap">Roadmap</a></li>			
-							<li><a href="<?php print get_home_url(); ?>/blog">OPL Blog</a></li>		
-
-						</ul>	
-
-					</li> 
-
-					<li><a href="<?php print get_home_url(); ?>/gallery">One Page Website Gallery</a>
-
-						<ul>
-
-							<li><a href="<?php print get_home_url(); ?>/gallery" title="Browse Unique One Page Website Design">Browse All</a></li> 
-							<?php 
-							$variable = wp_list_categories('echo=0&title_li=&sort_column=name&optioncount=0&hierarchical=0&child_of=5932'); // 1319 Local 752 Live
-							$variable = preg_replace( '/<a href=\"([^\"]+)\"/', '<a href="$1"', $variable );
-							echo $variable; ?>	
-
-						</ul>            
-
-					</li>
-
-					<li><a href="#">One Page Website Templates</a>
-
-						<ul>
-
-							<li><a href="<?php print get_home_url(); ?>/templates" title="Browse One Page Website Templates">Browse All</a></li>
-							<?php 
-							$variable = wp_list_categories('echo=0&title_li=&sort_column=name&optioncount=0&hierarchical=0&child_of=194'); // 17 Local 194 Live
-							$variable = preg_replace( '/<a href=\"([^\"]+)\"/', '<a href="$1"', $variable );
-							echo $variable; ?>      
-
-						</ul>                      
-
-					</li> 
-
-					<li><a href="#">Resources</a>
-
-						<?php include('frontend/inc/nav-resources.php'); ?>	
-
-					</li>		
-
-					<li><a href="#">Subscribe to One Page Love</a>
-
-						<?php include('frontend/inc/nav-subscribe.php'); ?>
-
-					</li>														
-
-				</ul>
-
-			</div><!-- /.mobile-navigation -->
-
-		</div><!-- /#toggle-mobile-navigation-->	
-	
+	</div>
 	
 	<div id="header-bottom-outer">
 		
@@ -215,37 +154,33 @@
 				<ul>
 				
 				    <li class="nav-wide" id="nav-trending"><a href="#">Trending</a>
+						
 						<?php include('frontend/inc/nav-popular.php'); ?>	
-				 	 </li>	
+
+				 	</li>	
 	
 					<li class="nav-wider"><a href="#">Gallery</a>
-		                <ul>
-		                    <li><a href="<?php print get_home_url(); ?>/gallery" title="Browse Unique One Page Website Design">Browse All</a></li> 
-							<?php 
-	                        $variable = wp_list_categories('echo=0&title_li=&sort_column=name&optioncount=0&hierarchical=0&child_of=5932'); // 1319 Local 752 Live
-	                        $variable = preg_replace( '/<a href=\"([^\"]+)\"/', '<a href="$1"', $variable );
-	                        echo $variable; ?>		
-	                        <li><a href="<?php print get_home_url(); ?>/submit" title="Submit One Page Websites">Submit</a></li>				                             
-		                </ul>                        
+
+    					<?php include('frontend/inc/nav-gallery.php'); ?>
+
 		            </li>
 		             					
 		            <li class="nav-wide"><a href="#">Templates</a>
-		                <ul>
-		                    <li><a href="<?php print get_home_url(); ?>/templates" title="Browse One Page Website Templates">Browse All</a></li>		                 
-							<?php 
-	                        $variable = wp_list_categories('echo=0&title_li=&sort_column=name&optioncount=0&hierarchical=0&child_of=194'); // 17 Local 194 Live
-	                        $variable = preg_replace( '/<a href=\"([^\"]+)\"/', '<a href="$1"', $variable );
-	                        echo $variable; ?>            
-	                        <li><a href="<?php print get_home_url(); ?>/submit" title="Submit One Page Websites">Submit</a></li>                                                         
-		                </ul>                       
+
+    					<?php include('frontend/inc/nav-templates.php'); ?>     
+
 		             </li> 
 		
 		             <li class="nav-wide"><a href="#">Resources</a>
+
 						<?php include('frontend/inc/nav-resources.php'); ?>	
+
 				 	 </li>			
 											   
 		             <li><a href="#">Subscribe</a>
+
 						<?php include('frontend/inc/nav-subscribe.php'); ?>
+
 		             </li>
 	
 	           </ul>
