@@ -8,7 +8,7 @@
 
 	#header-top-left .header-logo {
 		float: left; 
-		height: 1.875rem; // 30
+		height: 1.875rem; // 30 
 		margin: 0.375rem 0.9375rem 0 0; // 6 15 0 0
 
 		.header-logo-heart {
@@ -50,13 +50,15 @@
 	}
 
 	//-------------------------------------------------------------------------------
-	// Mobile Button - hide when not on mobile lolz
+	// Mobile Header Nav
 	//-------------------------------------------------------------------------------
 
-
+	// hide when not on mobile lolz
 	#mobile-nav-button {
 		display: none;
 	}
+
+	// see bottom of this file for mobile nav stuff
 
 	//-------------------------------------------------------------------------------
 	// Meta Navigation
@@ -391,6 +393,187 @@
 
 }
 
+
+//-------------------------------------------------------------------------------
+// Header - Mobile Big Dropdown + Center Logo Icon
+//-------------------------------------------------------------------------------
+
+@media screen and (max-width: $bp-tablet) {
+
+	//-------------------------------------------------------------------------------
+	// Hide some things
+	//-------------------------------------------------------------------------------
+
+	#header-top-left .header-logo,
+	#header-top-left ul,
+	#toggle-mobile-navigation {
+		display: none;
+	}	
+
+	#header-bottom-outer {
+		display: none !important; // not sure why !important TBH
+	}	
+
+	//-------------------------------------------------------------------------------
+	// Show some things
+	//-------------------------------------------------------------------------------
+
+	#mobile-nav-button,
+	#header-top-mid,
+	.mobile-navigation {
+		display: block
+	}
+
+	//-------------------------------------------------------------------------------
+	// Mobile Navigation
+	//-------------------------------------------------------------------------------
+
+	// Show nav icon
+	#toggle-mobile-navigation {
+		position: relative;
+	}
+
+	.mobile-navigation {
+		position: relative; 
+		clear: both; 
+		width: 96%; 
+		padding: 0 2% 0 2%; 
+		float: none; 
+		text-shadow: none; 
+		margin:0;
+		background: $color-header-top;
+
+		ul { // Section headings eg. Browse, One Page Website Gallery
+			overflow: auto; 
+			width: 100% !important; 
+			height: auto; 
+			margin: 0; 
+			padding: 0px; 
+			list-style: none; 
+			text-shadow: none; 
+			background:  $color-header-top; 
+			border-top: 1px solid #222;  
+			box-shadow: 0 -1px 0 #000;
+
+			li {
+				display: block; 
+				position: relative; 
+				float: none;  
+				margin: 0; 
+				padding: 0;
+				border: none; 
+				border-bottom: 1px solid #000;  
+				box-shadow: 0 1px 0 #222;
+
+				a {
+					display: block; 
+					margin: 0 !important;  
+					border: none; 
+					text-decoration: none; 
+					height: 16px; 
+					padding: 13px 0 11px 0; 
+					white-space: nowrap;
+					color: #CCC; 
+					font-weight: 600;
+				} 
+
+				a:hover {
+					text-decoration: none;
+					color: $color-main-link;
+				}
+
+				ul { // Child menu background eg. Home, About...
+					width: 100%; 
+					padding: 0; 
+					margin-left: 0;
+					background: $color-header-top;
+					display: flex;
+  					flex-wrap: wrap;
+
+					li { // child list item background set at top of stylesheet
+						flex: 1 0 50%;
+ 						box-sizing: border-box;
+
+						a { // dropdown list item link color
+							height: 16px; 
+							padding: 13px 0 11px 2%;
+							color: #999 !important; 
+							font-weight: 300; 
+							letter-spacing: 0px;
+						}
+
+						ul {
+
+							li {
+								display: none;
+							}
+						}
+					} 
+
+					li:hover {
+						padding: 0;
+					}
+
+					li:last-child {
+						border-bottom: none;
+					}
+
+				} 
+
+			}
+
+			li:hover {
+
+				a { // parent link color when hovering on dropdown
+					color: #DDD;
+				} 
+
+				li {
+
+					a:hover { // dropdown list item background & link color on hover 
+
+						color: $color-main-link !important; 
+
+					}
+
+				}
+
+			}
+			
+		}
+
+	}
+
+	//-------------------------------------------------------------------------------
+	// Center Logo Icon
+	//-------------------------------------------------------------------------------	
+
+	#header-top-mid .header-logo-heart {
+		margin: 0 auto; 
+		height: $size-logo; 
+		width: $size-logo; 
+		background: url('https://onepagelove.com/wp-content/uploads/2014/01/one-page-love-heart-logo.png') left top no-repeat; 
+		background-size:$size-logo $size-logo; 
+
+		a {
+			height: $size-logo; 
+			width: $size-logo; 
+			display: block; 
+			padding: 0;
+		}
+
+	}
+
+	//-------------------------------------------------------------------------------
+	// Z-index
+	//-------------------------------------------------------------------------------
+
+	#header-top-mid {z-index: 20000}
+	#mobile-nav-button {z-index: 20000}
+	#header-top-left .mobile-navigation {z-index: 10000;}
+	#header-top-left ul {z-index: 5000;}
+
+}
 
 
 
