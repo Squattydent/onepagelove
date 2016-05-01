@@ -20,89 +20,115 @@
 //-------------------------------------------------------------------------------		
 
 #container-outer {
-	width: 100%
-	}
+	width: 100%;
+
 	#header-top-outer {
 		width: 100%; 
 		height: $spacing-big; 
 		margin: 0; 
 		padding: 0; 
 		display: block;
-		}
+
 		#header-top {
 			width: $container-standard; 
 			margin:0 auto; 
-			padding: 0;}
+			padding: 0;
+
 			#header-top-left {
 				float: left;
 				width: 840px; 
 				margin: 0; 
 				padding: 0;
-				}
+			}
+
 			#header-top-right {
 				float: right;
 				width: 400px; 
 				margin: 0; 
 				padding: 0;
-				}			
+			}	
+		}
+
+	}
+
 	#header-bottom-outer {
 		width: 100%; 
 		height: 3.75rem; // 60px
 		margin: 0; 
 		padding: 0; 
 		display: block;
-		}
+
 		#header-bottom {
 			width: $container-standard; 
 			margin:0 auto; 
 			padding: 0;
 			color: #FFF;
-			}	
+
 			#header-bottom-left {
 				float: left;
 				width: 840px; 
 				height: 3.75rem; // 60px
 				margin: 0; 
 				padding: 0;		
-				}
+			}
+
 			#header-bottom-right {
 				float: right;
 				width: 400px; 
 				margin: 0; 
 				padding: 0;
-				}									
+			}
+
+		}
+
+	}
+
 	#container {
 		width: $container-standard; 
 		margin: 0 auto; 
 		padding:$spacing-big 0 $spacing-big 0;
-		}
+
+
 		#content {
 			width: 1320px; /* 40px greater than #container with hidden overflow from parent */
 			padding:0; 
 			margin: 0; 
 			overflow: visible !important;
+
+			.single-container {
+				width: 1200px; /* 80px less than #container as 40px padding */
+	            margin: $spacing-medium 0 $spacing-big 0;
+				padding: $spacing-big; 
+				height: auto;			
 			}
-		#content .single-container {
-			width: 1200px; /* 80px less than #container as 40px padding */
-            margin: $spacing-medium 0 $spacing-big 0;
-			padding: $spacing-big; 
-			height: auto;			
-			}
-		#content .review {
-			width: $container-standard; /* same as #container with no padding */
-			margin-top: $spacing-medium;
-			padding: 0px; /* different to single with big screenshot touching edge */			
+
+			.review {
+				width: $container-standard; /* same as #container with no padding */
+				margin-top: $spacing-medium;
+				padding: 0px; /* different to single with big screenshot touching edge */	
+
+				.review-meta {
+					width: 1200px;
+
+					.review-meta-right {
+						float: right; 
+						width: 320px; 
+						vertical-align: top;
+					}
+
+				}
+
+				.review-screenshot img {
+					width: $container-standard; 
+					height: auto;
+				}
+
 			}		
 
+		}
+
+	}
+
+}
 	
-//-------------------------------------------------------------------------------
-// Reviews
-//-------------------------------------------------------------------------------
-
-.review .review-meta {width: 1200px;}
-.review .review-meta-right {float: right; width: 320px; vertical-align: top;}
-.review .review-meta-left {}
-.review .review-screenshot img {width: $container-standard; height: auto;}
-
-
-
+	

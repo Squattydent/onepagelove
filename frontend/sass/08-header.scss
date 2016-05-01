@@ -2,37 +2,154 @@
 // Header - Top Left - Logo + Meta Nav
 //-------------------------------------------------------------------------------
 
-/* Logo */
-#header-top-left .header-logo {float: left; height: 30px; margin: 6px 15px 0 0; }
-#header-top-left .header-logo-heart {float: left; height: 22px; width: 22px; background: url('https://onepagelove.com/wp-content/uploads/2014/01/one-page-love-heart-logo.png') left top no-repeat; background-size:22px 22px; }
-#header-top-left .header-logo-heart a {height: 22px; width: 22px; display: block; padding: 0;}
-#header-top-left .header-logo-name {float: left;height: 22px; margin: 3px 0 0 4px; text-transform: uppercase;}
-#header-top-left .header-logo-name a {color: #FFF; font-size: 18px; line-height: 20px; text-shadow: 0 1px 0 #000;}
-#header-top-left .header-logo-name a:hover {text-decoration: none;}
+	//-------------------------------------------------------------------------------
+	// Logo
+	//-------------------------------------------------------------------------------
 
-/* Top Navigation */
-#mobile-nav-button {display: none;}
+	#header-top-left .header-logo {
+		float: left; 
+		height: 1.875rem; // 30
+		margin: 0.375rem 0.9375rem 0 0; // 6 15 0 0
 
-#header-top-left  ul {margin: 0; padding: 0; list-style: none; text-shadow: none; }
-#header-top-left  ul li {display: block; position: relative; float: left;  margin: 0; padding: 0;border: none; }
-#header-top-left  li ul {display: none;}
-#header-top-left  ul li a {display: block; margin: 0 !important;  border: none; text-decoration: none; height: 16px; padding: 13px 15px 11px 15px; white-space: nowrap;} 
-#header-top-left  ul li a:hover {text-decoration: none;}
-#header-top-left  li:hover a {background-position: 0 0px; }
-#header-top-left  li:hover ul {display: block; position: absolute;}
-#header-top-left  li:hover li {float: none;}
-#header-top-left  ul li ul {left: -5px;}
-#header-top-left  ul li ul li {width: 130px; padding: 0; background-clip: padding-box; }
-#header-top-left  ul li ul li:hover {padding: 0;}
-#header-top-left  ul li ul li a {height: 16px; padding: 13px 20px 11px 20px;}
-#header-top-left  ul li ul li ul li {display: none;}
+		.header-logo-heart {
+			float: left; 
+			height: $size-logo; 
+			width: $size-logo; 
+			background: url('https://onepagelove.com/wp-content/uploads/2014/01/one-page-love-heart-logo.png') left top no-repeat; 
+			background-size: $size-logo $size-logo; 
 
-#header-top-left ul li a {color: #555;} /* parent link color */
-#header-top-left ul li a:hover {color: $color-main-link;} /* parent link color on hover */
-#header-top-left li:hover a {color: #fff;} /* parent link color when hovering on dropdown */
-#header-top-left ul li ul {background: #141414} /* dropdown background */
-#header-top-left ul li ul li a {color: #777 !important;} /* dropdown list item link color*/
-#header-top-left li:hover li a:hover {background: $color-main-link !important; color: #FFF !important;} /* dropdown list item background & link color on hover */
+			a {
+				height: $size-logo; 
+				width: $size-logo; 
+				display: block; 
+				padding: 0;
+			}
+
+		}
+
+		.header-logo-name {
+			float: left;
+			height: $size-logo; 
+			margin: 0.1875rem 0 0 0.25rem; // 3 0 0 4
+			text-transform: uppercase;
+
+			a {
+				color: $color-logo-text;	 
+				font-size:  1.125rem; // 18
+				line-height:  1.25rem; // 20
+				text-shadow: 0 1px 0 #000;
+				font-weight: 600; 
+				letter-spacing: 0;
+			}
+
+			a:hover {
+				text-decoration: none;
+			}
+		}
+
+	}
+
+	//-------------------------------------------------------------------------------
+	// Mobile Button - hide when not on mobile lolz
+	//-------------------------------------------------------------------------------
+
+
+	#mobile-nav-button {
+		display: none;
+	}
+
+	//-------------------------------------------------------------------------------
+	// Meta Navigation
+	//-------------------------------------------------------------------------------
+
+	#header-top-left  ul {
+		margin: 0; 
+		padding: 0; 
+		list-style: none; 
+		text-shadow: none; 
+
+		li {
+			display: block; 
+			position: relative; 
+			float: left;  
+			margin: 0; 
+			padding: 0;
+			border: none; 
+
+			ul {
+				display: none;
+				left: -0.3125rem;
+				background: $color-header-top;  // dropdown background
+
+				li {
+					width: 8.125rem; // 130
+					padding: 0; 
+					background-clip: padding-box; 
+
+					a {
+						height: 1rem; // 16
+						padding: 0.8125rem 1.25rem 0.6875rem 1.25rem; // 13 20 11 20
+						color: #777 !important; // dropdown list item link color
+					}
+				}
+
+				li:hover {
+					padding: 0;
+				}
+
+				ul {
+					li {
+						display: none;
+					}
+				}
+
+			}
+
+			a {
+				display: block; 
+				margin: 0 !important;  
+				border: none; 
+				text-decoration: none; 
+				height: 1rem; // 16
+				padding: 0.8125rem 0.9375rem 0.6875rem 0.9375rem; // 13 15 11 15
+				white-space: nowrap;
+				color: #555; // parent link color 
+				font-weight: 600;
+				font-size: 0.75rem; // 12
+				line-height: 0.75rem; 
+				letter-spacing: 0;
+			} 
+
+			a:hover {
+				text-decoration: none;
+				color: $color-main-link; // parent link color on hover 
+			}
+
+		}
+
+		li:hover {
+
+			a {
+				background-position: 0 0; 
+				color: $color-main-link; // parent link color when hovering on dropdown 
+			}
+			ul {
+				display: block; 
+				position: absolute;
+			}
+			li {
+				float: none;
+
+				a:hover { // dropdown list item background & link color on hover
+					background: $color-main-link !important; 
+					color: #FFF !important;
+				}
+
+			}
+
+		}
+
+	}
 
 //-------------------------------------------------------------------------------
 // Header - Top Right - Buttons
@@ -45,16 +162,18 @@
 
 	ul.account-logged-out {
 
-		margin-top:12px;
+		margin-top: 0.75rem; // 12
 
 		li {
 
 			display: inline-block; 
-			margin-left: 10px; 
+			margin-left: 0.625rem; // 10
 
 			a {
-				padding: 2px 4px; 
+				padding: 0.125rem 0.25rem; // 2 4
 				text-transform: uppercase;
+				font-size: 0.625rem; // 10
+				letter-spacing: 0.03125rem; // 0.5
 			}
 
 		}
@@ -66,7 +185,7 @@
 
 		li.account-join a {
 			background: $color-main-link; 
-			color: #FFF;
+			color: $color-white;
 		}
 	}
 
@@ -77,40 +196,136 @@
 @media screen and (max-width: $bp-mobilesm) {
 
 	li.account-login {display: none !important;}
+
 }
 
 //-------------------------------------------------------------------------------
 // Header - Bottom Left - Main Nav
 //-------------------------------------------------------------------------------
 
-#header-bottom-left ul li a {color: #999;} /* parent link color */
-#header-bottom-left ul li a:hover {color: #CCC;} /* parent link color on hover */
-#header-bottom-left li:hover a {color: #CCC} /* parent link color when hovering on dropdown */
-#header-bottom-left ul li ul {background: #1E1E1E;} /* dropdown background */
-#header-bottom-left ul li ul li a {color: #777 !important;} /* dropdown list item link color*/
-#header-bottom-left li:hover li a:hover {background: $color-main-link !important; color: #FFF !important;} /* dropdown list item background & link color on hover */
+#header-bottom-left  ul {
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+	text-shadow: none;
 
-/* Bottom Navigation */
-#header-bottom-left  ul {margin: 0; padding: 0; list-style: none; text-shadow: none;}
-#header-bottom-left  ul li {display: block; position: relative; float: left;  margin: 0; padding: 0;border: none; }
-#header-bottom-left  li ul {display: none;}
-#header-bottom-left  ul li a {display: block; margin: 0 !important;  border: none; text-decoration: none; height: 20px; padding: 20px 45px 20px 5px; white-space: nowrap;} 
-#header-bottom-left  ul li a:hover {text-decoration: none;}
-#header-bottom-left  li:hover a {background-position: 0 0px; }
-#header-bottom-left  li:hover ul {display: block; position: absolute;}
-#header-bottom-left  li:hover li {float: none;}
-#header-bottom-left  ul li ul {left: -15px; padding-bottom: 10px;}
-#header-bottom-left  ul li ul li {width: 130px; padding: 0; background-clip: padding-box;} 
-#header-bottom-left  ul li ul li:hover {padding: 0;}
-#header-bottom-left  ul li ul li a {height: 16px; padding: 13px 20px 11px 20px;}
-#header-bottom-left  ul li ul li ul li {display: none;}
-#header-bottom-left  ul li.nav-wide ul {width: 386px;}
-#header-bottom-left  ul li.nav-wide ul li {width: 190px; display: inline-block;}
-#header-bottom-left  ul li.nav-wider ul {width: 488px;}
-#header-bottom-left  ul li.nav-wider ul li {width: 160px; display: inline-block;}
+	li {
+		display: block; 
+		position: relative; 
+		float: left;  
+		margin: 0; 
+		padding: 0;
+		border: none; 
+
+		a {
+			display: block; 
+			margin: 0 !important;  
+			border: none; 
+			text-decoration: none; 
+			height: 1.25rem; // 20
+			padding: 1.25rem 2.813rem 1.25rem 0.3125rem; // 20 45 20 5
+			white-space: nowrap;
+			color: #999; // parent link color
+			font-size: 1rem; // 16
+			line-height: 1rem; // 16
+			letter-spacing: 0; 
+			font-weight: 500;
+		} 
+
+		a:hover {
+			text-decoration: none;
+			color: #CCC; // parent link color on hover 
+		}
+
+		ul {
+			left: -0.9375rem; // -15
+			padding-bottom: 0.625rem;
+			background: $color-header-bottom; //  dropdown background 
+
+			li {
+				width: 8.125rem; // 130
+				padding: 0; 
+				background-clip: padding-box;
+
+				a {
+					height: 1rem; 
+					padding: 0.8125rem 1.25rem 0.6875rem 1.25rem; // 13 20 11 20
+					color: #777 !important; //  dropdown list item link color
+					font-size: 0.875rem; // 14
+					line-height: 0.875rem; // 14
+					letter-spacing: 0; 
+					font-weight: 500;
+				}
+
+			}
+
+			li:hover {
+				padding: 0;
+			}
+
+			ul li {
+				display: none;
+			}
+
+		}
+
+	}
+
+	li:hover {
+		a {
+			background-position: 0 0; 
+			color: #CCC // parent link color when hovering on dropdown 
+		}
+		ul {
+			display: block; 
+			position: absolute;
+		}
+		li {
+			float: none;
+
+			a:hover { // dropdown list item background & link color on hover
+				background: $color-main-link; 
+				color: $color-white !important;
+			}
+
+			a.sub-h:hover {background: $color-producthunt;}
+			a.sub-f:hover {background: $color-facebook;}
+			a.sub-t:hover {background: $color-twitter;}
+			a.sub-g:hover {background: $color-googleplus;}
+			a.sub-p:hover {background: $color-pinterest;}
+
+		}
+
+	}
+
+	// Dropdown Sizes
+	li.nav-wide ul {
+		width: 24.13rem; // 386
+
+		li {
+			width: 11.88rem; // 190
+			display: inline-block;
+		}
+	}
+
+	li.nav-wider ul {
+		width: 30.5rem; // 488
+
+		li {
+			width: 10rem; // 160
+			display: inline-block;
+		}
+	}
+
+	ul {
+		display: none;
+	}
+
+}
+
 
 // Descrease spacing
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: $bp-notebook) {
 
 	#header-bottom-left  ul li a {
 		padding: 20px 15px 20px 5px;
@@ -122,22 +337,64 @@
 // Header - Bottom Right - Search
 //-------------------------------------------------------------------------------
 
-#header-bottom-right .search {background: #F2f2f2;}
-#header-bottom-right .search-field {color: #CCC;}
-#header-bottom-right .search-field:focus {color: #666;}
+#header-bottom-right {
+
+	.search {
+		background: $color-search-bg;
+		height: $size-search; 
+		padding: 0.5rem 4% 0.4375rem 2%; // 8 % 7 %
+		overflow: hidden; 
+		width: 94%; 
+		margin: 0.625rem 0 0 0; // 10 0 0 0
+		font-size: 1.125rem; // 18
+
+		.search-icon {
+			display: inline-block; 
+			width: 1.125rem; // 18
+			height: $size-search;
+
+			svg {
+				width: 1.125rem; // 18
+				height: 1.125rem; 
+				fill: $color-search-svg; 
+				margin: 0.125rem 0 0 0.125rem; // 2 0 0 2
+			}
+		}
+
+		.search-field-holder {
+			display: inline-block; 
+			width: 90%; 
+			height: $size-search; 
+			vertical-align: top;
+
+			.search-field {
+				color: $color-search-text;
+				background: none; 
+				border:none; 
+				height: $size-search; 
+				width: 98%; 
+				padding: 0 0 0 2%; 
+				margin: 0;
+			}
+
+			.search-field:focus {
+				color: $color-search-focus;
+			}
+
+		}
+
+	}
+
+}
+
+@media screen and (max-width: $bp-desksm ) {
+	#header-bottom-right .search-field-holder {width: 85%;}
+}
 
 
-/* Search */
-#header-bottom-right .search {height:24px; padding: 8px 4% 7px 2%; overflow: hidden; width: 94%; margin: 10px 0 0 0;}
-#header-bottom-right .search-icon {display: inline-block; width: 18px; height: 24px;}
-#header-bottom-right .search-icon SVG {width: 18px !important; height: 18px  !important; fill: #BBBBBB !important; margin: 2px 0 0 2px;}
-svg.svg-search-icon {width: 18px !important; height: 18px  !important; fill: #BBBBBB !important; margin: 2px 0 0 2px;}
-#header-bottom-right .search-field-holder {display: inline-block; width: 90%; height: 24px; vertical-align: top}
-#header-bottom-right .search-field {background: none; border:none; height: 24px; width: 98%; padding: 0 0 0 2%; margin: 0;}
-#header-bottom-right .search-field:focus {}
-#header-bottom-right .search-field:hover {} 
-#header-bottom-right .search-button{padding: 3px;opacity: 0.5}
-#header-bottom-right .search-button:hover {opacity: 1}
+//-------------------------------------------------------------------------------
+// Media query clean-up
+//-------------------------------------------------------------------------------
 
 
 @media screen and (max-width: 1430px) {
@@ -183,25 +440,13 @@ svg.svg-search-icon {width: 18px !important; height: 18px  !important; fill: #BB
 				height: 60px;
 				margin: 0; 
 				padding: 0;		
-				}
+			}
 			#header-bottom-right {
 				float: right;
 				width: 30%;  
 				margin: 0; 
 				padding: 0;
-				}			
-	
-
-	// Descrease spacing			
-
-	// search
-	#header-bottom-right .search-field-holder {width: 85%;}
-
+			}			
 
 }
-
-
-
-
-
 
