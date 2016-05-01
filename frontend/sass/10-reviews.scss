@@ -248,7 +248,11 @@
 /* Similar */
 .similar-title {margin: 40px 0 40px 0;}
 
-/* Floating pagination: arrows on sides of browser */
+
+//-------------------------------------------------------------------------------
+// Floating pagination: arrows on sides of browser 
+//-------------------------------------------------------------------------------
+
 .floating-pagi a {display: block;position: fixed;top: 50%; width: 60px; height: 60px; outline: none;}
 .floating-pagi .floating-pagi-next a {left: 30px; -webkit-transform: rotate(-180deg);-moz-transform: rotate(-180deg);-ms-transform: rotate(-180deg);-o-transform: rotate(-180deg);filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
 .floating-pagi .floating-pagi-prev a {right: 30px; }
@@ -256,6 +260,13 @@
 .floating-pagi svg {fill: #999;}
 .floating-pagi:hover svg {fill: $color-main-link;}
 .floating-pagi a:hover {border: none; text-decoration: none;}
+
+
+@media screen and (max-width: 1480px) {
+.floating-pagi .floating-pagi-next a {left: 10px;}
+.floating-pagi .floating-pagi-prev a {right: 10px;}	
+}
+
 
 /* Review notice */
 .single-container .review-notice {

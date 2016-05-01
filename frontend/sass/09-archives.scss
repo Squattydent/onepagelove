@@ -1,6 +1,7 @@
 //-------------------------------------------------------------------------------
 // Archive Container
 //-------------------------------------------------------------------------------
+
 .archive-container {
 	@media screen and (max-width: $bp-desksm) {
 		width: 104%;
@@ -44,59 +45,215 @@
 
 }
 
-
 //-------------------------------------------------------------------------------
 // Archive Thumbs
 //-------------------------------------------------------------------------------
 
-.thumb {position: relative; width:400px; height: auto; display: inline-block;  margin: 0 36px 40px 0; text-shadow: none; padding: 0px; vertical-align: top; border: none;}
-.thumb p {margin: 0; padding: 0;}
-
-.thumb .thumb-label {position: absolute; display: block; top: -8px; left: -8px; width: 48px; height: 48px; border-radius: 24px;-webkit-border-radius: 24px;-moz-border-radius: 24px; text-align: center;}
-.thumb .thumb-label-loved {text-transform: uppercase; font-size: 11px; line-height: 10px; letter-spacing: 0px; }
-.thumb .thumb-label-template {text-transform: uppercase; font-size: 20px; letter-spacing: 1px;}
-.thumb .thumb-label-free {text-transform: uppercase; font-size: 14px; letter-spacing: 1px;}
-.thumb .thumb-label-loved .thumb-label-loved-position {display: block; padding: 14px 0 0 0;}
-.thumb .thumb-label-template .thumb-label-template-position {display: block; padding: 18px 3px 0 3px;}
-.thumb .thumb-label-free .thumb-label-free-position {display: block; padding: 18px 3px 0 3px;}
-.thumb .thumb-image {width: 100%; height: auto; top: 0;}
-.thumb .thumb-image img {margin: 0; width: 100%; height: auto;}
-.thumb .thumb-image img:hover {opacity: 0.75;}
-.thumb .thumb-info {padding: 10px 20px 0 15px;}
-.thumb .thumb-info .thumb-title .thumb-name {}
-.thumb .thumb-info .thumb-title .thumb-name	.fav-add {display: inline-block; height: 14px; width: 14px;}
-.thumb .thumb-info .thumb-title .thumb-name	.fav-remove {display: inline-block; height: 14px; width: 14px;}
-.thumb .thumb-info .thumb-title .thumb-name	svg.heart-add {width: 14px; height: 14px;}
-.thumb .thumb-info .thumb-title .thumb-name	svg.heart-remove {width: 14px; height: 14px;}
-.thumb .thumb-info .thumb-title .thumb-name h2 {padding: 0; font-size: 18px; line-height: 20px; margin-bottom: 4px;}
-.thumb .thumb-info .thumb-title .thumb-name h2 a {}
-.thumb .thumb-info .thumb-title .thumb-name h2 a:hover {text-decoration: none;}
-SVG.thumb-launch-svg {
-	max-width: 18px; 
+.thumb {
+	position: relative; 
+	width:400px; 
 	height: auto; 
-	margin-bottom: -3px; 
-	// float: right; requested from users
+	display: inline-block;  
+	margin: 0 36px 40px 0; 
+	text-shadow: none; 
+	padding: 0px; 
+	vertical-align: top; 
+	border: none;
+
+		// Definitely Flexbox needed here
+		@media screen and (max-width: $bp-desksm) {
+			width: 30.5%; 
+			margin: 0 2% 2% 0;
+		}
+
+		@media screen and (max-width: $bp-tablet) {	
+			width: 45%; 
+			margin: 0 4% 4% 0;
+		}	
+
+		@media screen and (max-width: $bp-mobile) {
+			width: 95%; 
+			margin: 0 0 10% 0;
+		}
+
+	p {
+		margin: 0; 
+		padding: 0;
+	}
+
+	.thumb-label {
+		position: absolute; 
+		display: block; 
+		top: -8px; 
+		left: -8px; 
+		width: 48px; 
+		height: 48px; 
+		border-radius: 24px;
+		text-align: center;
+
+	}
+
+	.thumb-label-loved {
+		text-transform: uppercase; 
+		font-size: 11px; 
+		line-height: 10px; 
+		letter-spacing: 0px; 
+
+		.thumb-label-loved-position {
+			display: block; 
+			padding: 14px 0 0 0;
+		}
+	}
+
+	.thumb-label-template {
+		text-transform: uppercase; 
+		font-size: 20px; 
+		letter-spacing: 1px;
+
+		.thumb-label-template-position {
+			display: block; 
+			padding: 18px 3px 0 3px;
+		}
+
+	}
+
+	.thumb-label-free {
+		text-transform: uppercase; 
+		font-size: 14px; 
+		letter-spacing: 1px;
+
+		.thumb-label-free-position {
+			display: block; 
+			padding: 18px 3px 0 3px;
+		}
+	}
+
+
+	.thumb-image {
+		width: 100%; 
+		height: auto; 
+		top: 0;
+
+		img {
+			margin: 0; 
+			width: 100%; 
+			height: auto;
+
+		}
+
+		img:hover {
+			opacity: 0.75;
+		}
+
+	}
+
+	.thumb-info {
+		padding: 10px 20px 0 15px;
+
+		.thumb-title {
+
+			.thumb-name {
+
+				h2 {
+					padding: 0; 
+					font-size: 18px; 
+					line-height: 20px; 
+					margin-bottom: 4px;
+
+					svg.thumb-launch-svg {
+						max-width: 18px; 
+						height: auto; 
+						margin-bottom: -3px; 
+					}
+				}
+
+				a {
+
+				}
+
+				a:hover {
+					text-decoration: none;
+				}
+
+			}
+
+			.thumb-cat {
+				font-size: 11px; 
+				margin-bottom: 12px; 
+				letter-spacing: 0.25px; 
+				text-overflow: ellipsis; 
+				max-width: 360px;
+				white-space: nowrap;
+				overflow: hidden;
+
+				a {
+					text-decoration: none;
+				}
+
+			}
+
+		}
+
+	}
+
 }
-SVG.thumb-launch-svg:hover {}
-.thumb .thumb-info .thumb-title .thumb-cat {font-size: 11px; margin-bottom: 12px; letter-spacing: 0.25px; text-overflow: ellipsis; max-width: 360px;white-space: nowrap;overflow: hidden;}
-.thumb .thumb-info .thumb-title .thumb-cat a {text-decoration: none;}
-.thumb .thumb-info .thumb-title .thumb-cat a:hover {}
 
 //-------------------------------------------------------------------------------
 // Archive Pagination
 //-------------------------------------------------------------------------------
 
-.browsing {clear: both;}
-.browsing a, 
-.browsing .current {font-size: 18px;line-height: 18px; padding: 5px; text-decoration: none; letter-spacing: 0;}
-.browsing {margin: 20px 0}
-.browsing .browsing-nav {width: 1280px;}
-.browsing .browsing-nav-left {float: left; width: 20%;text-align: left;}
-.browsing .browsing-nav-mid {float: left;width: 60%; text-align: center; }
-.browsing .browsing-nav-mid a, 
-.browsing .current {display: inline-block; margin: 0 5px; width: 45px; text-align: center; padding: 12px 0;}
-.browsing .browsing-nav-right {float: right; width: 20%; text-align: right;}
-.browsing .browsing-nav-right a, 
-.browsing .browsing-nav-left a {display: inline-block; width: 125px; padding: 12px 0; text-align: center; margin: 0 !important;}
-.browsing .current {background: none; opacity: 1; }
-.browsing a:hover {}
+.browsing {
+	clear: both;
+	margin: 20px 0;
+
+	.browsing-nav {
+		width: 1280px;
+
+		.browsing-nav-left {
+			float: left; 
+			width: 20%;
+			text-align: left;
+
+			a {
+				@extend %pagination-browse;
+			}
+		}
+
+		.browsing-nav-mid {
+			float: left;
+			width: 60%; 
+			text-align: center;
+
+			a {
+				@extend %pagination-number;
+			}
+
+			@media screen and (max-width: $bp-tablet) {	
+				display: none;
+			}	
+		}
+
+		.browsing-nav-right {
+			float: right; 
+			width: 20%; 
+			text-align: right;
+
+			a {
+				@extend %pagination-browse;
+			}
+		}
+
+	}
+
+	a {
+		@extend %pagination-number;
+	}
+
+	.current {
+		@extend %pagination-number;
+		background: none; 
+		opacity: 1;
+	}
+
+}
+

@@ -82,9 +82,9 @@ $font-fam-bloc			: Palatino Linotype, Palatino, Georgia, Serif;
 
 $bp-desksm 		 	 	: 1430px;
 $bp-notebook 		 	: 1040px;
-$bp-tablet 			 	: 840px;
-$bp-mobile 			 	: 500px;
-$bp-mobilesm 		 	: 400px;
+$bp-tablet		 		: 840px;
+$bp-mobile 		 		: 500px;
+$bp-mobilesm		 	: 400px;
 
 //-------------------------------------------------------------------------------
 // Colors
@@ -172,4 +172,24 @@ $rounded-buttons	 	: 2px;
 
 %font-bloc {
 	font-family: $font-fam-bloc;
+} 
+
+%pagination-browse {
+	display: inline-block; 
+	width: 125px; 
+	padding: 12px 0; 
+	text-align: center; 
+	margin: 0 !important;
+} 
+
+%pagination-number {
+	display: inline-block; 
+	margin: 0 5px; 
+	width: 45px; 
+	text-align: center; 
+	padding: 12px 0;
+	font-size: 18px;
+	line-height: 18px; 
+	text-decoration: none; 
+	letter-spacing: 0;	
 } 
