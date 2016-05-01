@@ -1,3 +1,5 @@
+// This section includes Search at the bottom as well
+
 //-------------------------------------------------------------------------------
 // Archive Container
 //-------------------------------------------------------------------------------
@@ -42,7 +44,6 @@
 			}
 		}
 	}
-
 }
 
 //-------------------------------------------------------------------------------
@@ -209,6 +210,10 @@
 	.browsing-nav {
 		width: 1280px;
 
+		@media screen and (max-width: $bp-desksm) {
+			 width: 100%;
+		}
+
 		.browsing-nav-left {
 			float: left; 
 			width: 20%;
@@ -217,6 +222,11 @@
 			a {
 				@extend %pagination-browse;
 			}
+
+			@media screen and (max-width: $bp-tablet) {	
+				width: 50%;
+			}	
+
 		}
 
 		.browsing-nav-mid {
@@ -241,6 +251,11 @@
 			a {
 				@extend %pagination-browse;
 			}
+
+			@media screen and (max-width: $bp-tablet) {	
+				width: 50%;
+			}	
+			
 		}
 
 	}
@@ -256,4 +271,18 @@
 	}
 
 }
+
+//-------------------------------------------------------------------------------
+// Search
+//-------------------------------------------------------------------------------
+
+.results-search {width: 260px; display: block;}
+.results-search .search {height:22px;background: none; border:1px solid #CCC; padding: 5px 10px; overflow: hidden; width: 245px; margin: 6px 0 0 0;}
+.results-search .search:hover {background: none;}
+.results-search .search .search-field {background: none;  font-size:16px; line-height: 16px; color: #666; height: 20px; width:240px; padding: 0 0 2px 0; margin: 0;vertical-align: top}
+.results-search .search .search-field:hover {} 
+.results-search .search .search-button{padding: 3px;opacity: 0.5}
+.results-search .search .search-button:hover {opacity: 1}
+.results-search .entry-search {color:#fff}
+.results-search .search input[type=text] {border: none !important;}
 

@@ -14,7 +14,7 @@
 		float: left; 
 		padding: $spacing-big; 
 		color: $review-meta-color;
-
+ 
 		.review-meta-left { 
 			margin-right: $spacing-medium;
 		}
@@ -29,47 +29,48 @@
 
 }
 
+@media screen and (max-width: $bp-desksm) {
+	.review-meta {
+		width: 92%; 
+		padding: 4%;
 
-// Tablet view with left dropdown nav
+		.review-meta-right {
+			float: right; 
+			width: 300px; 
+		}
+
+	}
+	
+}
+
 @media screen and (max-width: $bp-tablet ) {
 
-	// Kill content padding
-	body.single-post #content {
-		width: 100%; 
-		margin: 0;
-		padding: 0;
-	}
-
-	// But now add padding to similar posts
-	body.single-post .similar {
-		width: 96%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	// Flex magic for ordering
 	.review {
 
 		.review-meta {
 			width: 100%;
 			padding: 0;
 			float: none;
-			display: flex; 
+			display: flex;  // Flex magic for ordering
 			flex-flow: column;
 
 			.review-meta-left { 
-				width: 100%; 
 				order: 1;
-				margin-bottom: $spacing-big;
-				margin-right: none;
+				margin: 0;
+				padding: 20px;
 			}
+
 			.review-meta-right {
-				width: 90% !important; 
-				padding: 5%;
+				width: 100% !important; // struggling with this one
+				padding: 0;
 				padding-bottom: 0;
-				display: block;
 				order: 2;
 				margin-left: 0;
+
+				.review-meta-right-padding-hack {
+					padding: 20px;
+					padding-bottom: 0;
+				}
 			}
 
 		} 
@@ -79,88 +80,26 @@
 }
 
 //-------------------------------------------------------------------------------
-// Review Content
+// Review Content - mainly styles, see above for container stuff
 //-------------------------------------------------------------------------------
 
 .review {
 
 	.review-meta {
 
-		.review-type {
-			text-transform: uppercase; 
-			font-size: 0.75rem; 
-			color: #999;
-		}
+		.review-meta-right {
 
-		.review-title {
+			.review-launch {
+				margin-bottom: 20px;
 
-			a {
-				border: none;
-			}
+				a { 
 
-			.fav-add {
-				display: inline-block; 
-				height: $review-heart ; 
-				width: $review-heart ;
-			}
+					@media screen and (max-width: $bp-tablet) {	
+						width: 100%;
+					}	
 
-			.fav-remove {
-				display: inline-block; 
-				height: $review-heart ; 
-				width: $review-heart ;
-			}
-
-			svg.heart-add {
-				height: $review-heart ; 
-				width: $review-heart ;
-			}
-
-			svg.heart-remove {
-				height: $review-heart ; 
-				width: $review-heart ;
-			}
-
-			h1 {
-				font-size: 2.375rem; 
-				line-height: 2.625rem; 
-				margin-bottom: $spacing-medium; 
-				color: #222;
-			}
-
-
-		}
-
-		.review-content {
-			font-size: 1.375rem; 
-			line-height: 1.75rem; 
-			margin-bottom: $spacing-medium; 
-			color: $review-body-color;
-
-			a {
-				color: $color-main-link;
-				border-bottom: 1px dotted $color-main-link;
-			}
-
-			a:hover {
-				color: $color-main-link;
-				border-bottom: 1px solid $color-main-link;
-			}
-
-			blockquote {
-				font-size: $spacing-medium; 
-				font-style: italic;
-				color: $review-testi-color;
-
-				a {
-					color: $review-testi-color;
-					border-bottom: 1px dotted $review-testi-color;
 				}
 			}
-
-		}
-
-
-		.review-meta-right {
 
 			ul {
 
@@ -184,92 +123,131 @@
 
 		}
 
+		.review-meta-left {
+
+			.review-type {
+				text-transform: uppercase; 
+				font-size: 0.75rem; 
+				color: #999;
+			}
+
+			.review-title {
+
+				a {
+					border: none;
+				}
+
+				h1 {
+					font-size: 2.375rem; 
+					line-height: 2.625rem; 
+					margin-bottom: $spacing-medium; 
+					color: #222;
+				}
+
+			}
+
+			.review-content {
+				font-size: 1.375rem; 
+				line-height: 1.75rem; 
+				margin-bottom: $spacing-medium; 
+				color: $review-body-color;
+
+				a {
+					color: $color-main-link;
+					border-bottom: 1px dotted $color-main-link;
+				}
+
+				a:hover {
+					color: $color-main-link;
+					border-bottom: 1px solid $color-main-link;
+				}
+
+				blockquote {
+					font-size: $spacing-medium; 
+					font-style: italic;
+					color: $review-testi-color;
+
+					a {
+						color: $review-testi-color;
+						border-bottom: 1px dotted $review-testi-color;
+					}
+				}
+
+			}			
+
+			.review-tags {
+				line-height: 35px; 
+				margin-bottom: 20px;
+
+				a {
+					color: #AAA; 
+					border: 1px solid #ccc; 
+					text-transform: capitalize;
+					height: 30px; 
+					padding: 4px 9px;
+					text-decoration: none; 
+					margin: 0 5px 30px 0 !important; 
+					white-space: nowrap; 
+					background: none;
+				}
+
+				a:hover { 
+					color: $color-main-link;
+					border: 1px solid $color-main-link;
+				}
+
+				strong {
+					display: block; 
+					font-size: 10px; 
+					text-transform: uppercase; 
+					line-height: 10px; 
+					margin-bottom: 5px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.review-screenshot {
+
+		img {
+
+			@media screen and (max-width: $bp-desksm) {
+				width: 100%; 
+				height: auto;
+			}
+
+		}
+
+		a.noBorder:hover {
+			opacity: 1;
+		}
+
+	}
+
+	.review-notes { // Author
+		padding: 40px 40px 40px 40px;
 	}
 
 }
 
-
-
-
-// Review Posts Tags + Cats
-.review .review-meta .review-tags a, 
-.review .review-meta .review-cats a {color: #AAA; border: 1px solid #ccc; text-transform: capitalize;}
-.review .review-meta .review-tags a:hover, 
-.review .review-meta .review-cats a:hover { color: $color-main-link;border: 1px solid $color-main-link;}
-.review .review-meta .review-cats {line-height: 30px; margin-bottom: 20px;}
-.review .review-meta .review-cats strong,
-.review .review-meta .review-tags strong {display: block; font-size: 10px; text-transform: uppercase; line-height: 10px; margin-bottom: 5px;}
-.review .review-meta .review-tags {line-height: 35px;}
-.review .review-meta .review-tags a, 
-.review .review-meta .review-cats a {height: 30px; padding: 4px 9px;text-decoration: none; margin: 0 5px 30px 0 !important; white-space: nowrap; background: none;}
-
-/* Meta Box */
-.review .review-meta .review-launch {margin-bottom: 20px;}
-.review .review-meta .review-date {margin-bottom: 10px;}
-.review .review-meta .review-unique {margin-bottom: 10px;}
-.review .review-meta .review-price {margin-bottom: 10px;}
-.review .review-meta .review-developer {margin-bottom: 20px;}
-.review .review-screenshot img {}
-.review .review-screenshot a.noBorder:hover {opacity: 1;}
-
-/* Comments */
-.review .review-notes {
-	padding: 40px 40px 40px 40px;
-}
-	.review .comments-tweet-email {
-		width: 50%; 
-		display: block;
-		float: left;
-	}
-	.review .opl-ad-holder-premium {
-		float: right;
-		width: 50%;
-		display: block;
-	}
-
-	@media screen and (max-width: 840px) {
-		.review .comments-tweet-email {
-			width: 100%; 
-			display: block;
-			float: none;
-			padding-bottom: 40px;
-		}
-		.review .opl-ad-holder-premium {
-			border-top: 1px solid #EEE; 
-			padding-top: 40px; 
-			float: none;
-			width: 100%;
-			display: block;
-			clear: both;
-			margin-top: 40px;
-		}
-	}
-
-/* Similar */
-.similar-title {margin: 40px 0 40px 0;}
 
 
 //-------------------------------------------------------------------------------
-// Floating pagination: arrows on sides of browser 
+// Similar Posts
 //-------------------------------------------------------------------------------
 
-.floating-pagi a {display: block;position: fixed;top: 50%; width: 60px; height: 60px; outline: none;}
-.floating-pagi .floating-pagi-next a {left: 30px; -webkit-transform: rotate(-180deg);-moz-transform: rotate(-180deg);-ms-transform: rotate(-180deg);-o-transform: rotate(-180deg);filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
-.floating-pagi .floating-pagi-prev a {right: 30px; }
-.floating-pagi svg {width: 60px; height: 60px;}
-.floating-pagi svg {fill: #999;}
-.floating-pagi:hover svg {fill: $color-main-link;}
-.floating-pagi a:hover {border: none; text-decoration: none;}
-
-
-@media screen and (max-width: 1480px) {
-.floating-pagi .floating-pagi-next a {left: 10px;}
-.floating-pagi .floating-pagi-prev a {right: 10px;}	
+.similar-title {
+	margin: 40px 0 40px 0;
 }
 
+//-------------------------------------------------------------------------------
+// Review notice - http://localhost/wordpress/onepagelove/how-to-achieve-a-parallax-scrolling-effect-with-petr-tichy
+//-------------------------------------------------------------------------------
 
-/* Review notice */
-.single-container .review-notice {
+.review-notice {
 	font-size: 18px; 
 	line-height: 24px; 
 	background: #ffc3da; 
@@ -497,3 +475,83 @@
 
     }
 }
+
+
+
+//-------------------------------------------------------------------------------
+// Floating pagination: arrows on sides of browser 
+//-------------------------------------------------------------------------------
+
+.floating-pagi {
+
+	a {
+		display: block;
+		position: fixed;
+		top: 50%; 
+		width: 60px; 
+		height: 60px; 
+		outline: none;
+
+		@media screen and (max-width: $bp-tablet) {	
+			width: 30px; 
+			height: 30px;
+		}
+	
+	}
+
+	a:hover {
+		border: none; 
+		text-decoration: none;
+	}
+
+	.floating-pagi-next {
+
+		a {
+			left: 30px; 
+			-webkit-transform: rotate(-180deg);
+			-moz-transform: rotate(-180deg);
+			-ms-transform: rotate(-180deg);
+			-o-transform: rotate(-180deg);
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+			@media screen and (max-width: $bp-desksm) {
+				left: 10px;
+			}
+		}
+	}
+
+	.floating-pagi-prev {
+
+		a {
+			right: 30px; 
+
+			@media screen and (max-width: $bp-desksm) {
+				right: 10px;
+			}
+		}
+	}
+
+	svg {
+		width: 60px; 
+		height: 60px; 
+		fill: #999;
+
+		@media screen and (max-width: $bp-tablet) {	
+			width: 30px; 
+			height: 30px;
+		}
+
+	}
+
+	:hover {
+
+		svg {
+			fill: $color-main-link;
+		}
+
+	}
+
+}
+
+
+
