@@ -11,13 +11,14 @@
 // 08. Truncation
 // 09. Enqueue Scripts and Styles
 // 10. WordPress Clean-up
+// 11. Update System
 
 // -------------------------------------------------------------
 // 00. Defining
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.6.9.7' );
+define( 'OPL_THEME_VERSION' , '6.6.9.8' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -307,5 +308,12 @@ add_action('wp_enqueue_scripts', 'opl_enqueue_scripts');
 
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );# Remove Smileys embedded in head
 remove_action( 'wp_print_styles', 'print_emoji_styles' );     # Remove Smileys embedded in head
+
+// -------------------------------------------------------------
+// 11. Update System
+// -------------------------------------------------------------
+
+require_once( dirname( __FILE__ ) . '/backend/theme-update-checker.php'  );
+require_once( dirname( __FILE__ ) . '/backend/theme-update-settings.php' );
 
 ?>

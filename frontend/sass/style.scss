@@ -2,8 +2,8 @@
 @import "02-variables";
 @import "03-global";
 // General
-@import "05-fonts";
-@import "06-colors";
+@import "05-fonts"; // kill list
+@import "06-colors"; // kill list
 @import "07-containers";
 @import "08-header";
 @import "09-archives";
@@ -12,5 +12,5 @@
 @import "12-footer";
 // Jobs
 // Misc
-@import "15-gravity";
+@import "15-gravity"; // kill list
 // Mediaqueries
