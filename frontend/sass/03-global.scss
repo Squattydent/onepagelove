@@ -5,12 +5,12 @@
 html {
   font-size: $base-normal;
 }
-@media screen and (min-width: $bp-desksm) {
+@media (min-width: $bp-desksm) {
 	html { 
 		font-size: $base-large; 
 	}
 }
-@media screen and (max-width: $bp-mobile) {
+@media (max-width: $bp-mobile) {
 	html { 
 		font-size: $base-small;
 	}

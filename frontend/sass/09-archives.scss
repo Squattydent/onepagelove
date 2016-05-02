@@ -5,7 +5,7 @@
 //-------------------------------------------------------------------------------
 
 .archive-container {
-	@media screen and (max-width: $bp-desksm) {
+	@media (max-width: $bp-desksm) {
 		width: 104%;
 	}
 }
@@ -19,7 +19,7 @@
 	align-items: center;	
 	// background: $test1;
 	margin-bottom: 30px;
-		@media screen and (max-width: $bp-tablet) {
+		@media (max-width: $bp-tablet) {
 			margin-bottom: 10px; 
 			}
 	.archive-header-info {
@@ -28,7 +28,7 @@
 		margin-right: 0;
 		text-align: center;
 		padding: 0;
-		@media screen and (max-width: $bp-mobile) {
+		@media (max-width: $bp-mobile) {
 			text-align: left;
 		}	
 		.archive-title {
@@ -39,7 +39,7 @@
 			max-width: 80%;
 			margin-right: auto;
 			margin-left: auto;
-			@media screen and (max-width: $bp-tablet) {
+			@media (max-width: $bp-tablet) {
 				max-width: none;
 			}
 		}
@@ -62,17 +62,17 @@
 	border: none;
 
 		// Definitely Flexbox needed here
-		@media screen and (max-width: $bp-desksm) {
+		@media (max-width: $bp-desksm) {
 			width: 30.5%; 
 			margin: 0 2% 2% 0;
 		}
 
-		@media screen and (max-width: $bp-tablet) {	
+		@media (max-width: $bp-tablet) {	
 			width: 45%; 
 			margin: 0 4% 4% 0;
 		}	
 
-		@media screen and (max-width: $bp-mobile) {
+		@media (max-width: $bp-mobile) {
 			width: 95%; 
 			margin: 0 0 10% 0;
 		}
@@ -210,7 +210,7 @@
 	.browsing-nav {
 		width: 1280px;
 
-		@media screen and (max-width: $bp-desksm) {
+		@media (max-width: $bp-desksm) {
 			 width: 100%;
 		}
 
@@ -223,7 +223,7 @@
 				@extend %pagination-browse;
 			}
 
-			@media screen and (max-width: $bp-tablet) {	
+			@media (max-width: $bp-tablet) {	
 				width: 50%;
 			}	
 
@@ -238,7 +238,7 @@
 				@extend %pagination-number;
 			}
 
-			@media screen and (max-width: $bp-tablet) {	
+			@media (max-width: $bp-tablet) {	
 				display: none;
 			}	
 		}
@@ -252,7 +252,7 @@
 				@extend %pagination-browse;
 			}
 
-			@media screen and (max-width: $bp-tablet) {	
+			@media (max-width: $bp-tablet) {	
 				width: 50%;
 			}	
 			

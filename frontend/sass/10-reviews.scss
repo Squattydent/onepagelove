@@ -29,7 +29,7 @@
 
 }
 
-@media screen and (max-width: $bp-desksm) {
+@media (max-width: $bp-desksm) {
 	.review-meta {
 		width: 92%; 
 		padding: 4%;
@@ -43,7 +43,7 @@
 	
 }
 
-@media screen and (max-width: $bp-tablet ) {
+@media (max-width: $bp-tablet ) {
 
 	.review {
 
@@ -94,7 +94,7 @@
 
 				a { 
 
-					@media screen and (max-width: $bp-tablet) {	
+					@media (max-width: $bp-tablet) {	
 						width: 100%;
 					}	
 
@@ -214,7 +214,7 @@
 
 		img {
 
-			@media screen and (max-width: $bp-desksm) {
+			@media (max-width: $bp-desksm) {
 				width: 100%; 
 				height: auto;
 			}
@@ -279,7 +279,7 @@
 
 	}
 
-	@media screen and (max-width: 768px) {
+	@media (max-width: 768px) {
 		width: 100%;
 	}
 
@@ -289,7 +289,7 @@
 		width: 60px;
 		height: 60px;
 
-		@media screen and (max-width: 400px) {
+		@media (max-width: 400px) {
 			width: $spacing-big;
 			height: $spacing-big;
 		}			
@@ -336,10 +336,10 @@
 	display: block; 
 	clear: both;
 
-	@media screen and (max-width: $bp-notebook ) {
+	@media (max-width: $bp-notebook ) {
 		height: 105px;
 	}
-	@media screen and (max-width: $bp-tablet ) {
+	@media (max-width: $bp-tablet ) {
 		height: 75px;
 	}
 
@@ -349,11 +349,11 @@
 		height: 150px;
 		align-items: center;
 
-			@media screen and (max-width: $bp-notebook ) {
+			@media (max-width: $bp-notebook ) {
 				flex : 0 0 120px;
 				height: 105px;
 			}
-			@media screen and (max-width: $bp-tablet ) {
+			@media (max-width: $bp-tablet ) {
 				flex : 0 0 85px;
 				height: 70px;
 			}
@@ -362,10 +362,10 @@
 			vertical-align: top;
 			flex : 0 0 140px;
 
-				@media screen and (max-width: $bp-notebook ) {
+				@media (max-width: $bp-notebook ) {
 					flex : 0 0 120px;
 				}
-				@media screen and (max-width: $bp-tablet ) {
+				@media (max-width: $bp-tablet ) {
 					flex : 0 0 85px;
 				}
 
@@ -373,10 +373,10 @@
 				width: 130px; 
 				height: auto; 
 
-				@media screen and (max-width: $bp-notebook ) {
+				@media (max-width: $bp-notebook ) {
 					width: 100px;
 				}
-				@media screen and (max-width: $bp-tablet ) {
+				@media (max-width: $bp-tablet ) {
 					width: 65px;
 				}
 			}
@@ -492,7 +492,7 @@
 		height: 60px; 
 		outline: none;
 
-		@media screen and (max-width: $bp-tablet) {	
+		@media (max-width: $bp-tablet) {	
 			width: 30px; 
 			height: 30px;
 		}
@@ -514,7 +514,7 @@
 			-o-transform: rotate(-180deg);
 			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
-			@media screen and (max-width: $bp-desksm) {
+			@media (max-width: $bp-desksm) {
 				left: 10px;
 			}
 		}
@@ -525,7 +525,7 @@
 		a {
 			right: 30px; 
 
-			@media screen and (max-width: $bp-desksm) {
+			@media (max-width: $bp-desksm) {
 				right: 10px;
 			}
 		}
@@ -536,7 +536,7 @@
 		height: 60px; 
 		fill: #999;
 
-		@media screen and (max-width: $bp-tablet) {	
+		@media (max-width: $bp-tablet) {	
 			width: 30px; 
 			height: 30px;
 		}
@@ -552,6 +552,3 @@
 	}
 
 }
-
-
-

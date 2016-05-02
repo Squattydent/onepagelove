@@ -96,7 +96,7 @@
 			overflow: visible !important;
 
 			.single-container {
-				width: 1200px; /* 80px less than #container as 40px padding */
+				width: $container-standard - 80px; // 1200 = 80px less than #container as 40px padding 
 	            margin: $spacing-medium 0 $spacing-big 0;
 				padding: $spacing-big; 
 				height: auto;			
@@ -136,7 +136,7 @@
 // Bigger Screens 
 //-------------------------------------------------------------------------------	
 
-@media screen and (min-width: 1580px) {
+@media (min-width: 1580px) {
 
 	.single-container {min-height: 800px;}	
 
@@ -147,7 +147,7 @@
 // Small Desktop
 //-------------------------------------------------------------------------------	
 
-@media screen and (max-width: $bp-desksm) {
+@media (max-width: $bp-desksm) {
 
 		
 	#container-outer {
@@ -254,7 +254,7 @@
 // Tablet 
 //-------------------------------------------------------------------------------	
 
-@media screen and (max-width: $bp-tablet) {
+@media (max-width: $bp-tablet) {
 	
 	#container-outer {
 		width: 100%;
@@ -309,7 +309,6 @@
 					padding: 0;		
 
 				}	
-
 
 			}
 

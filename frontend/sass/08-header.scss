@@ -195,7 +195,7 @@
 
 
 // Hide submit on mobile
-@media screen and (max-width: $bp-mobilesm) {
+@media (max-width: $bp-mobilesm) {
 
 	li.account-login {display: none !important;}
 
@@ -327,7 +327,7 @@
 
 
 // Descrease spacing
-@media screen and (max-width: $bp-notebook) {
+@media (max-width: $bp-notebook) {
 
 	#header-bottom-left  ul li a {
 		padding: 20px 15px 20px 5px;
@@ -369,7 +369,7 @@
 			height: $size-search; 
 			vertical-align: top;
 
-			@media screen and (max-width: $bp-desksm ) {
+			@media (max-width: $bp-desksm ) {
 				width: 85%;
 			}
 
@@ -398,7 +398,7 @@
 // Header - Mobile Big Dropdown + Center Logo Icon
 //-------------------------------------------------------------------------------
 
-@media screen and (max-width: $bp-tablet) {
+@media (max-width: $bp-tablet) {
 
 	//-------------------------------------------------------------------------------
 	// Hide some things

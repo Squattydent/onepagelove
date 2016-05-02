@@ -61,7 +61,7 @@
 
 		img {
 
-			@media screen and (max-width: $bp-desksm) {
+			@media (max-width: $bp-desksm) {
 				max-width: 100%; 
 				height: auto;
 
@@ -75,7 +75,7 @@
 
 			 .alignleft {
 
-			 	@media screen and (max-width: $bp-desksm) {
+			 	@media (max-width: $bp-desksm) {
 				 	max-width: 300px; 
 				 	height: auto;
 
@@ -101,7 +101,7 @@
 		font-size: 0.875rem;
 		line-height: 1.125rem; 
 
-		@media screen and (max-width: $bp-tablet) {
+		@media (max-width: $bp-tablet) {
 			display: none;
 		}
 
@@ -139,7 +139,7 @@
 // Page with Ad
 // ------------------------------------------------ 	
 
-@media screen and (max-width: $bp-tablet) {	
+@media (max-width: $bp-tablet) {	
 
 	.page-template-page-with-ad-php .single-container {
 		margin-top: 20px;
@@ -168,7 +168,7 @@ table.join-table {text-align: left; color: #666;}
 table.join-table td {font-size: 18px; line-height: 20px; padding: 5px 10px 10px 0; margin: 0; vertical-align: top;}
 table.join-table svg.heart-list {fill: $color-main-link; width: 18px; height: 18px; margin-top: 2px;}	
 
-@media screen and (max-width: $bp-tablet) {	
+@media (max-width: $bp-tablet) {	
 
 	.join-benefits {width: 90%; padding: 4% 4%; float: none; margin-bottom: 40px;}
 	.gform_wrapper {max-width: 100% !important;	width: 100% !important; float: none;}
@@ -176,7 +176,7 @@ table.join-table svg.heart-list {fill: $color-main-link; width: 18px; height: 18
 }	
 
 
-@media screen and (max-width: 1050px) {
+@media (max-width: 1050px) {
 	
 	.gform_wrapper {
 		max-width: 45% !important;	
@@ -200,7 +200,7 @@ h3.freebie-icons {margin-top: 0; padding-top: 0;}
 // Still sorting
 // ------------------------------------------------ 
 
-@media screen and (max-width: $bp-tablet ) {
+@media (max-width: $bp-tablet ) {
 
 	// Kill content padding
 	body.single-post #content {

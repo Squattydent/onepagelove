@@ -33,7 +33,7 @@
 
 
 
-@media screen and (max-width: 1430px) {
+@media (max-width: 1430px) {
 	
 	#footer-top-container {
 		width: 100%; 
@@ -57,7 +57,7 @@
 
 }
 
-@media screen and (max-width: 840px) {
+@media (max-width: 840px) {
 		
 	#footer-top-container {
 		width: 100%; 
@@ -113,7 +113,7 @@
 		}
 	}
 
-	@media screen and (max-width: 840px) {
+	@media (max-width: 840px) {
 
 		.footer-promo {
 			top: -20px; 
@@ -135,7 +135,7 @@
 		}
 	}
 
-	@media screen and (max-width: 400px) {
+	@media (max-width: 400px) {
 		.footer-promo {display: none;}
 	}
 
@@ -181,7 +181,7 @@
 	}
 }
 
-	@media screen and (max-width: 720px) {
+	@media (max-width: 720px) {
 		#footer .footer-column {
 			width: 50%;
 			min-height: 240px;
@@ -191,7 +191,7 @@
 		}
 	}
 
-	@media screen and (max-width: 400px) {
+	@media (max-width: 400px) {
 		#footer .footer-column {
 			width: 90%;
 			min-height: auto;
