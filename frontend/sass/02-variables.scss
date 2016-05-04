@@ -2,6 +2,7 @@
 // Sizing references
 //-------------------------------------------------------------------------------
 
+$spacing-huge			: 5rem; 	 // 80px
 $spacing-big			: 2.5rem; 	 // 40px
 $spacing-m-b			: 1.875rem;  // 30px
 $spacing-medium			: 1.25rem; 	 // 20px
@@ -21,9 +22,9 @@ $size-search			: 1.5rem; // 24px
 // REMS based off 16px body font
 // 60px = 6vw if view point is 1000px
 
-$base-large				: 16px; // 18px; 
+$base-large				: 18px; // 18px; 
 $base-normal			: 16px; // aka standard
-$base-small				: 16px; // 14px;
+$base-small				: 14px; // 14px;
 
 //-------------------------------------------------------------------------------
 // Font Sizes
@@ -193,3 +194,11 @@ $rounded-buttons	 	: 2px;
 	text-decoration: none; 
 	letter-spacing: 0;	
 } 
+
+%font-smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "liga" on;
+}
+			

@@ -1,5 +1,5 @@
 // ------------------------------------------------------------------------
-// Blog: FitVids.js integration
+// FitVids.js integration
 // ------------------------------------------------------------------------
 
 $(document).ready(function(){
@@ -8,7 +8,10 @@ $(document).ready(function(){
 });
 
 
+// ------------------------------------------------------------------------
 // Mobile Navigation: Menu Button
+// ------------------------------------------------------------------------
+
 function toggleNav() {
 	var ele = document.getElementById("toggle-mobile-navigation");
 	var text = document.getElementById("mobile-nav-button-link");
@@ -19,3 +22,22 @@ function toggleNav() {
 		ele.style.display = "block";
 	}
 }
+
+// ------------------------------------------------------------------------
+// Smooth Scrolling - https://css-tricks.com/snippets/jquery/smooth-scrolling/
+// ------------------------------------------------------------------------
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
