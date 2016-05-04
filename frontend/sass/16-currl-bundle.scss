@@ -261,7 +261,7 @@
 
                 @media (max-width: $bp-tablet) {
 
-                    flex-direction: column;
+                    // flex-direction: column;
                     min-height: auto;
                     max-height: none;
                     text-align: center;
@@ -270,11 +270,12 @@
                 }
 
                 .feature-image {
-                    flex: 1 0 50%;
+                    flex: 1 1 50%;
                     box-sizing: border-box;
                     // padding-right: $spacing-medium;
 
                     @media (max-width: $bp-tablet) {
+                        flex: 1 1 100%;
                         order: 1;
                         margin-bottom: $spacing-medium;
                     }
@@ -288,7 +289,7 @@
                 }
 
                 .feature-copy {
-                    flex: 1 0 50%;
+                    flex: 1 1 50%;
                     box-sizing: border-box;
                     font-size: 1.125rem;
                     line-height: 1.65rem;
@@ -300,6 +301,7 @@
                     padding-right: $spacing-medium;
 
                     @media (max-width: $bp-tablet) {
+                        flex: 1 1 100%;
                         order: 2;
                         padding-right: 0;
                     }

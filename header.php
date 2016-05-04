@@ -99,7 +99,7 @@
 						<li><a href="#">About</a>
 							<?php include('frontend/inc/nav-about.php'); ?>	
 						</li> 
-						<li><a href="<?php print get_home_url(); ?>/freebies" title="Free stuff!">Freebies</a></li> 									  	
+						<li><a href="<?php print get_home_url(); ?>/freebies" title="Free stuff!">Freebies</a></li>
 						<li><a href="<?php print get_home_url(); ?>/blog">Blog</a></li> 
 						<li><a href="<?php print get_home_url(); ?>/hosting" title="Hosting Recommendations">Hosting</a></li> 
 											
@@ -122,7 +122,7 @@
 					<ul class="account-logged-out">
 
 						<li class="account-login"><a href="<?php print get_home_url(); ?>/submit">Submit</a></li>	
-						<li class="account-join"><a href="https://onepagelove.com/go/feedback" title="Premium One Page Website Review">Get Feedback</a></li>		
+						<li class="account-join"><a href="https://onepagelove.com/currl-bundle">Start Here</a></li>		
 					</ul>	
 
                 </div>
