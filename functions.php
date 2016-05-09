@@ -18,7 +18,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.6.9.12' );
+define( 'OPL_THEME_VERSION' , '6.6.9.13' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -292,7 +292,7 @@ function opl_enqueue_scripts(){
 
     // jQuery
     wp_deregister_script( 'jquery' );
-    wp_register_script( 'opl-jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js', array(), OPL_THEME_VERSION ); 
+    wp_register_script( 'opl-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js', array(), OPL_THEME_VERSION ); 
     wp_enqueue_script( 'opl-jquery' );
 
 	// Script: FitVids

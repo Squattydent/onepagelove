@@ -48,7 +48,7 @@ Template Name: Currl Bundle
 				
 				<div class="feature">
 					<div class="feature-image"><img src="https://onepagelove.com/wp-content/uploads/2016/05/feature-2.jpg" /></div>
-					<div class="feature-copy"><h3>Slideshow Backgrounds</h3>Upload unlimited background images to showcase you big beautiful imagery.</div>
+					<div class="feature-copy"><h3>Slideshow Backgrounds</h3>Upload unlimited background images to showcase your big beautiful imagery.</div>
 				</div>
 
 				<div class="feature">
