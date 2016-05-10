@@ -13,7 +13,9 @@ $spacing-tiny   		: 0.3125rem; // 5px
 $container-standard		: 1280px;
 
 $size-logo				: 1.375rem; // 22px
-$size-search			: 1.5rem; // 24px
+$size-search			: 1.5rem; 	// 24px
+$size-arrow 			: 3.75rem; 	// 60
+$size-arrow-tablet		: 1.875rem; // 30px
 
 //-------------------------------------------------------------------------------
 // Font Base
@@ -112,6 +114,7 @@ $color-blue-link     	: #11C1f4;
 $color-logo-text		: #FFFFFF;
 
 // Connect Dropdown
+$color-rss 				: #ee802f;
 $color-facebook			: #3b5998;
 $color-twitter			: #55acee;
 $color-pinterest		: #cb2027;

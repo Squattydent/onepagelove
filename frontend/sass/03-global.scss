@@ -210,13 +210,17 @@ a.noBorder:hover {
 // Z-index 
 //-------------------------------------------------------------------------------
 
-.thumb .thumb-inner             {z-index: 100;}
-.thumb .thumb-image             {z-index: 200;}
-.thumb .thumb-label             {z-index: 400;}
-#header-top-left ul                       {z-index: 500;}
-#header-top-right ul.account-logged-in    {z-index: 500;}
-#header-bottom-left ul                    {z-index: 500;}
-.floating-pagi a                {z-index: 1000;}
+.thumb .thumb-inner                       	{z-index: 100}
+.thumb .thumb-image             			{z-index: 200}
+.thumb .thumb-label             			{z-index: 400}
+#header-top-left ul                       	{z-index: 500}
+#header-top-right ul.account-logged-in    	{z-index: 500}
+#header-bottom-left ul                    	{z-index: 500}
+#header-top-left ul 						{z-index: 5000}
+.floating-pagi                				{z-index: 1000}
+#header-top-mid 							{z-index: 2000}
+#mobile-nav-button 							{z-index: 2000}
+.mobile-navigation 							{z-index: 3000}
 
 //-------------------------------------------------------------------------------
 // Promo 
@@ -233,6 +237,52 @@ a.noBorder:hover {
 .mobile-navigation,
 .review .review-meta-mobile {
 	display: none;
+}
+
+// ------------------------------------------------
+// Roundup Buttons
+// ------------------------------------------------ 
+
+.theme-options-down a, // needs to get phased out
+a.roundup-buy { // needs to get phased out
+	float: left; 
+}
+
+a.roundup-demo { // needs to get phased out
+	float: left; 
+	margin-top: -28px;
+}
+
+.theme-options-demo a { // needs to get phased out
+	float: left;
+}
+
+.theme-options-down a, // needs to get phased out
+.theme-options-demo a, // needs to get phased out
+a.roundup-buy, // needs to get phased out
+a.roundup-demo, // needs to get phased out
+a.button-fill,
+a.button-border { 
+	text-align: center; 
+	font-size: 0.875rem; // 14
+	line-height: 0.875rem; 
+	text-transform: uppercase; 
+	display: inline-block;
+	border-radius: $rounded-corners;
+	border-width: 2px !important; // to override the 1px global border styles
+	border-style: solid !important; // to override the dotted global border styles
+	border-color: $color-main-link;
+	font-weight: 600;  
+	text-decoration: none;
+	padding: $spacing-small $spacing-medium;
+	margin-right: $spacing-small;
+}
+
+.theme-options-demo a, // needs to get phased out
+a.roundup-buy, // needs to get phased out
+a.button-fill {
+	background-color: $color-main-link;
+	color: $color-white !important;
 }
 
 //-------------------------------------------------------------------------------
@@ -252,16 +302,12 @@ a.noBorder:hover {
 .single-container,
 .single-container img.alignleft,
 .single-container img.alignright,
-a.roundup-buy, 
-a.roundup-demo,
 .results-search .search,
 #mce-FNAME, 
 #mce-EMAIL,
 .name-tag,
 .footer-promo-buttons a,
 #mc-embedded-subscribe,
-.theme a.table-button,
-.theme-options a,
 #header-bottom-right .search,
 .opl-ad-img img,
 .opl-ad-img-premium img,
@@ -278,10 +324,6 @@ ul.account-logged-out li a
 /* Rounded Corners 4px top edges only */
 .thumb .thumb-image img,
 .thumb-details {
--webkit-border-top-left-radius: 4px;
--webkit-border-top-right-radius: 4px;
--moz-border-radius-topleft: 4px;
--moz-border-radius-top-right: 4px;
 border-top-left-radius: 4px;
 border-top-right-radius: 4px;
 }
@@ -290,10 +332,6 @@ border-top-right-radius: 4px;
 #header-top-left ul li ul,
 #header-bottom-left ul li ul,
 #header-top-right ul.account-logged-in li ul {
--webkit-border-bottom-right-radius: 4px;
--webkit-border-bottom-left-radius: 4px;
--moz-border-radius-bottomright: 4px;
--moz-border-radius-bottomleft: 4px;
 border-bottom-right-radius: 4px;
 border-bottom-left-radius: 4px;
 overflow:hidden;

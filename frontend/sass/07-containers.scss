@@ -321,3 +321,25 @@
 	}
 	
 }
+
+// ------------------------------------------------
+// Still sorting
+// ------------------------------------------------ 
+
+@media (max-width: $bp-tablet ) {
+
+	// Kill content padding
+	body.single-post #content {
+		width: 100%; 
+		margin: 0;
+		padding: 0;
+	}
+
+	// But now add padding to similar posts
+	body.single-post .similar {
+		width: 96%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}

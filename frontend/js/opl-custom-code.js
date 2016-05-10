@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
   // Target your .container, .wrapper, .post, etc.
-  $("#content .single-content").fitVids();
+  $("#content .single-container").fitVids();
 });
 
 

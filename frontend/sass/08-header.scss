@@ -158,16 +158,21 @@
 //-------------------------------------------------------------------------------
 
 #header-top-right {
-
 	position: relative;
 	text-align: right;
 
 	ul.account-logged-out {
-
 		margin-top: 0.75rem; // 12
 
-		li {
+		@media (max-width: $bp-tablet) {
+			margin-top: 12px; // too small with REMs
+		}
 
+		@media (max-width: $bp-mobile) {
+			margin-top: 14px; // too small with REMs
+		}
+
+		li {
 			display: inline-block; 
 			margin-left: 0.625rem; // 10
 
@@ -176,6 +181,11 @@
 				text-transform: uppercase;
 				font-size: 0.625rem; // 10
 				letter-spacing: 0.03125rem; // 0.5
+
+				@media (max-width: $bp-mobile) {
+					padding: 2px 4px; // too small with REMs
+					font-size: 10px; // too small with REMs
+				}
 			}
 
 		}
@@ -290,6 +300,7 @@
 				color: $color-white !important;
 			}
 
+			a.sub-r:hover {background: $color-rss;}
 			a.sub-h:hover {background: $color-producthunt;}
 			a.sub-f:hover {background: $color-facebook;}
 			a.sub-t:hover {background: $color-twitter;}
@@ -459,11 +470,13 @@
 				display: block; 
 				position: relative; 
 				float: none;  
+				font-size: 12px;
 				margin: 0; 
 				padding: 0;
 				border: none; 
 				border-bottom: 1px solid #000;  
 				box-shadow: 0 1px 0 #222;
+
 
 				a {
 					display: block; 
@@ -490,14 +503,18 @@
 					display: flex;
   					flex-wrap: wrap;
 
+
 					li { // child list item background set at top of stylesheet
 						flex: 1 0 50%;
  						box-sizing: border-box;
+
+ 					
 
 						a { // dropdown list item link color
 							height: 16px; 
 							padding: 13px 0 11px 2%;
 							color: #999 !important; 
+							font-size: 12px; // no Rems
 							font-weight: 300; 
 							letter-spacing: 0px;
 						}
@@ -516,6 +533,8 @@
 
 					li:last-child {
 						border-bottom: none;
+						box-shadow: none;
+
 					}
 
 				} 
@@ -531,7 +550,6 @@
 				li {
 
 					a:hover { // dropdown list item background & link color on hover 
-
 						color: $color-main-link !important; 
 
 					}
@@ -563,15 +581,6 @@
 		}
 
 	}
-
-	//-------------------------------------------------------------------------------
-	// Z-index
-	//-------------------------------------------------------------------------------
-
-	#header-top-mid {z-index: 20000}
-	#mobile-nav-button {z-index: 20000}
-	#header-top-left .mobile-navigation {z-index: 10000;}
-	#header-top-left ul {z-index: 5000;}
 
 }
 

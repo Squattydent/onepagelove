@@ -488,13 +488,16 @@
 		display: block;
 		position: fixed;
 		top: 50%; 
-		width: 60px; 
-		height: 60px; 
+		width: $size-arrow; 
+		height: $size-arrow; 
 		outline: none;
 
-		@media (max-width: $bp-tablet) {	
-			width: 30px; 
-			height: 30px;
+		@media (max-width: $bp-desksm) {	
+			width: $size-arrow-tablet; 
+			height: $size-arrow-tablet; 
+			padding: $spacing-tiny;
+			background: rgba(255,255,255,0.3);
+			border-radius: $size-arrow-tablet+$spacing-small/2; // make that circle bro!
 		}
 	
 	}
@@ -507,7 +510,7 @@
 	.floating-pagi-next {
 
 		a {
-			left: 30px; 
+			left: $size-arrow-tablet/2; 
 			-webkit-transform: rotate(-180deg);
 			-moz-transform: rotate(-180deg);
 			-ms-transform: rotate(-180deg);
@@ -515,7 +518,7 @@
 			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 			@media (max-width: $bp-desksm) {
-				left: 10px;
+				left: $spacing-small;
 			}
 		}
 	}
@@ -523,22 +526,23 @@
 	.floating-pagi-prev {
 
 		a {
-			right: 30px; 
+			right: $size-arrow-tablet/2; 
 
 			@media (max-width: $bp-desksm) {
-				right: 10px;
+				right: $spacing-small;
 			}
 		}
 	}
 
 	svg {
-		width: 60px; 
-		height: 60px; 
+		width: $size-arrow; 
+		height: $size-arrow; 
 		fill: #999;
 
-		@media (max-width: $bp-tablet) {	
-			width: 30px; 
-			height: 30px;
+		@media (max-width: $bp-desksm) {	
+			width: $size-arrow-tablet; 
+			height: $size-arrow-tablet; 
+			fill: #666;
 		}
 
 	}

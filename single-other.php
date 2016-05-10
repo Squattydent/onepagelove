@@ -19,14 +19,10 @@
 		    </div><!-- /.block-right -->
 
 		    <div class="single-title"><h1><?php the_title(); ?></h1></div>
-		         
-		    <div class="single-content">
 		           
-				<?php include ('frontend/inc/pagination-floating.php'); ?>
-		           
-		      	<?php the_content(''); ?>
-		           
-		  	</div><!-- /single-content -->
+			<?php include ('frontend/inc/pagination-floating.php'); ?>
+	           
+	      	<?php the_content(''); ?>
 		           
 		</div><!-- /.single-container -->
    

@@ -6,88 +6,84 @@
 	border: none; 
 	border-bottom: 1px solid #ccc;
 
-		h1 {
-			padding: 0; 
-			margin-bottom: 30px;
+	h1 {
+		padding: 0; 
+		margin-bottom: 30px;
+	}
+
+	h2 {
+		padding: 0; 
+		margin-bottom: 30px;
+	}
+
+	h3 {
+		margin: 40px 0 20px 0;
+	}
+
+	h3.h3-top-page {
+		margin-top: 0;
+	}
+
+	h4 {
+		font-weight: bold;
+		font-size: 20px; 
+		line-height: 24px; 
+		color: #555555; 
+		margin: 30px 0 10px 0; 
+	}
+
+	p {
+		margin: 0 0 20px 0; 
+		padding: 0;
+	}
+
+	ul {
+		margin: 20px 0 20px 0; 
+		padding-left: 30px; 
+
+		li {
+			list-style-type: circle; 
+			padding: 0 0 10px 10px;
+		}
+	} 
+
+	ol {
+		margin: 20px 0 20px 0; 
+		padding-left: 30px; 
+
+		li {
+			list-style-type: decimal-leading-zero; 
+			padding: 0 0 10px 10px;
+		}
+	}
+
+	img {
+
+		@media (max-width: $bp-desksm) {
+			max-width: 100%; 
+			height: auto;
+
 		}
 
-	.single-content {
+		.alignnone {
+			max-width: 100%; 
+			height: auto;
 
-		h2 {
-			padding: 0; 
-			margin-bottom: 30px;
 		}
 
-		h3 {
-			margin: 40px 0 20px 0;
-		}
+		 .alignleft {
 
-		h3.h3-top-page {
-			margin-top: 0;
-		}
+		 	@media (max-width: $bp-desksm) {
+			 	max-width: 300px; 
+			 	height: auto;
 
-		h4 {
-			font-weight: bold;
-			font-size: 20px; 
-			line-height: 24px; 
-			color: #555555; 
-			margin: 30px 0 10px 0; 
-		}
-
-		p {
-			margin: 0 0 20px 0; 
-			padding: 0;
-		}
-
-		ul {
-			margin: 20px 0 20px 0; 
-			padding-left: 30px; 
-
-			li {
-				list-style-type: circle; 
-				padding: 0 0 10px 10px;
 			}
-		} 
 
-		ol {
-			margin: 20px 0 20px 0; 
-			padding-left: 30px; 
+		 }
+	}
 
-			li {
-				list-style-type: decimal-leading-zero; 
-				padding: 0 0 10px 10px;
-			}
-		}
-
-		img {
-
-			@media (max-width: $bp-desksm) {
-				max-width: 100%; 
-				height: auto;
-
-			}
-
-			.alignnone {
-				max-width: 100%; 
-				height: auto;
-
-			}
-
-			 .alignleft {
-
-			 	@media (max-width: $bp-desksm) {
-				 	max-width: 300px; 
-				 	height: auto;
-
-				}
-
-			 }
-		}
-
-		iframe {
-			max-width: 100%;
-		}
-
+	iframe {
+		max-width: 100%;
 	}
 
 	.block-right {
@@ -105,16 +101,18 @@
 			display: none;
 		}
 
-
-
 		ul {
-			
+			padding: 0;
+			margin: 0;
 			font-size: 0.875rem;
 		    line-height: 1.125rem; 
 			margin-bottom: $spacing-medium;
 
 			li {
+				padding: 0;
+				margin: 0;
 				margin-bottom: $spacing-small;
+				list-style: none;
 
 				a {
 					color: $color-main-link;
@@ -130,90 +128,6 @@
 
 		}
 
-	}
-
-}
-
-	
-// ------------------------------------------------
-// Page with Ad
-// ------------------------------------------------ 	
-
-@media (max-width: $bp-tablet) {	
-
-	.page-template-page-with-ad-php .single-container {
-		margin-top: 20px;
-	}
-
-}	
-
-// ------------------------------------------------
-// Roundup Buttons
-// ------------------------------------------------ 
-
-a.roundup-buy, 
-a.roundup-demo {text-align: center; font-size: 14px; line-height: 14px; text-transform: uppercase; float: left;}
-a.roundup-buy {min-width: 120px; padding: 10px 20px; margin-right: 10px;margin-bottom: 20px;}
-a.roundup-demo {width: 116px; padding: 8px 0; margin-right: 0; margin-top: -28px;}
-a.roundup-demo:hover {}
-
-
-// ------------------------------------------------
-// Join Page
-// ------------------------------------------------ 
-
-.join-benefits {width: 330px; background: #f5f5f5; float: right; vertical-align: top; padding: 20px 10px 20px 20px;}
-.join-benefits h3 {margin-top: 0;}
-table.join-table {text-align: left; color: #666;}
-table.join-table td {font-size: 18px; line-height: 20px; padding: 5px 10px 10px 0; margin: 0; vertical-align: top;}
-table.join-table svg.heart-list {fill: $color-main-link; width: 18px; height: 18px; margin-top: 2px;}	
-
-@media (max-width: $bp-tablet) {	
-
-	.join-benefits {width: 90%; padding: 4% 4%; float: none; margin-bottom: 40px;}
-	.gform_wrapper {max-width: 100% !important;	width: 100% !important; float: none;}
-
-}	
-
-
-@media (max-width: 1050px) {
-	
-	.gform_wrapper {
-		max-width: 45% !important;	
-		width: 45% !important;	
-		float: left;
-		padding: 0 !important; 
-		margin: 0 !important;
-	}
-
-}
-
-// ------------------------------------------------
-// Freebies Page
-// ------------------------------------------------ 
-
-h3.freebie-icons {margin-top: 0; padding-top: 0;}
-
-
-
-// ------------------------------------------------
-// Still sorting
-// ------------------------------------------------ 
-
-@media (max-width: $bp-tablet ) {
-
-	// Kill content padding
-	body.single-post #content {
-		width: 100%; 
-		margin: 0;
-		padding: 0;
-	}
-
-	// But now add padding to similar posts
-	body.single-post .similar {
-		width: 96%;
-		margin-right: auto;
-		margin-left: auto;
 	}
 
 }
