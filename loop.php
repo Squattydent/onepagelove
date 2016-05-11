@@ -55,10 +55,14 @@
 											}		
 											elseif (in_category('Joomla Templates')) {
 								          	echo 'Joomla Template';							
-											}										
+											}	
+											elseif (in_category('Bundle Deals')) {
+									        echo '';              
+									        } 									
 											elseif (in_category('WordPress Themes')) {
 								          	echo 'WordPress Theme';							
-											}											
+											}
+																						
 											else {
 								          	echo '';							
 											};
