@@ -11,7 +11,7 @@
 					<li><strong>Category:</strong> <?php the_category(', ', 'parents' ); ?></li>
 				</ul>
 
-				<?php include ("frontend/inc/review-meta-ad.php"); ?>
+				<?php include ("frontend/inc/review-meta-slayer.php"); ?>
 		        <?php include ("frontend/inc/review-meta-panda.php"); ?>
 
 		        <div class="clear"></div>

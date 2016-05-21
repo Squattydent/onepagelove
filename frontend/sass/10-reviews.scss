@@ -329,7 +329,7 @@
 // Review - Advertisting
 //-------------------------------------------------------------------------------
 
-.review-ad-holder {
+.review-slayer-holder {
     box-shadow: 0 -1px 0 #DDD;
 	border-top: 1px solid #FFF;
 	height: 150px;
@@ -343,7 +343,7 @@
 		height: 75px;
 	}
 
-	.opl-ad {
+	.slayer {
 		display: flex;
 		flex-direction: row;
 		height: 150px;
@@ -358,7 +358,7 @@
 				height: 70px;
 			}
 
-		.opl-ad-img {
+		.slayer-img {
 			vertical-align: top;
 			flex : 0 0 140px;
 
@@ -383,7 +383,7 @@
 
 		}
 
-		.opl-ad-info {
+		.slayer-info {
 			color: #666; 
 			font-size: 0.8125rem; 
 			line-height: 1.063rem; 
