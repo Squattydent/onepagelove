@@ -45,7 +45,7 @@
 			        echo 'Bundle Deal Review';              
 			        } 		        							        																					
 					else {
-			      	echo 'Unique One Page Website Review';						
+			      	echo 'One Page Website Review';						
 					};
 					?>
 
@@ -69,7 +69,9 @@
 								echo $oplreview;
 							}
 							else {
-								echo 'This is an older review. From Feb 2013 onward each One Page Love award featured commentary and a big image.';
+								echo 'This is an older review of the '; 
+								echo the_title();
+								echo ' website. From February 2013 onward each One Page Love award featured additional commentary and a higher resolution website screenshot.';
 							}
 
 						?>

@@ -41,7 +41,7 @@
               echo 'Bundle Deal';              
         }                                    
         else {
-              echo 'unique One Page website ';            
+              echo 'original One Page website ';            
         };
       ?>
         

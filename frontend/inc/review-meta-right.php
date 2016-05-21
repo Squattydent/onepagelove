@@ -98,7 +98,7 @@
 					echo 'Yes, this is a Bundle Deal';              
 				}                  
 				else {
-					echo 'No, this is a unique design';           
+					echo 'No, this is a custom built website';           
 				};
 
 			?>
@@ -161,22 +161,20 @@
 
 		<li>
 
-			<strong>Built by:</strong>  
-
 			<?php
 
 				$dev_name = get_post_meta($post->ID, "dev_name", true);
 				$dev_url = get_post_meta($post->ID, "dev_url", true);
 
 				if ($dev_name != '') {
-					echo '<a href="';
+					echo '<strong>Built by:</strong> <a href="';
 					echo $dev_url;
 					echo '" target="_blank">';
 					echo $dev_name;
 					echo '</a>';
 				}
 				else {
-					echo 'Unknown';
+					echo '';
 				};
 
 			?>
