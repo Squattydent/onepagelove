@@ -58,38 +58,44 @@
 			    </div> 
 
 			    <div class="review-content">
+
+			    	<div id="oplReview">
                                               
-					<?php // One Page Review
+						<?php // One Page Review
 
-						$oplreview = get_post_meta($post->ID, "opl_review", true);
+							$oplreview = get_post_meta($post->ID, "opl_review", true);
 
-						if ($oplreview != '') {
-						echo '<div id="oplReview">';
-						echo '';
-						echo $oplreview;
-						echo '</div>';
-						}
-						else {
-						echo '';
-						}
+							if ($oplreview != '') {
+								echo $oplreview;
+							}
+							else {
+								echo 'This is an older review. From Feb 2013 onward each One Page Love award featured commentary and a big image.';
+							}
 
-					?>
-                   
-					<?php // Build Notes
-	
-						$oplbuild = get_post_meta($post->ID, "opl_build", true);
+						?>
 
-						if ($oplbuild != '') {
-						echo '<div id="oplBuild">';
-						echo '<blockquote>';
-						echo $oplbuild;
-						echo '</blockquote></div>';
-						}
-						else {
-						echo '';
-						}
+					</div>
 
-					?>
+					<div id="oplBuild">
+
+						<blockquote>
+	                   
+							<?php // Build Notes
+			
+								$oplbuild = get_post_meta($post->ID, "opl_build", true);
+
+								if ($oplbuild != '') {
+									echo $oplbuild;
+								}
+								else {
+									echo '';
+								}
+
+							?>
+
+						</blockquote>
+
+					</div>
 
 				</div><!-- .review-content -->
 
