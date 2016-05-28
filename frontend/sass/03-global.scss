@@ -134,18 +134,6 @@ code {
   background: $color-code;
 }
 
-// Text Select 
-::selection {
-  background: $color-main-link; 
-  color: $color-white    ; 
-  text-shadow: none; 
-}
-::-moz-selection {
-  background: $color-main-link; 
-  color: $color-white    ; 
-  text-shadow: none;
-}
-
 // Highlights notice within paragraph text
 .notice {
 	background: #ffc3da; 
@@ -221,6 +209,31 @@ a.noBorder:hover {
 #header-top-mid 							{z-index: 2000}
 #mobile-nav-button 							{z-index: 2000}
 .mobile-navigation 							{z-index: 3000}
+.mobile-navigation 							{z-index: 3000}
+#footer-container 							{z-index: 4000} // I want to hide the floating nav over footer
+
+//-------------------------------------------------------------------------------
+// Text Select
+//-------------------------------------------------------------------------------
+
+
+::selection {
+	background: $color-main-link; 
+	color: $color-white; 
+	text-shadow: none; 
+}
+::-moz-selection {
+	background: $color-main-link; 
+	color: $color-white; 
+	text-shadow: none;
+}
+#header-container ::selection,
+#footer-container ::selection {
+	background: $color-white; 
+	color: #222; 
+}
+
+
 
 //-------------------------------------------------------------------------------
 // Promo 
@@ -295,8 +308,6 @@ a.button-fill {
 .browsing .current, 
 .block-right,
 .review,
-.review .review-meta .review-tags a, 
-.review .review-meta .review-cats a,
 .review-launch a,
 .review .review-meta-right,
 .single-container,
@@ -309,8 +320,6 @@ a.button-fill {
 .footer-promo-buttons a,
 #mc-embedded-subscribe,
 #header-bottom-right .search,
-.opl-ad-img img,
-.opl-ad-img-premium img,
 .gform_body input,
 .gform_wrapper .gfield_password_strength,
 .gform_wrapper .gform_footer input[type=submit],

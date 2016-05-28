@@ -203,6 +203,18 @@
 
 }
 
+// These guys are only show in website footer lists
+ul#nav-subscribe {
+
+	li {
+		&:nth-child(8),
+		&:nth-child(9),
+		&:nth-child(10) {
+			display:none;
+		}
+	}
+}
+
 
 // Hide submit on mobile
 @media (max-width: $bp-mobilesm) {

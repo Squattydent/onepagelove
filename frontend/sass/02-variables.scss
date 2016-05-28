@@ -156,6 +156,8 @@ $rounded-buttons	 	: 2px;
 // Extends
 //-------------------------------------------------------------------------------
 
+// @extend %font-global;
+
 %font-global {
 	font-family: $font-fam-prox;
 	font-size: 100%;
@@ -203,5 +205,20 @@ $rounded-buttons	 	: 2px;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "liga" on;
+}
+
+%button {
+	height: 0.875rem;  // 14
+	font-size: 0.875rem; // 14
+	line-height: 0.875rem; // 14
+	border: 1px solid #ccc; 
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 0.3125rem 0.5625rem; // 5 9
+	text-decoration: none; 
+	margin: 0 $spacing-tiny $spacing-small 0 !important; 
+	white-space: nowrap; 
+	background: none;
+	border-radius: $rounded-corners;
 }
 			

@@ -3,17 +3,24 @@
 //-------------------------------------------------------------------------------
 
 // #container-outer {}
-// 	 #header-top-outer {}
-// 		#header-top {}
-//	 #header-bottom-outer {}
-//		#header-bottom {}			
+
+//   #header-container {}
+// 		 #header-top-outer {}
+// 			#header-top {}
+//		 #header-bottom-outer {}
+//			#header-bottom {}	
+
 //	 #container {}
 //		#content {}
-//	 #footer-top-container {}
-//		#footer-top {}
-//	 #footer-container {}
-//		#footer {}
-//		#footer-bottom {}
+
+//   #footer-container {}
+//		 #footer-quote-container {}
+//			#footer-quote {}
+//		 #footer-promo-container {}
+//			#footer-promo {}
+//	 	#footer-bottom-container {}
+//			#footer-bottom {}
+//			#footer-credits {}
 		
 //-------------------------------------------------------------------------------
 // Widths, margins, padding 
@@ -86,7 +93,7 @@
 	#container {
 		width: $container-standard; 
 		margin: 0 auto; 
-		padding:$spacing-big 0 $spacing-big 0;
+		padding:$spacing-big 0 $spacing-huge 0;
 
 
 		#content {
@@ -129,6 +136,52 @@
 
 	}
 
+	#footer-quote-container {
+		width: 100%;
+		display: flex;
+
+		#footer-quote {
+			width: $container-standard; 
+			margin: 0 auto; 
+			padding: $spacing-big 0 $spacing-big 0;
+			// background: $test2;
+		}
+
+	}
+
+	#footer-promo-container {
+		width: 100%;
+		display: flex;
+		background: $color-header-top;
+
+		#footer-promo {
+			// width: $container-standard; // set in footer.scss
+			margin: 0 auto; 
+			// padding: $spacing-big 0 $spacing-big 0; // no padding needed
+			// background: $test2;
+		}
+
+	}
+
+	#footer-bottom-container {
+		background: #181818;
+		width: 100%;
+
+		#footer-lists { 
+			width: $container-standard; 
+			margin: 0 auto; 
+			padding: $spacing-huge 0 $spacing-big 0;
+			// background: $test1;
+		}
+
+		#footer-credits {
+			width: $container-standard; 
+			margin: 0 auto; 
+			padding: $spacing-big 0 $spacing-big 0;
+			// background: $test1;
+		}
+	}
+
 }
 
 
@@ -149,7 +202,6 @@
 
 @media (max-width: $bp-desksm) {
 
-		
 	#container-outer {
 		width: 100%;
 
@@ -243,6 +295,37 @@
 
 			}
 
+		}
+
+		#footer-quote-container {
+
+			#footer-quote {
+				display: flex; 
+				padding: $spacing-big $spacing-medium;
+			}
+
+		}
+
+		#footer-promo-container {
+
+			#footer-promo {
+				display: flex; 
+				padding: 0 $spacing-medium;
+			}
+
+		}
+
+		#footer-bottom-container {
+
+			#footer-lists { 
+				width: 96%;
+				padding: $spacing-big 2%;
+			}
+
+			#footer-credits {
+				width: 96%; 
+				padding: $spacing-big 2%;
+			}
 		}
 
 	}		
