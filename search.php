@@ -37,15 +37,19 @@
 
 	</div><!--  /.archive-header -->
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<div class="archive-container">
 
-		<?php get_template_part('loop'); ?>
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<?php endwhile; else: ?>
+			<?php get_template_part('loop'); ?>
 
-		<div class="single-container"><p>Sorry, no content matched your criteria:(</p><p>Try use different keywords or browse using the categories.</p></div>
+		<?php endwhile; else: ?>
 
-	<?php endif; ?>
+			<p>Sorry, no content matched your criteria:(</p><p>Try use different keywords or browse using the categories.</p>
+
+		<?php endif; ?>
+
+	</div>
 
 	<?php include ("frontend/inc/pagination.php"); ?>
 

@@ -30,6 +30,7 @@
 			// text-transform: capitalize;
 
 			h1 {
+				@extend %font-heading;
 				color: #333;
 				font-size: 2rem; 
 				line-height: 2rem;
@@ -38,12 +39,16 @@
 
 		.archive-description {
 			color: #777;
-			// max-width: 80%;
-			// margin-right: auto;
-			// margin-left: auto;
+			max-width: 60%;
+			margin-right: auto;
+			margin-left: auto;
 			font-size: 1rem; 
 			line-height: 1.125rem; 
 			font-weight: 300;
+
+			@media (max-width: $bp-desksm) {
+				max-width: 80%;
+			}
 
 			@media (max-width: $bp-tablet) {
 				max-width: none;
