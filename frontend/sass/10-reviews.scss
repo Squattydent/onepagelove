@@ -131,12 +131,14 @@
 			}
 
 			.review-title {
+				@extend %font-heading;
 
 				a {
 					border: none;
 				}
 
 				h1 {
+					@extend %font-heading;
 					font-size: 2.375rem; 
 					line-height: 2.625rem; 
 					margin-bottom: $spacing-medium; 
@@ -232,7 +234,12 @@
 //-------------------------------------------------------------------------------
 
 .similar-title {
-	margin: 40px 0 40px 0;
+	@extend %font-heading;
+	text-align: center;
+	margin: $spacing-big 0 $spacing-medium;
+	font-size: 1.125rem; 
+	line-height: 1.125rem; 
+	font-weight: 300;
 }
 
 //-------------------------------------------------------------------------------

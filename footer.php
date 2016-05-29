@@ -40,53 +40,44 @@
 
 			<div id="footer-lists">
 
-				<div class="footer-column col-one">	
+				<div class="footer-column">	
 
 					<h3>Browse</h3>
 					<?php include('frontend/inc/nav-browse.php'); ?>
 
-				</div><!-- .footer-column -->		
+				</div>	
 
-				<div class="footer-column col-two">
+				<div class="footer-column">	
+
+					<h3>Information</h3>
+					<?php include('frontend/inc/nav-info.php'); ?>
+
+				</div>	
+
+				<div class="footer-column" id="trending">
 
 					<h3>Trending</h3>
 					<?php include('frontend/inc/nav-popular.php'); ?>
 
-				</div><!-- .footer-column -->
+				</div>
 
-				<div class="footer-column col-three">
+				<div class="footer-column">
 
 					<h3>Resources</h3>
 					<?php include('frontend/inc/nav-resources.php'); ?>
 
-				</div><!-- .footer-column -->	
+				</div>
 
-				<div class="footer-column col-four">
+				<div class="footer-column">
 
 					<h3>Connect</h3>
 					<?php include('frontend/inc/nav-subscribe.php'); ?>
 
-				</div><!-- .footer-column -->	
+				</div>
 
 				<div class="clear"></div>
 
 			</div><!-- #footer-lists -->
-
-			<div id="footer-credits">
-
-				<div class="copyright">
-						
-					&copy; 2008-<?php echo date("Y") ?> <a href="<?php print get_home_url(); ?>">One Page Love</a>. All Rights Reserved.
-
-				</div>
-
-				<div class="hitdelete">
-					
-					Made with <span class="heart">&#x2764;</span> in South Africa by <a href="http://hitdelete.com" target="_blank">Hit Delete</a>
-
-				</div>
-				
-			</div>
 
 		</div><!-- #footer-bottom-container -->  
 

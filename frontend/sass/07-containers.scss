@@ -29,61 +29,66 @@
 #container-outer {
 	width: 100%;
 
-	#header-top-outer {
-		width: 100%; 
-		height: $spacing-big; 
-		margin: 0; 
-		padding: 0; 
-		display: block;
+	#header-container {
 
-		#header-top {
-			width: $container-standard; 
-			margin:0 auto; 
-			padding: 0;
+		#header-top-outer {
+			width: 100%; 
+			height: $spacing-big; 
+			margin: 0; 
+			padding: 0; 
+			display: block;
 
-			#header-top-left {
-				float: left;
-				width: 840px; 
-				margin: 0; 
+			#header-top {
+				width: $container-large; 
+				margin:0 auto; 
 				padding: 0;
+
+				#header-top-left {
+					float: left;
+					width: 840px; 
+					margin: 0; 
+					padding: 0;
+				}
+
+				#header-top-right {
+					float: right;
+					width: 400px; 
+					margin: 0; 
+					padding: 0;
+				}	
+
 			}
 
-			#header-top-right {
-				float: right;
-				width: 400px; 
-				margin: 0; 
-				padding: 0;
-			}	
 		}
 
-	}
+		#header-bottom-outer {
+			width: 100%; 
+			height: 3.75rem; // 60px
+			margin: 0; 
+			padding: 0; 
+			display: block;
 
-	#header-bottom-outer {
-		width: 100%; 
-		height: 3.75rem; // 60px
-		margin: 0; 
-		padding: 0; 
-		display: block;
-
-		#header-bottom {
-			width: $container-standard; 
-			margin:0 auto; 
-			padding: 0;
-			color: #FFF;
-
-			#header-bottom-left {
-				float: left;
-				width: 840px; 
-				height: 3.75rem; // 60px
-				margin: 0; 
-				padding: 0;		
-			}
-
-			#header-bottom-right {
-				float: right;
-				width: 400px; 
-				margin: 0; 
+			#header-bottom {
+				width: $container-large; 
+				margin:0 auto; 
 				padding: 0;
+				color: #FFF;
+
+				#header-bottom-left {
+					float: left;
+					width: 840px; 
+					height: 3.75rem; // 60px
+					margin: 0; 
+					padding: 0;		
+				}
+
+				#header-bottom-right {
+					float: right;
+					width: 400px; 
+					margin: 0; 
+					padding: 0;
+				}
+
 			}
 
 		}
@@ -91,27 +96,28 @@
 	}
 
 	#container {
-		width: $container-standard; 
+		width: 100%;
+		// width: $container-large; 
 		margin: 0 auto; 
-		padding:$spacing-big 0 $spacing-huge 0;
+		padding: 0;
 
 
 		#content {
-			width: 1320px; /* 40px greater than #container with hidden overflow from parent */
+			// width: 1320px; /* 40px greater than #container with hidden overflow from parent */
 			padding:0; 
 			margin: 0; 
-			overflow: visible !important;
+			// overflow: visible !important;
 
 			.single-container {
 				width: $container-standard - 80px; // 1200 = 80px less than #container as 40px padding 
-	            margin: $spacing-medium 0 $spacing-big 0;
+	            margin: $spacing-medium auto $spacing-big auto;
 				padding: $spacing-big; 
 				height: auto;			
 			}
 
 			.review {
 				width: $container-standard; /* same as #container with no padding */
-				margin-top: $spacing-medium;
+				margin: $spacing-big auto $spacing-big auto;
 				padding: 0px; /* different to single with big screenshot touching edge */	
 
 				.review-meta {
@@ -136,65 +142,175 @@
 
 	}
 
-	#footer-quote-container {
-		width: 100%;
-		display: flex;
+	#footer-container {
 
-		#footer-quote {
-			width: $container-standard; 
-			margin: 0 auto; 
-			padding: $spacing-big 0 $spacing-big 0;
-			// background: $test2;
+		#footer-quote-container {
+			width: 100%;
+			display: flex;
+
+			#footer-quote {
+				width: $container-large; 
+				margin: 0 auto; 
+				padding: $spacing-big 0 $spacing-big 0;
+				// background: $test2;
+			}
+
 		}
 
-	}
+		#footer-promo-container {
+			width: 100%;
+			display: flex;
+			background: $color-header-top;
 
-	#footer-promo-container {
-		width: 100%;
-		display: flex;
-		background: $color-header-top;
+			#footer-promo {
+				// width: $container-standard; // set in footer.scss
+				margin: 0 auto; 
+				// padding: $spacing-big 0 $spacing-big 0; // no padding needed
+				// background: $test2;
+			}
 
-		#footer-promo {
-			// width: $container-standard; // set in footer.scss
-			margin: 0 auto; 
-			// padding: $spacing-big 0 $spacing-big 0; // no padding needed
-			// background: $test2;
 		}
 
-	}
+		#footer-bottom-container {
+			background: #181818;
+			width: 100%;
 
-	#footer-bottom-container {
-		background: #181818;
-		width: 100%;
+			#footer-lists { 
+				width: $container-large; 
+				margin: 0 auto; 
+				padding: $spacing-huge 0 $spacing-big 0;
+				// background: $test1;
+			}
 
-		#footer-lists { 
-			width: $container-standard; 
-			margin: 0 auto; 
-			padding: $spacing-huge 0 $spacing-big 0;
-			// background: $test1;
 		}
 
-		#footer-credits {
-			width: $container-standard; 
-			margin: 0 auto; 
-			padding: $spacing-big 0 $spacing-big 0;
-			// background: $test1;
-		}
 	}
 
 }
 
 
+
+
+
+
 //-------------------------------------------------------------------------------
-// Bigger Screens 
+// Large Desktop
 //-------------------------------------------------------------------------------	
 
-@media (min-width: 1580px) {
+@media (max-width: $bp-desklg) {
 
-	.single-container {min-height: 800px;}	
+	#container-outer {
+		// width: 100%;
 
-}	
+		#header-container {
 
+			#header-top-outer {
+
+
+				#header-top {
+					width: $container-standard; 
+
+
+					#header-top-left {
+
+					}
+
+					#header-top-right {
+
+					}	
+
+				}
+
+			}
+
+			#header-bottom-outer {
+
+
+				#header-bottom {
+					width: $container-standard; 
+
+
+					#header-bottom-left {
+	
+					}
+
+					#header-bottom-right {
+
+					}
+
+				}
+
+			}
+
+		}
+
+		#container {
+			width: 100%; 
+
+
+
+			#content {
+
+
+				.single-container {
+	
+				}
+
+				.review {
+
+
+					.review-meta {
+
+
+						.review-meta-right {
+
+						}
+
+					}
+
+					.review-screenshot img {
+
+					}
+
+				}		
+
+			}
+
+		}
+
+		#footer-container {
+
+			#footer-quote-container {
+
+
+				#footer-quote {
+					width: $container-standard; 
+				}
+
+			}
+
+			#footer-promo-container {
+
+
+				#footer-promo {
+				}
+
+			}
+
+			#footer-bottom-container {
+
+
+				#footer-lists { 
+					width: $container-standard; 
+				}
+
+			}
+
+		}
+
+	}
+
+}
 
 //-------------------------------------------------------------------------------
 // Small Desktop
@@ -205,63 +321,66 @@
 	#container-outer {
 		width: 100%;
 
-		#header-top-outer {
-			width: 100%; 
-			height: 40px; 
-			margin: 0; 
-			padding: 0; 
-			display: block;
+		#header-container {
 
-			#header-top {
-				width: 96%; 
-				margin:0 auto; 
-				padding: 0;
+			#header-top-outer {
+				width: 100%; 
+				height: 40px; 
+				margin: 0; 
+				padding: 0; 
+				display: block;
 
-				#header-top-left {
-					float: left;
-					width: 70%; 
-					margin: 0; 
+				#header-top {
+					width: 96%; 
+					margin:0 auto; 
 					padding: 0;
-				}
 
-				#header-top-right {
-					float: right;
-					width: 30%; 
-					margin: 0; 
-					padding: 0;
-				}	
-				
-			}
+					#header-top-left {
+						float: left;
+						width: 70%; 
+						margin: 0; 
+						padding: 0;
+					}
 
-		}
-			
+					#header-top-right {
+						float: right;
+						width: 30%; 
+						margin: 0; 
+						padding: 0;
+					}	
 					
-		#header-bottom-outer {
-			width: 100%; 
-			height: 60px; 
-			margin: 0; 
-			padding: 0; 
-			display: block;
-
-			#header-bottom {
-				width: 96%; 
-				margin:0 auto; 
-				padding: 0;
-				color: #FFF;
-
-				#header-bottom-left {
-					float: left;
-					width: 70%; 
-					height: 60px;
-					margin: 0; 
-					padding: 0;		
 				}
 
-				#header-bottom-right {
-					float: right;
-					width: 30%;  
-					margin: 0; 
+			}
+						
+			#header-bottom-outer {
+				width: 100%; 
+				height: 60px; 
+				margin: 0; 
+				padding: 0; 
+				display: block;
+
+				#header-bottom {
+					width: 96%; 
+					margin:0 auto; 
 					padding: 0;
+					color: #FFF;
+
+					#header-bottom-left {
+						float: left;
+						width: 70%; 
+						height: 60px;
+						margin: 0; 
+						padding: 0;		
+					}
+
+					#header-bottom-right {
+						float: right;
+						width: 30%;  
+						margin: 0; 
+						padding: 0;
+					}
+
 				}
 
 			}
@@ -269,16 +388,12 @@
 		}
 
 		#container {
-			width: 100%; 
-			margin: 0; 
-			padding: 40px 0 40px 0;
-			overflow: hidden;
+			// width: 100%; 
+			// margin: 0; 
+			// padding: 40px 0 40px 0;
+			// overflow: hidden;
 
 			#content {
-				width: 96%; 
-				padding:0 2%; 
-				margin: 0 auto; 
-				overflow: hidden !important;
 
 				.single-container {
 					width: 94%;  
@@ -297,35 +412,35 @@
 
 		}
 
-		#footer-quote-container {
+		#footer-container {
 
-			#footer-quote {
-				display: flex; 
-				padding: $spacing-big $spacing-medium;
+			#footer-quote-container {
+
+				#footer-quote {
+					display: flex; 
+					padding: $spacing-big $spacing-medium;
+				}
+
 			}
 
-		}
+			#footer-promo-container {
 
-		#footer-promo-container {
+				#footer-promo {
+					display: flex; 
+					padding: 0 $spacing-medium;
+				}
 
-			#footer-promo {
-				display: flex; 
-				padding: 0 $spacing-medium;
 			}
 
-		}
+			#footer-bottom-container {
 
-		#footer-bottom-container {
+				#footer-lists { 
+					width: 100%;
+					padding: $spacing-big 0;
+				}
 
-			#footer-lists { 
-				width: 96%;
-				padding: $spacing-big 2%;
 			}
 
-			#footer-credits {
-				width: 96%; 
-				padding: $spacing-big 2%;
-			}
 		}
 
 	}		
@@ -342,87 +457,112 @@
 	#container-outer {
 		width: 100%;
 
-		#header-top-outer {
-			width: 100%; 
-			height: 40px; 
-			margin: 0; 
-			padding: 0; 
-			display: block;
+		#header-container {
 
-			#header-top {
-				width: 96%; 
-			    height: 40px; 
-				margin:0 auto; 
-				padding: 0;
+			#header-top-outer {
+				width: 100%; 
+				height: 40px; 
+				margin: 0; 
+				padding: 0; 
+				display: block;
 
-				#header-top-left {
-				    float: left;
-					width: 47%; 
-					height: 40px; 
-					margin: 0; 
+				#header-top {
+					width: 96%; 
+				    height: 40px; 
+					margin:0 auto; 
 					padding: 0;
 
-					#mobile-nav-button {
-						float: left; 
-						position: absolute; 
-						margin: 12px 0 0 0;
+					#header-top-left {
+					    float: left;
+						width: 47%; 
+						height: 40px; 
+						margin: 0; 
+						padding: 0;
 
-						svg {
-							fill: #777;
-						} 
+						#mobile-nav-button {
+							float: left; 
+							position: absolute; 
+							margin: 12px 0 0 0;
+
+							svg {
+								fill: #777;
+							} 
+						}
+
 					}
 
+					#header-top-mid {
+					    float: left;
+						width: 6%;	
+						margin: 0;
+						height: 24px; 
+						padding: 8px 0;				
+						text-align: center;	
+
+					}				
+
+					#header-top-right {
+						float: left;
+						width: 47%; 
+						height: 40px; 
+						margin: 0; 
+						padding: 0;		
+
+					}	
+
 				}
-
-				#header-top-mid {
-				    float: left;
-					width: 6%;	
-					margin: 0;
-					height: 24px; 
-					padding: 8px 0;				
-					text-align: center;	
-
-				}				
-
-				#header-top-right {
-					float: left;
-					width: 47%; 
-					height: 40px; 
-					margin: 0; 
-					padding: 0;		
-
-				}	
 
 			}
 
 		}
 
 		#container {
-			padding-top: 20px;
+
+
+			#content {
+
+				.single-container {
+	
+				}
+
+				.review {
+					margin: 0;		
+				}	
+
+			}
+
+		}
+
+		#footer-container {
+
+			#footer-quote-container {
+
+
+				#footer-quote {
+					
+				}
+
+			}
+
+			#footer-promo-container {
+
+
+				#footer-promo {
+				}
+
+			}
+
+			#footer-bottom-container {
+
+
+				#footer-lists { 
+					padding-bottom: 0;
+				}
+
+			}
+
 		}
 
 	}
 	
-}
-
-// ------------------------------------------------
-// Still sorting
-// ------------------------------------------------ 
-
-@media (max-width: $bp-tablet ) {
-
-	// Kill content padding
-	body.single-post #content {
-		width: 100%; 
-		margin: 0;
-		padding: 0;
-	}
-
-	// But now add padding to similar posts
-	body.single-post .similar {
-		width: 96%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
 }

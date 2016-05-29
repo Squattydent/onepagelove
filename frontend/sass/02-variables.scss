@@ -10,6 +10,7 @@ $spacing-s-m  			: 0.9375rem; // 15px
 $spacing-small  		: 0.625rem;  // 10px
 $spacing-tiny   		: 0.3125rem; // 5px
 
+$container-large		: 1740px;
 $container-standard		: 1280px;
 
 $size-logo				: 1.375rem; // 22px
@@ -83,6 +84,7 @@ $font-fam-bloc			: Palatino Linotype, Palatino, Georgia, Serif;
 // Breakpoints
 //-------------------------------------------------------------------------------
 
+$bp-desklg				: 1800px;
 $bp-desksm 		 	 	: 1430px;
 $bp-notebook 		 	: 1040px;
 $bp-tablet		 		: 840px;
@@ -198,6 +200,7 @@ $rounded-buttons	 	: 2px;
 	line-height: 18px; 
 	text-decoration: none; 
 	letter-spacing: 0;	
+	font-weight: 300;
 } 
 
 %font-smoothing {
@@ -220,5 +223,6 @@ $rounded-buttons	 	: 2px;
 	white-space: nowrap; 
 	background: none;
 	border-radius: $rounded-corners;
+	font-weight: 300;
 }
 			

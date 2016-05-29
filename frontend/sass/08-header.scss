@@ -34,6 +34,7 @@
 			text-transform: uppercase;
 
 			a {
+				@extend %font-heading;
 				color: $color-logo-text;	 
 				font-size:  1.125rem; // 18
 				line-height:  1.25rem; // 20
@@ -242,6 +243,7 @@ ul#nav-subscribe {
 		border: none; 
 
 		a {
+			@extend %font-heading;
 			display: block; 
 			margin: 0 !important;  
 			border: none; 

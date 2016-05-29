@@ -3,7 +3,7 @@
 //---------------------------------------------------------------
 
 #footer-quote-container {
-	background-image: url('http://localhost/wordpress/onepagelove/wp-content/themes/onepagelove/img/screenshot-tile.jpg');
+	background-image: url('https://onepagelove.com/wp-content/uploads/2016/05/screenshot-tile.jpg');
   	background-repeat: repeat; 
 
 	#footer-quote {
@@ -155,23 +155,25 @@
 		}
 
 		.footer-column {
-			flex: 1 1 auto;
+			width: 20%;
 			min-height: auto;
-			margin-bottom: 40px;
+			margin-bottom: $spacing-big;
+			// padding: 0 $spacing-medium;
 
 			@media (max-width: $bp-tablet) { 
-				flex: 1 0 50%;
+				width: 50%;
 			}
 			
 			h3 {
 				text-transform: uppercase; 
-				margin: 0 0 25px 0;
+				margin: 0 0 $spacing-medium $spacing-medium;
 			}
 
 			ul {
-				font-size: 13px; 
-				line-height: 24px; 
+				font-size: 0.8125rem; // 13
+				line-height:  1.5rem; // 24
 				color: #666;
+				padding: 0 0 0 $spacing-medium;
 
 				li a {
 					color: #666;
@@ -180,67 +182,22 @@
 						text-decoration: none;
 						color: $color-main-link;
 					}
+
 				}
-			}
 
-			ul#nav-subscribe { // show these 3 extra items that are hidden on mobile and top menu
-
-				li {
-					&:nth-child(8),
-					&:nth-child(9),
-					&:nth-child(10) {
-						display:block;
-					}
+				li:nth-of-type(1n+9) { // Hide all lists with more than 8 items
+					display: none;
 				}
-			}
-		}
-	}
 
-	#footer-credits {
-		display: flex;
-    	border-top: 1px solid #222;
-    	color: #444;
 
-	    @media (max-width: $bp-tablet) { 
-			flex-direction: column;
-		}
-
-    	div {
-    		width: 50%;
-
-    		@media (max-width: $bp-tablet) { 
-				width: 100%;
-				text-align: center;
-			}
-    	}
-
-    	a {
-    		color: #444;
-
-    		&:hover {
-    			color: #666;
-    		}
-    	}
-
-		.copyright {
-
-		}
-		.hitdelete {
-			text-align: right;
-
-			@media (max-width: $bp-tablet) { 
-				text-align: center;
-				padding-top: $spacing-small;
-			}
-
-			.heart {
-				&:hover {
-					color: $color-main-link;
-					cursor: pointer;
-				}
 			}
 		}
 
+		@media (max-width: $bp-tablet) { // Hide trending column on Tablet
+			#trending {
+				display:none;
+			}
+		}
 	}
 }
 
