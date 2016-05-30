@@ -3,15 +3,11 @@
 
 <head>
 
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 <title>One Page Love</title>
-
-<!-- Meta -->
-<meta charset = "UTF-8" />
-
-<!-- Responsive stylesheet -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- HTTPS referrer tracking -->
 <meta name="referrer" content="always" />
@@ -124,7 +120,7 @@
 						<ul class="account-logged-out">
 
 							<li class="account-login"><a href="<?php print get_home_url(); ?>/submit">Submit</a></li>	
-							<li class="account-join"><a href="https://onepagelove.com/currl-bundle">Start Here</a></li>		
+							<li class="account-join"><a href="<?php print get_home_url(); ?>/currl-bundle">Start Here</a></li>		
 						</ul>	
 
 	                </div>

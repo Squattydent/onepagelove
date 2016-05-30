@@ -143,6 +143,7 @@
 	}
 
 	#footer-container {
+		position: relative; // for the z-index
 
 		#footer-quote-container {
 			width: 100%;

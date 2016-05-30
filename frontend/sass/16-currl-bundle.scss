@@ -14,7 +14,7 @@
 .currl-bundle {
 	width: $container-standard; 
 	max-width: 100%;
-    margin: $spacing-medium 0 $spacing-big 0;
+    margin: $spacing-medium auto $spacing-big auto;
     text-align: center;
     background-color: #FFF;
 	padding: 0; 
@@ -26,6 +26,10 @@
     background-position: bottom; 
     background-repeat: no-repeat; 
     background-size: 100%;  
+
+    @media (max-width: $bp-tablet) {
+        margin-top: 0;
+    }   
 
     // ------------------------------------------------
 	// Globals
