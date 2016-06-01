@@ -136,8 +136,6 @@ $test3		 			: #33ccff;
 $test4		 			: #ccff33;
 $test5		 			: #ffcc33;
 
-
-
 //-------------------------------------------------------------------------------
 // Misc
 //-------------------------------------------------------------------------------
@@ -180,6 +178,7 @@ $rounded-buttons	 	: 2px;
 
 %font-bloc {
 	font-family: $font-fam-bloc;
+	font-style: italic;
 } 
 
 %pagination-browse {
