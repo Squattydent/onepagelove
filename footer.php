@@ -22,15 +22,15 @@
 
 				<div class="promo-info">
 
-					<span class="promo-info-title"><a href="https://onepagelove.com/currl-bundle">The Personal Theme Bundle</a></span>
+					<span class="promo-info-title"><a href="<?php print get_home_url(); ?>/currl-bundle">The Personal Theme Bundle</a></span>
 
-					<span class="promo-info-description"><a href="https://onepagelove.com/currl-bundle">3 minimal One Page WordPress themes to create a beautiful online presence.</a></span>
+					<span class="promo-info-description"><a href="<?php print get_home_url(); ?>/currl-bundle">3 minimal One Page WordPress themes to create a beautiful online presence.</a></span>
 
 				</div>
 
-				<div class="promo-image"><a href="https://onepagelove.com/currl-bundle"><img src="<?php echo get_template_directory_uri(); ?>/img/currl-bundle.jpg" alt="Personal Theme Bundle" /></a></div>
+				<div class="promo-image"><a href="<?php print get_home_url(); ?>/currl-bundle"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-currl-bundle.jpg" alt="Personal Theme Bundle" /></a></div>
 
-				<div class="promo-buttons"><a href="https://onepagelove.com/currl-bundle">View Demo</a>  <a href="https://onepagelove.com/currl-bundle">See Features</a></div>
+				<div class="promo-buttons"><a href="<?php print get_home_url(); ?>/currl-bundle">View Demo</a>  <a href="<?php print get_home_url(); ?>/currl-bundle">See Features</a></div>
 
 			</div><!-- /#footer-promo -->		
 			

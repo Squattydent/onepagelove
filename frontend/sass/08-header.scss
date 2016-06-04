@@ -137,6 +137,12 @@
 			}
 
 			&#nav-trending {
+				@media (max-width: 1250px) {
+					display: none;
+				}
+			}
+
+			&#nav-subscribe {
 				@media (max-width: 1100px) {
 					display: none;
 				}

@@ -21,7 +21,7 @@
       <div class="thumb-image">
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
           <?php 
-          if ( in_category(array("Blog","Resources","Interviews","Round Ups","Sponsored"))) { //  
+          if ( in_category(array("Blog","Resources","Interviews","Round Ups","Sponsored","Website Design Elements"))) { //  
             the_post_thumbnail();   
           } else {
           	$string = get_the_content();   

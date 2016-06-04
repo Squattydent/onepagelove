@@ -235,6 +235,7 @@
 
 .similar-title {
 	@extend %font-heading;
+	letter-spacing: -0.5px;
 	text-align: center;
 	margin: $spacing-big 0 $spacing-medium;
 	font-size: 1.125rem; 

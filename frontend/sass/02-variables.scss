@@ -79,13 +79,16 @@ $size-arrow-tablet		: 1.875rem; // 30px
 $font-fam-prox			: "proxima-nova", Arial, sans-serif;
 $font-fam-prox-soft		: "proxima-nova-soft", "Arial Rounded MT", Arial, sans-serif;
 $font-fam-bloc			: Palatino Linotype, Palatino, Georgia, Serif;
+$font-fam-geor			: Georgia, Serif;
 
 //-------------------------------------------------------------------------------
 // Background Images
 //-------------------------------------------------------------------------------
 
-$background-quotes		: 'https://onepagelove.com/wp-content/themes/onepagelove/img/screenshot-tile.jpg';
-$background-icon		: 'https://onepagelove.com/wp-content/themes/onepagelove/img/pattern-icons.png';
+$background-quotes			: 	'https://onepagelove.com/wp-content/themes/onepagelove/img/screenshot-tile.jpg';
+$background-icon			: 	'https://onepagelove.com/wp-content/themes/onepagelove/img/pattern-icons.png';
+$background-bundle-intro	:	'https://onepagelove.com/wp-content/themes/onepagelove/img/currl-bundle-intro.jpg';
+$background-bundle-footer	:	'https://onepagelove.com/wp-content/themes/onepagelove/img/currl-bundle-footer.jpg';
 
 //-------------------------------------------------------------------------------
 // Breakpoints
@@ -163,7 +166,13 @@ $rounded-buttons	 	: 2px;
 // Extends
 //-------------------------------------------------------------------------------
 
-// @extend %font-global;
+// @extend %font-smoothing;
+%font-smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "liga" on;
+}
 
 %font-global {
 	font-family: $font-fam-prox;
@@ -190,6 +199,11 @@ $rounded-buttons	 	: 2px;
 	font-style: italic;
 } 
 
+%font-g {
+	font-family: $font-fam-geor;
+	@extend %font-smoothing;
+}
+
 %pagination-browse {
 	display: inline-block; 
 	width: 125px; 
@@ -210,14 +224,6 @@ $rounded-buttons	 	: 2px;
 	letter-spacing: 0;	
 	font-weight: 300;
 } 
-
-// @extend %font-smoothing;
-%font-smoothing {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
-	-moz-font-feature-settings: "liga" on;
-}
 
 %button {
 	height: 0.875rem;  // 14
@@ -248,8 +254,62 @@ $rounded-buttons	 	: 2px;
 
 // @extend %archive-title-burst;
 %archive-title-burst {
-background: radial-gradient(ellipse at center,  rgba(226,226,226,0.8) 0%,rgba(226,226,226,0.4) 50%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce2e2e2', endColorstr='#33e2e2e2',GradientType=1 );
-
+	background: radial-gradient(ellipse at center,  rgba(226,226,226,0.8) 0%,rgba(226,226,226,0.4) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce2e2e2', endColorstr='#33e2e2e2',GradientType=1 );
 }
-			
+
+// Elements, Pages and Currl Bundle
+
+%section-inner-grey {
+	background: #f6f6f6; // Old browsers 
+	background: -moz-linear-gradient(top,  #f6f6f6 0%, #ffffff 100%); // FF3.6-15 
+	background: -webkit-linear-gradient(top,  #f6f6f6 0%,#ffffff 100%); // Chrome10-25,Safari5.1-6 
+	background: linear-gradient(to bottom,  #f6f6f6 0%,#ffffff 100%); //  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0 ); // IE6-9 
+}		
+
+%section-tagline {
+    @extend %font-g;
+    color: #999;
+    margin-bottom: $spacing-medium;
+    font-style: italic;     
+    a {
+        color: #999;
+    }   
+    a:hover {
+        color: $color-main-link;
+    }
+}
+
+%section-title {
+	font-weight: 600;
+	font-size: 5rem;
+	line-height: 5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.125rem;
+	margin-bottom: $spacing-big;
+    @media (max-width: $bp-tablet) {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    @media (max-width: $bp-mobile) {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+%section-description {
+    @extend %font-smoothing;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    display: block;
+    width: 80%; 
+    margin: 0 auto $spacing-huge auto;
+    max-width: 760px;
+    text-align: center;
+    color: #999;
+    @media (max-width: $bp-tablet) {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+}

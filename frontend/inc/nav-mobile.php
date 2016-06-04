@@ -18,6 +18,12 @@
 
 	</li> 
 
+	<li><a href="#">Website Design Elements</a>
+
+		<?php include('nav-elements.php'); ?>                     
+
+	</li> 
+
 	<li><a href="#">Resources</a>
 
 		<?php include('nav-resources.php'); ?>	

@@ -112,7 +112,7 @@ Template Name: Currl Bundle
 
 	</div>
 
-	<img src="https://onepagelove.com/wp-content/uploads/2016/05/alto.jpg" alt="Alto WordPress Theme by Currl" />
+	<img src="<?php echo get_template_directory_uri(); ?>/img/currl-bundle-alto.jpg" alt="Alto WordPress Theme by Currl" />
 
 	<div class="section section-padding section-theme theme-verb">
 
@@ -135,7 +135,7 @@ Template Name: Currl Bundle
 
 	</div>
 
-	<img src="https://onepagelove.com/wp-content/uploads/2016/05/verb.jpg" alt="Verb WordPress Theme by Currl" />
+	<img src="<?php echo get_template_directory_uri(); ?>/img/currl-bundle-verb.jpg" alt="Verb WordPress Theme by Currl" />
 
 	<div class="section section-padding section-theme theme-elon">
 
@@ -158,7 +158,7 @@ Template Name: Currl Bundle
 
 	</div>	
 
-	<img src="https://onepagelove.com/wp-content/uploads/2016/05/elon.jpg" alt="Elon WordPress Theme by Currl" />
+	<img src="<?php echo get_template_directory_uri(); ?>/img/currl-bundle-elon.jpg" alt="Elon WordPress Theme by Currl" />
 
 	<div class="section section-padding section-faq" id="title-faq">
 

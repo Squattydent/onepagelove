@@ -134,6 +134,11 @@
 	        echo 'You are browsing posts by One Page Love Sponsors';														
 			}
 
+      		// Website Design Elements			
+			elseif (is_category('Website Design Elements')) {
+	        echo 'You are browsing Website Design Elements';														
+			}
+
       		// Remaining One Page Gallery categories			
 			elseif (is_archive()) {
           	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' One Page ';							

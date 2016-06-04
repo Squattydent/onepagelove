@@ -1,14 +1,5 @@
 // ------------------------------------------------
-// Variables
-// ------------------------------------------------ 
-
-%font-g {
-	font-family: Georgia, Serif;
-	@extend %font-smoothing;
-}
-
-// ------------------------------------------------
-// Styles
+// Currl Bundle
 // ------------------------------------------------ 
 
 .currl-bundle {
@@ -22,7 +13,7 @@
 	font-size: 1rem;
 	line-height: 1rem;
 	min-height: 1000px;
-    background-image: url("https://onepagelove.com/wp-content/uploads/2016/05/footer.jpg");
+    background-image: url($background-bundle-footer);
     background-position: bottom; 
     background-repeat: no-repeat; 
     background-size: 100%;  
@@ -52,39 +43,11 @@
         // ------------------------------------------------ 
 
     	.section-tagline {
-    		@extend %font-g;
-    		color: #999;
-    		margin-bottom: $spacing-medium;
-     		font-style: italic;   	
-
-            a {
-                color: #999;
-            }	
-
-            a:hover {
-                color: $color-main-link;
-            }
-
+            @extend %section-tagline;
     	}
     	
     	.section-title {
-    		font-weight: 600;
-    		font-size: 5rem;
-    		line-height: 5rem;
-    		text-transform: uppercase;
-    		letter-spacing: 0.125rem;
-    		margin-bottom: $spacing-big;
-
-                @media (max-width: $bp-tablet) {
-                    font-size: 4rem;
-                    line-height: 4rem;
-                }
-
-                @media (max-width: $bp-mobile) {
-                    font-size: 3rem;
-                    line-height: 3rem;
-                }
-
+            @extend %section-title;
     	}
 
         // ------------------------------------------------
@@ -187,12 +150,8 @@
         }
 
     	.inner-grey {
-    		padding-top: $spacing-huge;
-			background: #f6f6f6; /* Old browsers */
-			background: -moz-linear-gradient(top,  #f6f6f6 0%, #ffffff 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top,  #f6f6f6 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom,  #f6f6f6 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+            padding-top: $spacing-huge;
+            @extend %section-inner-grey;
 		}
 
     }
@@ -205,7 +164,7 @@
     .section-intro {
     	padding-top: $spacing-huge;
     	padding-bottom: 500px;
-		background-image: url("https://onepagelove.com/wp-content/uploads/2016/06/currl-bundle-37.jpg");
+		background-image: url($background-bundle-intro);
     	background-position: bottom; 
     	background-repeat: no-repeat; 
     	background-size: 100%;  
@@ -226,21 +185,7 @@
 				max-width: 760px;
     		}
     		.intro-copy {
-	    		@extend %font-smoothing;
-	    		font-size: 2.25rem;
-	    		line-height: 3rem;
-	    		display: block;
-				width: 80%; 
-				margin: 0 auto $spacing-huge auto;
-				max-width: 760px;
-				text-align: center;
-				color: #999;
-
-                @media (max-width: $bp-tablet) {
-                    font-size: 1.5rem;
-                    line-height: 1.875rem;
-                }
-
+                @extend %section-description;
     		}
     				
     }

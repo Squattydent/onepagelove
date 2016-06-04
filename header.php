@@ -79,19 +79,7 @@
 
 					<li><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a>
 
-						<ul>
-
-							<li><a href="<?php print get_home_url(); ?>">Go Home</a></li>
-							<li><a href="<?php print get_home_url(); ?>/about">About</a></li>
-							<li><a href="<?php print get_home_url(); ?>/go/feedback">Get Feedback</a></li> 
-							<li><a href="<?php print get_home_url(); ?>/submit">Submit</a></li>
-							<li><a href="<?php print get_home_url(); ?>/advertise">Advertise</a></li>
-							<li><a href="<?php print get_home_url(); ?>/what-exactly-is-a-one-page-website">One Page?</a></li> 
-
-						</ul>
-
-
-
+					<?php include('frontend/inc/nav-home.php'); ?>	
 
 					</li>
 				
@@ -112,14 +100,20 @@
     					<?php include('frontend/inc/nav-templates.php'); ?>     
 
 		             </li> 
-		
+
+		            <li class="nav-wide"><a href="#">Elements</a>
+
+    					<?php include('frontend/inc/nav-elements.php'); ?>     
+
+		             </li> 
+
 		             <li class="nav-wide"><a href="#">Resources</a>
 
 						<?php include('frontend/inc/nav-resources.php'); ?>	
 
 				 	 </li>			
 											   
-		             <li><a href="#">Subscribe</a>
+		             <li id="nav-subscribe"><a href="#">Subscribe</a>
 
 						<?php include('frontend/inc/nav-subscribe.php'); ?>
 
