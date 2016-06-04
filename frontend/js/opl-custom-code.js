@@ -13,7 +13,7 @@ $(document).ready(function(){
 // ------------------------------------------------------------------------
 
 function toggleNav() {
-	var ele = document.getElementById("toggle-mobile-navigation");
+	var ele = document.getElementById("mobile-navigation-toggle");
 	var text = document.getElementById("mobile-nav-button-link");
 	if(ele.style.display == "block") {
     		ele.style.display = "none";

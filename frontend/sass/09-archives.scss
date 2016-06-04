@@ -9,31 +9,28 @@
 	align-items: center;	
 	text-align: center;
 	// background: $test3;
+	@extend %archive-title-burst;
+	
 
 	.archive-header-info {
 		text-shadow:0 1px 0 #FFF; 
 		color: #333;
 		width: 100%;
 		text-align: center;
-		padding: $spacing-big $spacing-medium $spacing-small $spacing-medium;
-		
+		padding: $spacing-medium $spacing-medium $spacing-small $spacing-medium;
 
 		@media (max-width: $bp-mobile) {
 			text-align: left;
+			padding-top: $spacing-small;
 		}	
 
 		.archive-title {
 			@extend %font-heading;
 			margin-bottom: $spacing-small;
-			font-size: 2rem; 
-			line-height: 2rem;
-			// text-transform: capitalize;
 
 			h1 {
 				@extend %font-heading;
 				color: #333;
-				font-size: 2rem; 
-				line-height: 2rem;
 			}
 		}
 
@@ -42,8 +39,8 @@
 			max-width: 60%;
 			margin-right: auto;
 			margin-left: auto;
-			font-size: 1rem; 
-			line-height: 1.125rem; 
+			font-size: 1.25rem; 
+			line-height: 1.5rem; 
 			font-weight: 300;
 
 			@media (max-width: $bp-desksm) {
@@ -90,6 +87,7 @@
 	margin: $spacing-medium; // 20
 	text-shadow: none; 
 	padding: 0;
+	border-radius: $rounded-corners;
 	// border: none;
 
 	@media (max-width: $bp-desklg) {
@@ -173,6 +171,7 @@
 			margin: 0; 
 			width: 100%; 
 			height: auto;
+			@extend %border-rounded-top;
 
 		}
 

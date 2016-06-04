@@ -27,6 +27,7 @@
 		'umbril.com for 	$149',
 		'warked.com  for 	$149',
 		'yukut.com	 for $199',
+		'kwikzo.com for $625',
 		'yumow.com for 	$199' // no comma
 
 		);

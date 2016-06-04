@@ -5,10 +5,12 @@
 // #container-outer {}
 
 //   #header-container {}
-// 		 #header-top-outer {}
-// 			#header-top {}
-//		 #header-bottom-outer {}
-//			#header-bottom {}	
+// 		#header {}
+//			#header-logo {}
+// 			#header-navigation {}
+//		 	#header-search {}
+//			#header-button {}	
+//		#mobile-navigation-toggle {}
 
 //	 #container {}
 //		#content {}
@@ -30,64 +32,39 @@
 	width: 100%;
 
 	#header-container {
+		width: 100%; 
+		height: 3.75rem; // 60px
+		margin: 0; 
+		padding: 0; 
+		display: block;
 
-		#header-top-outer {
-			width: 100%; 
-			height: $spacing-big; 
-			margin: 0; 
-			padding: 0; 
-			display: block;
+		#header {
+			// width: $container-large; 
+			margin:0 auto; 
+			padding: $spacing-small $spacing-medium;
+			color: #FFF;
 
-			#header-top {
-				width: $container-large; 
-				margin:0 auto; 
-				padding: 0;
 
-				#header-top-left {
-					float: left;
-					width: 840px; 
-					margin: 0; 
-					padding: 0;
-				}
-
-				#header-top-right {
-					float: right;
-					width: 400px; 
-					margin: 0; 
-					padding: 0;
-				}	
+			#header-logo {
 
 			}
 
-		}
+			#header-navigation {
+				float: left;
+				// width: 840px; 
+				// height: 3.75rem; // 60px
+				margin: 0; 
+				padding: 0;		
+			}
 
-		#header-bottom-outer {
-			width: 100%; 
-			height: 3.75rem; // 60px
-			margin: 0; 
-			padding: 0; 
-			display: block;
-
-			#header-bottom {
-				width: $container-large; 
-				margin:0 auto; 
+			#header-search {
+				float: right;
+				width: 18.75rem;
+				margin: 0; 
 				padding: 0;
-				color: #FFF;
+			}
 
-				#header-bottom-left {
-					float: left;
-					width: 840px; 
-					height: 3.75rem; // 60px
-					margin: 0; 
-					padding: 0;		
-				}
-
-				#header-bottom-right {
-					float: right;
-					width: 400px; 
-					margin: 0; 
-					padding: 0;
-				}
+			#header-button {
 
 			}
 
@@ -96,6 +73,8 @@
 	}
 
 	#container {
+		background-image: url($background-icon);
+  		background-repeat: repeat-x; 
 		width: 100%;
 		// width: $container-large; 
 		margin: 0 auto; 
@@ -104,7 +83,7 @@
 
 		#content {
 			// width: 1320px; /* 40px greater than #container with hidden overflow from parent */
-			padding:0; 
+			padding: $spacing-big 0 0 0; 
 			margin: 0; 
 			// overflow: visible !important;
 
@@ -117,7 +96,7 @@
 
 			.review {
 				width: $container-standard; /* same as #container with no padding */
-				margin: $spacing-big auto $spacing-big auto;
+				margin: 0 auto $spacing-big auto;
 				padding: 0px; /* different to single with big screenshot touching edge */	
 
 				.review-meta {
@@ -205,43 +184,20 @@
 
 		#header-container {
 
-			#header-top-outer {
+			#header {
+				// width: $container-standard; 
 
+				#header-navigation{
 
-				#header-top {
-					width: $container-standard; 
+				}
 
-
-					#header-top-left {
-
-					}
-
-					#header-top-right {
-
-					}	
+				#header-search {
 
 				}
 
 			}
 
-			#header-bottom-outer {
-
-
-				#header-bottom {
-					width: $container-standard; 
-
-
-					#header-bottom-left {
-	
-					}
-
-					#header-bottom-right {
-
-					}
-
-				}
-
-			}
+		
 
 		}
 
@@ -324,63 +280,15 @@
 
 		#header-container {
 
-			#header-top-outer {
-				width: 100%; 
-				height: 40px; 
-				margin: 0; 
-				padding: 0; 
-				display: block;
 
-				#header-top {
-					width: 96%; 
-					margin:0 auto; 
-					padding: 0;
+			#header {
 
-					#header-top-left {
-						float: left;
-						width: 70%; 
-						margin: 0; 
-						padding: 0;
-					}
 
-					#header-top-right {
-						float: right;
-						width: 30%; 
-						margin: 0; 
-						padding: 0;
-					}	
-					
+				#header-navigation {
 				}
 
-			}
-						
-			#header-bottom-outer {
-				width: 100%; 
-				height: 60px; 
-				margin: 0; 
-				padding: 0; 
-				display: block;
-
-				#header-bottom {
-					width: 96%; 
-					margin:0 auto; 
-					padding: 0;
-					color: #FFF;
-
-					#header-bottom-left {
-						float: left;
-						width: 70%; 
-						height: 60px;
-						margin: 0; 
-						padding: 0;		
-					}
-
-					#header-bottom-right {
-						float: right;
-						width: 30%;  
-						margin: 0; 
-						padding: 0;
-					}
+				#header-search {
+					width: 12.5rem; // 200
 
 				}
 
@@ -389,10 +297,7 @@
 		}
 
 		#container {
-			// width: 100%; 
-			// margin: 0; 
-			// padding: 40px 0 40px 0;
-			// overflow: hidden;
+
 
 			#content {
 
@@ -448,6 +353,36 @@
 
 }
 
+//-------------------------------------------------------------------------------
+// Notebook
+//-------------------------------------------------------------------------------	
+
+@media (max-width: $bp-notebook) {
+
+	#container-outer {
+
+		#header-container {
+
+
+			#header {
+
+
+				#header-navigation {
+				}
+
+				#header-search {
+					width: 9.375rem; // 150
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
 
 //-------------------------------------------------------------------------------
 // Tablet 
@@ -459,62 +394,7 @@
 		width: 100%;
 
 		#header-container {
-
-			#header-top-outer {
-				width: 100%; 
-				height: 40px; 
-				margin: 0; 
-				padding: 0; 
-				display: block;
-
-				#header-top {
-					width: 96%; 
-				    height: 40px; 
-					margin:0 auto; 
-					padding: 0;
-
-					#header-top-left {
-					    float: left;
-						width: 47%; 
-						height: 40px; 
-						margin: 0; 
-						padding: 0;
-
-						#mobile-nav-button {
-							float: left; 
-							position: absolute; 
-							margin: 12px 0 0 0;
-
-							svg {
-								fill: #777;
-							} 
-						}
-
-					}
-
-					#header-top-mid {
-					    float: left;
-						width: 6%;	
-						margin: 0;
-						height: 24px; 
-						padding: 8px 0;				
-						text-align: center;	
-
-					}				
-
-					#header-top-right {
-						float: left;
-						width: 47%; 
-						height: 40px; 
-						margin: 0; 
-						padding: 0;		
-
-					}	
-
-				}
-
-			}
-
+			
 		}
 
 		#container {

@@ -6,12 +6,12 @@
 
 				 <div class="archive-header-info">
 
-					<div class="archive-title">The ultimate showcase of <?php include("frontend/inc/random-naming-intro.php"); ?> One Page websites.</div>
+					<div class="archive-title">The ultimate showcase of One Page websites.</div>
 
 					<div class="archive-description">
 						<p>Browse <a href="<?php print get_home_url(); ?>/gallery" title="Browse Beautiful One Page Websites">One Page Websites</a>, 
 						find <a href="<?php print get_home_url(); ?>/templates" title="Find One Page Website Templates and Themes">One Page Templates</a> 
-						or explore <a href="<?php print get_home_url(); ?>/resources" title="Explore One Page Website Design and Development Resources">Development Resources</a>.</p>
+						or get <a href="<?php print get_home_url(); ?>/hosting" title="Get One Page Website Hosting">Website Hosting</a>.</p>
 					</div>
 
 				 </div><!--  /.archive-header-info -->

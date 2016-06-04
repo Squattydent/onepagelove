@@ -1,75 +1,96 @@
+
 //-------------------------------------------------------------------------------
-// Header - Top Left - Logo + Meta Nav
+// Mobile Nav Icon
 //-------------------------------------------------------------------------------
 
-	//-------------------------------------------------------------------------------
-	// Logo
-	//-------------------------------------------------------------------------------
+#header-button {
+	float: right;
+	display: none;
+	margin: $spacing-small 0 0 0; 
 
-	#header-top-left .header-logo {
+	svg {
+		fill: #CCC;
+	}
+}
+
+// see bottom of this file for mobile nav stuff
+#mobile-navigation-toggle {
+	display: none;
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Logo
+//-------------------------------------------------------------------------------
+
+#header-logo {
+	float: left; 
+	height: 1.875rem; // 30 
+	margin: 0.375rem 2.5rem 0 0; 
+	// background: $test1;
+
+	@media (max-width: 1000px) {
+		margin-right: 0.875rem;
+	}
+
+	.header-logo-heart {
 		float: left; 
-		height: 1.875rem; // 30 
-		margin: 0.375rem 0.9375rem 0 0; // 6 15 0 0
+		height: $size-logo; 
+		width: $size-logo; 
+		background: url('https://onepagelove.com/wp-content/uploads/2014/01/one-page-love-heart-logo.png') left top no-repeat; 
+		background-size: $size-logo $size-logo; 
 
-		.header-logo-heart {
-			float: left; 
+		a {
 			height: $size-logo; 
 			width: $size-logo; 
-			background: url('https://onepagelove.com/wp-content/uploads/2014/01/one-page-love-heart-logo.png') left top no-repeat; 
-			background-size: $size-logo $size-logo; 
-
-			a {
-				height: $size-logo; 
-				width: $size-logo; 
-				display: block; 
-				padding: 0;
-			}
-
-		}
-
-		.header-logo-name {
-			float: left;
-			height: $size-logo; 
-			margin: 0.1875rem 0 0 0.25rem; // 3 0 0 4
-			text-transform: uppercase;
-
-			a {
-				@extend %font-heading;
-				color: $color-logo-text;	 
-				font-size:  1.125rem; // 18
-				line-height:  1.25rem; // 20
-				text-shadow: 0 1px 0 #000;
-				font-weight: 600; 
-				letter-spacing: 0;
-			}
-
-			a:hover {
-				text-decoration: none;
-			}
+			display: block; 
+			padding: 0;
 		}
 
 	}
 
-	//-------------------------------------------------------------------------------
-	// Mobile Header Nav
-	//-------------------------------------------------------------------------------
+	.header-logo-name {
+		float: left;
+		height: $size-logo; 
+		margin: 0.1875rem 0 0 0.25rem; // 3 0 0 4
+		text-transform: uppercase;
 
-	// hide when not on mobile lolz
-	#mobile-nav-button {
-		display: none;
+		a {
+			@extend %font-heading;
+			color: $color-logo-text;	 
+			font-size:  1.125rem; // 18
+			line-height:  1.25rem; // 20
+			text-shadow: 0 1px 0 #000;
+			font-weight: 600; 
+			letter-spacing: 0;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
 	}
 
-	// see bottom of this file for mobile nav stuff
+}
+
+//-------------------------------------------------------------------------------
+// Header - Bottom Left - Main Nav
+//-------------------------------------------------------------------------------
+
+#header-navigation {
+	float: left;
+	// background: $test2;
 
 	//-------------------------------------------------------------------------------
-	// Meta Navigation
+	// Main Navigation
 	//-------------------------------------------------------------------------------
 
-	#header-top-left  ul {
+	ul {
+		@extend %font-smoothing;
 		margin: 0; 
 		padding: 0; 
 		list-style: none; 
-		text-shadow: none; 
+		text-shadow: none;
 
 		li {
 			display: block; 
@@ -79,62 +100,88 @@
 			padding: 0;
 			border: none; 
 
-			ul {
+			a { // Main Navigation
+				// @extend %font-heading;
+				display: block; 
+				margin: 0 !important;  
+				border: none; 
+				text-decoration: none; 
+				height: 1.25rem; // 20
+				padding: 0.625rem 2.813rem 1.25rem 0.3125rem; // 10 45 20 5
+				white-space: nowrap;
+				color: #999; // parent link color
+				font-size: 1rem; // 16
+				line-height: 1rem; // 16
+				letter-spacing: 0; 
+				font-weight: 600;
+
+				@media (max-width: 1000px) {
+
+					padding-right: 0.875rem;
+					padding-left:  0.875rem;
+
+				}
+			} 
+
+			&:last-child a {
+				padding-right: 0;
+			}
+
+			a:hover {
+				text-decoration: none;
+				color: #CCC; // parent link color on hover 
+			}
+
+			#nav-subscribe li:nth-of-type(1n+8) { // Hide all lists with more than 7 items
 				display: none;
-				left: -0.3125rem;
-				background: $color-header-top;  // dropdown background
+			}
+
+			&#nav-trending {
+				@media (max-width: 1100px) {
+					display: none;
+				}
+			}
+
+			ul {
+				left: -0.9375rem; // -15
+				padding-bottom: 0.625rem;
+				background: $color-header-bottom; //  dropdown background 
+				@extend %border-rounded-bottom;
 
 				li {
 					width: 8.125rem; // 130
 					padding: 0; 
-					background-clip: padding-box; 
+					background-clip: padding-box;
 
 					a {
-						height: 1rem; // 16
+						height: 1rem; 
 						padding: 0.8125rem 1.25rem 0.6875rem 1.25rem; // 13 20 11 20
-						color: #777 !important; // dropdown list item link color
+						color: #777 !important; //  dropdown list item link color
+						font-size: 0.875rem; // 14
+						line-height: 0.875rem; // 14
+						letter-spacing: 0; 
+						font-weight: 600;
+
 					}
+
 				}
 
 				li:hover {
 					padding: 0;
 				}
 
-				ul {
-					li {
-						display: none;
-					}
+				ul li {
+					display: none;
 				}
 
-			}
-
-			a {
-				display: block; 
-				margin: 0 !important;  
-				border: none; 
-				text-decoration: none; 
-				height: 1rem; // 16
-				padding: 0.8125rem 0.9375rem 0.6875rem 0.9375rem; // 13 15 11 15
-				white-space: nowrap;
-				color: #555; // parent link color 
-				font-weight: 600;
-				font-size: 0.75rem; // 12
-				line-height: 0.75rem; 
-				letter-spacing: 0;
-			} 
-
-			a:hover {
-				text-decoration: none;
-				color: $color-main-link; // parent link color on hover 
 			}
 
 		}
 
 		li:hover {
-
 			a {
 				background-position: 0 0; 
-				color: $color-main-link; // parent link color when hovering on dropdown 
+				color: #CCC // parent link color when hovering on dropdown 
 			}
 			ul {
 				display: block; 
@@ -144,227 +191,57 @@
 				float: none;
 
 				a:hover { // dropdown list item background & link color on hover
-					background: $color-main-link !important; 
-					color: #FFF !important;
+					background: $color-main-link; 
+					color: $color-white !important;
 				}
+
+				a.sub-r:hover {background: $color-rss;}
+				a.sub-h:hover {background: $color-producthunt;}
+				a.sub-f:hover {background: $color-facebook;}
+				a.sub-t:hover {background: $color-twitter;}
+				a.sub-g:hover {background: $color-googleplus;}
+				a.sub-p:hover {background: $color-pinterest;}
 
 			}
 
 		}
 
-	}
-
-//-------------------------------------------------------------------------------
-// Header - Top Right - Buttons
-//-------------------------------------------------------------------------------
-
-#header-top-right {
-	position: relative;
-	text-align: right;
-
-	ul.account-logged-out {
-		margin-top: 0.75rem; // 12
-
-		@media (max-width: $bp-tablet) {
-			margin-top: 12px; // too small with REMs
-		}
-
-		@media (max-width: $bp-mobile) {
-			margin-top: 14px; // too small with REMs
-		}
-
-		li {
-			display: inline-block; 
-			margin-left: 0.625rem; // 10
-
-			a {
-				padding: 0.125rem 0.25rem; // 2 4
-				text-transform: uppercase;
-				font-size: 0.625rem; // 10
-				letter-spacing: 0.03125rem; // 0.5
-
-				@media (max-width: $bp-mobile) {
-					padding: 2px 4px; // too small with REMs
-					font-size: 10px; // too small with REMs
-				}
-			}
-
-		}
-
-		li.account-login a {
-			background: #333; 
-			color: #999;
-		}
-
-		li.account-join a {
-			background: $color-main-link; 
-			color: $color-white;
-		}
-	}
-
-}
-
-// These guys are only show in website footer lists
-ul#nav-subscribe {
-
-	li {
-		&:nth-child(8),
-		&:nth-child(9),
-		&:nth-child(10) {
-			display:none;
-		}
-	}
-}
-
-
-// Hide submit on mobile
-@media (max-width: $bp-mobilesm) {
-
-	li.account-login {display: none !important;}
-
-}
-
-//-------------------------------------------------------------------------------
-// Header - Bottom Left - Main Nav
-//-------------------------------------------------------------------------------
-
-#header-bottom-left  ul {
-	margin: 0; 
-	padding: 0; 
-	list-style: none; 
-	text-shadow: none;
-
-	li {
-		display: block; 
-		position: relative; 
-		float: left;  
-		margin: 0; 
-		padding: 0;
-		border: none; 
-
-		a {
-			@extend %font-heading;
-			display: block; 
-			margin: 0 !important;  
-			border: none; 
-			text-decoration: none; 
-			height: 1.25rem; // 20
-			padding: 1.25rem 2.813rem 1.25rem 0.3125rem; // 20 45 20 5
-			white-space: nowrap;
-			color: #999; // parent link color
-			font-size: 1rem; // 16
-			line-height: 1rem; // 16
-			letter-spacing: 0; 
-			font-weight: 500;
-		} 
-
-		a:hover {
-			text-decoration: none;
-			color: #CCC; // parent link color on hover 
-		}
-
-		ul {
-			left: -0.9375rem; // -15
-			padding-bottom: 0.625rem;
-			background: $color-header-bottom; //  dropdown background 
+		// Dropdown Sizes
+		li.nav-wide ul {
+			width: 24.13rem; // 386
 
 			li {
-				width: 8.125rem; // 130
-				padding: 0; 
-				background-clip: padding-box;
-
-				a {
-					height: 1rem; 
-					padding: 0.8125rem 1.25rem 0.6875rem 1.25rem; // 13 20 11 20
-					color: #777 !important; //  dropdown list item link color
-					font-size: 0.875rem; // 14
-					line-height: 0.875rem; // 14
-					letter-spacing: 0; 
-					font-weight: 500;
-				}
-
+				width: 11.88rem; // 190
+				display: inline-block;
 			}
-
-			li:hover {
-				padding: 0;
-			}
-
-			ul li {
-				display: none;
-			}
-
 		}
 
-	}
+		li.nav-wider ul {
+			width: 30.5rem; // 488
 
-	li:hover {
-		a {
-			background-position: 0 0; 
-			color: #CCC // parent link color when hovering on dropdown 
+			li {
+				width: 10rem; // 160
+				display: inline-block;
+			}
 		}
+
 		ul {
-			display: block; 
-			position: absolute;
-		}
-		li {
-			float: none;
-
-			a:hover { // dropdown list item background & link color on hover
-				background: $color-main-link; 
-				color: $color-white !important;
-			}
-
-			a.sub-r:hover {background: $color-rss;}
-			a.sub-h:hover {background: $color-producthunt;}
-			a.sub-f:hover {background: $color-facebook;}
-			a.sub-t:hover {background: $color-twitter;}
-			a.sub-g:hover {background: $color-googleplus;}
-			a.sub-p:hover {background: $color-pinterest;}
-
+			display: none;
 		}
 
-	}
-
-	// Dropdown Sizes
-	li.nav-wide ul {
-		width: 24.13rem; // 386
-
-		li {
-			width: 11.88rem; // 190
-			display: inline-block;
-		}
-	}
-
-	li.nav-wider ul {
-		width: 30.5rem; // 488
-
-		li {
-			width: 10rem; // 160
-			display: inline-block;
-		}
-	}
-
-	ul {
-		display: none;
 	}
 
 }
 
-
-// Descrease spacing
-@media (max-width: $bp-notebook) {
-
-	#header-bottom-left  ul li a {
-		padding: 20px 15px 20px 5px;
-	}	
-}
 
 
 //-------------------------------------------------------------------------------
 // Header - Bottom Right - Search
 //-------------------------------------------------------------------------------
 
-#header-bottom-right {
+#header-search {
+	float: left;
+	// background: $test3;
 
 	.search {
 		background: $color-search-bg;
@@ -372,8 +249,9 @@ ul#nav-subscribe {
 		padding: 0.5rem 4% 0.4375rem 2%; // 8 % 7 %
 		overflow: hidden; 
 		width: 94%; 
-		margin: 0.625rem 0 0 0; // 10 0 0 0
+		margin: 0; // 10 0 0 0
 		font-size: 1.125rem; // 18
+		border-radius: $rounded-corners;
 
 		.search-icon {
 			display: inline-block; 
@@ -398,6 +276,10 @@ ul#nav-subscribe {
 				width: 85%;
 			}
 
+			@media (max-width: $bp-notebook) {
+				width: 75%;
+			}	
+
 			.search-field {
 				color: $color-search-text;
 				background: none; 
@@ -420,7 +302,7 @@ ul#nav-subscribe {
 
 
 //-------------------------------------------------------------------------------
-// Header - Mobile Big Dropdown + Center Logo Icon
+// Header - Mobile Big Dropdown 
 //-------------------------------------------------------------------------------
 
 @media (max-width: $bp-tablet) {
@@ -429,22 +311,17 @@ ul#nav-subscribe {
 	// Hide some things
 	//-------------------------------------------------------------------------------
 
-	#header-top-left .header-logo,
-	#header-top-left ul,
-	#toggle-mobile-navigation {
+	// #toggle-mobile-navigation,
+	#header-navigation,
+	#header-search {
 		display: none;
-	}	
-
-	#header-bottom-outer {
-		display: none !important; // not sure why !important TBH
 	}	
 
 	//-------------------------------------------------------------------------------
 	// Show some things
 	//-------------------------------------------------------------------------------
 
-	#mobile-nav-button,
-	#header-top-mid,
+	#header-button,
 	.mobile-navigation {
 		display: block
 	}
@@ -454,149 +331,124 @@ ul#nav-subscribe {
 	//-------------------------------------------------------------------------------
 
 	// Show nav icon
-	#toggle-mobile-navigation {
+	#mobile-navigation-toggle {
 		position: relative;
-	}
 
-	.mobile-navigation {
-		position: relative; 
-		clear: both; 
-		width: 96%; 
-		padding: 0 2% 0 2%; 
-		float: none; 
-		text-shadow: none; 
-		margin:0;
-		background: $color-header-top;
-
-		ul { // Section headings eg. Browse, One Page Website Gallery
-			overflow: auto; 
-			width: 100% !important; 
-			height: auto; 
-			margin: 0; 
-			padding: 0px; 
-			list-style: none; 
+		.mobile-navigation {
+			position: relative; 
+			clear: both; 
+			// width: 96%; 
+			// padding: 0 2% 0 2%; 
+			float: none; 
 			text-shadow: none; 
-			background:  $color-header-top; 
-			border-top: 1px solid #222;  
-			box-shadow: 0 -1px 0 #000;
+			margin:0;
+			background: $color-header-top;
 
-			li {
-				display: block; 
-				position: relative; 
-				float: none;  
-				font-size: 12px;
+			ul { // Section headings eg. Browse, One Page Website Gallery
+				overflow: auto; 
+				// width: 100% !important; 
+				top: -1px;
+				height: auto; 
 				margin: 0; 
-				padding: 0;
-				border: none; 
-				border-bottom: 1px solid #000;  
-				box-shadow: 0 1px 0 #222;
-
-
-				a {
-					display: block; 
-					margin: 0 !important;  
-					border: none; 
-					text-decoration: none; 
-					height: 16px; 
-					padding: 13px 0 11px 0; 
-					white-space: nowrap;
-					color: #CCC; 
-					font-weight: 600;
-				} 
-
-				a:hover {
-					text-decoration: none;
-					color: $color-main-link;
-				}
-
-				ul { // Child menu background eg. Home, About...
-					width: 100%; 
-					padding: 0; 
-					margin-left: 0;
-					background: $color-header-top;
-					display: flex;
-  					flex-wrap: wrap;
-
-
-					li { // child list item background set at top of stylesheet
-						flex: 1 0 50%;
- 						box-sizing: border-box;
-
- 					
-
-						a { // dropdown list item link color
-							height: 16px; 
-							padding: 13px 0 11px 2%;
-							color: #999 !important; 
-							font-size: 12px; // no Rems
-							font-weight: 300; 
-							letter-spacing: 0px;
-						}
-
-						ul {
-
-							li {
-								display: none;
-							}
-						}
-					} 
-
-					li:hover {
-						padding: 0;
-					}
-
-					li:last-child {
-						border-bottom: none;
-						box-shadow: none;
-
-					}
-
-				} 
-
-			}
-
-			li:hover {
-
-				a { // parent link color when hovering on dropdown
-					color: #DDD;
-				} 
+				padding: 0 $spacing-medium; 
+				list-style: none; 
+				text-shadow: none; 
+				background:  $color-header-top; 
+				border-top: 1px solid #222;  
+				// box-shadow: 0 -1px 0 #000;
 
 				li {
+					display: block; 
+					position: relative; 
+					float: none;  
+					font-size: 0.75rem; // 12
+					line-height: 0.75rem; // 12
+					margin: 0; 
+					padding: 0;
+					border: none; 
+					// border-bottom: 1px solid #ff33cc;  // this is doubling up giving a thick black line
+					box-shadow: 0 1px 0 #222;
 
-					a:hover { // dropdown list item background & link color on hover 
-						color: $color-main-link !important; 
+
+					a {
+						display: block; 
+						margin: 0 !important;  
+						border: none; 
+						text-decoration: none; 
+						height: 1rem; 
+						padding: 0.8125rem 0 0.6875rem 0; // 13 0 11 0
+						white-space: nowrap;
+						color: #CCC; 
+						font-weight: 600;
+					} 
+
+					a:hover {
+						text-decoration: none;
+						color: $color-main-link;
+					}
+
+					ul { // Child menu background eg. Home, About...
+						width: 100%; 
+						padding: 0; 
+						margin-left: 0;
+						background: $color-header-top;
+						display: flex;
+	  					flex-wrap: wrap;
+						border-bottom: 0; 
+						// box-shadow: 0 0 0 $test1;
+
+
+						li { // child list item background set at top of stylesheet
+							flex: 1 0 50%; 
+	 						box-sizing: border-box;
+
+							a { // dropdown list item link color
+								height: 1rem; // 16
+								padding: 0.8125rem 0 0.6875rem 0; // 13 0 11 0
+								color: #999 !important; 
+								font-size: 0.75rem; // 12
+								font-weight: 300; 
+								letter-spacing: 0px;
+							}
+
+							ul {
+
+								li {
+									display: none;
+								}
+							}
+						} 
+
+						li:hover {
+							padding: 0;
+						}
+
+					} 
+
+				}
+
+				li:hover {
+
+					a { // parent link color when hovering on dropdown
+						color: #DDD;
+					} 
+
+					li {
+
+						a:hover { // dropdown list item background & link color on hover 
+							color: $color-main-link !important; 
+
+						}
 
 					}
 
 				}
-
+				
 			}
-			
-		}
 
-	}
-
-	//-------------------------------------------------------------------------------
-	// Center Logo Icon
-	//-------------------------------------------------------------------------------	
-
-	#header-top-mid .header-logo-heart {
-		margin: 0 auto; 
-		height: $size-logo; 
-		width: $size-logo; 
-		background: url('https://onepagelove.com/wp-content/uploads/2014/01/one-page-love-heart-logo.png') left top no-repeat; 
-		background-size:$size-logo $size-logo; 
-
-		a {
-			height: $size-logo; 
-			width: $size-logo; 
-			display: block; 
-			padding: 0;
 		}
 
 	}
 
 }
-
-
 
