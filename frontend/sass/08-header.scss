@@ -30,7 +30,7 @@
 	margin: 0.375rem 2.5rem 0 0; 
 	// background: $test1;
 
-	@media (max-width: 1000px) {
+	@media (max-width: 1130px) {
 		margin-right: 0.875rem;
 	}
 
@@ -115,7 +115,7 @@
 				letter-spacing: 0; 
 				font-weight: 600;
 
-				@media (max-width: 1000px) {
+				@media (max-width: 1130px) {
 
 					padding-right: 0.875rem;
 					padding-left:  0.875rem;
@@ -136,14 +136,14 @@
 				display: none;
 			}
 
-			&#nav-trending {
+			&#nav-resources {
 				@media (max-width: 1250px) {
 					display: none;
 				}
-			}
+			} 
 
 			&#nav-subscribe {
-				@media (max-width: 1100px) {
+				@media (max-width: 930px) {
 					display: none;
 				}
 			}

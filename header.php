@@ -77,15 +77,11 @@
 				
 				<ul>
 
-					<li><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a>
-
-					<?php include('frontend/inc/nav-home.php'); ?>	
-
-					</li>
+					<li><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a></li>
 				
-				    <li class="nav-wide" id="nav-trending"><a href="#">Trending</a>
+				    <li class="nav-wide" id="nav-start"><a href="#">Start Here</a>
 						
-						<?php include('frontend/inc/nav-popular.php'); ?>	
+						<?php include('frontend/inc/nav-start.php'); ?>	
 
 				 	</li>	
 	
@@ -107,7 +103,7 @@
 
 		             </li> 
 
-		             <li class="nav-wide"><a href="#">Resources</a>
+		             <li class="nav-wide" id="nav-resources"><a href="#">Resources</a>
 
 						<?php include('frontend/inc/nav-resources.php'); ?>	
 

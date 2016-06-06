@@ -7,7 +7,7 @@
 		include(TEMPLATEPATH . '/single-other.php');
 	} 
 
-	elseif ( in_category((array("Website Design Elements"))) ) {
+	elseif ( in_category((array("Web Design Elements"))) ) {
 
 		include(TEMPLATEPATH . '/single-element.php');
 	} 

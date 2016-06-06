@@ -8,7 +8,7 @@
 
 				<div class="element-padding">
 
-				    <div class="element-tagline">Website Design Element</div>				
+				    <div class="element-tagline">Web Design Element</div>				
 					<div class="element-title"><h1><?php the_title(); ?></h1></div>
 					<div class="element-description">
 						
@@ -58,7 +58,7 @@
 
 				?>
 
-				">One Page websites tagged with "<?php the_title(); ?>".</a></p> 
+				">One Page websites tagged with "<?php the_title(); ?>"</a>.</p> 
 
 				<p>ps. if Pinning is your jam, here is our <a href="
 
@@ -75,7 +75,7 @@
 
 				?>
 
- 				" target="_blank"><?php the_title(); ?> Pinterest board:)</a></p>
+ 				" target="_blank"><?php the_title(); ?> Pinterest board</a>:)</p>
 
 			</div>
 	           

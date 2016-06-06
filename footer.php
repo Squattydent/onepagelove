@@ -57,7 +57,7 @@
 				<div class="footer-column" id="trending">
 
 					<h3>Trending</h3>
-					<?php include('frontend/inc/nav-popular.php'); ?>
+					<?php include('frontend/inc/nav-trending.php'); ?>
 
 				</div>
 

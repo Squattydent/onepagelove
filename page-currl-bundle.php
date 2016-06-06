@@ -22,7 +22,7 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#title-features">See Features</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $19</a></div>
+				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -83,7 +83,7 @@ Template Name: Currl Bundle
 
 				<div class="button"><a href="#title-themes">See Themes</a></div>
 				<div class="button"><a href="#title-faq">Read FAQs</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $19</a></div>
+				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -103,8 +103,8 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/alto" target="_blank">See Demo</a></div>
-				<div class="button"><a href="https://gum.co/currl-alto" target="_blank" data-gumroad-single-product="true">Buy Alto $10</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $19</a></div>
+				<div class="button"><a href="https://gum.co/currl-alto" target="_blank" data-gumroad-single-product="true">Buy Alto $19</a></div>
+				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 	
@@ -126,8 +126,8 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/verb" target="_blank">See Demo</a></div>
-				<div class="button"><a href="https://gum.co/currl-verb" target="_blank" data-gumroad-single-product="true">Buy Verb $10</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal">Buy Bundle $19</a></div>
+				<div class="button"><a href="https://gum.co/currl-verb" target="_blank" data-gumroad-single-product="true">Buy Verb $19</a></div>
+				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -149,8 +149,8 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/elon" target="_blank">See Demo</a></div>
-				<div class="button"><a href="https://gum.co/currl-elon" target="_blank" data-gumroad-single-product="true">Buy Elon $10</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $19</a></div>
+				<div class="button"><a href="https://gum.co/currl-elon" target="_blank" data-gumroad-single-product="true">Buy Elon $19</a></div>
+				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -238,7 +238,7 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#container-outer">Back to top</a></div>	
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $19</a></div>
+				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 
