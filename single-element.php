@@ -2,15 +2,15 @@
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
  
-		<div class="single-element">
+		<div class="pages">
 
-			<div class="element-intro">
+			<div class="section-intro">
 
-				<div class="element-padding">
+				<div class="section-padding">
 
-				    <div class="element-tagline">Web Design Element</div>				
-					<div class="element-title"><h1><?php the_title(); ?></h1></div>
-					<div class="element-description">
+				    <div class="section-tagline">Web Design Element</div>				
+					<div class="section-title"><h1><?php the_title(); ?></h1></div>
+					<div class="section-description">
 						
 						<?php // Taken from One Page Review custom field
 
@@ -33,13 +33,13 @@
 		           
 			<?php include ('frontend/inc/pagination-floating.php'); ?>
 
-			<div class="element-content">
+			<div class="section-content">
 				
 				<?php the_content(''); ?>
 
 			</div>
 
-			<div class="element-submit">
+			<div class="section-submit">
 
 				<p>This is an ongoing collection of <?php the_title(); ?>. Seen any other good references? <a href="https://twitter.com/OnePageLove">Tweet us</a> the link!</p>
 
@@ -79,7 +79,7 @@
 
 			</div>
 	           
-		</div><!-- /.single-element -->
+		</div><!-- /.pages -->
    
 	<?php endwhile; else: ?>
 

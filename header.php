@@ -79,7 +79,7 @@
 
 					<li><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a></li>
 				
-				    <li class="nav-wide" id="nav-start"><a href="#">Start Here</a>
+				    <li class="nav-wide-single" id="nav-start"><a href="#">Start Here</a>
 						
 						<?php include('frontend/inc/nav-start.php'); ?>	
 
@@ -97,7 +97,7 @@
 
 		             </li> 
 
-		            <li class="nav-wide"><a href="#">Elements</a>
+		            <li class="nav-wide-single"><a href="#">Elements</a>
 
     					<?php include('frontend/inc/nav-elements.php'); ?>     
 

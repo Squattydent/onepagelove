@@ -1,17 +1,14 @@
 @import "01-reset";
 @import "02-variables";
-@import "03-global";
-// General
-// Fonts
+@import "03-extends";
+@import "05-globals";
 @import "06-colors"; // kill list
 @import "07-containers";
 @import "08-header";
 @import "09-archives";
 @import "10-reviews";
-@import "11-pages";
-@import "12-footer";
-@import "13-elements";  
-// Misc
+@import "11-single-other";
+@import "12-pages";
+@import "13-footer";
 @import "15-gravity"; // kill list
-@import "16-currl-bundle";  
-// Mediaqueries
+

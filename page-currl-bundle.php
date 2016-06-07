@@ -9,20 +9,20 @@ Template Name: Currl Bundle
 <!-- Include Gumroad magic needed for payment overlays -->
 <script src="https://gumroad.com/js/gumroad.js"></script>
 		
-<div class="currl-bundle">	
+<div class="pages currl-bundle">	
 
-	<div class="section section-padding section-intro">
+	<div class="section section-padding section-intro bundle-intro">
 
 		<div>
 
 			<div class="section-tagline">In collaboration with <a href="https://currl.com" target="_blank">Currl</a></div>
 			<div class="section-title">The Personal Theme Bundle</div>
-			<div class="intro-copy">3 minimal One Page WordPress themes to create a beautiful online presence.</div>
+			<div class="section-description">3 minimal One Page WordPress themes to create a beautiful online presence.</div>
 
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#title-features">See Features</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
+				<div class="button"><a class="maverick" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -32,7 +32,7 @@ Template Name: Currl Bundle
 
 	<div class="section section-padding section-features"  id="title-features">
 
-		<div class="inner-grey">
+		<div class="section-grey">
 				
 			<div class="section-tagline">Each WordPress theme include these</div>				
 			<div class="section-title">Features</div>
@@ -47,34 +47,34 @@ Template Name: Currl Bundle
 			<div class="features">
 				
 				<div class="feature">
-					<div class="feature-image"><img src="https://onepagelove.com/wp-content/uploads/2016/05/feature-2.jpg" /></div>
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/1.jpg" /></div>
 					<div class="feature-copy"><h3>Slideshow Backgrounds</h3>Upload unlimited background images to showcase your big beautiful imagery.</div>
 				</div>
 
 				<div class="feature">
 					<div class="feature-copy"><h3>Responsive Minimal Design</h3>Each theme adapts perfectly on all device sizes, especially bigger screens.</div>
-					<div class="feature-image"><img src="https://onepagelove.com/wp-content/uploads/2016/05/feature-1.jpg" /></div>
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/2.jpg" /></div>
 				</div>
 
 				<div class="feature">			
-					<div class="feature-image"><img src="https://onepagelove.com/wp-content/uploads/2016/05/feature-3.jpg" /></div>
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/3.jpg" /></div>
 					<div class="feature-copy"><h3>23 Social Network Icons</h3>Retina optimised to ensure a crisp looking icon on all devices.</div>
 				</div>
 
 				<div class="feature">			
 					<div class="feature-copy"><h3>Call-To-Action Buttons</h3>With focus on sending the visitor to any link of your choosing.</div>
-					<div class="feature-image"><img src="https://onepagelove.com/wp-content/uploads/2016/05/feature-4.jpg" /></div>
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/4.jpg" /></div>
 
 				</div>
 
 				<div class="feature">			
-					<div class="feature-image"><img src="https://onepagelove.com/wp-content/uploads/2016/05/feature-5.jpg" /></div>
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/5.jpg" /></div>
 					<div class="feature-copy"><h3>Theme Customizer Integration</h3>Making the most of the power of WordPress, no coding needed.</div>
 				</div>
 
 				<div class="feature">		
 					<div class="feature-copy"><h3>3 Months Support and Lifetime Updates</h3>Your purchase includes a lifetime of free  updates on all 3 WordPress themes.</div>
-					<div class="feature-image"><img src="https://onepagelove.com/wp-content/uploads/2016/05/feature-6.jpg" /></div>
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/6.jpg" /></div>
 				</div>
 
 			</div>
@@ -83,7 +83,7 @@ Template Name: Currl Bundle
 
 				<div class="button"><a href="#title-themes">See Themes</a></div>
 				<div class="button"><a href="#title-faq">Read FAQs</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
+				<div class="button"><a class="maverick" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -98,13 +98,13 @@ Template Name: Currl Bundle
 			<div class="section-tagline">Tell Your Story, Beautifully</div>
 			<div class="section-title">Alto</div>
 
-			<div class="theme-copy">“Alto” is a One Page WordPress theme featuring a gorgeous header slideshow with a clear content overlay area below. This mobile-friendly theme is perfect to tell your story, beautifully.</div>	
+			<div class="section-description">“Alto” is a One Page WordPress theme featuring a gorgeous header slideshow with a clear content overlay area below. This mobile-friendly theme is perfect to tell your story, beautifully.</div>	
 
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/alto" target="_blank">See Demo</a></div>
 				<div class="button"><a href="https://gum.co/currl-alto" target="_blank" data-gumroad-single-product="true">Buy Alto $19</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
+				<div class="button"><a class="maverick" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 	
@@ -112,7 +112,7 @@ Template Name: Currl Bundle
 
 	</div>
 
-	<img src="<?php echo get_template_directory_uri(); ?>/img/currl-bundle-alto.jpg" alt="Alto WordPress Theme by Currl" />
+	<img src="<?php echo get_template_directory_uri(); ?>/img/bundle/alto.jpg" alt="Alto WordPress Theme by Currl" />
 
 	<div class="section section-padding section-theme theme-verb">
 
@@ -121,13 +121,13 @@ Template Name: Currl Bundle
 			<div class="section-tagline">Centrally Divided Layout</div>
 			<div class="section-title">Verb</div>
 
-			<div class="theme-copy">“Verb” is a One Page WordPress theme with a centrally divided layout. This mobile-friendly theme hosts a gorgeous beautiful image with alongside text, perfect to tell your story without the reader having to scroll or click anything.</div>		
+			<div class="section-description">“Verb” is a One Page WordPress theme with a centrally divided layout. This mobile-friendly theme hosts a gorgeous beautiful image with alongside text, perfect to tell your story without the reader having to scroll or click anything.</div>		
 			
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/verb" target="_blank">See Demo</a></div>
 				<div class="button"><a href="https://gum.co/currl-verb" target="_blank" data-gumroad-single-product="true">Buy Verb $19</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal">Buy Bundle $29</a></div>
+				<div class="button"><a class="maverick" href="https://gum.co/currl-bundle-personal">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -135,7 +135,7 @@ Template Name: Currl Bundle
 
 	</div>
 
-	<img src="<?php echo get_template_directory_uri(); ?>/img/currl-bundle-verb.jpg" alt="Verb WordPress Theme by Currl" />
+	<img src="<?php echo get_template_directory_uri(); ?>/img/bundle/verb.jpg" alt="Verb WordPress Theme by Currl" />
 
 	<div class="section section-padding section-theme theme-elon">
 
@@ -144,13 +144,13 @@ Template Name: Currl Bundle
 			<div class="section-tagline">Minimal Online Presence</div>
 			<div class="section-title">Elon</div>
 
-			<div class="theme-copy">“Elon” is One Page WordPress theme named after South African hero, Elon Musk. This minimal, uncluttered theme is the perfect platform to create a beautiful yet powerful online presence for any individual, product or brand.</div>		
+			<div class="section-description">“Elon” is One Page WordPress theme named after South African hero, Elon Musk. This minimal, uncluttered theme is the perfect platform to create a beautiful yet powerful online presence for any individual, product or brand.</div>		
 
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/elon" target="_blank">See Demo</a></div>
 				<div class="button"><a href="https://gum.co/currl-elon" target="_blank" data-gumroad-single-product="true">Buy Elon $19</a></div>
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
+				<div class="button"><a class="maverick" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -158,7 +158,7 @@ Template Name: Currl Bundle
 
 	</div>	
 
-	<img src="<?php echo get_template_directory_uri(); ?>/img/currl-bundle-elon.jpg" alt="Elon WordPress Theme by Currl" />
+	<img src="<?php echo get_template_directory_uri(); ?>/img/bundle/elon.jpg" alt="Elon WordPress Theme by Currl" />
 
 	<div class="section section-padding section-faq" id="title-faq">
 
@@ -238,7 +238,7 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#container-outer">Back to top</a></div>	
-				<div class="button"><a class="bundle" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
+				<div class="button"><a class="maverick" href="https://gum.co/currl-bundle-personal" target="_blank" data-gumroad-single-product="true">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -253,6 +253,6 @@ Template Name: Currl Bundle
 
 	</div>
 
-</div><!-- /.currl-bundle -->
+</div><!-- /.pages -->
 
 <?php get_footer(); ?>

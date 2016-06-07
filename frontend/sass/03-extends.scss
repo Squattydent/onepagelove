@@ -1,0 +1,237 @@
+//-------------------------------------------------------------------------------
+// Font Smoothing
+//-------------------------------------------------------------------------------
+
+// @extend %font-smoothing;
+%font-smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "liga" on;
+}
+
+//-------------------------------------------------------------------------------
+// Font Global
+//-------------------------------------------------------------------------------
+
+%font-global {
+	font-family: $font-fam-prox;
+	font-size: 100%;
+	font-size: 0.75rem;
+	line-height: 0.75rem;
+	text-decoration: none;
+	text-shadow: none;	
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 0;
+}
+
+%font-heading {
+	font-family: $font-fam-prox-soft;
+	font-weight: 700;
+	font-size: 2.625rem; 
+	line-height: 2.625rem;
+	letter-spacing: -1px;
+} 
+
+%font-bloc {
+	font-family: $font-fam-bloc;
+	font-style: italic;
+} 
+
+%font-g {
+	font-family: $font-fam-geor;
+	@extend %font-smoothing;
+}
+
+//-------------------------------------------------------------------------------
+// Pagination
+//-------------------------------------------------------------------------------
+
+%pagination-browse {
+	display: inline-block; 
+	width: 125px; 
+	padding: 12px 0; 
+	text-align: center; 
+	margin: 0 !important;
+} 
+
+%pagination-number {
+	display: inline-block; 
+	margin: 0 5px; 
+	width: 45px; 
+	text-align: center; 
+	padding: 12px 0;
+	font-size: 18px;
+	line-height: 18px; 
+	text-decoration: none; 
+	letter-spacing: 0;	
+	font-weight: 300;
+} 
+
+//-------------------------------------------------------------------------------
+// Buttons
+//-------------------------------------------------------------------------------
+
+%button {
+	height: 0.875rem;  // 14
+	font-size: 0.875rem; // 14
+	line-height: 0.875rem; // 14
+	border: 1px solid #ccc; 
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 0.3125rem 0.5625rem; // 5 9
+	text-decoration: none; 
+	margin: 0 $spacing-tiny $spacing-small 0 !important; 
+	white-space: nowrap; 
+	background: none;
+	border-radius: $rounded-corners;
+	font-weight: 300;
+}
+
+%border-rounded-top {
+	border-top-left-radius: $rounded-corners;
+	border-top-right-radius: $rounded-corners;
+}
+
+%border-rounded-bottom {
+	border-bottom-right-radius: $rounded-corners;
+	border-bottom-left-radius: $rounded-corners;
+	overflow: hidden;
+}
+
+//-------------------------------------------------------------------------------
+// Archives
+//-------------------------------------------------------------------------------
+
+// @extend %archive-title-burst;
+%archive-title-burst {
+	background: radial-gradient(ellipse at center,  rgba(226,226,226,0.8) 0%,rgba(226,226,226,0.6) 80%);
+	// Previous // background: radial-gradient(ellipse at center,  rgba(226,226,226,0.8) 0%,rgba(226,226,226,0.4) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce2e2e2', endColorstr='#33e2e2e2',GradientType=1 );
+}
+
+//-------------------------------------------------------------------------------
+// Pages
+//-------------------------------------------------------------------------------
+
+%section-inner-grey {
+	background: #f6f6f6; // Old browsers 
+	background: -moz-linear-gradient(top,  #f6f6f6 0%, #ffffff 100%); // FF3.6-15 
+	background: -webkit-linear-gradient(top,  #f6f6f6 0%,#ffffff 100%); // Chrome10-25,Safari5.1-6 
+	background: linear-gradient(to bottom,  #f6f6f6 0%,#ffffff 100%); //  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0 ); // IE6-9 
+}		
+
+%section-tagline {
+    @extend %font-g;
+    color: #999;
+    margin-bottom: $spacing-medium;
+    font-style: italic;     
+    a {
+        color: #999;
+    }   
+    a:hover {
+        color: $color-main-link;
+    }
+}
+
+%section-title {
+	font-weight: 600;
+	font-size: 5rem;
+	line-height: 5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.125rem;
+	margin-bottom: $spacing-big;
+    @media (max-width: $bp-tablet) {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    @media (max-width: $bp-mobile) {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+%section-description {
+    @extend %font-smoothing;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    display: block;
+    width: 80%; 
+    margin: 0 auto $spacing-huge auto;
+    max-width: 760px;
+    text-align: center;
+    color: #999;
+    @media (max-width: $bp-tablet) {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+}
+
+//-------------------------------------------------------------------------------
+// Typography - reviews and pages
+//-------------------------------------------------------------------------------
+
+// @extend %typography-p;
+%typography-p {
+	font-size: 1.25rem; // 20
+	line-height: 1.75rem; // 28	
+	margin: 0 0 $spacing-medium 0; 
+	padding: 0;
+}
+%typography-h1 {
+	@extend %font-heading;
+	padding: 0; 
+	margin-bottom: $spacing-m-b;
+	font-size: 2.625rem; // 42
+	line-height: 2.625rem; // 42
+	font-weight: 700;
+}
+%typography-h2 {
+	@extend %font-heading;
+	padding: $spacing-medium 0 0 0; 
+	margin-bottom: $spacing-m-b;
+	font-size:  2.125rem; // 34
+	line-height: 2.375rem; // 38	
+	font-weight: 500;	
+}
+%typography-h3 {
+	@extend %font-heading;
+	margin: $spacing-big 0 $spacing-medium 0;
+	font-size:  1.625rem; // 26
+	line-height: 2rem; // 32
+	font-weight: 500;
+}
+%typography-h4 {
+	font-weight: bold;
+	font-size: 1.25rem; // 20
+	line-height: 1.5rem; // 24
+	color: #555555; 
+	margin: $spacing-m-b 0 $spacing-small 0; 
+	font-weight: 500;
+}
+%typography-ul {
+	margin: $spacing-medium 0; 
+	padding-left: $spacing-m-b; 
+	font-size: 1.25rem; // 20
+	line-height: 1.75rem; // 28
+
+	li {
+		list-style-type: circle; 
+		padding: 0 0 $spacing-small $spacing-small;
+	}
+}
+%typography-ol {
+	margin: $spacing-medium 0; 
+	padding-left: $spacing-m-b; 
+	font-size: 1.25rem; // 20
+	line-height: 1.75rem; // 28
+
+	li {
+		list-style-type: decimal-leading-zero; 
+		padding: 0 0 $spacing-small $spacing-small;
+	}
+}
+
+

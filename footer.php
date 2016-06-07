@@ -10,7 +10,7 @@
 			
 			<div id="footer-quote">	
 
-				<div class="quote"><?php include("frontend/inc/random-quotes.php"); ?></div>
+				<div class="footer-quote-single"><?php include("frontend/inc/random-quotes.php"); ?></div>
 
 			</div><!-- /#footer-quote -->		
 			

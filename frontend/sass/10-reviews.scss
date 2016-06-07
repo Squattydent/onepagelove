@@ -8,6 +8,7 @@
 	line-height: 1.125rem; 
 	border: none; 
 	border-bottom: 1px solid #ccc;
+	border-radius: $rounded-corners;
 
 	.review-meta {
 		display: block; 
@@ -87,11 +88,13 @@
 	.review-meta {
 
 		.review-meta-right {
+			border-radius: $rounded-corners;
 
 			.review-launch {
 				margin-bottom: 20px;
 
 				a { 
+					border-radius: $rounded-corners;
 
 					@media (max-width: $bp-tablet) {	
 						width: 100%;

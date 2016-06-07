@@ -38,7 +38,7 @@
 		float: left; 
 		height: $size-logo; 
 		width: $size-logo; 
-		background: url('https://onepagelove.com/wp-content/uploads/2014/01/one-page-love-heart-logo.png') left top no-repeat; 
+		background: url($heart-logo) left top no-repeat; 
 		background-size: $size-logo $size-logo; 
 
 		a {
@@ -228,6 +228,14 @@
 			li {
 				width: 10rem; // 160
 				display: inline-block;
+			}
+		}
+
+		li.nav-wide-single ul {
+			width: 11.88rem; // 190
+
+			li {
+				width: 11.88rem; // 190
 			}
 		}
 

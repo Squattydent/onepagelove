@@ -1,5 +1,10 @@
 <div class="similar">
-	<div class="similar-title">Related posts</div>
+
+	<div class="similar-title">
+
+		Related posts
+
+	</div>
 	
 <div class="archive-container">
 		

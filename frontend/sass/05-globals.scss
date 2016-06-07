@@ -1,9 +1,9 @@
 //-------------------------------------------------------------------------------
 // Setting the rems globally
 //-------------------------------------------------------------------------------
-
+	
 html {
-  font-size: $base-normal;
+	font-size: $base-normal;
 }
 @media (min-width: $bp-desksm) {
 	html { 
@@ -134,15 +134,7 @@ code {
   background: $color-code;
 }
 
-// Highlights notice within paragraph text
-.notice {
-	background: #ffc3da; 
-	border: 1px solid #feb0ce; 
-	color: #EC3D80;
-	width: 1240px; 
-	padding: $spacing-s-m $spacing-medium ; 
-	margin-bottom: $spacing-big;
-}
+
 
 //-------------------------------------------------------------------------------
 // Background Colors
@@ -197,14 +189,14 @@ a.noBorder:hover {
 // Z-index 
 //-------------------------------------------------------------------------------
 
-.thumb .thumb-inner                       	{z-index: 100}
-.thumb .thumb-image             			{z-index: 200}
-.thumb .thumb-label             			{z-index: 400}
-#header-navigation ul                    	{z-index: 500}
-.floating-pagi                				{z-index: 1000}
-#footer-container                           {z-index: 2000} // To hide the floating nav over footer
-#mobile-nav-button 							{z-index: 3000}
-.mobile-navigation 							{z-index: 4000}
+.thumb .thumb-inner                 {z-index: 100}
+.thumb .thumb-image             	{z-index: 200}
+.thumb .thumb-label             	{z-index: 400}
+.floating-pagi                		{z-index: 1000}
+#footer-container                   {z-index: 2000} // To hide the floating nav over footer
+#header-navigation ul               {z-index: 3000}
+#mobile-nav-button 					{z-index: 4000}
+.mobile-navigation 					{z-index: 5000}
 
 //-------------------------------------------------------------------------------
 // Text Select
@@ -227,8 +219,6 @@ a.noBorder:hover {
 	color: #222; 
 }
 
-
-
 //-------------------------------------------------------------------------------
 // Promo 
 //-------------------------------------------------------------------------------
@@ -236,80 +226,15 @@ a.noBorder:hover {
 // Hides the big OPL heart placed after body open tag for social sharing.
 #promo {display: none;}
 
-// ------------------------------------------------
-// Roundup Buttons
-// ------------------------------------------------ 
-
-.theme-options-down a, // needs to get phased out
-a.roundup-buy { // needs to get phased out
-	float: left; 
-}
-
-a.roundup-demo { // needs to get phased out
-	float: left; 
-	margin-top: -1.75rem; // 28
-}
-
-.theme-options-demo a { // needs to get phased out
-	float: left;
-}
-
-.theme-options-down a, // needs to get phased out
-.theme-options-demo a, // needs to get phased out
-a.roundup-buy, // needs to get phased out
-a.roundup-demo, // needs to get phased out
-a.button-fill,
-a.button-border { 
-	text-align: center; 
-	font-size: 0.875rem; // 14
-	line-height: 0.875rem; 
-	text-transform: uppercase; 
-	display: inline-block;
-	border-radius: $rounded-corners;
-	border-width: 2px !important; // to override the 1px global border styles
-	border-style: solid !important; // to override the dotted global border styles
-	border-color: $color-main-link;
-	font-weight: 600;  
-	text-decoration: none;
-	padding: $spacing-small $spacing-medium;
-	margin-right: $spacing-small;
-	font-weight: 600;
-}
-
-.theme-options-demo a, // needs to get phased out
-a.roundup-buy, // needs to get phased out
-a.button-fill {
-	background-color: $color-main-link;
-	color: $color-white !important;
-}
-
 //-------------------------------------------------------------------------------
-// General Styles - still sorting
+// Highlights notice within paragraph text - horrible style - need to sort this shit out, seriously
 //-------------------------------------------------------------------------------
 
-/* Rounded Corners 4px */
-.browsing a, 
-.browsing .current, 
-.block-right,
-.review,
-.review-launch a,
-.review .review-meta-right,
-.single-container,
-.single-container img.alignleft,
-.single-container img.alignright,
-.results-search .search,
-#mce-FNAME, 
-#mce-EMAIL,
-.name-tag,
-#mc-embedded-subscribe,
-#header-bottom-right .search,
-.gform_body input,
-.gform_wrapper .gfield_password_strength,
-.gform_wrapper .gform_footer input[type=submit],
-.gform_body textarea  
-{border-radius: $rounded-corners;}
-
-ul.account-logged-out li a
-{border-radius: $rounded-buttons;}
-
-
+.notice {
+	background: #ffc3da; 
+	border: 1px solid #feb0ce; 
+	color: #EC3D80;
+	width: 1240px; 
+	padding: $spacing-s-m $spacing-medium ; 
+	margin-bottom: $spacing-big;
+}

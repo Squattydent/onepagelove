@@ -8,9 +8,6 @@
 	display: flex;
 	align-items: center;	
 	text-align: center;
-	// background: $test3;
-	@extend %archive-title-burst;
-	
 
 	.archive-header-info {
 		text-shadow:0 1px 0 #FFF; 
@@ -24,9 +21,15 @@
 			padding-top: $spacing-small;
 		}	
 
+		.grey-shadow {
+			@extend %archive-title-burst;
+			display: inline-block;
+		}
+
 		.archive-title {
 			@extend %font-heading;
 			margin-bottom: $spacing-small;
+			letter-spacing: -2px;
 
 			h1 {
 				@extend %font-heading;
@@ -299,10 +302,12 @@
 
 	a {
 		@extend %pagination-number;
+		border-radius: $rounded-corners;
 	}
 
 	.current {
 		@extend %pagination-number;
+		border-radius: $rounded-corners;
 		background: none; 
 		opacity: 1;
 	}
@@ -326,6 +331,7 @@
 		overflow: hidden; 
 		width: 245px; 
 		margin: 6px 0 0 0;
+		border-radius: $rounded-corners;
 
 		.search-field {
 			background: none;  

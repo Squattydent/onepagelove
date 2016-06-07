@@ -6,12 +6,16 @@
 
 				 <div class="archive-header-info">
 
-					<div class="archive-title">The ultimate showcase of One Page websites.</div>
+					<div class="archive-title"><span class="grey-shadow">The ultimate showcase of One Page websites.</span></div>
 
 					<div class="archive-description">
-						<p>Browse <a href="<?php print get_home_url(); ?>/gallery" title="Browse Beautiful One Page Websites">One Page Websites</a>, 
-						find <a href="<?php print get_home_url(); ?>/templates" title="Find One Page Website Templates and Themes">One Page Templates</a> 
-						or get <a href="<?php print get_home_url(); ?>/hosting" title="Get One Page Website Hosting">Website Hosting</a>.</p>
+
+						<span class="grey-shadow">
+							<p>Browse <a href="<?php print get_home_url(); ?>/gallery">One Page Websites</a>, 
+							find <a href="<?php print get_home_url(); ?>/templates">One Page Templates</a> 
+							or explore <a href="<?php print get_home_url(); ?>/elements">Design Elements</a>.</p>
+						</span>	
+
 					</div>
 
 				 </div><!--  /.archive-header-info -->
@@ -26,13 +30,15 @@
 
 			 <div class="archive-header-info">
 
-				<div class="archive-title"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo 'You are browsing page '.$paged.' of '.$wp_query->max_num_pages.' in our '; ?> <?php include("frontend/inc/random-naming-archives.php"); ?></div>
+				<div class="archive-title"><span class="grey-shadow"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo 'You are browsing page '.$paged.' of '.$wp_query->max_num_pages.' in our '; ?> <?php include("frontend/inc/random-naming-archives.php"); ?></span></div>
 
 				<div class="archive-description">
-					<p>Your are browsing all categories. Browse just the <a href="<?php print get_home_url(); ?>/gallery" title="Browse One Page Websites"> Gallery</a> or  
-					 <a href="<?php print get_home_url(); ?>/templates" title="Browse One Page Website Templates">Templates</a> or
-					 <a href="<?php print get_home_url(); ?>/resources" title="Browse One Page Website Design Resources">Resources</a>.
-					</p></div>
+					<span class="grey-shadow">
+						<p>Your are browsing all categories. Browse just the <a href="<?php print get_home_url(); ?>/gallery"> Gallery</a>,   
+						 <a href="<?php print get_home_url(); ?>/templates">Templates</a>, <a href="<?php print get_home_url(); ?>/elements">Elements</a> or <a href="<?php print get_home_url(); ?>/resources">Resources</a>.
+						</p>
+					</span>
+				</div>
 
 			 </div><!--  /.archive-header-info -->
 

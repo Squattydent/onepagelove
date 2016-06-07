@@ -1,0 +1,517 @@
+// ------------------------------------------------
+// Contents
+// ------------------------------------------------ 
+
+// 1 - Pages -  global new layout
+// 2 - Elements post styles (these are reusing .pages style, but are posts because need to be searchable)
+// 3 - Currl Bundle Page
+// 4 - Advertising Page
+
+// ------------------------------------------------
+// 1 - Pages - the new fresh layout
+// ------------------------------------------------ 
+
+.pages {
+    width: $container-standard; 
+    max-width: 100%;
+    margin: $spacing-medium auto $spacing-big auto;
+    text-align: center;
+    background-color: #FFF;
+    padding: 0; 
+    height: auto;       
+    font-size: 1rem;
+    line-height: 1.25rem;
+    min-height: 1000px;
+    border-radius: $rounded-corners;
+    border: none; 
+    border-bottom: 1px solid #ccc;    
+
+    @media (max-width: $bp-tablet) {
+        margin-top: 0;
+    }   
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+  
+// ------------------------------------------------
+// Sections Global
+// ------------------------------------------------     
+
+.section {
+    // general holder
+}    
+
+.section-padding {
+    padding: $spacing-medium;
+
+    @media (max-width: $bp-mobile) {
+        padding: $spacing-small;
+    }
+
+}
+
+.section-gradient {
+    padding-top: $spacing-huge;
+    @extend %section-inner-grey;
+}
+
+.section-grey {
+    padding-top: $spacing-huge;
+    padding-bottom: $spacing-huge;
+    background-color: #F6F6F6;
+}
+
+// ------------------------------------------------
+// Header Text
+// ------------------------------------------------ 
+
+.section-tagline {
+    @extend %section-tagline;
+
+    @media (max-width: $bp-mobile) {
+        // padding-top: $spacing-small;
+    }
+}
+
+.section-title {
+    @extend %section-title;
+
+    h1 {
+        font-weight: 600;
+    }
+}
+
+.section-description {
+    @extend %section-description;
+}
+
+// ------------------------------------------------
+// Section Content
+// ------------------------------------------------ 
+
+.section-content { // The big images on Elements
+
+    .pages-content {
+        padding: $spacing-medium;
+
+        p {
+            @extend %typography-p;
+        }
+
+        h1 {
+            @extend %typography-h1;
+        }
+
+        h2 {
+            @extend %typography-h2;
+        }
+
+        h3 {
+            @extend %typography-h3;
+        }   
+
+        h4 {
+            @extend %typography-h4;
+        }
+
+        ul {
+            @extend %typography-ul;
+        } 
+
+        ol {
+            @extend %typography-ol;
+        }
+
+        img {
+            max-width: 100%; 
+            height: auto;
+            border-radius: $rounded-corners;
+
+            .alignnone {
+
+                max-width: 100%; 
+                height: auto;
+
+            }
+
+             .alignleft {
+
+                @media (max-width: $bp-desksm) {
+                    max-width: 300px; 
+                    height: auto;
+
+                }
+
+             }
+
+             .alignright {
+                
+             }
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+
+    }
+
+}    
+
+
+
+// ------------------------------------------------
+// Buttons
+// ------------------------------------------------ 
+
+.section-buttons {
+    margin-top: $spacing-huge;
+
+    .button {
+        display: inline-block;
+        min-height: 1rem + $spacing-big;
+
+        @media (max-width: $bp-mobile) {
+            min-height: 1rem + $spacing-medium;
+        }
+
+        a {
+            display: block;
+            padding: $spacing-medium $spacing-big;
+            color: #444;
+            border: 2px solid #444;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1rem;
+            margin: 0 $spacing-small $spacing-medium $spacing-small;
+            transition:1s;
+
+            @media (max-width: $bp-mobile) {
+                padding: $spacing-small $spacing-medium;
+            }
+
+        }
+
+        a:hover {
+            color: #FFF;
+            border-color: #222;
+            background: #222;
+            transition:.5s;
+        }
+
+        a.maverick {
+            border-color: $color-main-link;
+            color: $color-main-link;
+        }
+
+        a.maverick:hover {
+            background: $color-main-link;
+            color: #FFF;
+            border-color: $color-main-link;
+
+        }
+
+    }
+
+}
+
+// ------------------------------------------------
+// Quotes 
+// ------------------------------------------------ 
+
+.quote {
+    @extend %font-g;
+    display: block;
+    width: 80%; 
+    margin: $spacing-huge auto;
+    max-width: 760px;
+
+    .quoted {
+        font-size: 2.25rem;
+        line-height: 3rem;
+        margin-bottom: $spacing-medium;
+        color: #333;    
+
+        @media (max-width: $bp-tablet) {
+            font-size: 1.5rem;
+            line-height: 1.875rem;
+        }
+
+    }
+
+    .quoter {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        color: #666;    
+
+        @media (max-width: $bp-tablet) {
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+
+    }
+
+}
+
+
+// ------------------------------------------------
+// Features
+// ------------------------------------------------ 
+
+.section-features {
+    text-align: center;
+
+    .features {
+         width: 720px;
+         max-width: 90%;
+         margin: $spacing-huge auto $spacing-huge*2 auto;
+         text-align: left;
+
+        .feature {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: $spacing-big;
+
+            @media (max-width: $bp-tablet) {
+
+                // flex-direction: column;
+                min-height: auto;
+                max-height: none;
+                text-align: center;
+                margin-bottom: $spacing-huge;
+
+            }
+
+            .feature-image {
+                flex: 1 1 50%;
+                box-sizing: border-box;
+                // padding-right: $spacing-medium;
+
+                @media (max-width: $bp-tablet) {
+                    flex: 1 1 100%;
+                    order: 1;
+                    margin-bottom: $spacing-medium;
+                }
+
+                img {
+                    border: 0.625rem solid #FFF;
+                    box-shadow: 0px 0px 30px #DDD;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .feature-copy {
+                flex: 1 1 50%;
+                box-sizing: border-box;
+                font-size: 1.125rem;
+                line-height: 1.65rem;
+                margin-bottom: 0;
+                color: #666;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-right: $spacing-medium;
+
+                @media (max-width: $bp-tablet) {
+                    flex: 1 1 100%;
+                    order: 2;
+                    padding-right: 0;
+                }
+
+                h3 {
+                    display: block;
+                    margin-bottom: $spacing-small;
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    line-height: 1.5rem;
+                    color: #333;
+                }
+
+            }
+
+        }
+
+    }             
+
+}
+
+// ------------------------------------------------
+// FAQs
+// ------------------------------------------------ 
+
+.section-faq {
+    text-align: center;
+    padding-bottom: 300px;
+
+        @media (max-width: $bp-mobile) {
+            padding-bottom: 100px;
+        }
+
+    .faqs {
+         text-align: left;
+         width: 960px;
+         max-width: 90%;
+         margin: $spacing-huge auto;
+         display: flex;
+         flex-wrap: wrap;
+
+        .faqs-col {
+            flex: 1 0 45%;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+            @media (max-width: $bp-tablet) {
+                flex: 1 0 100%;
+            }
+        }
+
+        .faqs-left {
+            // float: left;
+            margin-right: 10%;
+
+            @media (max-width: $bp-tablet) {
+                margin-right: 0%;
+            }
+        }
+
+        .faqs-right {
+            // float: right;
+        }
+
+        .faq {
+
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-size: 1.125rem;
+
+            .question {
+
+                margin-bottom: $spacing-small;
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    line-height: 1.5rem;
+                    color: #333;
+                }
+
+            }
+
+            .answer {
+
+                margin-bottom: $spacing-big;
+
+                p {
+                    font-size: 1.125rem;
+                    line-height: 1.65rem;
+                    margin-bottom: 0;
+                    color: #666;
+
+                    @media (max-width: $bp-tablet) {
+                        font-size: 1rem;
+                        line-height: 1.375rem;
+                    }
+
+                    a {
+                        color: #666;
+                        text-decoration: none;
+                        border-bottom: 1px dotted #666;
+                    }
+
+                    a:hover {
+                        color: $color-main-link;
+                        border-bottom: 1px solid $color-main-link;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}    
+
+// ------------------------------------------------
+// Currl Bundle Intro
+// ------------------------------------------------ 
+
+.currl-bundle {    
+    font-size: 1rem;
+    line-height: 1rem;
+    background-image: url($background-bundle-footer);
+    background-position: bottom; 
+    background-repeat: no-repeat; 
+    background-size: 100%;  
+
+    .bundle-intro {
+        padding-top: $spacing-huge;
+        padding-bottom: 500px;
+        background-image: url($background-bundle-intro);
+        background-position: bottom; 
+        background-repeat: no-repeat; 
+        background-size: 100%;  
+
+        @media (max-width: $bp-tablet) {
+            padding-bottom: 350px;
+        }
+
+        @media (max-width: $bp-mobile) {
+            padding-bottom: 200px;
+        }
+
+        .section-title { // to keep those words within two lines evenly
+            display: block;
+            width: 80%; 
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 760px;
+        }
+                    
+    }
+
+    #title-faq .quote { 
+        margin-top: $spacing-huge*2;
+    }
+
+}
+
+// ------------------------------------------------
+// Advertise - Sponsored Posts
+// ------------------------------------------------ 
+
+.sponsored-posts {    
+    font-size: 1rem;
+    line-height: 1rem;
+    background-image: url($background-advertise-footer);
+    background-position: bottom; 
+    background-repeat: no-repeat; 
+    background-size: 100%;  
+    padding-bottom: $spacing-huge*4;
+
+    .section-stats {
+        padding-top: 0;
+    }
+
+    .section-faq {
+        padding-top: 0;
+    }
+
+}
+
+// ------------------------------------------------
+// 2 - Element Posts
+// ------------------------------------------------ 
+
+.section-submit {
+
+    padding: 0 $spacing-medium $spacing-medium $spacing-medium;
+
+}

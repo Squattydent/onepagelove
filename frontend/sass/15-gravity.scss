@@ -53,20 +53,21 @@
 .gform_body input,
 input[type=url],
  .gform_body textarea {
-border: none; 
-background: none;
-border: 1px solid #CCC; 
-margin: 0 !important; 
-text-decoration: none; 
-color: #666;
+	border: none; 
+	background: none;
+	border: 1px solid #CCC; 
+	margin: 0 !important; 
+	text-decoration: none; 
+	color: #666;
+	border-radius: $rounded-corners;
 }
 .gform_wrapper input[type=text],
 .gform_wrapper input[type=email],
 .gform_wrapper .ginput_complex input[type=password],
 .gform_wrapper .ginput_complex input[type=url]	{
-font-size: 24px !important;
-line-height: 24px !important;
-padding: 0.5% 1% !important; 
+	font-size: 24px !important;
+	line-height: 24px !important;
+	padding: 0.5% 1% !important; 
 }
 .gform_wrapper .ginput_complex label {
 padding: 0 0 0 0;
@@ -139,29 +140,29 @@ margin-bottom: 10px !important;
 .gform_button,
 .gform_next_button,
 .gform_previous_button {
-text-decoration: none !important;  
-vertical-align: top !important;
-display: block !important; 
-width: 33% !important; 
-color: #FFF !important; 
-height: 40px !important; 
-padding: 1% 0 !important; 
-text-align: center !important;
-text-decoration:none !important;
-text-shadow: none !important;  
-text-transform: uppercase !important; 
-font-size: 16px !important; 
-line-height: 20px !important;  
-background:$color-main-link !important; 
-border: none !important; 
-cursor: pointer !important;	
+	text-decoration: none !important;  
+	vertical-align: top !important;
+	display: block !important; 
+	width: 33% !important; 
+	color: #FFF !important; 
+	height: 40px !important; 
+	padding: 1% 0 !important; 
+	text-align: center !important;
+	text-decoration:none !important;
+	text-shadow: none !important;  
+	text-transform: uppercase !important; 
+	font-size: 16px !important; 
+	line-height: 20px !important;  
+	background:$color-main-link !important; 
+	border: none !important; 
+	cursor: pointer !important;	
 }
 .gform_button:hover,
 .gform_next_button:hover,
 .gform_previous_button:hover {
-color: #FFF !important; 
-background: #EC3D80 !important; 
-border: none !important; 
+	color: #FFF !important; 
+	background: #EC3D80 !important; 
+	border: none !important; 
 }
 
 // Next / Previous Buttons
@@ -172,8 +173,8 @@ border: none !important;
 
 // Next / Previous Buttons
 .gform_previous_button {	
- background: #CCC !important; 
- float: left !important;
+	 background: #CCC !important; 
+	 float: left !important;
 
 }
 
@@ -200,7 +201,10 @@ border: none !important;
 // Submission Page
 // ------------------------------------------------ 
 
-
 @media (max-width: $bp-tablet) {	
-	.gform_wrapper {max-width: 100% !important;	width: 100% !important; float: none;}
+	.gform_wrapper {
+		max-width: 100% !important;	
+		width: 100% !important; 
+		float: none;
+	}
 }	
