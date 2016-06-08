@@ -4,9 +4,9 @@
  
 		<div class="pages">
 
-			<div class="section-intro">
+			<div class="section section-intro section-padding">
 
-				<div class="section-padding">
+				<div class="section-gradient">
 
 				    <div class="section-tagline">Web Design Element</div>				
 					<div class="section-title"><h1><?php the_title(); ?></h1></div>

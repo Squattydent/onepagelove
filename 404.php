@@ -2,9 +2,9 @@
 
 <div class="pages">
 
-	<div class="section-intro">
+	<div class="section-intro section-padding">
 
-		<div class="section-padding">
+		<div class="section-gradient">
 
 		    <div class="section-tagline">404 Error</div>				
 			<div class="section-title"><h1>Oh Rats!</h1></div>
