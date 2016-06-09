@@ -14,7 +14,7 @@
 .pages {
     width: $container-standard; 
     max-width: 100%;
-    margin: $spacing-medium auto $spacing-big auto;
+    margin: $spacing-medium auto $spacing-huge auto;
     text-align: center;
     background-color: #FFF;
     padding: 0; 
@@ -24,7 +24,8 @@
     min-height: 1000px;
     border-radius: $rounded-corners;
     border: none; 
-    border-bottom: 1px solid #ccc;    
+    box-shadow: $shadow-global;  
+
 
     @media (max-width: $bp-tablet) {
         margin-top: 0;

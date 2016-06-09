@@ -93,7 +93,7 @@ Template Name: Currl Bundle
 
 	<div class="section section-padding section-theme theme-alto" id="title-themes">
 
-		<div class="inner-grey">
+		<div class="section-gradient">
 
 			<div class="section-tagline">Tell Your Story, Beautifully</div>
 			<div class="section-title">Alto</div>
@@ -116,7 +116,7 @@ Template Name: Currl Bundle
 
 	<div class="section section-padding section-theme theme-verb">
 
-		<div class="inner-grey">
+		<div class="section-gradient">
 			
 			<div class="section-tagline">Centrally Divided Layout</div>
 			<div class="section-title">Verb</div>
@@ -139,7 +139,7 @@ Template Name: Currl Bundle
 
 	<div class="section section-padding section-theme theme-elon">
 
-		<div class="inner-grey">	
+		<div class="section-gradient">	
 
 			<div class="section-tagline">Minimal Online Presence</div>
 			<div class="section-title">Elon</div>
@@ -162,7 +162,7 @@ Template Name: Currl Bundle
 
 	<div class="section section-padding section-faq" id="title-faq">
 
-		<div class="inner-grey">
+		<div class="section-gradient">
 				
 			<div class="section-tagline">A few more details</div>				
 			<div class="section-title">FAQs</div>

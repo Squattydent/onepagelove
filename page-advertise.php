@@ -36,7 +36,7 @@ Template Name: Advertise
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#title-features">Learn More</a></div>
-				<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week</a></div>
+				<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week $199</a></div>
 
 			</div>
 
@@ -97,7 +97,7 @@ Template Name: Advertise
 
 					<div class="button"><a href="#title-stats">See Statistics</a></div>
 					<div class="button"><a href="#title-faq">Read FAQs</a></div>
-					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week</a></div>
+					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week $199</a></div>
 
 				</div>
 
@@ -118,7 +118,7 @@ Template Name: Advertise
 					
 					<div class="button"><a href="<?php echo get_template_directory_uri(); ?>/img/sponsored/onepagelove-analytics.pdf" target="_blank">Download PDF</a></div>
 					<div class="button"><a href="#title-demographics">See Demographics</a></div>
-					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week</a></div>
+					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week $199</a></div>
 
 				</div>
 
@@ -141,7 +141,7 @@ Template Name: Advertise
 					
 					<div class="button"><a href="<?php echo get_template_directory_uri(); ?>/img/sponsored/onepagelove-demographics.pdf" target="_blank">Download PDF</a></div>
 					<div class="button"><a href="https://gum.co/currl-elon" target="_blank" data-gumroad-single-product="true">Previous Campaigns</a></div>
-					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week</a></div>
+					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week $199</a></div>
 
 				</div>
 
@@ -179,7 +179,7 @@ Template Name: Advertise
 
 					<div class="feature">			
 						<div class="feature-image"><a href="https://onepagelove.com/how-to-build-a-landing-page-in-less-than-an-hour-with-wix"><img src="<?php echo get_template_directory_uri(); ?>/img/sponsored/features/9.jpg" /></a></div>
-						<div class="feature-copy"><h3>Wix</h3>2360 Reads<br />620 Clicks <a href="https://onepagelove.com/how-to-build-a-landing-page-in-less-than-an-hour-with-wix">See post</a></div>
+						<div class="feature-copy"><h3>Wix Website Builder</h3>2360 Reads<br />620 Clicks <a href="https://onepagelove.com/how-to-build-a-landing-page-in-less-than-an-hour-with-wix">See post</a></div>
 					</div>
 
 					<div class="feature">
@@ -189,7 +189,7 @@ Template Name: Advertise
 
 					<div class="feature">			
 						<div class="feature-image"><a href="https://onepagelove.com/why-we-host-with-wp-engine"><img src="<?php echo get_template_directory_uri(); ?>/img/sponsored/features/11.jpg" /></a></div>
-						<div class="feature-copy"><h3>WP Engine</h3>3447 Reads<br />312 Clicks <a href="https://onepagelove.com/why-we-host-with-wp-engine">See post</a></div>
+						<div class="feature-copy"><h3>WP Engine Hosting</h3>3447 Reads<br />312 Clicks <a href="https://onepagelove.com/why-we-host-with-wp-engine">See post</a></div>
 					</div>
 
 				</div>
@@ -197,7 +197,7 @@ Template Name: Advertise
 				<div class="section-buttons">
 
 					<div class="button"><a href="#title-faq">Read FAQs</a></div>
-					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week</a></div>
+					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week $199</a></div>
 
 				</div>
 
@@ -293,7 +293,7 @@ Template Name: Advertise
 				<div class="section-buttons">
 					
 					<div class="button"><a href="#container-outer">Back To Top</a></div>	
-					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week</a></div>
+					<div class="button"><a class="maverick" href="https://gumroad.com/l/opl-sponsored-post" target="_blank" data-gumroad-single-product="true">Book A Week $199</a></div>
 
 				</div>
 

@@ -91,6 +91,7 @@
 	text-shadow: none; 
 	padding: 0;
 	border-radius: $rounded-corners;
+	box-shadow: $shadow-global;  
 	// border: none;
 
 	@media (max-width: $bp-desklg) {
@@ -126,6 +127,7 @@
 		height: 3rem; 
 		border-radius: 1.5rem; // 24
 		text-align: center;
+		box-shadow: $shadow-global;  
 
 	}
 

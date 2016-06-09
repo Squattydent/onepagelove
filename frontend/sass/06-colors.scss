@@ -3,7 +3,10 @@
 // Thumbs
 //-------------------------------------------------------------------------------
 
-.thumb {background: #FFF; border-bottom: 1px solid #ccc;}
+.thumb {
+	background: #FFF; 
+	// border-bottom: 1px solid #ccc;
+}
 .thumb .thumb-label-loved {background: $color-main-link; color: #FFF;}
 .thumb .thumb-label-template {background: #11c1f4; text-transform: uppercase; color: #FFF;}
 .thumb .thumb-label-free {background: #11c1f4; text-transform: uppercase; color: #FFF;}
