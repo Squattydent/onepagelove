@@ -184,6 +184,5 @@
 	</ul>
 
 	<?php include ("review-meta-slayer.php"); ?>
-	<?php include ("review-meta-panda.php"); ?>
 
 </div>

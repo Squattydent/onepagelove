@@ -178,10 +178,12 @@
 
       <?php get_template_part('loop'); ?>
 
-      <?php endwhile; else: ?>
+    <?php endwhile; else: ?>
        <p>Sorry, no posts matched your criteria.</p>
 
-       <?php endif; ?>
+    <?php endif; ?>
+
+    <?php include ("frontend/inc/loop-bundle.php"); ?>   
 
 </div><!--  /.archive-container -->
 

@@ -12,7 +12,6 @@
 				</ul>
 
 				<?php include ("frontend/inc/review-meta-slayer.php"); ?>
-		        <?php include ("frontend/inc/review-meta-panda.php"); ?>
 
 		        <div class="clear"></div>
 		     

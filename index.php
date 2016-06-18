@@ -59,6 +59,8 @@
 
 	   <?php endif; ?>
 
+	   	<?php include ("frontend/inc/loop-bundle.php"); ?>
+
    </div><!--  /.archive-container -->
 
    <?php include ("frontend/inc/pagination.php"); ?>

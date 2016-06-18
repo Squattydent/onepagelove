@@ -280,7 +280,7 @@ Template Name: Advertise
 								<h3>I have a question not answered here?</h3>
 							</div>
 							<div class="answer">
-								<p>Please feel free to email us on <a href="mailto:advertisting@onepagelove.com">advertisting@onepagelove.com</a> and we'd be happy to answer your questions:)</p>
+								<p>Please feel free to email us on <a href="mailto:advertising@onepagelove.com">advertising@onepagelove.com</a> and we'd be happy to answer your questions:)</p>
 							</div>
 						</div>
 
