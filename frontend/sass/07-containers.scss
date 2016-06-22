@@ -137,22 +137,7 @@
 
 		}
 
-		#footer-promo-container {
-			width: 100%;
-			display: flex;
-			background: $color-header-top;
-
-			#footer-promo {
-				// width: $container-standard; // set in footer.scss
-				margin: 0 auto; 
-				// padding: $spacing-big 0 $spacing-big 0; // no padding needed
-				// background: $test2;
-			}
-
-		}
-
 		#footer-bottom-container {
-			background: #181818;
 			width: 100%;
 
 			#footer-lists { 
@@ -246,14 +231,6 @@
 
 			}
 
-			#footer-promo-container {
-
-
-				#footer-promo {
-				}
-
-			}
-
 			#footer-bottom-container {
 
 
@@ -325,15 +302,6 @@
 				#footer-quote {
 					display: flex; 
 					padding: $spacing-big $spacing-medium;
-				}
-
-			}
-
-			#footer-promo-container {
-
-				#footer-promo {
-					display: flex; 
-					padding: 0 $spacing-medium;
 				}
 
 			}
@@ -425,13 +393,6 @@
 
 			}
 
-			#footer-promo-container {
-
-
-				#footer-promo {
-				}
-
-			}
 
 			#footer-bottom-container {
 

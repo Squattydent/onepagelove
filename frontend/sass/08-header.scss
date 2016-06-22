@@ -151,7 +151,7 @@
 			ul {
 				left: -0.9375rem; // -15
 				padding-bottom: 0.625rem;
-				background: $color-header-bottom; //  dropdown background 
+				background: $color-header; //  dropdown background 
 				@extend %border-rounded-bottom;
 
 				li {
@@ -356,7 +356,7 @@
 			float: none; 
 			text-shadow: none; 
 			margin:0;
-			background: $color-header-top;
+			background: $color-header;
 
 			ul { // Section headings eg. Browse, One Page Website Gallery
 				overflow: auto; 
@@ -367,7 +367,7 @@
 				padding: 0 $spacing-medium; 
 				list-style: none; 
 				text-shadow: none; 
-				background:  $color-header-top; 
+				background:  $color-header; 
 				border-top: 1px solid #222;  
 				// box-shadow: 0 -1px 0 #000;
 
@@ -405,7 +405,7 @@
 						width: 100%; 
 						padding: 0; 
 						margin-left: 0;
-						background: $color-header-top;
+						background: $color-header;
 						display: flex;
 	  					flex-wrap: wrap;
 						border-bottom: 0; 

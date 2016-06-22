@@ -34,112 +34,12 @@
 }
 
 //---------------------------------------------------------------
-// Footer Promo
-//---------------------------------------------------------------
-
-
-#footer-promo-container {
-
-	#footer-promo {
-		padding: 0;
-		width: 880px;
-		display: flex;
-		align-items: center;
-		
-
-			@media (max-width: $bp-tablet) { 
-				flex-direction: column;
-				// align-items: flex-end;
-			}
-
-		div {
-			flex: 1 1 300px;
-
-			@media (max-width: $bp-tablet) { 
-				flex: 1 1 auto;
-			}
-		}
-
-		.promo-info {
-			text-align: right;
-
-			@media (max-width: $bp-tablet) { 
-				order: 1;
-				text-align: center;
-				padding-top: $spacing-big;
-				padding-bottom: $spacing-medium;
-			}
-
-			.promo-info-title {
-				display: block;
-				margin-bottom: $spacing-tiny;
-
-				a {
-					color: #CCC;
-					font-weight: 600;
-					font-size: 1rem;
-					
-				}
-			}
-
-			.promo-info-description {
-				display: block;
-
-				a {
-					color: #666;
-					font-size: 0.875rem;
-					line-height: 1rem;
-				}
-			}
-		}
-
-		.promo-image {
-			text-align: center;
-			align-items: flex-end;
-			padding-top: $spacing-small;
-
-			@media (max-width: $bp-tablet) { 
-				order: 3;
-				padding-top: $spacing-medium;
-			}
-
-			img {
-				max-width: 240px; 
-				height: auto;
-			}
-		}
-
-		.promo-buttons {
-			align-items: center;
-			padding-top: $spacing-small;
-			text-align: left;
-
-			@media (max-width: $bp-tablet) { 
-				order: 2;
-			}
-
-			a {
-				@extend %button;
-				color: #666; 
-				border-color: #666; 
-			}
-
-			a:hover { 
-				color: $color-main-link;
-				border: 1px solid $color-main-link;
-			}
-		}
-		
-	}
-}
-
-
-//---------------------------------------------------------------
 // Footer Bottom
 //---------------------------------------------------------------
 
 #footer-bottom-container {
-	border-top: 1px solid #222;
+	border-top: 1px solid #181818;
+	box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.2);
 
 	#footer-lists {
 		display: flex;

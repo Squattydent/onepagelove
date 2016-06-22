@@ -140,12 +140,11 @@ code {
 // Background Colors
 //-------------------------------------------------------------------------------
 
-html                  {background: $color-browser-bg;}
-#header-container	    {background: $color-header-bottom;} 
-#footer-top-container {background: $color-footer-top ;} 
-#footer-container     {background: $color-footer-bottom;}
-.review               {background: $color-page-bg;}
-.single-container     {background: $color-page-bg;}
+html                      {background: $color-browser-bg;}
+#header-container	        {background: $color-header;} 
+#footer-container         {background: $color-footer;} 
+.review                   {background: $color-page-bg;}
+.single-container         {background: $color-page-bg;}
 
 //-------------------------------------------------------------------------------
 // Link Colors
