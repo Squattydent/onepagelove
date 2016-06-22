@@ -18,7 +18,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.7' );
+define( 'OPL_THEME_VERSION' , '6.8.8' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
