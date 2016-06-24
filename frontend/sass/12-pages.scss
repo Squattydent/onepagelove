@@ -482,6 +482,10 @@
         margin-top: $spacing-huge*2;
     }
 
+    .button-paypal {
+        @extend %section-tagline;
+    }
+
 }
 
 // ------------------------------------------------

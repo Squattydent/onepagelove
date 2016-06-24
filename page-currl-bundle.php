@@ -26,6 +26,8 @@ Template Name: Currl Bundle
 
 			</div>
 
+			<div class="button-paypal">Payment handled with PayPal</div>
+
 		</div>
 		
 	</div>
@@ -87,6 +89,8 @@ Template Name: Currl Bundle
 
 			</div>
 
+			<div class="button-paypal">Payment handled with PayPal</div>
+
 		</div>
 
 	</div>
@@ -103,10 +107,12 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/alto" target="_blank">See Demo</a></div>
-				<div class="button"><a href="https://gum.co/currl-alto" target="_blank" data-gumroad-single-product="true">Buy Alto $19</a></div>
+				<div class="button"><a href="https://transactions.sendowl.com/products/429985/7BCCD6AB/purchase" rel="nofollow">Buy Alto $19</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
+
+			<div class="button-paypal">Payment handled with PayPal</div>
 	
 		</div>
 
@@ -126,10 +132,12 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/verb" target="_blank">See Demo</a></div>
-				<div class="button"><a href="https://gum.co/currl-verb" target="_blank" data-gumroad-single-product="true">Buy Verb $19</a></div>
+				<div class="button"><a href="https://transactions.sendowl.com/products/429984/6A24A1C4/purchase" rel="nofollow">Buy Verb $19</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
+
+			<div class="button-paypal">Payment handled with PayPal</div>
 
 		</div>
 
@@ -149,10 +157,12 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/elon" target="_blank">See Demo</a></div>
-				<div class="button"><a href="https://gum.co/currl-elon" target="_blank" data-gumroad-single-product="true">Buy Elon $19</a></div>
+				<div class="button"><a href="https://transactions.sendowl.com/products/429980/CABD5B34/purchase" rel="nofollow">Buy Elon $19</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
+
+			<div class="button-paypal">Payment handled with PayPal</div>
 
 		</div>
 
@@ -176,7 +186,7 @@ Template Name: Currl Bundle
 							<h3>How is payment handled?</h3>
 						</div>
 						<div class="answer">
-							<p>Payment is handled with PayPal or Credit Card via <a href="https://twitter.com/gumroad" target="_blank">Gumroad</a>. We offer a 30-day money back guarantee if you feel the themes don't deliver what we say.</p>
+							<p>Payment is securely handled with PayPal. We offer a 30-day money back guarantee if you feel the themes don't deliver what we say.</p>
 						</div>
 					</div>
 
@@ -241,6 +251,8 @@ Template Name: Currl Bundle
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
+
+			<div class="button-paypal">Payment handled with PayPal</div>
 
 			<div class="quote">
 				
