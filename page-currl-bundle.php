@@ -16,7 +16,7 @@ Template Name: Currl Bundle
 		<div>
 
 			<div class="section-tagline">In collaboration with <a href="https://currl.com" target="_blank">Currl</a></div>
-			<div class="section-title">The Personal Theme Bundle</div>
+			<div class="section-title">The One Page Theme Bundle</div>
 			<div class="section-description">3 minimal One Page WordPress themes to create a beautiful online presence.</div>
 
 			<div class="section-buttons">

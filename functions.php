@@ -11,14 +11,15 @@
 // 08. Truncation
 // 09. Enqueue Scripts and Styles
 // 10. WordPress Clean-up
-// 11. Update System
+// 11. Gravity Forms filters
+// 12. Update System
 
 // -------------------------------------------------------------
 // 00. Defining
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.9' );
+define( 'OPL_THEME_VERSION' , '6.8.10' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -306,7 +307,70 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );# Remove Smileys e
 remove_action( 'wp_print_styles', 'print_emoji_styles' );     # Remove Smileys embedded in head
 
 // -------------------------------------------------------------
-// 11. Update System
+// 11. Gravity Forms Filters
+// -------------------------------------------------------------
+
+// Display File Upload URL in entries list view
+add_filter( 'gform_entries_field_value', 'file_upload_field_values', 10, 4 );
+function file_upload_field_values( $value, $form_id, $field_id, $entry ) {
+    $form  = GFAPI::get_form( $form_id );
+    $field = RGFormsModel::get_field( $form, $field_id );
+
+    if ( is_object( $field ) && $field->get_input_type() == 'fileupload' ) {
+        $file_path = rgar( $entry, $field_id );
+
+        if ( $field->multipleFiles ) {
+            $uploaded_files_arr = empty( $file_path ) ? array() : json_decode( $file_path, true );
+            $file_count         = count( $uploaded_files_arr );
+            if ( $file_count > 1 ) {
+                $value = empty( $uploaded_files_arr ) ? '' : sprintf( esc_html__( '%d files', 'gravityforms' ), count( $uploaded_files_arr ) );
+
+                return $value;
+            } elseif ( $file_count == 1 ) {
+                $file_path = current( $uploaded_files_arr );
+            } elseif ( $file_count == 0 ) {
+                return '';
+            }
+        }
+
+        if ( ! empty( $file_path ) ) {
+            $thumb     = GFEntryList::get_icon_url( $file_path );
+            $file_path = esc_attr( $file_path );
+            $value     = "<a href='$file_path' target='_blank' title='" . esc_attr__( 'Click to view', 'gravityforms' ) . "'><img src='$thumb'/></a>";
+        }
+
+    }
+
+    return $value;
+}
+
+// Display File Upload URL in entry detail page
+add_filter( 'gform_entry_field_value', function ( $value, $field, $entry, $form ) {
+    if ( $field->get_input_type() == 'fileupload' && $field->multipleFiles && ! empty( $value ) ) {
+        $value     = '';
+        $raw_value = rgar( $entry, $field->id );
+        $files     = empty( $raw_value ) ? array() : json_decode( $raw_value, true );
+        foreach ( $files as $file_url ) {
+            $value .= sprintf( "<a href='%s' target='_blank' title='%s'><img src='%s' width='100' /></a><br>", $file_url, __( 'Click to view', 'gravityforms' ), $file_url );
+        }
+    }
+
+    return $value;
+}, 10, 4 );
+
+// Display File Upload URL in merge tags
+add_filter( 'gform_merge_tag_filter', function ( $value, $merge_tag, $modifier, $field, $raw_value ) {
+    if ( $merge_tag != 'all_fields' && $field->type == 'fileupload' ) {
+        $value    = str_replace( ' ', '%20', $raw_value );
+        $pathinfo = pathinfo( $value );
+        $value    = rgar( $pathinfo, 'basename' );
+    }
+
+    return $value;
+}, 10, 5 );
+
+// -------------------------------------------------------------
+// 12. Update System
 // -------------------------------------------------------------
 
 require_once( dirname( __FILE__ ) . '/backend/theme-update-checker.php'  );
