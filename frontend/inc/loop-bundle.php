@@ -1,11 +1,9 @@
 <div class="thumb">
 	
-	<span class="thumb-label thumb-label-template"><span class="thumb-label-template-position">$29</span></span>   
-
 	<div class="thumb-image">
 
-		<a href="<?php print get_home_url(); ?>/currl-bundle" title="The Personal Theme Bundle (Save 50%)">
-		<img src="https://onepagelove.com/wp-content/uploads/2016/05/currl-bundle-thumbnail.jpg" alt="currl-bundle-thumb" width="400" height="211" class="alignnone size-full wp-image-28749" /></a>
+		<a href="https://www.bluehost.com/track/onepagelove/julythumb" title="Host One Page websites for only $3.49/mo">
+		<img src="https://onepagelove.com/wp-content/uploads/2016/06/thumbnail-july.jpg" alt="july-thumb" width="400" height="211" class="alignnone size-full" /></a>
 
 	</div>
 
@@ -15,13 +13,13 @@
 
 			<div class="thumb-name">
 
-				<h2><a href="<?php print get_home_url(); ?>/currl-bundle" title="The Personal Theme Bundle (Save 50%)">The One Page Theme Bundle (Save 50%)</a></h2>
+				<h2><a href="https://www.bluehost.com/track/onepagelove/julythumb" title="Host One Page websites for only $3.49/mo">Host One Page websites for only $3.49/mo</a></h2>
 
 			</div>
 
 			<div class="thumb-cat">
 
-				<a href="<?php print get_home_url(); ?>/currl-bundle"><?php echo date("F"); ?> Promotion</a>
+				<a href="https://www.bluehost.com/track/onepagelove/julythumb"><?php echo date("F"); ?> Promotion (Save 50%)</a>
 
 			</div>
 

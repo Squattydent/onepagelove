@@ -69,9 +69,7 @@
 								echo $oplreview;
 							}
 							else {
-								echo 'This is an older review of the '; 
-								echo the_title();
-								echo ' website. From February 2013 onward each One Page Love award featured additional commentary and a higher resolution website screenshot.';
+								echo 'No detailed review.';
 							}
 
 						?>
