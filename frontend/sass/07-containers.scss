@@ -26,6 +26,13 @@
 // Widths, margins, padding 
 //-------------------------------------------------------------------------------		
 
+// icon background only on reviews
+body.page #container-outer #container,
+body.single #container-outer #container { 
+	background-image: url($background-icon);
+	background-repeat: repeat-x; 
+}
+
 #container-outer {
 	width: 100%;
 
@@ -71,8 +78,8 @@
 	}
 
 	#container {
-		background-image: url($background-icon);
-  		background-repeat: repeat-x; 
+		// background-image: url($background-icon);
+  		// background-repeat: repeat-x; 
 		width: 100%;
 		// width: $container-large; 
 		margin: 0 auto; 
