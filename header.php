@@ -79,9 +79,9 @@
 
 					<li><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a></li>
 				
-				    <li class="nav-wide-single" id="nav-start"><a href="#">Start Here</a>
+				    <li id="nav-start"><a href="#">Info</a>
 						
-						<?php include('frontend/inc/nav-start.php'); ?>	
+						<?php include('frontend/inc/nav-info.php'); ?>	
 
 				 	</li>	
 	
@@ -97,23 +97,23 @@
 
 		             </li> 
 
-		            <li class="nav-wide-single"><a href="#">Elements</a>
+		            <li><a href="#">Elements</a>
 
     					<?php include('frontend/inc/nav-elements.php'); ?>     
 
-		             </li> 
+		            </li> 
 
-		             <li class="nav-wide" id="nav-resources"><a href="#">Resources</a>
+		            <li id="nav-resources"><a href="#">Blog</a>
 
-						<?php include('frontend/inc/nav-resources.php'); ?>	
+						<?php include('frontend/inc/nav-blog.php'); ?>	
 
-				 	 </li>			
+				 	</li>			
 											   
-		             <li id="nav-subscribe"><a href="#">Subscribe</a>
+		            <li id="nav-subscribe"><a href="#">Subscribe</a>
 
 						<?php include('frontend/inc/nav-subscribe.php'); ?>
 
-		             </li>
+		            </li>
 	
 	           </ul>
 				

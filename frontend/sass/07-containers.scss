@@ -82,6 +82,7 @@ body.single #container-outer #container {
   		// background-repeat: repeat-x; 
 		width: 100%;
 		// width: $container-large; 
+		max-width: 1800px; // to prevent 5th column on massive monitors
 		margin: 0 auto; 
 		padding: 0;
 
@@ -160,7 +161,11 @@ body.single #container-outer #container {
 
 
 
-
+body.single #container-outer #container { 
+  max-width: none; 
+  // to prevent 5th column on massive monitors
+  // set at 1800px on archive
+}
 
 
 //-------------------------------------------------------------------------------

@@ -30,7 +30,7 @@
 				<div class="footer-column">	
 
 					<h3>Information</h3>
-					<?php include('frontend/inc/nav-info.php'); ?>
+					<?php include('frontend/inc/nav-info-footer.php'); ?>
 
 				</div>	
 
@@ -43,8 +43,8 @@
 
 				<div class="footer-column">
 
-					<h3>Resources</h3>
-					<?php include('frontend/inc/nav-resources.php'); ?>
+					<h3>Blog</h3>
+					<?php include('frontend/inc/nav-blog.php'); ?>
 
 				</div>
 

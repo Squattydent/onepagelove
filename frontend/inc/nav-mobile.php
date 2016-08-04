@@ -24,9 +24,9 @@
 
 	</li> 
 
-	<li><a href="#">Resources</a>
+	<li><a href="#">Blog</a>
 
-		<?php include('nav-resources.php'); ?>	
+		<?php include('nav-blog.php'); ?>	
 
 	</li>		
 

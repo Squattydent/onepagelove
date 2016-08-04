@@ -1,0 +1,9 @@
+<ul>
+  <li><a href="<?php print get_home_url(); ?>/blog">Browse All</a></li>
+  <li><a href="<?php print get_home_url(); ?>/blog/articles">Articles</a></li>
+  <li><a href="<?php print get_home_url(); ?>/blog/interviews">Interviews</a></li>
+  <li><a href="<?php print get_home_url(); ?>/blog/resources">Resources</a></li>  	
+  <li><a href="<?php print get_home_url(); ?>/blog/round-ups">Round Ups</a></li>        
+</ul>
+
+
