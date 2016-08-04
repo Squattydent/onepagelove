@@ -2,7 +2,7 @@
 
 	$post = $wp_query->post;
 
-	if ( in_category((array("Blog","Resources","Interviews","Round Ups","Sponsored"))) ) {
+	if ( in_category((array("Blog","Articles","Resources","Interviews","Round Ups","Sponsored"))) ) {
 
 		include(TEMPLATEPATH . '/single-other.php');
 	} 
