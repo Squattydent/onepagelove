@@ -66,7 +66,9 @@
 //-------------------------------------------------------------------------------
 
 .archive-container {
-	// background: $test2;
+	max-width: 1800px; // to prevent 5th column on massive monitors 
+	margin-right: auto;
+	margin-left: auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;

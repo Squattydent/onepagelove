@@ -1057,6 +1057,9 @@ body.single #container-outer #container {
         font-weight: 600; }
 
 .archive-container {
+  max-width: 1800px;
+  margin-right: auto;
+  margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
