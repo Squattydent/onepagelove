@@ -39,15 +39,17 @@
 
 	<div class="archive-container">
 
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php // query_posts('cat=-280'); // Hide the Sponsored Posts category ?>
 
-			<?php get_template_part('loop'); ?>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		<?php endwhile; else: ?>
+				<?php get_template_part('loop'); ?>
 
-			<p>Sorry, no content matched your criteria:(</p><p>Try use different keywords or browse using the categories.</p>
+			<?php endwhile; else: ?>
 
-		<?php endif; ?>
+				<p>Sorry, no content matched your criteria:(</p><p>Try use different keywords or browse using the categories.</p>
+
+			<?php endif; ?>
 
 		<?php include ("frontend/inc/loop-bundle.php"); ?>
 

@@ -95,7 +95,13 @@
 
     					<?php include('frontend/inc/nav-templates.php'); ?>     
 
-		             </li> 
+		            </li> 
+
+		            <li class="nav-wide"><a href="#">Styles</a>
+
+    					<?php include('frontend/inc/nav-styles.php'); ?>     
+
+		            </li> 		            
 
 		            <li><a href="#">Elements</a>
 
