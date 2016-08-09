@@ -8,13 +8,13 @@
     <li><a href="<?php print get_home_url(); ?>/tag/dark-scheme">Dark Scheme</a></li>    
     <li><a href="<?php print get_home_url(); ?>/tag/diagonal-lines">Diagonal Lines</a></li>    
 	<li><a href="<?php print get_home_url(); ?>/tag/drop-shadow">Drop Shadow</a></li>  
-    <li><a href="<?php print get_home_url(); ?>/tag/horizontal-scroll">Horziontal Scroll</a></li>      
+    <li><a href="<?php print get_home_url(); ?>/tag/horizontal-scroll">Horizontal Scroll</a></li>      
     <li><a href="<?php print get_home_url(); ?>/tag/interactive">Interactive</a></li>      
     <li><a href="<?php print get_home_url(); ?>/tag/flat-design">Flat Design</a></li>      
     <li><a href="<?php print get_home_url(); ?>/tag/minimal">Minimal</a></li>		
-    <li><a href="<?php print get_home_url(); ?>/tag/off-canvas-navigation-menu">Off-Canvas Menu</a></li>  
     <li><a href="<?php print get_home_url(); ?>/tag/parallax-scrolling">Parallax Scrolling</a></li>    
-    <li><a href="<?php print get_home_url(); ?>/tag/retro">Retro</a></li>      
+    <li><a href="<?php print get_home_url(); ?>/tag/retro">Retro</a></li>     
+    <li><a href="<?php print get_home_url(); ?>/tag/scattered">Scattered</a></li>   
     <li><a href="<?php print get_home_url(); ?>/tag/unique">Unique</a></li>    
     <li><a href="<?php print get_home_url(); ?>/tag/vintage">Vintage</a></li>     
 </ul>

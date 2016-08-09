@@ -4,7 +4,7 @@
 	
 	<div class="archive-container">
 	
-		<?php include ("loop-bundle.php"); ?>
+		<?php include ("loop-hosting.php"); ?>
 
 		<?php
 		$categories = get_the_category($post->ID);

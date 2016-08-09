@@ -183,7 +183,7 @@
 
     <?php endif; ?>
 
-    <?php include ("frontend/inc/loop-bundle.php"); ?>   
+    <?php include ("frontend/inc/loop-hosting.php"); ?>   
 
 </div><!--  /.archive-container -->
 

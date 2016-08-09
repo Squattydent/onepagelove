@@ -8,7 +8,7 @@
 	
 <div class="archive-container">
 
-	<?php include ("loop-bundle.php"); ?>
+	<?php include ("loop-hosting.php"); ?>
 		
 	<?php if (have_posts()) : $count = 0; 
 	$categories = get_the_category();
