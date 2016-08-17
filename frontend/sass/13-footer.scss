@@ -3,7 +3,6 @@
 //---------------------------------------------------------------
 
 #footer-quote-container {
-	background-image: url($background-quotes);
   	background-repeat: repeat; 
 
 	#footer-quote {
@@ -13,15 +12,21 @@
 
     	.footer-quote-single {
     		color: #666;
-    		width: 100%;
+    		max-width: 80%;
+    		margin-right: auto;
+    		margin-left: auto;
     		text-align: center; // doesn't work?
     		font-style: italic;
     		font-family: Georgia;
     		font-size: 1.125rem;
     		line-height: 1.5rem;
 
+			@media (max-width: $bp-mobile) { 
+				max-width: 100%;
+			}
+
     		i {
-    			font-size: 0.875rem;
+    			font-size: 1rem;
     			display: block;
     			padding-top: $spacing-small;
     			font-style: normal;
