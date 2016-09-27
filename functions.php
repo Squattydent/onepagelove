@@ -19,7 +19,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.18' );
+define( 'OPL_THEME_VERSION' , '6.8.20' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -33,8 +33,7 @@ if ( ! isset( $content_width ) ) $content_width = 1600;
 // -------------------------------------------------------------
 
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 400, 211, true ); // Normal post thumbs, fixed width and height, cropped
-add_image_size( 'small-image',  40, 40, true); // Sidebar post thumbs, fixed width and height, cropped
+set_post_thumbnail_size( 800, 422, true ); // Normal post thumbs, fixed width and height, cropped
 
 // -------------------------------------------------------------
 // 02. Recent Posts

@@ -3,7 +3,7 @@
 	<div class="thumb-image">
 
 		<a href="https://onepagelove.com/hosting" title="Host One Page websites for only $3.49/mo">
-		<img src="https://onepagelove.com/wp-content/uploads/2016/06/thumbnail-july.jpg" alt="july-thumb" width="400" height="211" class="alignnone size-full" /></a>
+		<img src="https://onepagelove.com/wp-content/uploads/2016/09/thumb-hosting-retina.jpg" alt="july-thumb" width="400" height="211" class="alignnone size-full" /></a>
 
 	</div>
 
