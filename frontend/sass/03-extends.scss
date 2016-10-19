@@ -143,13 +143,22 @@
 	text-transform: uppercase;
 	letter-spacing: 0.125rem;
 	margin-bottom: $spacing-big;
+	display: flex;
+	flex-wrap: wrap;
+	padding-right: $spacing-huge;
+	padding-left: $spacing-huge;
+
     @media (max-width: $bp-tablet) {
         font-size: 4rem;
         line-height: 4rem;
+        padding-right: 0;
+		padding-left: 0;
     }
     @media (max-width: $bp-mobile) {
         font-size: 3rem;
         line-height: 3rem;
+        padding-right: 0;
+		padding-left: 0;
     }
 }
 

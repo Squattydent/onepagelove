@@ -4,9 +4,6 @@ Template Name: Advertise
 */ 
 ?>
 
-<!-- Include Gumroad magic needed for payment overlays -->
-<script src="https://gumroad.com/js/gumroad.js"></script>
-
 <?php get_header(); ?>
  
 	<div class="pages sponsored-posts">

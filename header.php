@@ -103,7 +103,7 @@
 
 		            </li> 		            
 
-		            <li><a href="#">Elements</a>
+		            <li class="nav-wide"><a href="#">Elements</a>
 
     					<?php include('frontend/inc/nav-elements.php'); ?>     
 
