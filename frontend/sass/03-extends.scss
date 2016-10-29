@@ -147,6 +147,7 @@
 	flex-wrap: wrap;
 	padding-right: $spacing-huge;
 	padding-left: $spacing-huge;
+	display: block;
 
     @media (max-width: $bp-tablet) {
         font-size: 4rem;
