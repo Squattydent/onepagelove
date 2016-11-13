@@ -22,7 +22,7 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#title-features">See Features</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -85,7 +85,7 @@ Template Name: Currl Bundle
 
 				<div class="button"><a href="#title-themes">See Themes</a></div>
 				<div class="button"><a href="#title-faq">Read FAQs</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -107,8 +107,8 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/alto" target="_blank">See Demo</a></div>
-				<div class="button"><a href="https://transactions.sendowl.com/products/429985/7BCCD6AB/purchase" rel="nofollow">Buy Alto $19</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
+				<div class="button"><a href="https://transactions.sendowl.com/products/429985/7BCCD6AB/add_to_cart" rel="nofollow">Buy Alto $19</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -132,8 +132,8 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/verb" target="_blank">See Demo</a></div>
-				<div class="button"><a href="https://transactions.sendowl.com/products/429984/6A24A1C4/purchase" rel="nofollow">Buy Verb $19</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
+				<div class="button"><a href="https://transactions.sendowl.com/products/429984/6A24A1C4/add_to_cart" rel="nofollow">Buy Verb $19</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -157,8 +157,8 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="http://demo.currl.com/elon" target="_blank">See Demo</a></div>
-				<div class="button"><a href="https://transactions.sendowl.com/products/429980/CABD5B34/purchase" rel="nofollow">Buy Elon $19</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
+				<div class="button"><a href="https://transactions.sendowl.com/products/429980/CABD5B34/add_to_cart" rel="nofollow">Buy Elon $19</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
 
@@ -248,7 +248,7 @@ Template Name: Currl Bundle
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#container-outer">Back to top</a></div>	
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/purchase" rel="nofollow">Buy Bundle $29</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
 
