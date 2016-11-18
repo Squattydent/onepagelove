@@ -327,6 +327,10 @@
 	display: block;
 	margin: 0 auto;
 
+	@media (max-width: $bp-mobile) {	
+		margin: 0;
+	}	
+
 	.search {
 		height:22px;
 		background: none; 
@@ -358,4 +362,21 @@
 			}
 		}
 	}
+}
+
+
+
+.no-results {
+	@extend %typography-p;
+	padding-right: $spacing-medium;
+	padding-left: $spacing-medium;
+	color: #666;
+	display: block;
+	text-align: center;
+	width: 100%;
+	clear: both;
+
+	@media (max-width: $bp-mobile) {	
+		text-align: left;
+	}	
 }

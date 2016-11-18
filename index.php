@@ -13,7 +13,7 @@
 						<span class="grey-shadow">
 							<p>Browse <a href="<?php print get_home_url(); ?>/gallery">One Page Websites</a>, 
 							find <a href="<?php print get_home_url(); ?>/templates">One Page Templates</a> 
-							or explore <a href="<?php print get_home_url(); ?>/elements">Design Elements</a>.</p>
+							or get <a href="<?php print get_home_url(); ?>/hosting">Website Hosting</a>.</p>
 						</span>	
 
 					</div>

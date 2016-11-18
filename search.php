@@ -47,7 +47,13 @@
 
 			<?php endwhile; else: ?>
 
-				<p>Sorry, no content matched your criteria:(</p><p>Try use different keywords or browse using the categories.</p>
+				<div class="no-results">
+
+					<p>Sorry, no posts matched your search term - try browse using the categories in the top header menu.</p>
+
+					<p>If you get stuck, please mail us on <a href="mailto:support@onepagelove.com">support@onepagelove.com</a> and we'd be happy to assist.</p>
+
+				</div>
 
 			<?php endif; ?>
 
