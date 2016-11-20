@@ -18,12 +18,6 @@
 
 	</li> 
 
-	<li><a href="#">Website Design Elements</a>
-
-		<?php include('nav-elements.php'); ?>                     
-
-	</li> 
-
 	<li><a href="#">Blog</a>
 
 		<?php include('nav-blog.php'); ?>	

@@ -103,12 +103,6 @@
 
 		            </li> 		            
 
-		            <li class="nav-wide"><a href="#">Elements</a>
-
-    					<?php include('frontend/inc/nav-elements.php'); ?>     
-
-		            </li> 
-
 		            <li id="nav-resources"><a href="#">Blog</a>
 
 						<?php include('frontend/inc/nav-blog.php'); ?>	
