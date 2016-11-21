@@ -4,7 +4,23 @@
 
 		<div class="slayer">
 
-			<?php echo adManager::ad_zone( 10 ); ?>
+			<?php 
+
+				$ads  = array(
+
+						'ads/newsletter.php', 
+						'ads/layers.php', 
+						'ads/woo.php', 
+						'ads/currl.php', 
+						'ads/hosting.php' // no comma on last one
+						
+					);
+
+				$adfile = $ads[rand(0, count($ads) - 1)];
+
+				include($adfile);
+
+			?>
 
 		</div>
 

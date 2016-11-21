@@ -27,7 +27,7 @@
 
 			<?php 
 
-				if ( in_category(array("Blog","Articles","Resources","Interviews","Round Ups","Sponsored","Web Design Elements"))) { //  
+				if ( in_category(array("Blog","Journal","Articles","Resources","Interviews","Round Ups","Sponsored"))) { //  
 					the_post_thumbnail();   
 				} 
 				else {

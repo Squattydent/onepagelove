@@ -19,7 +19,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.26' );
+define( 'OPL_THEME_VERSION' , '6.8.27' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -248,13 +248,7 @@ function pagenavi($before = '', $after = '') {
 // 06. Exclude pages from search results
 // -------------------------------------------------------------
 
-function mySearchFilter($query) {
-if ($query->is_search) {
-$query->set('post_type', 'post');
-}
-return $query;
-}
-add_filter('pre_get_posts','mySearchFilter');
+// new searchWP plugin covers this
 
 // -------------------------------------------------------------
 // 07. Allow media permissions for contributors

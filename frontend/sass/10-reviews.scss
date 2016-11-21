@@ -246,6 +246,26 @@
 	font-weight: 300;
 }
 
+.similar-submit {
+	text-align: center; 
+	display: block;
+
+	a {
+		color: $color-body-font; 
+		border-bottom: 1px;
+		border-bottom-style: dotted;
+		border-bottom-color: $color-body-font; 
+
+		// text-decoration: underline;
+	}
+
+	a:hover {
+		color: #333333;
+		border-bottom-style: solid;
+		border-bottom-color: #333333; 
+	}
+}
+
 //-------------------------------------------------------------------------------
 // Review notice - http://localhost/wordpress/onepagelove/how-to-achieve-a-parallax-scrolling-effect-with-petr-tichy
 //-------------------------------------------------------------------------------

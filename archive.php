@@ -79,10 +79,10 @@
 				  	echo 'You are browsing the One Page Love blog';		
 					}	
 
-						// Announcements			
-						elseif (is_category('Announcements')) {
-				      	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';							
-				      	echo ' Announcements';		
+						// OPL Journal			
+						elseif (is_category('Journal')) {
+				      	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';								
+				      	echo ' posts in the One Page Love Journal';	
 						}	
 
 						// Articles			
@@ -97,50 +97,27 @@
 				      	echo ' Interviews';		
 						}	
 					
-						// resources			
-					elseif (is_category('Resources')) {
-				    echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';							
-				  	echo 'Design & Development Resources';								
-					}		
+						// Resources			
+						elseif (is_category('Resources')) {
+					    echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';							
+					  	echo 'Design & Development Resources';								
+						}		
 
-				  		// design resources			
-						elseif (is_category('Design Resources')) {
-				  		echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';						
-				      	echo 'One Page Design Resources';								
-						}	
-
-				  		// design resources			
-						elseif (is_category('Development Resources')) {
-				  		echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';						
-				      	echo 'One Page Development Resources';								
-						}	
-
-				  		// design resources			
+				  		// Hosting		
 						elseif (is_category('Hosting')) {
 				  		echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';						
 				      	echo 'Hosting reviews';								
 						}						
 
-				  		// round ups			
+				  		// Round ups			
 						elseif (is_category('Round Ups')) {
 				      	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';							
 				      	echo ' Round Ups';		
 						}											
-						
-				  		// tutorials			
-						elseif (is_category('Tutorials')) {
-				      	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';							
-				      	echo ' Tutorials';		
-						}	
 
 						// Sponsored			
 					elseif (is_category('Sponsored')) {
 				    echo 'You are browsing posts by One Page Love Sponsors';														
-					}
-
-						// Website Design Elements			
-					elseif (is_category('Web Design Elements')) {
-				    echo 'You are browsing Web Design Elements';														
 					}
 
 						// Remaining One Page Gallery categories			

@@ -39,8 +39,6 @@
 
 	<div class="archive-container">
 
-		<?php // query_posts('cat=-280'); // Hide the Sponsored Posts category ?>
-
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part('loop'); ?>

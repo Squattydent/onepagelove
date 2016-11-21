@@ -81,37 +81,37 @@
 				
 				    <li id="nav-start"><a href="#">Info</a>
 						
-						<?php include('frontend/inc/nav-info.php'); ?>	
+						<?php include('frontend/inc/nav/info.php'); ?>	
 
 				 	</li>	
 	
 					<li class="nav-wider"><a href="#">Gallery</a>
 
-    					<?php include('frontend/inc/nav-gallery.php'); ?>
+    					<?php include('frontend/inc/nav/gallery.php'); ?>
 
 		            </li>
 		             					
 		            <li class="nav-wide"><a href="#">Templates</a>
 
-    					<?php include('frontend/inc/nav-templates.php'); ?>     
+    					<?php include('frontend/inc/nav/templates.php'); ?>     
 
 		            </li> 
 
 		            <li class="nav-wide"><a href="#">Styles</a>
 
-    					<?php include('frontend/inc/nav-styles.php'); ?>     
+    					<?php include('frontend/inc/nav/styles.php'); ?>     
 
 		            </li> 		            
 
-		            <li id="nav-resources"><a href="#">Blog</a>
+		            <li id="nav-blog"><a href="#">Blog</a>
 
-						<?php include('frontend/inc/nav-blog.php'); ?>	
+						<?php include('frontend/inc/nav/blog.php'); ?>	
 
 				 	</li>			
 											   
 		            <li id="nav-subscribe"><a href="#">Subscribe</a>
 
-						<?php include('frontend/inc/nav-subscribe.php'); ?>
+						<?php include('frontend/inc/nav/subscribe.php'); ?>
 
 		            </li>
 	
@@ -150,7 +150,7 @@
 
 			<div class="mobile-navigation">
 
-				<?php include('frontend/inc/nav-mobile.php'); ?>	
+				<?php include('frontend/inc/nav/mobile.php'); ?>	
 
 			</div>
 

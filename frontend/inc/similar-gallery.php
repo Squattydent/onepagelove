@@ -1,7 +1,9 @@
 <div class="similar">
 
 	<div class="similar-title">Similar One Page Websites</div>
-	
+ 
+	<div class="similar-submit"><a href="<?php print get_home_url(); ?>/submit">Submit</a></div>
+
 	<div class="archive-container">
 	
 		<?php include ("loop-hosting.php"); ?>
@@ -16,7 +18,7 @@
 				'category__in' => $category_ids,
 				'post__not_in' => array($post->ID),
 				'showposts'=>11,
-				'caller_get_posts'=>1
+				'ignore_sticky_posts'=>1
 			);
 			$my_query = new wp_query($args);
 			if( $my_query->have_posts() ) {

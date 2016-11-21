@@ -131,20 +131,15 @@
 				text-decoration: none;
 				color: #CCC; // parent link color on hover 
 			}
-			
-			// Hide all lists with more than 7 items
-			// #nav-subscribe li:nth-of-type(1n+8) { 
-			// 	display: none;
-			// }
 
-			&#nav-resources {
-				@media (max-width: 1250px) {
+			&#nav-blog {
+				@media (max-width: 930px) {
 					display: none;
 				}
 			} 
 
 			&#nav-subscribe {
-				@media (max-width: 930px) {
+				@media (max-width: 1250px) {
 					display: none;
 				}
 			}
