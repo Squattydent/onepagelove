@@ -8,7 +8,8 @@
 
 				$ads  = array(
 
-						'ads/newsletter.php', 
+						// 'ads/newsletter.php', 
+						'ads/survey.php', 					
 						'ads/layers.php', 
 						'ads/woo.php', 
 						'ads/currl.php', 

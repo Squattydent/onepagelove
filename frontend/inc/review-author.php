@@ -47,7 +47,7 @@
 
 	    was reviewed by Rob Hope</p>
 	    
-	    <p class="author-bio">I founded One Page Love back in 2008. It's come a long way but I want to continuously add value to your experience. Please <a href="http://twitter.com/hitdelete">tweet</a> or <a href="mailto:rob@onepagelove.com">email me</a> with any questions or suggestions.</p>
+	    <p class="author-bio">I started One Page Love back in 2008. It's come a long way but I want to keeping adding value to your experience. Please <a href="http://twitter.com/hitdelete">tweet</a> or <a href="mailto:rob@onepagelove.com">email me</a> with any questions or suggestions.</p>
 
 	</div>
 

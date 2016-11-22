@@ -49,7 +49,7 @@
 
 					<p>Sorry, no posts matched your search term - try browse using the categories in the top header menu.</p>
 
-					<p>If you get stuck, please mail us on <a href="mailto:support@onepagelove.com">support@onepagelove.com</a> and we'd be happy to assist.</p>
+					<p>If you get stuck, please mail me on <a href="mailto:rob@onepagelove.com">rob@onepagelove.com</a> and I'd be happy to assist!</p>
 
 				</div>
 
