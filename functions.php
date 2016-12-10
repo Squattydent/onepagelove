@@ -19,7 +19,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.28' );
+define( 'OPL_THEME_VERSION' , '6.8.30' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -32,8 +32,8 @@ if ( ! isset( $content_width ) ) $content_width = 1600;
 // 01. Post Thumbnails
 // -------------------------------------------------------------
 
+// Added Featured Image
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 800, 422, true ); // Normal post thumbs, fixed width and height, cropped
 
 // -------------------------------------------------------------
 // 02. Recent Posts

@@ -9,11 +9,11 @@
 				$ads  = array(
 
 						// 'ads/newsletter.php', 
-						'ads/survey.php', 					
+						'ads/hosting.php', 					
 						'ads/layers.php', 
 						'ads/woo.php', 
 						'ads/currl.php', 
-						'ads/hosting.php' // no comma on last one
+						'ads/survey.php' // no comma on last one
 						
 					);
 
