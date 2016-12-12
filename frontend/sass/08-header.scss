@@ -91,6 +91,7 @@
 		padding: 0; 
 		list-style: none; 
 		text-shadow: none;
+		color: #999;
 
 		li {
 			display: block; 
@@ -247,11 +248,19 @@
 
 
 //-------------------------------------------------------------------------------
-// Header - Bottom Right - Search
+// Header - Right - Search
 //-------------------------------------------------------------------------------
 
 #header-search {
-	float: left;
+	float: left
+}
+
+#mobile-search {
+	padding: 0 $spacing-medium $spacing-medium $spacing-medium;
+}
+
+#header-search,
+#mobile-search {
 	// background: $test3;
 
 	.search {
@@ -323,7 +332,10 @@
 	//-------------------------------------------------------------------------------
 
 	// #toggle-mobile-navigation,
-	#header-navigation,
+	#header-navigation {
+		display: none;
+	}	
+
 	#header-search {
 		display: none;
 	}	
@@ -410,7 +422,7 @@
 
 
 						li { // child list item background set at top of stylesheet
-							flex: 1 0 50%; 
+							flex: 1 0 33%; 
 	 						box-sizing: border-box;
 
 							a { // dropdown list item link color
@@ -463,3 +475,31 @@
 
 }
 
+
+@media (max-width: $bp-mobile) {
+
+	#mobile-navigation-toggle {
+
+		.mobile-navigation {
+
+			ul { // Section headings eg. Browse, One Page Website Gallery
+
+				li {
+
+					ul { // Child menu background eg. Home, About...
+
+						li { // child list item background set at top of stylesheet
+							flex: 1 0 50%; 
+	 					}
+
+	 				}
+
+	 			}
+
+	 		}
+
+	 	}
+
+	}
+
+}

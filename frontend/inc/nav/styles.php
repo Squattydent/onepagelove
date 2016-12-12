@@ -1,6 +1,6 @@
 <ul>
-    <li><a href="<?php print get_home_url(); ?>/tag/arty">Arty</a></li>     
     <li><a href="<?php print get_home_url(); ?>/tag/big-typography">Big Typography</a></li>     
+    <li><a href="<?php print get_home_url(); ?>/tag/brutalism">Brutalist</a></li>     
     <li><a href="<?php print get_home_url(); ?>/tag/card-style">Card Style</a></li> 
     <li><a href="<?php print get_home_url(); ?>/tag/colorful">Colorful</a></li>       
     <li><a href="<?php print get_home_url(); ?>/tag/comic-style">Comic Style</a></li>  

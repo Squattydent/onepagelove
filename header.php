@@ -126,7 +126,7 @@
                     <div class="search-field-holder"><input type="text" class="search-field" name="s" placeholder="Search" /></div>
 				</form>
 	
-			</div><!-- /#header-bottom-right -->
+			</div>
 
 			<div id="header-button">
 
