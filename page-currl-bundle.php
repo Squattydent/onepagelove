@@ -9,9 +9,9 @@ Template Name: Currl Bundle
 <!-- Include Sendowl magic needed for PayPal payments -->
 <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js" ></script>
 		
-<div class="pages currl-bundle">	
+<div class="pages currl-bundle" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/feedback/footer.jpg');">	
 
-	<div class="section section-padding section-intro bundle-intro">
+	<div class="section section-padding section-intro bundle-intro" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/bundle/intro.jpg');">
 
 		<div>
 

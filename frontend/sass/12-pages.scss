@@ -441,21 +441,21 @@
 }    
 
 // ------------------------------------------------
-// Currl Bundle Intro
+// Currl Bundle
 // ------------------------------------------------ 
 
 .currl-bundle {    
     font-size: 1rem;
     line-height: 1rem;
-    background-image: url($background-bundle-footer);
     background-position: bottom; 
+    // background image added inline
     background-repeat: no-repeat; 
     background-size: 100%;  
 
     .bundle-intro {
         padding-top: $spacing-huge;
         padding-bottom: 500px;
-        background-image: url($background-bundle-intro);
+        // background image added inline
         background-position: bottom; 
         background-repeat: no-repeat; 
         background-size: 100%;  
@@ -489,34 +489,14 @@
 }
 
 // ------------------------------------------------
-// Advertise - Sponsored Posts
+// Private Feedback
 // ------------------------------------------------ 
 
-.sponsored-posts {    
-    font-size: 1rem;
-    line-height: 1rem;
-    background-image: url($background-sponsored-footer);
+.private-feedback {
+    // background image added inline
     background-position: bottom; 
     background-repeat: no-repeat; 
     background-size: 100%;  
-    padding-bottom: $spacing-huge*4;
-
-    .section-stats {
-        padding-top: 0;
-    }
-
-    .section-faq {
-        padding-top: 0;
-    }
-
 }
 
-// ------------------------------------------------
-// 2 - Element Posts
-// ------------------------------------------------ 
 
-.section-submit {
-
-    padding: 0 $spacing-medium $spacing-medium $spacing-medium;
-
-}
