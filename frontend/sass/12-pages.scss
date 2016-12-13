@@ -267,7 +267,7 @@
     text-align: center;
 
     .features {
-         width: 720px;
+         width: 900px;
          max-width: 90%;
          margin: $spacing-huge auto $spacing-huge*2 auto;
          text-align: left;
@@ -278,19 +278,15 @@
             margin-bottom: $spacing-big;
 
             @media (max-width: $bp-tablet) {
-
-                // flex-direction: column;
                 min-height: auto;
                 max-height: none;
                 text-align: center;
                 margin-bottom: $spacing-huge;
-
             }
 
             .feature-image {
                 flex: 1 1 50%;
                 box-sizing: border-box;
-                // padding-right: $spacing-medium;
 
                 @media (max-width: $bp-tablet) {
                     flex: 1 1 100%;
@@ -301,7 +297,8 @@
                 img {
                     border: 0.625rem solid #FFF;
                     box-shadow: 0px 0px 30px #DDD;
-                    max-width: 100%;
+                    max-width: 400px;
+                    width: 100%;
                     height: auto;
                 }
             }
@@ -334,6 +331,27 @@
                 }
 
             }
+
+        }
+
+        .feature-left {
+
+            .feature-image {
+
+                @media (max-width: $bp-notebook) and (min-width: $bp-tablet) {
+                    padding-right: $spacing-medium;
+                }
+
+            }    
+
+            .feature-copy {
+
+                @media (max-width: $bp-notebook) and (min-width: $bp-tablet) {
+                    padding-left: $spacing-medium;
+                }
+
+            }    
+
 
         }
 

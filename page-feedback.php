@@ -48,35 +48,35 @@ Template Name: Feedback
 
 			<div class="features">
 				
-				<div class="feature">
-					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/1.jpg" /></div>
+				<div class="feature feature-left">
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/feedback/first-impression.jpg" /></div>
 					<div class="feature-copy"><h3>First Impression</h3>Immediate thoughts upon first review without reading the submitted build notes. These comments often pick up issues with the overall concept and flow of the website. Often a team has been working on a website so long they forget that it needs to be much clearer to new users.</div>
 				</div>
 
 				<div class="feature">
 					<div class="feature-copy"><h3>User Experience (UX)</h3>"User experience" encompasses all aspects of the end-user's interaction with the One Page website. UX feedback covers: Language tone, Trust, Transparency, Navigation and Consistency.</div>
-					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/2.jpg" /></div>
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/feedback/ux.gif" /></div>
 				</div>
 
-				<div class="feature">			
-					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/3.jpg" /></div>
+				<div class="feature feature-left">			
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/feedback/design.jpg" /></div>
 					<div class="feature-copy"><h3>Design</h3>Suggestions that come from a subjective point of view. Design feedback covers: Logo, Branding, Responsive adaption, Spacing and more.</div>
 				</div>
 
 				<div class="feature">			
 					<div class="feature-copy"><h3>Code</h3>Suggestions based on reports from online services but also include experienced suggestions for good practice. Code feedback covers: PageSpeed Insights, Source Code inspection, Search Engine Optimization, Heading hierarchies and more.</div>
-					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/4.jpg" /></div>
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/feedback/code.jpg" /></div>
 
 				</div>
 
-				<div class="feature">			
-					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/5.jpg" /></div>
+				<div class="feature feature-left">			
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/feedback/grammar.jpg" /></div>
 					<div class="feature-copy"><h3>Grammar</h3>Bad grammar and spelling result in terrible first impressions and decrease conversions. We point out the errors.</div>
 				</div>
 
 				<div class="feature">		
 					<div class="feature-copy"><h3>Final Thoughts</h3>Suggestions on ways to improve the overall website concept delivery. This could include simplifying the website or even adding more elements to increase trust.</div>
-					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/bundle/features/6.jpg" /></div>
+					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/feedback/final-thoughts.gif" /></div>
 				</div>
 
 			</div>
