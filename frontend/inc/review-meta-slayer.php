@@ -12,7 +12,7 @@
 						'ads/hosting.php', 					
 						'ads/layers.php', 
 						'ads/woo.php', 
-						'ads/currl.php', 
+						// 'ads/currl.php', 
 						'ads/survey.php' // no comma on last one
 						
 					);

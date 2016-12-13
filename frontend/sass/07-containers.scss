@@ -94,9 +94,9 @@ body.single #container-outer #container {
 			// overflow: visible !important;
 
 			.single-container {
-				width: $container-standard - 80px; // 1200 = 80px less than #container as 40px padding 
+				width: $container-standard - 160px; // 1200 = 80px less than #container as 40px padding 
 	            margin: $spacing-medium auto $spacing-huge auto;
-				padding: $spacing-big; 
+				padding: $spacing-huge; 
 				height: auto;			
 			}
 
@@ -257,10 +257,10 @@ body.single #container-outer #container {
 }
 
 //-------------------------------------------------------------------------------
-// Small Desktop
+// Small Desktop (used to be smdesktop breakpoint)
 //-------------------------------------------------------------------------------	
 
-@media (max-width: $bp-desksm) {
+@media (max-width: 1340px) {
 
 	#container-outer {
 		width: 100%;
@@ -328,36 +328,6 @@ body.single #container-outer #container {
 		}
 
 	}		
-
-}
-
-//-------------------------------------------------------------------------------
-// Notebook
-//-------------------------------------------------------------------------------	
-
-@media (max-width: $bp-notebook) {
-
-	#container-outer {
-
-		#header-container {
-
-
-			#header {
-
-
-				#header-navigation {
-				}
-
-				#header-search {
-					width: 9.375rem; // 150
-
-				}
-
-			}
-
-		}
-
-	}
 
 }
 
