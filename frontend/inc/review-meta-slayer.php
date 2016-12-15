@@ -11,9 +11,7 @@
 						// 'ads/newsletter.php', 
 						'ads/hosting.php', 					
 						'ads/layers.php', 
-						'ads/woo.php', 
-						// 'ads/currl.php', 
-						'ads/survey.php' // no comma on last one
+						'ads/woo.php' // no comma on last one
 						
 					);
 
