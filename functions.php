@@ -19,7 +19,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.35' );
+define( 'OPL_THEME_VERSION' , '6.8.36' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -254,12 +254,7 @@ function pagenavi($before = '', $after = '') {
 // 07. Allow media permissions for contributors
 // -------------------------------------------------------------
 
-if ( current_user_can('contributor') && !current_user_can('upload_files') )
-    add_action('admin_init', 'allow_contributor_uploads');
-function allow_contributor_uploads() {
-    $contributor = get_role('contributor');
-    $contributor->add_cap('upload_files');
-}
+// When users submitted images with Gravity Forms
 
 // -------------------------------------------------------------
 // 08. Truncation
@@ -280,17 +275,24 @@ function limit_text($text, $limit) {
 
 function opl_enqueue_scripts(){
     
+    // jQuery
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', false, '3.1.0', true);
+    wp_enqueue_script('jquery');
+
     // Main Stylesheet
     wp_register_style( 'opl-stylesheet', get_template_directory_uri().'/frontend/css/style.css', array(), OPL_THEME_VERSION );  
     wp_enqueue_style( 'opl-stylesheet' );   
 
     // Script: Custom Code
-    wp_register_script('opl-custom-js',  get_template_directory_uri().'/frontend/js/opl-custom-code.js', array(), OPL_THEME_VERSION ); 
+    wp_register_script('opl-custom-js',  get_template_directory_uri().'/frontend/js/opl-custom-code.js', array(), OPL_THEME_VERSION, true ); 
     wp_enqueue_script('opl-custom-js');
 
 }
 
 add_action('wp_enqueue_scripts', 'opl_enqueue_scripts');
+
+
 
 // -------------------------------------------------------------
 // 10. WordPress Clean-up
@@ -303,7 +305,7 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );     # Remove Smileys e
 // 11. Gravity Forms Filters
 // -------------------------------------------------------------
 
-
+// No longer needed
 
 // -------------------------------------------------------------
 // 12. Update System
