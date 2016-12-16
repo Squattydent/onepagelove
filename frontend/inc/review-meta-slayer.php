@@ -8,7 +8,8 @@
 
 				$ads  = array(
 
-						// 'ads/newsletter.php', 
+						'ads/critique.php', 
+						'ads/feedback.php', 
 						'ads/hosting.php', 					
 						'ads/layers.php', 
 						'ads/woo.php' // no comma on last one

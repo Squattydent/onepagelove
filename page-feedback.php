@@ -17,7 +17,7 @@ Template Name: Feedback
 
 			<div class="section-tagline">A One Page Love Service</div>
 			<div class="section-title">Private Feedback</div>
-			<div class="section-description">10 minute video analysis of your Landing Page covering design, code, conversions & more.</div>
+			<div class="section-description">10 minute video analysis of your Landing Page covering design, code, performance & more.</div>
 
 			<div class="section-buttons">
 				
