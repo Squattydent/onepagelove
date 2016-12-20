@@ -26,7 +26,7 @@ Template Name: Feedback
 
 			</div>
 
-			<div class="button-paypal">Away notice: Reviews resume January 2017<!-- Payment handled with PayPal  --></div>
+			<div class="button-paypal">Holiday notice: Feedback resumes Jan 2017<!-- Payment handled with PayPal  --></div>
 
 		</div>
 		
@@ -88,7 +88,7 @@ Template Name: Feedback
 
 			</div>
 
-			<div class="button-paypal">Away notice: Reviews resume January 2017<!-- Payment handled with PayPal  --></div>
+			<div class="button-paypal">Holiday notice: Feedback resumes Jan 2017<!-- Payment handled with PayPal  --></div>
 
 		</div>
 
@@ -176,7 +176,7 @@ Template Name: Feedback
 
 			</div>
 
-			<div class="button-paypal">Away notice: Reviews resume January 2017<!-- Payment handled with PayPal  --></div>
+			<div class="button-paypal">Holiday notice: Feedback resumes Jan 2017<!-- Payment handled with PayPal  --></div>
 
 			<div class="quote">
 				
