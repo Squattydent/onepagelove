@@ -26,7 +26,7 @@ Template Name: Feedback
 
 			</div>
 
-			<div class="button-paypal">Holiday notice: Feedback resumes Jan 2017<!-- Payment handled with PayPal  --></div>
+			<div class="button-paypal">Payment handled with PayPal</div>
 
 		</div>
 		
@@ -88,7 +88,7 @@ Template Name: Feedback
 
 			</div>
 
-			<div class="button-paypal">Holiday notice: Feedback resumes Jan 2017<!-- Payment handled with PayPal  --></div>
+			<div class="button-paypal">Payment handled with PayPal</div>
 
 		</div>
 
@@ -176,8 +176,8 @@ Template Name: Feedback
 
 			</div>
 
-			<div class="button-paypal">Holiday notice: Feedback resumes Jan 2017<!-- Payment handled with PayPal  --></div>
-
+			<div class="button-paypal">Payment handled with PayPal</div>
+			
 			<div class="quote">
 				
 				<div class="quoted">"Thanks a lot, the feedback was very good and our developers will take a closer look and make some fixes. A good service idea and the price is worth it."</div>
