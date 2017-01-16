@@ -515,10 +515,3 @@
     background-repeat: no-repeat; 
     background-size: 100%;  
 }
-
-// ------------------------------------------------
-// Holiday Notice
-// ------------------------------------------------ 
-
-body.page-template-default::after{content:"🎄 Holiday Notice: Submission reviews continue in the week starting 09 January 2017 🎄";display:block;text-align:center;position:fixed;z-index:999999;bottom:0;right:0;left:0;color:#f5f5f5;background:#222;padding:30px 10px;font-size:20px; line-height: 20px;}
-body.page-template-page-feedback::after{content:"🎄 Holiday Notice: Private feedback continues in the week starting 09 January 2017 🎄";display:block;text-align:center;position:fixed;z-index:999999;bottom:0;right:0;left:0;color:#f5f5f5;background:#222;padding:30px 10px;font-size:20px; line-height: 20px;}
