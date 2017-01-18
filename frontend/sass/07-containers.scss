@@ -94,9 +94,9 @@ body.single #container-outer #container {
 			// overflow: visible !important;
 
 			.single-container {
-				width: $container-standard - 160px; // 1200 = 80px less than #container as 40px padding 
+				width: $container-standard - 80px; // 1200 = 80px less than #container as 40px padding 
 	            margin: $spacing-medium auto $spacing-huge auto;
-				padding: $spacing-huge; 
+				padding: $spacing-huge 0; 
 				height: auto;			
 			}
 
@@ -292,7 +292,7 @@ body.single #container-outer #container {
 					width: 94%;  
 		            margin: 20px auto 40px auto;
 					padding: 40px 3% 40px 3%; 
-					height: auto;			
+					height: auto;		
 				}
 
 				.review {

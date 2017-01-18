@@ -6,7 +6,7 @@
 // 03. If in parent category
 // 04. Add special content to RSS Feed
 // 05. Pagination
-// 06. Exclude pages from search results
+// 06. Remove <p> around images
 // 07. Allow media permissions for contributors
 // 08. Truncation
 // 09. Enqueue Scripts and Styles
@@ -19,7 +19,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.41' );
+define( 'OPL_THEME_VERSION' , '6.8.42' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -245,10 +245,21 @@ function pagenavi($before = '', $after = '') {
 }
 
 // -------------------------------------------------------------
-// 06. Exclude pages from search results
+// 06. Remove <p> around images in Blog category
 // -------------------------------------------------------------
 
-// new searchWP plugin covers this
+function filter_ptags_on_images($content){
+
+    if ( in_category( array( "Blog", "Interviews", "Round Ups", "Articles" ))) {
+        return preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '\1', $content);
+    }
+
+    else {
+         return ($content);
+    };
+
+}    
+add_filter('the_content', 'filter_ptags_on_images');
 
 // -------------------------------------------------------------
 // 07. Allow media permissions for contributors

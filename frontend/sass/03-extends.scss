@@ -179,6 +179,7 @@
     }
 }
 
+
 //-------------------------------------------------------------------------------
 // Typography - reviews and pages
 //-------------------------------------------------------------------------------
@@ -250,3 +251,26 @@
 }
 
 
+//-------------------------------------------------------------------------------
+// Articles - blog, roundups, interviews
+//-------------------------------------------------------------------------------
+
+%padding-articles {
+	padding-left: $spacing-mega;
+	padding-right: $spacing-mega;
+
+	@media (max-width: $bp-notebook) {
+
+		padding-left: $spacing-big;
+		padding-right: $spacing-big;
+
+	}
+
+	@media (max-width: $bp-mobile) {
+
+		padding-left: $spacing-medium;
+		padding-right: $spacing-medium;
+
+	}
+
+}

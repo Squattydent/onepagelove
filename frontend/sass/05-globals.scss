@@ -78,7 +78,7 @@ li {
 
 .alignleft {
   float: left;
-  margin: 0 $spacing-medium $spacing-medium 0;
+  margin: 0 $spacing-big $spacing-medium 0;
 }
 
 .alignright {
@@ -121,16 +121,27 @@ blockquote {
 }
 blockquote p {
 	color: #AAA !important;
+
+  a {
+    color: #AAA !important;
+    border-color: #AAA !important;
+  }
 }
 
 i, em {
   font-style: italic;
 }
 
-code {
+pre code {
   display: block;
   padding: $spacing-medium;
   overflow: hidden;
+  background: $color-code;
+  margin-bottom: $spacing-medium;
+  color: #666;
+}
+
+li code, p code {
   background: $color-code;
 }
 
@@ -217,7 +228,6 @@ a.noBorder:hover {
 //-------------------------------------------------------------------------------
 // Text Select
 //-------------------------------------------------------------------------------
-
 
 ::selection {
 	background: $color-main-link; 

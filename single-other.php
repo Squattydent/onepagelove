@@ -4,20 +4,12 @@
  
 		<div class="single-container">
 
-		    <div class="block-right">
+			<div class="section section-padding blog-intro">
 
-				<ul>
-					<li><strong>Published:</strong> <?php echo get_the_date(); ?></li>
-					<li><strong>Category:</strong> <?php the_category(', ', 'parents' ); ?></li>
-				</ul>
-
-				<?php include ("frontend/inc/review-meta-slayer.php"); ?>
-
-		        <div class="clear"></div>
-		     
-		    </div><!-- /.block-right -->
-
-		    <div class="single-title"><h1><?php the_title(); ?></h1></div>
+				<div class="blog-meta"><?php echo get_the_date(); ?> - <?php the_category(', ', 'parents' ); ?></div>
+				<div class="blog-title"><h1><?php the_title(); ?></h1></div>
+				
+			</div>
 		           
 			<?php include ('frontend/inc/pagination-floating.php'); ?>
 	           

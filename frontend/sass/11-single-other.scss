@@ -9,22 +9,56 @@
 	border-radius: $rounded-corners;
 	box-shadow: $shadow-global;
 
+	.blog-intro {
+        padding-top: $spacing-medium;
+        margin-bottom: $spacing-big;
 
+        .blog-meta {
+        	text-align: center;
+        	font-size: 1rem;
+		    @extend %section-tagline;
+
+		    @media (max-width: $bp-mobile) {
+		        // padding-top: $spacing-small;
+		    }
+		}
+
+		.blog-title {
+			// h1 set further up
+		}
+                    
+    }
 
 	p {
 		@extend %typography-p;
+		@extend %padding-articles;
+
+		img {
+			padding: none;
+		}
 	}
 
 	h1 {
-		@extend %typography-h1;
+		@extend %section-title;
+		font-weight: 600;
+		text-align: center;
+		text-transform: none;
+		letter-spacing: -0.125rem;
+		font-family: $font-fam-prox-soft;
 	}
 
 	h2 {
 		@extend %typography-h2;
+		@extend %padding-articles;
 	}
 
 	h3 {
 		@extend %typography-h3;
+		@extend %padding-articles;
+
+		@media (max-width: $bp-desksm) {
+			margin-top: $spacing-huge;
+		}
 	}	
 
 	h4 {
@@ -33,35 +67,119 @@
 
 	ul {
 		@extend %typography-ul;
+		@extend %padding-articles;
+		margin-left: $spacing-big;
+
 	} 
 
 	ol {
 		@extend %typography-ol;
+		@extend %padding-articles;
+		margin-left: $spacing-big;
 	}
 
 	img {
 		max-width: 100%; 
 		height: auto;
-		border-radius: $rounded-corners;
+		margin-bottom: $spacing-medium;
 
 		.alignnone {
 			max-width: 100%; 
 			height: auto;
+
 		}
 
-		 .alignleft {
+	}
 
-		 	@media (max-width: $bp-desksm) {
-			 	max-width: 300px; 
-			 	height: auto;
+	.wp-caption {
+		// background-color: #111;
+		max-width: 100%;
+		text-align: center;
 
+		p {
+			@extend %section-tagline;
+			margin-bottom: $spacing-huge;
+			color: #AAA;
+			font-size: 1rem;
+
+			@media (max-width: $bp-tablet) {
+				margin-bottom: $spacing-big;
 			}
 
-		 }
+		}
+		
+	}
 
-		 .alignright {
-		 	
-		 }
+
+	.alignleft {
+		margin: 0 $spacing-big $spacing-medium $spacing-mega;
+
+			@media (max-width: $bp-notebook) {
+			 	margin-left: $spacing-medium;
+			}
+			@media (max-width: $bp-tablet) {
+				margin-left: $spacing-big;
+			 	max-width: 300px;
+			 	height: auto;
+			}
+			@media (max-width: $bp-mobile) {
+				max-width: none;
+			 	width: 92%;
+			 	height: auto;
+			 	margin: 0 $spacing-medium $spacing-medium $spacing-medium;
+			}		
+	}
+
+	.alignright {
+		margin: 0 $spacing-mega $spacing-medium $spacing-medium;
+
+			@media (max-width: $bp-notebook) {
+			 	margin-right: $spacing-medium;
+			}
+			@media (max-width: $bp-tablet) {
+				margin-right: $spacing-big;
+			 	max-width: 300px;
+			 	height: auto;
+			}
+			@media (max-width: $bp-mobile) {
+				max-width: none;
+			 	width: 92%;
+			 	height: auto;
+			 	margin: 0 $spacing-medium $spacing-medium $spacing-medium;
+			}		
+	}
+
+	.aligncenter {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.alignnone {
+		margin-bottom: $spacing-medium ;
+	}
+
+	hr {
+		border: none;
+		height: 1px;
+		display: block;
+		margin: $spacing-huge 0;
+		text-align: center;
+
+			@media (max-width: $bp-tablet) {
+				margin: $spacing-big 0;
+			}
+
+	}
+	hr:after { 
+		content: '\000B7 \000B7 \000B7 '; 
+		display: inline-block; 
+		position: relative; 
+		top: -13px; 
+		padding: 0 3px; 
+		background: #fff; 
+		color: #999; 
+		font-size: 48px; 
+		letter-spacing: 12px;
 	}
 
 	blockquote  {
@@ -69,15 +187,19 @@
 	    display: block;
 	    width: 80%; 
 	    margin: $spacing-huge auto;
-	    max-width: 760px;
 	    border-left: none;
 
+	    	@media (max-width: $bp-tablet) {
+				margin: $spacing-big auto;
+			}
+ 
 	    p {
 	    	font-size: 2.25rem;
 	        line-height: 3rem;
 	        margin-bottom: $spacing-medium;
-	        color: #333 !important;    
-
+	        color: #444 !important;    
+		    padding-right: none !important;
+		    padding-left: none  !important;
 
 	        @media (max-width: $bp-tablet) {
 	            font-size: 1.5rem;
@@ -90,48 +212,8 @@
 		max-width: 100%;
 	}
 
-	.block-right {
-		padding: $spacing-medium $spacing-medium 0 $spacing-medium; 
-		float: right; 
-		vertical-align: top; 
-		display: block; 
-		width: 300px; 
-		height: auto; 
-		margin: 0 0 $spacing-big $spacing-big;
-		font-size: 0.875rem;
-		line-height: 1.125rem; 
-
-		@media (max-width: $bp-tablet) {
-			display: none; // Should be hidden on tablet
-		}
-
-		ul {
-			padding: 0;
-			margin: 0;
-			font-size: 0.875rem;
-		    line-height: 1.125rem; 
-			margin-bottom: $spacing-medium;
-
-			li {
-				padding: 0;
-				margin: 0;
-				margin-bottom: $spacing-small;
-				list-style: none;
-
-				a {
-					color: $color-main-link;
-					border-bottom: none;
-				}
-
-				a:hover {
-					color: $color-main-link;
-					border-bottom: 1px solid $color-main-link;
-				}
-
-			}
-
-		}
-
+	pre {
+		@extend %padding-articles;
 	}
 
 }
@@ -141,12 +223,17 @@
 // ------------------------------------------------ 
 
 a.roundup-buy { // needs to get phased out
-	float: left; 
+	// float: left; 
+	float: none; 
+	clear: both;
+	@extend %padding-articles;
 }
 
 a.roundup-demo { // needs to get phased out
-	float: left; 
-	margin-top: -1.75rem; // 28
+	// float: left; 
+	float: none; 
+	clear: both;
+	// margin-top: -1.75rem; // 28
 }
 
 a.roundup-buy, // needs to get phased out
@@ -157,7 +244,7 @@ a.button-border {
 	font-size: 0.875rem; // 14
 	line-height: 0.875rem; 
 	text-transform: uppercase; 
-	display: inline-block;
+	// display: inline-block;
 	border-radius: $rounded-corners;
 	border-width: 2px !important; // to override the 1px global border styles
 	border-style: solid !important; // to override the dotted global border styles
@@ -167,6 +254,7 @@ a.button-border {
 	padding: $spacing-small $spacing-medium;
 	margin-right: $spacing-small;
 	font-weight: 600;
+			@extend %padding-articles;
 }
 
 a.roundup-buy, // needs to get phased out
