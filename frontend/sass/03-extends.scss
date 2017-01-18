@@ -260,17 +260,26 @@
 	padding-right: $spacing-mega;
 
 	@media (max-width: $bp-notebook) {
-
 		padding-left: $spacing-big;
 		padding-right: $spacing-big;
-
 	}
 
 	@media (max-width: $bp-mobile) {
-
 		padding-left: $spacing-medium;
 		padding-right: $spacing-medium;
+	}
 
+}
+
+%margin-buttons {
+	margin-left: $spacing-mega;
+
+	@media (max-width: $bp-notebook) {
+		margin-left: $spacing-big;
+	}
+
+	@media (max-width: $bp-mobile) {
+		margin-left: $spacing-medium;
 	}
 
 }

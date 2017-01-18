@@ -223,17 +223,13 @@
 // ------------------------------------------------ 
 
 a.roundup-buy { // needs to get phased out
-	// float: left; 
-	float: none; 
-	clear: both;
-	@extend %padding-articles;
+	float: left; 
+	@extend %margin-buttons;
 }
 
 a.roundup-demo { // needs to get phased out
-	// float: left; 
-	float: none; 
-	clear: both;
-	// margin-top: -1.75rem; // 28
+	float: left; 
+	margin-top: -1.75rem; // 28
 }
 
 a.roundup-buy, // needs to get phased out
@@ -244,7 +240,7 @@ a.button-border {
 	font-size: 0.875rem; // 14
 	line-height: 0.875rem; 
 	text-transform: uppercase; 
-	// display: inline-block;
+	display: inline-block;
 	border-radius: $rounded-corners;
 	border-width: 2px !important; // to override the 1px global border styles
 	border-style: solid !important; // to override the dotted global border styles
@@ -254,7 +250,6 @@ a.button-border {
 	padding: $spacing-small $spacing-medium;
 	margin-right: $spacing-small;
 	font-weight: 600;
-			@extend %padding-articles;
 }
 
 a.roundup-buy, // needs to get phased out
