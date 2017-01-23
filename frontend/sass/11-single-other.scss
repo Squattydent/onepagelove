@@ -206,6 +206,11 @@
 	            line-height: 1.875rem;
 	        }
 	    }
+	    
+	}
+
+	.twitter-tweet {
+		@extend %padding-articles;
 	}
 
 	iframe {

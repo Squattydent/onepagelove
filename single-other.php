@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<!-- Include Sendowl magic needed for PayPal payments -->
+<script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js" ></script>
+
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
  
 		<div class="single-container">
