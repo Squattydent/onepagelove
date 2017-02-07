@@ -16,6 +16,6 @@
 
 		<?php endif; ?>
 
-	</div><!-- /.single -->
+	</div>
 
 <?php get_footer(); ?>

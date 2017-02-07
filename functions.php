@@ -19,7 +19,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.44' );
+define( 'OPL_THEME_VERSION' , '6.8.48' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -250,7 +250,7 @@ function pagenavi($before = '', $after = '') {
 
 function filter_ptags_on_images($content){
 
-    if ( in_category( array( "Blog", "Interviews", "Round Ups", "Articles" ))) {
+    if ( in_category( array( "Blog", "Interviews", "Round Ups", "Articles", "Journal" ))) {
         return preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '\1', $content);
     }
 
@@ -302,7 +302,6 @@ function opl_enqueue_scripts(){
 }
 
 add_action('wp_enqueue_scripts', 'opl_enqueue_scripts');
-
 
 
 // -------------------------------------------------------------

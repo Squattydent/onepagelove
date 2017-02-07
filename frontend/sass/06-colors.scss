@@ -38,6 +38,16 @@ SVG.thumb-launch-svg:hover {fill: $color-main-link;}
 .review .postInfo .postLinks a:hover {background: #EC3D80; color: #FFF;}
 .similar-title {color: #333;}
 
+/* Launch Website Buttons */
+.review-launch {}
+.review-launch a {text-decoration: none;  vertical-align: top;display: block; width: 100%; color: #FFF; height: 40px; padding:20px 0px 0px 0px; text-align: center;text-decoration:none;text-shadow: none;  text-transform: uppercase; font-size: 16px; line-height: 20px;  background:$color-main-link; }
+.review-launch {margin-top: 0px !important; padding: 0;}
+.review-launch svg {fill: #FFF; width: 20px; height: 20px;}
+.review-launch a:hover {color: #FFF; background: $color-main-link-hover; border: none; }
+
+.review-demo a {background-color: $color-blue-link;}
+.review-demo a:hover {background-color: $color-blue-link-hover;}
+
 //-------------------------------------------------------------------------------
 // Pages
 //-------------------------------------------------------------------------------
@@ -58,13 +68,6 @@ SVG.thumb-launch-svg:hover {fill: $color-main-link;}
 .browsing a {border: 1px solid #ccc;color: #999;}
 .browsing a:hover {border: 1px solid $color-main-link;color: $color-main-link;}
 .browsing .current {border: 1px solid $color-main-link;color: $color-main-link;}
-
-/* Launch Website Buttons */
-.review-launch {}
-.review-launch a {text-decoration: none;  vertical-align: top;display: block; width: 100%; color: #FFF; height: 40px; padding:20px 0px 0px 0px; text-align: center;text-decoration:none;text-shadow: none;  text-transform: uppercase; font-size: 16px; line-height: 20px;  background:$color-main-link; }
-.review-launch {margin-top: 0px !important; padding: 0;}
-.review-launch svg {fill: #FFF; width: 20px; height: 20px;}
-.review-launch a:hover {color: #FFF; background: #EC3D80; border: none; }
 
 /* Round Ups */
 a.roundup-buy {color: #FFF !important; background: $color-main-link;}

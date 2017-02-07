@@ -1,108 +1,126 @@
 //---------------------------------------------------------------
-// Footer Quote
+// Footer Newsletter - https://emailoctopus.com/lists/804e381c-8793-11e6-9b6d-02b6b4f78f99/members
 //---------------------------------------------------------------
 
-#footer-quote-container {
-  	background-repeat: repeat; 
+#footer-newsletter {
+	background-color: $test4;
 
-	#footer-quote {
+	.newsletter-title {
+
+	}
+
+	.newsletter-lower-wrapper {
+
 		display: flex;
-    	align-items: center;
-    	@extend %font-smoothing;
+	    // flex-direction: column;
+	    // lex-wrap: wrap;
 
-    	.footer-quote-single {
-    		color: #666;
-    		max-width: 80%;
-    		margin-right: auto;
-    		margin-left: auto;
-    		text-align: center; // doesn't work?
-    		font-style: italic;
-    		font-family: Georgia;
-    		font-size: 1.125rem;
-    		line-height: 1.5rem;
+		.newsletter-ebook {
+			order:1; 
+			background:$test1; 	
+			width: 33%;
+		}
 
-			@media (max-width: $bp-mobile) { 
-				max-width: 100%;
+		.newsletter-pitch {
+			order:2; 
+			background:$test2; 
+			height:300px;		
+			width: 33%;
+
+			/* List styling */
+			.ul {
+			  margin-top: 0;
+			  padding-left: 2em;
+			  list-style-type: none;
+			}
+			li:before {
+			  position: absolute;
+			  margin-left: -1.3em;
+			  font-weight: bold;
+			}
+			li.tick:before {
+			  content: "\2713";
+			  color: darkgreen;
 			}
 
-    		i {
-    			font-size: 1rem;
-    			display: block;
-    			padding-top: $spacing-small;
-    			font-style: normal;
-    			// font-family: $font-fam-prox;
-    			color: #454545;
-    		}
-    	}
-		
+		}
+
+
+		.newsletter-form {
+			order:3; 
+			background:$test3; 
+			height:300px;			
+			width: 33%;
+
+			.email-octopus-form-row-hp {
+				display: none;
+			}
+
+		}
+
 	}
 }
 
+
 //---------------------------------------------------------------
-// Footer Bottom
+// Footer Social - svgicons.sparkk.fr
 //---------------------------------------------------------------
 
-#footer-bottom-container {
-	border-top: 1px solid #181818;
-	box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.2);
-
-	#footer-lists {
-		display: flex;
-
-		@media (max-width: $bp-tablet) { 
-			flex-wrap: wrap;
-		}
-
-		h3 {
-			color: #FFF;
-			font-weight: 600; 
-			text-transform: uppercase;
-		}
-
-		.footer-column {
-			width: 20%;
-			min-height: auto;
-			margin-bottom: $spacing-big;
-			// padding: 0 $spacing-medium;
-
-			@media (max-width: $bp-tablet) { 
-				width: 50%;
-			}
-			
-			h3 {
-				text-transform: uppercase; 
-				margin: 0 0 $spacing-medium $spacing-medium;
-			}
-
-			ul {
-				font-size: 0.8125rem; // 13
-				line-height:  1.5rem; // 24
-				color: #666;
-				padding: 0 0 0 $spacing-medium;
-
-				li a {
-					color: #666;
-
-					&:hover { 
-						text-decoration: none;
-						color: $color-main-link;
-					}
-
-				}
-
-				li:nth-of-type(1n+7) { // Hide all lists with more than 8 items
-					display: none;
-				}
-
-
-			}
-		}
-
-		@media (max-width: $bp-tablet) { // Hide trending column on Tablet
-			#trending {
-				display:none;
-			}
-		}
-	}
+.svg-icon {
+	display: block;
+	padding: 5px;
+	width: 20px;
+	height: 20px;
 }
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+	fill: #666;
+}
+
+.svg-icon:hover path,
+.svg-icon:hover polygon,
+.svg-icon:hover rect {
+	fill: #FFF;
+}
+
+.svg-icon circle {
+	stroke: #666;
+	stroke-width: 1;
+}
+
+
+#footer-social {
+	display: flex;
+	width: 100%;
+	// background: #ff33cc;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	
+
+		a {
+			display: inline-block;
+			// padding-top: 5px;
+			margin: 0 5px;
+			width: 30px; 
+			height: 30px;
+			border-radius: 15px;
+			background: #222;
+			cursor: pointer;
+		}
+
+		a.sub-r:hover {background: $color-rss;}
+		a.sub-h:hover {background: $color-producthunt;}
+		a.sub-f:hover {background: $color-facebook;}
+		a.sub-t:hover {background: $color-twitter;}
+		a.sub-g:hover {background: $color-googleplus;}
+		a.sub-p:hover {background: $color-pinterest;}
+		a.sub-d:hover {background: $color-dribbble;}	
+
+
+	
+}
+
 

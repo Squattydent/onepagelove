@@ -129,6 +129,8 @@ body.single #container-outer #container {
 
 	#footer-container {
 		position: relative; // for the z-index
+		
+		display: none !important; // to be removed once Footer Newsletter in place
 
 		#footer-quote-container {
 			width: 100%;

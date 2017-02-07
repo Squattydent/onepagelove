@@ -213,6 +213,11 @@
 		@extend %padding-articles;
 	}
 
+	.gform_wrapper {
+		@extend %padding-articles;
+		
+	}
+
 	iframe {
 		max-width: 100%;
 	}

@@ -1,10 +1,49 @@
 <div class="review-meta-right-padding-hack">
 
+	<!-- Template Download Modal -->  
+	<div id="modal-content" data-download-url="<?php $downloadurl = get_post_meta($post->ID, "download_url", true); echo $downloadurl; ?>">
+
+		<div class="modal-title">Your download is being prepared...</div>
+
+		<div class="modal-suggestion">
+			
+			<div class="modal-suggestion-left">
+				
+				<a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo"><img src="<?php echo get_template_directory_uri(); ?>/img/hustle/modal-bluehost-retina-logo.png" alt="Exclusive Hosting Special" width="180" height="150" /></a>
+
+			</div>
+
+			<div class="modal-suggestion-right">
+				
+				<div class="modal-deal-pitch">Need Hosting for this template?</div>
+
+				<p><a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">Bluehost</a> has an <a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">exclusive deal</a> for One Page Love readers at only $2.95 per month!</p>
+
+				<a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo" class="modal-deal-button button-fill">See Deal</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
 	<div class="review-launch">
 
-		<a href="<?php print get_post_meta($post->ID, 'site_url', true) ?>" target="_blank">
+		<a href="<?php 
 
-			<?php     
+			$downloadurl = get_post_meta($post->ID, "download_url", true);
+			$siteurl 	 = get_post_meta($post->ID, "site_url", 	true);
+
+			if ($downloadurl != null) {
+				echo 'javascript:void(0);" id="trigger';
+			}
+			else {
+			    echo $siteurl;
+			    echo '" target="_blank';
+			}; 
+
+			?>"><?php     
 
 				$siteprice = get_post_meta($post->ID, "site_price", true);  
 				if (in_category('Free Templates')) {
@@ -17,9 +56,7 @@
 					echo '';           
 				};
 
-			?>
-
-			<?php      
+			?><?php      
 
 				if (in_category('Bundle Deals')) {
 					echo 'Bundle Deal';              
@@ -52,11 +89,22 @@
 					echo 'Launch Website';            
 				};
 
-			?>
-
-		</a>
+			?></a>
 
 	</div>
+
+	<?php 
+
+		$demourl = get_post_meta($post->ID, "demo_url", true);
+
+		if ($demourl != null) {
+			echo '<div class="review-launch review-demo"><a href="' . $demourl . '" target="_blank">Launch Demo</a></div>';		
+		}
+		else {
+		    echo '';
+		}; 
+
+	?>
 
 	<ul>
 
@@ -66,7 +114,7 @@
 
 		<li>
 
-			<strong>Template?</strong>  
+			<strong>Template?</strong> 
 
 			<?php      
 

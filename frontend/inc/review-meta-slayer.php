@@ -11,7 +11,8 @@
 						'ads/critique.php', 
 						'ads/feedback.php', 
 						'ads/hosting.php', 					
-						'ads/layers.php', 
+						'ads/tips.php', 
+						'ads/tighten.php', 
 						'ads/woo.php' // no comma on last one
 						
 					);
