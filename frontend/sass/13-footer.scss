@@ -15,8 +15,7 @@
 	}
 
 	.newsletter-pitch {
-		// background:$test2; 
-		// height:300px;		
+		// background:$test2; 	
 		text-align: center;
 		@extend %typography-p;
 		color: #AAA;
@@ -30,10 +29,6 @@
 	}
 
 	.newsletter-lower-wrapper {
-		// display: flex;
-		// justify-content: center;
-	    // flex-direction: column;
-	    // flex-wrap: wrap;
 
 	    @media (max-width: $bp-tablet) {
 	    	width: 100%;
