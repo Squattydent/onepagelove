@@ -97,6 +97,12 @@
 
 		            </li> 
 
+		            <li id="nav-free"><a href="#">Free</a>
+
+    					<?php include('frontend/inc/nav/free.php'); ?>     
+
+		            </li> 
+
 		            <li class="nav-wide"><a href="#">Styles</a>
 
     					<?php include('frontend/inc/nav/styles.php'); ?>     

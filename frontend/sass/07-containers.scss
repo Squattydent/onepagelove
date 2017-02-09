@@ -16,11 +16,8 @@
 //		#content {}
 
 //   #footer-container {}
-//		 #footer-quote-container {}
-//			#footer-quote {}
+//		 #footer-top-container {}
 //	 	#footer-bottom-container {}
-//			#footer-bottom {}
-//			#footer-credits {}
 		
 //-------------------------------------------------------------------------------
 // Widths, margins, padding 
@@ -130,31 +127,13 @@ body.single #container-outer #container {
 	#footer-container {
 		position: relative; // for the z-index
 		
-		display: none !important; // to be removed once Footer Newsletter in place
-
-		#footer-quote-container {
+		#footer-top-container {
 			width: 100%;
-			display: flex;
-
-			#footer-quote {
-				width: $container-large; 
-				margin: 0 auto; 
-				padding: $spacing-huge 0 $spacing-huge 0;
-				// background: $test2;
-			}
-
+			padding: $spacing-huge 0;
 		}
 
 		#footer-bottom-container {
 			width: 100%;
-
-			#footer-lists { 
-				width: $container-large; 
-				margin: 0 auto; 
-				padding: $spacing-huge 0 $spacing-big 0;
-				// background: $test1;
-			}
-
 		}
 
 	}

@@ -3,59 +3,215 @@
 //---------------------------------------------------------------
 
 #footer-newsletter {
-	background-color: $test4;
+	// background-color: $test4;
 
 	.newsletter-title {
+		text-align: center;
+		@extend %typography-h3;
+		color: #DDD;
+		max-width: 90%;
+		margin: 0 auto $spacing-medium auto;
 
+	}
+
+	.newsletter-pitch {
+		// background:$test2; 
+		// height:300px;		
+		text-align: center;
+		@extend %typography-p;
+		color: #AAA;
+		max-width: 90%;
+		margin: 0 auto $spacing-big auto;
+
+		.tick {
+			color: $color-main-link;
+			margin-left: $spacing-small;
+		}
 	}
 
 	.newsletter-lower-wrapper {
-
-		display: flex;
+		// display: flex;
+		// justify-content: center;
 	    // flex-direction: column;
-	    // lex-wrap: wrap;
+	    // flex-wrap: wrap;
 
-		.newsletter-ebook {
-			order:1; 
-			background:$test1; 	
-			width: 33%;
+	    @media (max-width: $bp-tablet) {
+	    	width: 100%;
+	    	margin: 0 auto;
 		}
-
-		.newsletter-pitch {
-			order:2; 
-			background:$test2; 
-			height:300px;		
-			width: 33%;
-
-			/* List styling */
-			.ul {
-			  margin-top: 0;
-			  padding-left: 2em;
-			  list-style-type: none;
-			}
-			li:before {
-			  position: absolute;
-			  margin-left: -1.3em;
-			  font-weight: bold;
-			}
-			li.tick:before {
-			  content: "\2713";
-			  color: darkgreen;
-			}
-
-		}
-
 
 		.newsletter-form {
-			order:3; 
-			background:$test3; 
-			height:300px;			
-			width: 33%;
+			// background:$test3; 
+			width: 600px;
+			margin: 0 auto $spacing-medium auto;
+			height: auto;
+			align-items: top;
+			font-size: 16px;
+			line-height: 16px;
 
-			.email-octopus-form-row-hp {
-				display: none;
+			@media (max-width: $bp-tablet) {
+				width: 100%;
 			}
 
+			.email-octopus-form-wrapper {
+				width: 100%;
+				height: 40px;
+
+				// Post-submit-message
+				p.email-octopus-success-message,
+				p.email-octopus-error-message {
+					@extend %typography-p;
+
+					@media (max-width: $bp-tablet) {
+							width: 90%;
+							margin-right: 5%;
+							margin-left: 5%;
+					}
+
+				}
+				p.email-octopus-success-message {
+					color: #68d851;
+				}
+				p.email-octopus-error-message {
+					color: #ff5b5b;
+				}
+
+				.email-octopus-form-row {
+					height: 40px;
+					width: 200px;
+					float: left;
+					color: #666;
+					// background:$test1;
+
+						@media (max-width: $bp-tablet) {
+							float: none;
+							width: 80%;
+							margin-right: 10%;
+							margin-left: 10%;
+							margin-bottom: $spacing-small;
+							text-align: center;
+						}
+
+						@media (max-width: $bp-mobile) {
+							width: 90%;
+							margin-right: 5%;
+							margin-left: 5%;
+						}
+
+					input {
+						width: 174px; // 200 - 26 (padding 12*2 - botder 1*2)
+						height: 30px;
+						padding: 4px 12px;
+						border: 1px solid #333333;
+						background-color: #252525;
+						margin: 0;
+						color: #666;
+
+						@media (max-width: $bp-tablet) {
+							padding-left: 2%;
+							padding-right: 2%;
+							width: 90%;
+						}
+					}
+
+					input:focus {
+						// border-color: #666666;
+						color: #999;
+						background-color: #333333;
+					}
+
+				}
+
+				.fn  input { // First Name
+						border-top-left-radius: 4px;
+						border-bottom-left-radius: 4px; 
+						// border-right: none;
+
+						@media (max-width: $bp-tablet) {
+							border-radius: 4px;
+						}
+				}
+
+				.ea  input { // Email Address
+					border-left: none;
+					border-right: none;
+
+						@media (max-width: $bp-tablet) {
+							border-radius: 4px;
+							border: 1px solid #333333;
+						}
+
+				}
+
+				.email-octopus-form-row-subscribe {
+					float: left;
+					height: 40px;
+					width: 200px;
+
+					@media (max-width: $bp-tablet) {
+						width: 80%;
+						margin-right: 10%;
+						margin-left: 10%;
+						margin-bottom: $spacing-medium;
+						text-align: center;
+					}
+
+					@media (max-width: $bp-mobile) {
+						width: 90%;
+						margin-right: 5%;
+						margin-left: 5%;
+					}
+
+					button {
+						width: 200px;
+						height: 40px;
+						padding: 0;
+						margin: 0;
+						margin-left: -2px;
+						border: 1px solid $color-main-link;
+						background-color: $color-main-link;
+						border-top-right-radius: 4px;
+						border-bottom-right-radius: 4px; 
+						color: #FFF;
+
+						@media (max-width: $bp-tablet) {
+							width: 94%;
+							margin-left: 0;
+							float: none;
+							border-radius: 4px;
+
+						}
+					}
+
+					button:hover {
+						cursor: pointer;
+						background-color: $color-main-link-hover;
+						border: 1px solid $color-main-link-hover;
+					}
+
+				}
+
+				.email-octopus-form-row-hp {
+					display: none;
+				}
+
+			}
+
+		}
+
+		.newsletter-ebook {
+			clear: both;
+			display: block;
+			padding-top: $spacing-big;
+			text-align: center;
+			max-width: 90%;
+			margin: 0 auto 0 auto;
+
+			img {
+				max-width: 500px;
+				width: 100%; 
+				height: auto;
+			}
 		}
 
 	}
@@ -63,64 +219,133 @@
 
 
 //---------------------------------------------------------------
-// Footer Social - svgicons.sparkk.fr
+// Footer Bottom - svgicons.sparkk.fr
 //---------------------------------------------------------------
 
-.svg-icon {
-	display: block;
-	padding: 5px;
-	width: 20px;
-	height: 20px;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-	fill: #666;
-}
-
-.svg-icon:hover path,
-.svg-icon:hover polygon,
-.svg-icon:hover rect {
-	fill: #FFF;
-}
-
-.svg-icon circle {
-	stroke: #666;
-	stroke-width: 1;
-}
-
-
-#footer-social {
-	display: flex;
+#footer-bottom {
 	width: 100%;
-	// background: #ff33cc;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	
+	height: 30px;
+	padding: $spacing-medium 0;
+	border-top: 1px solid #252525;
+	display: flex; 
 
-		a {
-			display: inline-block;
-			// padding-top: 5px;
-			margin: 0 5px;
-			width: 30px; 
-			height: 30px;
-			border-radius: 15px;
-			background: #222;
-			cursor: pointer;
+	#footer-links {
+		order: 1; 
+		width: 33%;
+		height: 30px;
+		vertical-align: center;
+
+		@media (max-width: $bp-tablet) {
+			width: 50%;
+			// text-align: right;			
 		}
 
-		a.sub-r:hover {background: $color-rss;}
-		a.sub-h:hover {background: $color-producthunt;}
-		a.sub-f:hover {background: $color-facebook;}
-		a.sub-t:hover {background: $color-twitter;}
-		a.sub-g:hover {background: $color-googleplus;}
-		a.sub-p:hover {background: $color-pinterest;}
-		a.sub-d:hover {background: $color-dribbble;}	
+		ul {
+			margin: 0; 
+			padding: 5px 0 0 $spacing-medium; 
+			list-style: none; 
+
+			li {
+				display: inline-block;
+				margin-right: $spacing-small;
+				a {
+					color: $color-footer-text;
+				}
+				a:hover {
+					color: $color-main-link;
+				}
+			}
+		}
 
 
-	
+	}
+
+	#footer-social {
+		order: 2; 
+		width: 33%;
+		display: flex;
+		height: 30px;
+		// background: #ff33cc;
+		justify-content: center;
+
+		@media (max-width: $bp-tablet) {
+			display: none;
+		}
+
+		.svg-icon {
+			display: block;
+			padding: 4px;
+			width: 16px;
+			height: 16px;
+		}
+
+		.svg-icon path,
+		.svg-icon polygon,
+		.svg-icon rect {
+			fill: #666;
+		}
+
+		.svg-icon:hover path,
+		.svg-icon:hover polygon,
+		.svg-icon:hover rect {
+			fill: #FFF;
+		}
+
+		.svg-icon circle {
+			stroke: #666;
+			stroke-width: 1;
+		}
+
+		a.sub-r svg {
+			fill: #666;
+
+			&:hover {
+				fill: #FFF;
+			}
+		}
+
+
+			a {
+				display: inline-block;
+				margin: 0 5px;
+				width: 24px; 
+				height: 24px;
+				border-radius: 12px;
+				background: #222;
+				cursor: pointer;
+			}
+
+			a.sub-r:hover {background: $color-rss;}
+			a.sub-h:hover {background: $color-producthunt;}
+			a.sub-f:hover {background: $color-facebook;}
+			a.sub-t:hover {background: $color-twitter;}
+			a.sub-g:hover {background: $color-googleplus;}
+			a.sub-p:hover {background: $color-pinterest;}
+			a.sub-d:hover {background: $color-dribbble;}	
+
+	}
+
+	#footer-credit {
+		order: 3; 
+		width: 33%;
+		height: 30px;	
+		text-align: right;
+		color: $color-footer-text;
+		padding: 5px $spacing-medium 0 0; 
+
+		a {
+			color: $color-footer-text;
+		}
+		a:hover {
+			color: $color-main-link;
+		}
+
+		@media (max-width: $bp-tablet) {
+			width: 50%;
+			// text-align: right;			
+		}
+
+	}
+
 }
-
 

@@ -133,6 +133,12 @@
 				color: #CCC; // parent link color on hover 
 			}
 
+			&#nav-free {
+				@media (max-width: $bp-notebook) {
+					display: none;
+				}
+			} 
+
 			&#nav-blog {
 				@media (max-width: 930px) {
 					display: none;

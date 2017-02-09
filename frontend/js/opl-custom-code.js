@@ -51,8 +51,6 @@ $errorMessage.text(emailOctopus.unknownErrorMessage);},ajaxSubmit:function($form
 $(function(){$('.email-octopus-form').submit(function(e){var $form=$(this);var $errorMessage=$form.siblings('.email-octopus-error-message');var emailAddress=$form.find('.email-octopus-email-address').val();$errorMessage.empty();if(emailOctopus.isBotPost($form)){$errorMessage.text(emailOctopus.botSubmissionErrorMessage);}else if(!$.trim(emailAddress)){$errorMessage.text(emailOctopus.missingEmailAddressMessage);}else if(!emailOctopus.basicValidateEmail(emailAddress)){$errorMessage.text(emailOctopus.invalidEmailAddressMessage);}else{emailOctopus.ajaxSubmit($form);}
 return false;});});
 
-
-
 // ------------------------------------------------------------------------
 // Template Download Modal - outsourced to Nic Appleby
 // ------------------------------------------------------------------------

@@ -19,7 +19,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.48' );
+define( 'OPL_THEME_VERSION' , '6.8.49' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -296,7 +296,7 @@ function opl_enqueue_scripts(){
     wp_enqueue_style( 'opl-stylesheet' );   
 
     // Script: Custom Code
-    wp_register_script('opl-custom-js',  get_template_directory_uri().'/frontend/js/opl-custom-code.js', array(), OPL_THEME_VERSION, true ); 
+    wp_register_script('opl-custom-js',  get_template_directory_uri().'/frontend/js/opl-custom-code-min.js', array(), OPL_THEME_VERSION, true ); 
     wp_enqueue_script('opl-custom-js');
 
 }
