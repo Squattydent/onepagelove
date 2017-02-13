@@ -19,7 +19,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.8.52' );
+define( 'OPL_THEME_VERSION' , '6.9.0' );
 
 // Feed Links
 add_theme_support( 'automatic-feed-links' );
@@ -54,19 +54,19 @@ function recentPosts() {
 
 // -------------------------------------------------------------
 // 03. If in parent category
+// http://wordpress.stackexchange.com/questions/155332/check-if-a-post-is-in-any-child-category-of-a-parent-category
 // -------------------------------------------------------------
 
-function is_desc_cat($cats, $_post = null) {
-  foreach ((array)$cats as $cat) {
-    if (in_category($cat, $_post)) {
-      return true;
-    } else {
-      if (!is_int($cat)) $cat = get_cat_ID($cat);
-      $descendants = get_term_children($cat, 'category');
-      if ($descendants && in_category($descendants, $_post)) return true;
+if ( ! function_exists( 'post_is_in_descendant_category' ) ) {
+    function post_is_in_descendant_category( $cats, $_post = null ) {
+        foreach ( (array) $cats as $cat ) {
+            // get_term_children() accepts integer ID only
+            $descendants = get_term_children( (int) $cat, 'category' );
+            if ( $descendants && in_category( $descendants, $_post ) )
+                return true;
+        }
+        return false;
     }
-  }
-return false;
 }
 
 // -------------------------------------------------------------

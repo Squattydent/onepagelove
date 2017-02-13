@@ -120,7 +120,7 @@
 					$ancestors = get_ancestors($post_category[0]->term_id, 'category');
 					$root = end($ancestors);
 
-					if ( $root==194 ) { // is a template
+					if ( $root==194 ) { // is a Template
 						echo '<a href="' . get_bloginfo('url') . '/templates">';
 						echo 'Templates';
 						echo  '</a>';
