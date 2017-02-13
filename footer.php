@@ -13,11 +13,14 @@
 				<div class="newsletter-title">Join the One Page Love Newsletter and get a free eBook!</div>
 
 				<div class="newsletter-pitch">
-					<span class="tick">&#x2713;</span> Monthly 
-					<span class="tick">&#x2713;</span> Inspiration 
-					<span class="tick">&#x2713;</span> Freebies
-					<span class="tick">&#x2713;</span> Resources 
-					<span class="tick">&#x2713;</span> Free eBook
+					<ul>
+						<li><span class="tick ft">&#x2713;</span> Monthly</li>
+						<li><span class="tick">&#x2713;</span> Inspiration</li>
+						<li><span class="tick">&#x2713;</span> Freebies</li>
+						<li><span class="tick">&#x2713;</span> Resources</li>
+						<li><span class="tick">&#x2713;</span> Free eBook</li>				
+					</ul>
+
 				</div>
 
 				<div class="newsletter-lower-wrapper">
@@ -52,9 +55,9 @@
 
 							</form>
 						
-						</div><!-- email-octopus-form-wrapper -->
+						</div>
 
-					</div><!-- newsletter-form -->
+					</div>
 
 					<div class="newsletter-ebook">
 						
@@ -62,11 +65,11 @@
 
 					</div>
 
-				</div><!-- newsletter-lower-wrapper -->
+				</div>
 
-			</div><!-- footer newsletter -->
+			</div>
 
-		</div><!-- footer top container -->
+		</div>
 
 		<div id="footer-bottom-container">		
 
@@ -120,17 +123,15 @@
 						</svg>
 					</a>
 
-				</div><!-- /#footer-social -->	
-
-				<div id="footer-credit">
-					
-					Built by <a href="https://twitter.com/hitdelete" target="_blank" title="Yo Manu! 🌵">@hitdelete</a>
-
 				</div>	
 
-			</div><!-- /#footer-bottom -->
+				<div id="footer-credit">
+					<span class="hitdelete">Built by <a href="https://twitter.com/hitdelete" target="_blank" title="🌵">@hitdelete</a></span>
+				</div>	
 
-		</div><!-- #footer-bottom-container -->  
+			</div>
+
+		</div>
 
 	</div><!-- #footer-container -->  
 

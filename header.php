@@ -58,7 +58,7 @@
 <body <?php body_class(); ?>>
 
 <!-- Hidden Promo Logo -->  
-<div id="promo"><img src="<?php echo get_template_directory_uri(); ?>/img/one-page-love-heart-logo.png" alt="One Page Love Logo" /></div>
+<div id="promo"><img src="<?php echo get_template_directory_uri(); ?>/img/one-page-love-heart-logo.jpg" alt="One Page Love Logo" /></div>
 
 <div id="container-outer">
 

@@ -1,5 +1,5 @@
 //---------------------------------------------------------------
-// Footer Newsletter - https://emailoctopus.com/lists/804e381c-8793-11e6-9b6d-02b6b4f78f99/members
+// Footer Newsletter
 //---------------------------------------------------------------
 
 #footer-newsletter {
@@ -22,9 +22,24 @@
 		max-width: 90%;
 		margin: 0 auto $spacing-big auto;
 
+		ul {
+			margin: 0; 
+			padding: 0;
+			list-style: none; 
+
+			li {
+				display: inline-block;
+				// margin-right: $spacing-small;
+			}
+		}
+
 		.tick {
 			color: $color-main-link;
-			margin-left: $spacing-small;
+			margin-left: $spacing-small;	
+			margin-right: -0.125rem; // -2
+		}
+		.ft {
+			margin-left: 0;
 		}
 	}
 
@@ -37,12 +52,12 @@
 
 		.newsletter-form {
 			// background:$test3; 
-			width: 600px;
+			width: 37.5rem; // 600
 			margin: 0 auto $spacing-medium auto;
 			height: auto;
 			align-items: top;
-			font-size: 16px;
-			line-height: 16px;
+			font-size: 1rem;
+			line-height: 1rem;
 
 			@media (max-width: $bp-tablet) {
 				width: 100%;
@@ -50,12 +65,13 @@
 
 			.email-octopus-form-wrapper {
 				width: 100%;
-				height: 40px;
+				height: 2.5rem; // 40
 
 				// Post-submit-message
 				p.email-octopus-success-message,
 				p.email-octopus-error-message {
 					@extend %typography-p;
+					text-align: center;
 
 					@media (max-width: $bp-tablet) {
 							width: 90%;
@@ -72,8 +88,8 @@
 				}
 
 				.email-octopus-form-row {
-					height: 40px;
-					width: 200px;
+					height: 2.5rem; // 40
+					width: 12.5rem; // 200
 					float: left;
 					color: #666;
 					// background:$test1;
@@ -94,9 +110,9 @@
 						}
 
 					input {
-						width: 174px; // 200 - 26 (padding 12*2 - botder 1*2)
-						height: 30px;
-						padding: 4px 12px;
+						width: 10.88rem; // 174 = 200 - 26 (padding 12*2 - botder 1*2)
+						height: 1.875rem; // 30
+						padding: 0.25rem 0.75rem; // 4 12
 						border: 1px solid #333333;
 						background-color: #252525;
 						margin: 0;
@@ -140,8 +156,8 @@
 
 				.email-octopus-form-row-subscribe {
 					float: left;
-					height: 40px;
-					width: 200px;
+					height: 2.5rem; // 40
+					width: 12.5rem; // 200
 
 					@media (max-width: $bp-tablet) {
 						width: 80%;
@@ -158,11 +174,11 @@
 					}
 
 					button {
-						width: 200px;
-						height: 40px;
+						height: 2.5rem; // 40
+						width: 12.5rem; // 200
 						padding: 0;
 						margin: 0;
-						margin-left: -2px;
+						margin-left: -0.125rem; // -2
 						border: 1px solid $color-main-link;
 						background-color: $color-main-link;
 						border-top-right-radius: 4px;
@@ -195,6 +211,7 @@
 		}
 
 		.newsletter-ebook {
+			// background:$test3; 
 			clear: both;
 			display: block;
 			padding-top: $spacing-big;
@@ -219,7 +236,7 @@
 
 #footer-bottom {
 	width: 100%;
-	height: 30px;
+	height: 1.875rem; // 30
 	padding: $spacing-medium 0;
 	border-top: 1px solid #252525;
 	display: flex; 
@@ -227,7 +244,7 @@
 	#footer-links {
 		order: 1; 
 		width: 33%;
-		height: 30px;
+		height: 1.875rem; // 30
 		vertical-align: center;
 
 		@media (max-width: $bp-tablet) {
@@ -237,7 +254,7 @@
 
 		ul {
 			margin: 0; 
-			padding: 5px 0 0 $spacing-medium; 
+			padding: 0.3125rem 0 0 $spacing-medium; // 5
 			list-style: none; 
 
 			li {
@@ -257,10 +274,9 @@
 
 	#footer-social {
 		order: 2; 
-		width: 33%;
+		width: 34%;
 		display: flex;
-		height: 30px;
-		// background: #ff33cc;
+		height: 1.875rem; // 30
 		justify-content: center;
 
 		@media (max-width: $bp-tablet) {
@@ -269,9 +285,9 @@
 
 		.svg-icon {
 			display: block;
-			padding: 4px;
-			width: 16px;
-			height: 16px;
+			padding: 0.25rem; // 4
+			width: 1rem; // 16
+			height: 1rem; // 16
 		}
 
 		.svg-icon path,
@@ -302,10 +318,10 @@
 
 			a {
 				display: inline-block;
-				margin: 0 5px;
-				width: 24px; 
-				height: 24px;
-				border-radius: 12px;
+				margin: 0 0.3125rem; // 5
+				width: 1.5rem; // 24
+				height: 1.5rem; // 24
+				border-radius: 0.75rem; // 12
 				background: #222;
 				cursor: pointer;
 			}
@@ -323,10 +339,14 @@
 	#footer-credit {
 		order: 3; 
 		width: 33%;
-		height: 30px;	
+		height: 1.875rem; // 30	
 		text-align: right;
 		color: $color-footer-text;
-		padding: 5px $spacing-medium 0 0; 
+		padding: 0.3125rem 0 0 0; // 5
+
+		.hitdelete {
+			margin-right: $spacing-medium;
+		}
 
 		a {
 			color: $color-footer-text;
@@ -337,7 +357,6 @@
 
 		@media (max-width: $bp-tablet) {
 			width: 50%;
-			// text-align: right;			
 		}
 
 	}

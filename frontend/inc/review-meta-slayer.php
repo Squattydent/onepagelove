@@ -7,14 +7,13 @@
 			<?php 
 
 				$ads  = array(
-
+						'ads/newsletter.php', 
 						'ads/critique.php', 
 						'ads/feedback.php', 
 						'ads/hosting.php', 					
 						'ads/tips.php', 
 						'ads/tighten.php', 
 						'ads/woo.php' // no comma on last one
-						
 					);
 
 				$adfile = $ads[rand(0, count($ads) - 1)];

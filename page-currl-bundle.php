@@ -21,7 +21,7 @@ Template Name: Currl Bundle
 
 			<div class="section-buttons">
 				
-				<div class="button"><a href="#title-features">See Features</a></div>
+				<div class="button"><a href="#title-features" class="smoothScroll">See Features</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
@@ -83,8 +83,8 @@ Template Name: Currl Bundle
 
 			<div class="section-buttons">
 
-				<div class="button"><a href="#title-themes">See Themes</a></div>
-				<div class="button"><a href="#title-faq">Read FAQs</a></div>
+				<div class="button"><a href="#title-themes" class="smoothScroll">See Themes</a></div>
+				<div class="button"><a href="#title-faq" class="smoothScroll">Read FAQs</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>
@@ -247,7 +247,7 @@ Template Name: Currl Bundle
 
 			<div class="section-buttons">
 				
-				<div class="button"><a href="#container-outer">Back to top</a></div>	
+				<div class="button"><a href="#container-outer" class="smoothScroll">Back to top</a></div>	
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
 			</div>

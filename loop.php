@@ -86,7 +86,7 @@
 
 				   	$siteurl = get_post_meta($post->ID, "site_url", true);
 
-					   	if (in_category('Web Design Elements')) {
+					   	if (in_category('Templates')) {
 
 				          	echo '';	
 
