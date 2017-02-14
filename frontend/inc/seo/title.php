@@ -10,11 +10,6 @@ $seo_count = ($wp_query->found_posts);
 // ID of Gallery category
 $seo_gallery_id = get_cat_ID('Gallery');
 
-$id = get_the_ID();
-$post_category = get_the_category($id);
-$ancestors = get_ancestors($post_category[0]->term_id, 'category');
-$root = end($ancestors);
-
 // If more than one result, use plural
 if ($seo_count > 1) {
 	$seo_plural = ' One Page Websites';
@@ -22,7 +17,6 @@ if ($seo_count > 1) {
 else {
 	$seo_plural = ' One Page Website';
 };
-
 
 //---------------------------------------------------------------
 // Home
@@ -198,17 +192,17 @@ elseif (is_page()) {
 
 elseif (is_single() && ( post_is_in_descendant_category( $seo_gallery_id ) )) {
 	wp_title('',true,'');
-	echo ' One Page Website Award';
+	echo ' - One Page Website Award';
 }
 
 elseif (is_single() && in_category('WordPress Themes')) {
 	wp_title('',true,'');
-	echo ' One Page WordPress Theme Review'; // incl demo, screenshots in description part
+	echo ' - One Page WordPress Theme Review'; // incl demo, screenshots in description part
 }
 
 elseif (is_single() && in_category('Templates')) {
 	wp_title('',true,'');
-	echo ' One Page Template Review';
+	echo ' - One Page Template Review';
 }
 
 // Blog posts
@@ -222,12 +216,7 @@ elseif (is_single()) {
 
 else {
 	wp_title('',true,'');
-};
-
-?>
-
-
-<?php 
+}
 
 //---------------------------------------------------------------
 // If deep in archives
@@ -240,6 +229,4 @@ if ($paged > 1) {
 }
 else {
 	echo '';
-};
-
-?>
+};?>
