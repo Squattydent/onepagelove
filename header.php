@@ -7,11 +7,26 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-	<!-- SEO yo! -->
+	<!-- SEO Yo! -->
 	<title><?php include('frontend/inc/seo/title.php'); ?></title>
+	<meta name="description" content="<?php include('frontend/inc/seo/description.php'); ?>" />
+	<meta name="author" content="One Page Love" />
+	<meta name="robots" content="<?php include('frontend/inc/seo/robots.php'); ?>" />
 	<meta name="referrer" content="always" />
 
-	<!-- Typekit fonts -->
+	<!-- Social -->
+	<meta property="og:title" content="<?php include('frontend/inc/seo/title.php'); ?>" />
+	<meta property="og:description" content="<?php include('frontend/inc/seo/description.php'); ?>" />
+	<meta property="og:image" content="<?php include('frontend/inc/seo/image.php'); ?>">
+	<meta property="og:url" content="<?php include('frontend/inc/seo/permalink.php'); ?>" />
+	<meta name="twitter:title" content="<?php include('frontend/inc/seo/title.php'); ?>" >
+	<meta name="twitter:description" content="<?php include('frontend/inc/seo/description.php'); ?>" />
+	<meta name="twitter:image" content="<?php include('frontend/inc/seo/image.php'); ?>" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@onepagelove" />
+	<meta name="twitter:creator" content="@hitdelete" />
+
+	<!-- Typekit Fonts -->
 	<script type="text/javascript" src="//use.typekit.net/spx0udh.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -40,7 +55,8 @@
 	<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/img/favicons/ms-icon-144x144.png" />
 	<meta name="theme-color" content="#222222" />
 
-	<?php wp_head(); ?>
+	<!-- WordPress Regulars  -->
+	<?php indented_wp_head(); ?>
 
 	<!-- Analytics  -->
 	<script>
@@ -55,9 +71,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-<!-- Hidden Promo Logo -->  
-<div id="promo"><img src="<?php echo get_template_directory_uri(); ?>/img/one-page-love-heart-logo.jpg" alt="One Page Love Logo" /></div>
 
 <div id="container-outer">
 
@@ -78,19 +91,19 @@
 
 					<li><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a></li>
 				
-				    <li id="nav-start"><a href="#">Info</a>
+				    <li id="nav-info"><a href="#">Info</a>
 						
 						<?php include('frontend/inc/nav/info.php'); ?>	
 
 				 	</li>	
 	
-					<li class="nav-wider"><a href="#">Gallery</a>
+					<li id="nav-insp" class="nav-wider"><a href="#">Inspiration</a>
 
     					<?php include('frontend/inc/nav/gallery.php'); ?>
 
 		            </li>
 		             					
-		            <li class="nav-wide"><a href="#">Templates</a>
+		            <li id="nav-temp" class="nav-wide"><a href="#">Templates</a>
 
     					<?php include('frontend/inc/nav/templates.php'); ?>     
 
@@ -102,19 +115,19 @@
 
 		            </li> 
 
-		            <li class="nav-wide"><a href="#">Styles</a>
+		            <li id="nav-styl" class="nav-wide"><a href="#">Styles</a>
 
     					<?php include('frontend/inc/nav/styles.php'); ?>     
 
 		            </li> 		            
 
-		            <li id="nav-blog"><a href="#">Blog</a>
+		            <li id="nav-read"><a href="#">Read</a>
 
 						<?php include('frontend/inc/nav/blog.php'); ?>	
 
 				 	</li>			
 											   
-		            <li id="nav-subscribe"><a href="#">Subscribe</a>
+		            <li id="nav-subs"><a href="#">Subscribe</a>
 
 						<?php include('frontend/inc/nav/subscribe.php'); ?>
 
@@ -122,7 +135,7 @@
 	
 	           </ul>
 				
-		    </div><!-- /#header-bottom-left -->
+		    </div>
 			
 			<div id="header-search">
 				

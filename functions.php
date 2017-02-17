@@ -2,27 +2,21 @@
 
 // functions.php index:
 // 01. Post Thumbnails
-// 02. Recent Posts
+// 02. Ultra geeky head indentation
 // 03. If in parent category
 // 04. Add special content to RSS Feed
 // 05. Pagination
 // 06. Remove <p> around images
-// 07. Allow media permissions for contributors
-// 08. Truncation
-// 09. Enqueue Scripts and Styles
-// 10. WordPress Clean-up
-// 11. Gravity Forms filters
-// 12. Update System
+// 07. Add excerpt support to pages
+// 08. Enqueue Scripts and Styles
+// 09. WordPress Clean-up
 
 // -------------------------------------------------------------
 // 00. Defining
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.9.1' );
-
-// Feed Links
-add_theme_support( 'automatic-feed-links' );
+define( 'OPL_THEME_VERSION' , '6.9.2' );
 
 // Content Width
 global $content_width;
@@ -36,20 +30,16 @@ if ( ! isset( $content_width ) ) $content_width = 1600;
 add_theme_support( 'post-thumbnails' );
 
 // -------------------------------------------------------------
-// 02. Recent Posts
+// 02. Ultra geeky wp_head indentation
 // -------------------------------------------------------------
 
-function recentPosts() {
-    $rPosts = new WP_Query();
-    $rPosts->query('showposts=5&cat=1403');
-        while ($rPosts->have_posts()) : $rPosts->the_post(); ?>
-            <div class="recentPost">
-                <a href="<?php the_permalink();?>"><div class="recentPostImg"><?php the_post_thumbnail('small-image'); ?></div>
-                <div class="recentPostTitle"><?php the_title();?></div></a>
-                <div class="clear"></div>
-            </div>
-        <?php endwhile;
-    wp_reset_query();
+function indented_wp_head(){
+    ob_start();
+    wp_head();
+    $header = ob_get_contents();
+    ob_end_clean();
+    echo preg_replace("/\n/", "\n\t", substr($header, 0, -1));
+    echo "\n";
 }
 
 // -------------------------------------------------------------
@@ -84,7 +74,6 @@ function fields_in_feed($content) {
     return $content;
 }
 add_filter('the_content','fields_in_feed');
-
 
 // -------------------------------------------------------------
 // 05. Pagination
@@ -262,26 +251,16 @@ function filter_ptags_on_images($content){
 add_filter('the_content', 'filter_ptags_on_images');
 
 // -------------------------------------------------------------
-// 07. Allow media permissions for contributors
+// 07. Add excerpt support to pages
 // -------------------------------------------------------------
 
-// When users submitted images with Gravity Forms
+function wpdocs_custom_init() {
+    add_post_type_support( 'page', 'excerpt' );
+}
+add_action('init', 'wpdocs_custom_init');
 
 // -------------------------------------------------------------
-// 08. Truncation
-// -------------------------------------------------------------
-
-function limit_text($text, $limit) {
-      if (str_word_count($text, 0) > $limit) {
-          $words = str_word_count($text, 2);
-          $pos = array_keys($words);
-          $text = substr($text, 0, $pos[$limit]).'...';
-      }
-      return $text;
-    }
-
-// -------------------------------------------------------------
-// 09. Enqueue Scripts and Styles
+// 08. Enqueue Scripts and Styles
 // -------------------------------------------------------------
 
 function opl_enqueue_scripts(){
@@ -303,25 +282,29 @@ function opl_enqueue_scripts(){
 
 add_action('wp_enqueue_scripts', 'opl_enqueue_scripts');
 
-
 // -------------------------------------------------------------
-// 10. WordPress Clean-up
-// -------------------------------------------------------------
-
-remove_action( 'wp_head', 'print_emoji_detection_script', 7 );# Remove Smileys embedded in head
-remove_action( 'wp_print_styles', 'print_emoji_styles' );     # Remove Smileys embedded in head
-
-// -------------------------------------------------------------
-// 11. Gravity Forms Filters
+// 09. WordPress Clean-up
 // -------------------------------------------------------------
 
-// No longer needed
+function opl_head_cleanup(){
 
-// -------------------------------------------------------------
-// 12. Update System
-// -------------------------------------------------------------
+    // Add default posts and comments RSS feed links to head.
+    add_theme_support( 'automatic-feed-links' );
 
-require_once( dirname( __FILE__ ) . '/backend/theme-update-checker.php'  );
-require_once( dirname( __FILE__ ) . '/backend/theme-update-settings.php' );
+    // Disable comments feed
+    add_filter( 'feed_links_show_comments_feed', '__return_false' ); 
+
+    // Remove Smileys embedded in head
+    remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+
+    // Remove Smileys embedded in head
+    remove_action( 'wp_print_styles', 'print_emoji_styles' );   
+
+    // Remove p tags from category description
+    remove_filter('term_description','wpautop');  
+
+}
+
+add_action( 'after_setup_theme', 'opl_head_cleanup' );
 
 ?>

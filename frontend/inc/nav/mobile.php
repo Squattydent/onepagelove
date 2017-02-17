@@ -15,7 +15,7 @@
 
 	</li> 
 
-	<li><a href="<?php print get_home_url(); ?>/gallery">One Page Website Gallery</a>
+	<li><a href="<?php print get_home_url(); ?>/gallery">One Page Website Inspiration</a>
 
 		<?php include('gallery.php'); ?>         
 
@@ -27,7 +27,7 @@
 
 	</li> 
 
-	<li><a href="#">Blog</a>
+	<li><a href="#">Read</a>
 
 		<?php include('blog.php'); ?>	
 

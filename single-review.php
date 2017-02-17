@@ -10,7 +10,7 @@
 
 				<?php include ('frontend/inc/review-meta-right.php'); ?>
 
-			</div><!-- /.review-meta-right -->	
+			</div>	
 
 			<div class="review-meta-left">
 
@@ -97,14 +97,14 @@
 
 					</div>
 
-				</div><!-- .review-content -->
+				</div>
 
 				<div class="review-tags"><strong>Categories:</strong> <?php the_category(' ', 'parents' ); ?></div> 
 				<div class="review-tags"><strong>Tags:</strong> <?php the_tags('', ' ', ' '); ?></div>
 
-			</div><!-- /.review-meta-left -->	
+			</div>	
 
-		</div><!-- /.review-meta -->
+		</div>
 
 		<div class="review-screenshot">
 
@@ -127,7 +127,7 @@
 
 			</a>
 
-		</div><!-- /.review-screenshot -->
+		</div>
 
 		<div class="review-notes">
 
@@ -137,7 +137,7 @@
 
 		</div>
 
-	</div><!-- /.review --> 
+	</div>
 
 <?php endwhile; else: ?>
 

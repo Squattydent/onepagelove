@@ -6,23 +6,23 @@
 
 				 <div class="archive-header-info">
 
-					<div class="archive-title"><span class="grey-shadow">The ultimate showcase of One Page websites.</span></div>
+					<div class="archive-title"><span class="grey-shadow">The ultimate showcase of One Page websites</span></div>
 
 					<div class="archive-description">
 
 						<span class="grey-shadow">
 							<p>Browse <a href="<?php print get_home_url(); ?>/gallery">One Page Websites</a>, 
 							find <a href="<?php print get_home_url(); ?>/templates">One Page Templates</a> 
-							or get <a href="<?php print get_home_url(); ?>/hosting">Website Hosting</a>.</p>
+							or get <a href="<?php print get_home_url(); ?>/hosting">Website Hosting</a></p>
 						</span>	
 
 					</div>
 
-				 </div><!--  /.archive-header-info -->
+				 </div>
 
 				<div class="clear"></div>
 
-		</div><!--  /.archive-header -->
+		</div>
 		
     <?php else : ?>
 
@@ -40,11 +40,11 @@
 					</span>
 				</div>
 
-			 </div><!--  /.archive-header-info -->
+			 </div>
 
 			<div class="clear"></div>
 
-	</div><!--  /.archive-header -->
+	</div>
 	
     <?php endif; ?>
 
@@ -61,7 +61,7 @@
 
 	   	<?php include ("frontend/inc/loop-hosting.php"); ?>
 
-   </div><!--  /.archive-container -->
+   </div>
 
    <?php include ("frontend/inc/pagination.php"); ?>
 

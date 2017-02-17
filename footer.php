@@ -1,8 +1,8 @@
-		</div><!-- content end -->		
+		</div><!-- / #content -->		
 		
 		<div class="clear"></div>
 
-	</div><!-- container end -->
+	</div><!-- / #container -->
 
 	<div id="footer-container">
 
@@ -133,7 +133,7 @@
 
 		</div>
 
-	</div><!-- #footer-container -->  
+	</div><!-- /#footer-container -->  
 
 </div><!-- /#container-outer -->  
 

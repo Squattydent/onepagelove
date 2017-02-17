@@ -10,11 +10,16 @@
 
 				<h1><?php 
 
+					// Get the variables
+					include('frontend/inc/seo/variables.php');
+
 					// Tags			
 					if (function_exists('is_tag') && is_tag()) {
-				    echo 'You are browsing '.$wp_query->found_posts, _n( ' One Pager', ' One Pagers', $wp_query->found_posts).'';
-				    echo ' tagged with: ';								
-				    wp_title('',true,'');
+					    echo 'You are browsing ';
+					    echo $seo_count;
+					    echo $seo_plural;
+					    echo ' tagged with: ';	
+						echo $seo_title;
 					}
 					
 						// Gallery Home			
@@ -137,7 +142,7 @@
 
 			<span class="grey-shadow">
 
-				<?php echo category_description( $category_id ); ?>
+				<?php echo category_description(); ?>
 
 			</span><!--  /.grey-shadow -->
 

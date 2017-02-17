@@ -18,7 +18,7 @@
 	           
 	      	<?php the_content(''); ?>
 		           
-		</div><!-- /.single-container -->
+		</div>
    
 	<?php endwhile; else: ?>
 
