@@ -267,3 +267,11 @@ a.button-fill {
 	background-color: $color-main-link;
 	color: $color-white !important;
 }
+
+// ------------------------------------------------
+// Hide recommended hosting on hosting post
+// ------------------------------------------------ 
+
+body.postid-26235 .similar {
+	display: none;
+}

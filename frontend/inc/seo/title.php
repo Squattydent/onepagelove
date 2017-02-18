@@ -167,6 +167,16 @@ elseif (is_single() && in_category('Templates')) {
 	echo ' - One Page Template Review';
 }
 
+elseif (is_single() && in_category('Most Loved')) {
+	echo $seo_title;
+	echo ' - "Most Loved" Website Award';
+}
+
+elseif (is_single() && in_category('Interviews')) {
+	echo 'Interview:';
+	echo $seo_title;
+}
+
 // Blog posts
 elseif (is_single()) {
 	echo ltrim($seo_title);

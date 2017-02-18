@@ -15,7 +15,7 @@
 
 			<div class="modal-suggestion-right">
 				
-				<div class="modal-deal-pitch">Need Hosting for this template?</div>
+				<div class="modal-deal-pitch">Need Hosting for this <?php if (in_category('WordPress Themes')) { echo ' WordPress theme?'; } else { echo 'template?'; }; ?></div>
 
 				<p><a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">Bluehost</a> has an <a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">exclusive deal</a> for One Page Love readers at only $2.95 per month!</p>
 

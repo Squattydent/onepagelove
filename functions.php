@@ -16,7 +16,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.9.3' );
+define( 'OPL_THEME_VERSION' , '6.9.4' );
 
 // Content Width
 global $content_width;
@@ -239,7 +239,7 @@ function pagenavi($before = '', $after = '') {
 
 function filter_ptags_on_images($content){
 
-    if ( in_category( array( "Blog", "Interviews", "Round Ups", "Articles", "Journal" ))) {
+    if ( in_category( array( "Blog", "Interviews", "Round Ups", "Articles", "Journal", "Hosting", "Resources" ))) {
         return preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '\1', $content);
     }
 
