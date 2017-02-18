@@ -11,9 +11,9 @@
 					<div class="archive-description">
 
 						<span class="grey-shadow">
-							<p>Browse <a href="<?php print get_home_url(); ?>/gallery">One Page Websites</a>, 
+							Browse <a href="<?php print get_home_url(); ?>/gallery">One Page Websites</a>, 
 							find <a href="<?php print get_home_url(); ?>/templates">One Page Templates</a> 
-							or get <a href="<?php print get_home_url(); ?>/hosting">Website Hosting</a></p>
+							or get <a href="<?php print get_home_url(); ?>/hosting">Website Hosting</a>
 						</span>	
 
 					</div>
@@ -34,9 +34,8 @@
 
 				<div class="archive-description">
 					<span class="grey-shadow">
-						<p>Your are browsing all categories. Browse just the <a href="<?php print get_home_url(); ?>/gallery">Unique Gallery</a> or    
+						Your are browsing all categories. Browse just the <a href="<?php print get_home_url(); ?>/gallery">Unique Gallery</a> or    
 						 <a href="<?php print get_home_url(); ?>/templates">Find Templates</a>.
-						</p>
 					</span>
 				</div>
 

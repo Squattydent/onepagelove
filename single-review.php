@@ -117,7 +117,7 @@
 					$bigScreenshot = get_post_meta($post->ID, "screenshot", true);
 
 					if ($bigScreenshot != '') {
-						echo '<img src="'.$bigScreenshot.'" />';
+						echo '<img src="'.$bigScreenshot.'" alt="'.get_the_title().' Big Screenshot" />';
 					}
 					else {
 						the_content();

@@ -8,6 +8,12 @@ if ($promo_image != '') {
 
 }
 
+elseif (is_home()) {
+
+	echo '' . get_template_directory_uri() . '/img/one-page-love-website-screenshot.jpg';
+
+}
+
 // elseif (is_single() && ( post_is_in_descendant_category( $seo_gallery_id ) ) ||  post_is_in_descendant_category( $seo_templates_id ) ) {
 	// use Greg's new custom image
 // }
@@ -15,7 +21,6 @@ if ($promo_image != '') {
 else {
 
 	echo '';
-	// echo '' . get_template_directory_uri() . '/img/one-page-love-heart-logo.jpg';
 
 };
 

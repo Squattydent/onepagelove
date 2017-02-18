@@ -16,7 +16,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.9.2' );
+define( 'OPL_THEME_VERSION' , '6.9.3' );
 
 // Content Width
 global $content_width;
@@ -275,8 +275,16 @@ function opl_enqueue_scripts(){
     wp_enqueue_style( 'opl-stylesheet' );   
 
     // Script: Custom Code
-    wp_register_script('opl-custom-js',  get_template_directory_uri().'/frontend/js/opl-custom-code-min.js', array(), OPL_THEME_VERSION, true ); 
+    wp_register_script('opl-custom-js', get_template_directory_uri().'/frontend/js/opl-custom-code-min.js', array(), OPL_THEME_VERSION, true ); 
     wp_enqueue_script('opl-custom-js');
+
+    if (is_single() && in_category('Free Templates')) {    
+
+        // Script: Template Modal
+        wp_register_script('opl-modal-js', get_template_directory_uri().'/frontend/js/template-modal-min.js', array(), OPL_THEME_VERSION, true ); 
+        wp_enqueue_script('opl-modal-js');
+
+    };
 
 }
 

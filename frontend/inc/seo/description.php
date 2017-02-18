@@ -48,7 +48,7 @@ elseif (is_archive() && is_category('Gallery')) {
 	elseif (is_archive() && is_category('Most Loved')) {
 		echo 'A collection of ';
 		echo $seo_count;
-		echo ' top awarded One Page websites for your design inspiration. These are the cream of the crop.';
+		echo ' Top Awarded One Page websites for your design inspiration. These are the cream of the crop.';
 	}					
 
 	// Gallery - remaining categories			
