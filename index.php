@@ -34,7 +34,7 @@
 
 				<div class="archive-description">
 					<span class="grey-shadow">
-						Your are browsing all categories. Browse just the <a href="<?php print get_home_url(); ?>/gallery">Unique Gallery</a> or    
+						You are browsing all categories. Browse just the <a href="<?php print get_home_url(); ?>/gallery">Unique Gallery</a> or    
 						 <a href="<?php print get_home_url(); ?>/templates">Find Templates</a>.
 					</span>
 				</div>

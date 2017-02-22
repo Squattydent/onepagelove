@@ -152,6 +152,11 @@ elseif (is_page()) {
 // Single Posts
 //---------------------------------------------------------------
 
+elseif (is_single() && in_category('Most Loved')) {
+	echo $seo_title;
+	echo ' - Most Loved Website Award';
+}
+
 elseif (is_single() && ( post_is_in_descendant_category( $seo_gallery_id ) )) {
 	echo ltrim($seo_title);
 	echo ' - One Page Website Award';
@@ -165,11 +170,6 @@ elseif (is_single() && in_category('WordPress Themes')) {
 elseif (is_single() && in_category('Templates')) {
 	echo $seo_title;
 	echo ' - One Page Template Review';
-}
-
-elseif (is_single() && in_category('Most Loved')) {
-	echo $seo_title;
-	echo ' - "Most Loved" Website Award';
 }
 
 elseif (is_single() && in_category('Interviews')) {

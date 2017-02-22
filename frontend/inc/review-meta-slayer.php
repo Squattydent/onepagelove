@@ -13,6 +13,8 @@
 						'ads/hosting.php', 					
 						'ads/tips.php', 
 						'ads/tighten.php', 
+						'ads/2016.php', 
+						'ads/about.php', 												
 						'ads/woo.php' // no comma on last one
 					);
 

@@ -2,7 +2,7 @@
 
 $promo_image = get_post_meta($post->ID, "promo_image", true);
 
-if ($promo_image != '') {
+if ( is_single() && ($promo_image != '') ) {
 
 	echo $promo_image;
 
