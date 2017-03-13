@@ -268,6 +268,16 @@ a.button-fill {
 	color: $color-white !important;
 }
 
+.roundup-buttons {
+	display: block;
+	height: $spacing-big;
+	margin-bottom: $spacing-big;
+
+	.roundup-demo {
+		margin-top: 0;
+	}
+}
+
 // ------------------------------------------------
 // Hide recommended hosting on hosting post
 // ------------------------------------------------ 
