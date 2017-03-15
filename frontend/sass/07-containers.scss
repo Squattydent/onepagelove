@@ -191,6 +191,8 @@ body.single #container-outer #container {
 
 
 				.single-container {
+
+					// background: #666;
 	
 				}
 
@@ -246,7 +248,7 @@ body.single #container-outer #container {
 // Small Desktop (used to be smdesktop breakpoint)
 //-------------------------------------------------------------------------------	
 
-@media (max-width: 1340px) {
+@media (max-width: $bp-desk) {
 
 	#container-outer {
 		width: 100%;
@@ -279,6 +281,7 @@ body.single #container-outer #container {
 		            margin: 20px auto 40px auto;
 					padding: 40px 3% 40px 3%; 
 					height: auto;		
+					// background: #333;
 				}
 
 				.review {
@@ -337,6 +340,8 @@ body.single #container-outer #container {
 			#content {
 
 				.single-container {
+
+					// background: #111;
 	
 				}
 

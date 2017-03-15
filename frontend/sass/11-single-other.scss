@@ -158,6 +158,15 @@
 		margin-bottom: $spacing-medium ;
 	}
 
+	// for white edges on images
+	.white-top-edge {
+		border-top: 1px solid #EEE;
+	}
+	.white-bottom-edge {
+		border-bottom: 1px solid #EEE;
+	}
+
+
 	hr {
 		border: none;
 		height: 1px;
@@ -226,6 +235,20 @@
 		@extend %padding-articles;
 	}
 
+	.vid-wrapper { 
+		width: 100%;
+		height: auto;
+		max-width: 880px;
+		@extend %padding-articles;
+		margin-bottom: $spacing-big;
+
+		@media (max-width: $bp-desk) {
+			width: auto;
+			max-width: none;
+		}
+
+	}
+
 }
 
 // ------------------------------------------------
@@ -285,3 +308,33 @@ a.button-fill {
 body.postid-26235 .similar {
 	display: none;
 }
+
+
+// ------------------------------------------------
+// Squarespace article coupon
+// ------------------------------------------------ 
+
+.sqspcoupon {
+	float: right;
+	margin-right: $spacing-mega;
+	margin-bottom: $spacing-big;
+	margin-left: $spacing-big;
+	border: 2px dashed $color-main-link; 
+	font-size: 2rem;
+	line-height: 2rem;
+	font-weight: 600;
+	color: $color-main-link;
+	padding: $spacing-medium $spacing-big;
+
+		@media (max-width: $bp-notebook ) {
+			margin-right: $spacing-big;
+			margin-bottom: $spacing-medium;
+		}
+
+		@media (max-width: $bp-mobile ) {
+			padding: $spacing-small $spacing-medium;
+			margin-left: $spacing-medium;
+		}
+}
+
+
