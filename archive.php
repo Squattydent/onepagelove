@@ -165,7 +165,7 @@
 
     <?php endif; ?>
 
-    <?php include ("frontend/inc/loop-hosting.php"); ?>   
+    <?php include ("frontend/inc/loop-thumb.php"); ?>   
 
 </div><!--  /.archive-container -->
 

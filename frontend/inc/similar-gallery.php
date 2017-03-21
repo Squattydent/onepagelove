@@ -6,7 +6,7 @@
 
 	<div class="archive-container">
 	
-		<?php include ("loop-hosting.php"); ?>
+		<?php include ("loop-thumb.php"); ?>
 
 		<?php
 		$categories = get_the_category($post->ID);
