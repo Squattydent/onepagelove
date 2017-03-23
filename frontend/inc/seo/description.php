@@ -27,7 +27,7 @@ elseif (function_exists('is_tag') && is_tag()) {
 		echo ' ';
 		echo ltrim($seo_title);
 		echo $seo_plural;
-		echo ' for your design inspiration.';
+		echo ' for your design inspiration. One Page Love is the leading resource of Single Page websites.';
 
 	};
 						

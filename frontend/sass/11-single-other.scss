@@ -1,5 +1,5 @@
 // ------------------------------------------------
-// Posts: Roundups and Articles
+// Posts: Roundups, Articles, Interviews
 // ------------------------------------------------ 
 
 .single-container {
@@ -247,6 +247,17 @@
 			max-width: none;
 		}
 
+	}
+
+	// Interview Head Images
+	.interview-head {
+		margin-right: $spacing-medium;
+		margin-bottom: $spacing-tiny;
+		padding-top: $spacing-tiny;
+
+		@media (max-width: $bp-mobile) {
+			max-width: 50px;
+		}
 	}
 
 }
