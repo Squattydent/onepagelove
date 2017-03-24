@@ -22,6 +22,10 @@
 		echo 'noindex, follow';
 	}
 
+	elseif ( is_category('Submissions') ) {
+		echo 'noindex, follow';
+	}
+
 	// green light mr robot
 	else {
 		echo 'index, follow';

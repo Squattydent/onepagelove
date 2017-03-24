@@ -4,19 +4,20 @@
 // 01. Post Thumbnails
 // 02. Ultra geeky head indentation
 // 03. If in parent category
-// 04. Add special content to RSS Feed
+// 04. RSS Feed Edits
 // 05. Pagination
 // 06. Remove <p> around images
 // 07. Add excerpt support to pages
 // 08. Enqueue Scripts and Styles
 // 09. WordPress Clean-up
+// 10. Hide Gallery - Submissions Category from all results
 
 // -------------------------------------------------------------
 // 00. Defining
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.9.12' );
+define( 'OPL_THEME_VERSION' , '6.9.14' );
 
 // Content Width
 global $content_width;
@@ -60,9 +61,10 @@ if ( ! function_exists( 'post_is_in_descendant_category' ) ) {
 }
 
 // -------------------------------------------------------------
-// 04. Add special content to RSS Feed
+// 04. RSS Feed Edits
 // -------------------------------------------------------------
 
+// Add special content to RSS Feed
 function fields_in_feed($content) {
     if(is_feed()) {
         $post_id = get_the_ID();
@@ -314,5 +316,25 @@ function opl_head_cleanup(){
 }
 
 add_action( 'after_setup_theme', 'opl_head_cleanup' );
+
+// -------------------------------------------------------------------------------------
+// 10. Hide Gallery - Submissions Category from all frontend results including RSS
+// -------------------------------------------------------------------------------------
+
+add_action('pre_get_posts', 'wpa_31553' );
+
+function wpa_31553( $wp_query ) {
+
+    // $wp_query is passed by reference. 
+    // we don't need to return anything. 
+    // whatever changes made inside this function will automatically effect the global variable
+
+    $excluded = array(8205);  // Submissions Category, Localhost is 1636
+
+    // only exclude on the front end
+    if( !is_admin() && !is_category('Submissions')) {
+        $wp_query->set('category__not_in', $excluded);
+    }
+}
 
 ?>
