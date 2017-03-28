@@ -32,7 +32,12 @@
 				      	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';							
 				      	echo ' "Most Loved" One Page Websites';		
 						}					
-					
+
+				  		// Submissions			
+						elseif (is_category('Submissions')) {
+				      	echo 'Community Submissions';		
+						}	
+
 						// Templates Home			
 					elseif (is_category('Templates')) {
 				  	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' One Page Templates';							

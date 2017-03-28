@@ -36,6 +36,11 @@ elseif (is_archive() && is_category('Gallery')) {
 		echo $seo_plural;	
 	}					
 
+	// Gallery - Submissions		
+	elseif (is_category('Submissions')) {
+  	echo 'Community Submissions';		
+	}	
+
 	// Gallery - remaining categories			
 	elseif (is_archive() && cat_is_ancestor_of($seo_gallery_id, $cat)) {
 		echo ltrim($seo_title);
@@ -160,6 +165,16 @@ elseif (is_single() && in_category('Most Loved')) {
 elseif (is_single() && ( post_is_in_descendant_category( $seo_gallery_id ) )) {
 	echo ltrim($seo_title);
 	echo ' - One Page Website Award';
+}
+
+elseif (is_single() && in_category('Free Templates') && in_category('WordPress Themes')) {
+	echo $seo_title;
+	echo ' - Free One Page WordPress Theme Download and Review';
+}
+
+elseif (is_single() && in_category('Free Templates')) {
+	echo $seo_title;
+	echo ' - Free One Page Template Download and Review';
 }
 
 elseif (is_single() && in_category('WordPress Themes')) {

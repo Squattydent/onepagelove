@@ -17,7 +17,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.9.14' );
+define( 'OPL_THEME_VERSION' , '6.9.15' );
 
 // Content Width
 global $content_width;
@@ -329,7 +329,7 @@ function wpa_31553( $wp_query ) {
     // we don't need to return anything. 
     // whatever changes made inside this function will automatically effect the global variable
 
-    $excluded = array(8205);  // Submissions Category, Localhost is 1636
+    $excluded = array(8205);  // Submissions Category 8205, Localhost is 1636
 
     // only exclude on the front end
     if( !is_admin() && !is_category('Submissions')) {
