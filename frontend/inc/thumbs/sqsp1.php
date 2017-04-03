@@ -1,7 +1,7 @@
 <div class="thumb-image">
 
 	<a href="https://onepagelove.com/how-to-create-one-page-websites-using-squarespace" title="How to create One Page websites using Squarespace">
-	<img src="<?php echo get_template_directory_uri(); ?>/img/hustle/<?php $thumbs = array('sqsp1.png', 'sqsp2.jpg', 'sqsp3.jpg' ); $thumbfile = $thumbs[rand(0, count($thumbs) - 1)]; echo($thumbfile); ?>" alt="How to create One Page websites using Squarespace" width="400" height="211" /></a>
+	<img src="<?php echo get_template_directory_uri(); ?>/img/hustle/sqsp1/<?php $thumbs = array('1.png', '2.jpg', '3.jpg' ); $thumbfile = $thumbs[rand(0, count($thumbs) - 1)]; echo($thumbfile); ?>" alt="How to create One Page websites using Squarespace" width="400" height="211" /></a>
 
 </div>
 

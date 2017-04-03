@@ -12,7 +12,7 @@
 
 	else {
 
-		include('thumbs/sqsp1.php'); // Squarespace Article 1
+		include('thumbs/sqsp2.php'); // Squarespace Article 2
 
 	};
 

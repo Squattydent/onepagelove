@@ -1,7 +1,7 @@
 <?php
 
 // functions.php index:
-// 01. Post Thumbnails
+// 01. Remove Pages from Search Results
 // 02. Ultra geeky head indentation
 // 03. If in parent category
 // 04. RSS Feed Edits
@@ -17,18 +17,27 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.9.15' );
+define( 'OPL_THEME_VERSION' , '6.9.16' );
 
 // Content Width
 global $content_width;
 if ( ! isset( $content_width ) ) $content_width = 1600;
 
-// -------------------------------------------------------------
-// 01. Post Thumbnails
-// -------------------------------------------------------------
-
 // Added Featured Image
 add_theme_support( 'post-thumbnails' );
+
+// -------------------------------------------------------------
+// 01. Remove Pages from Search Results
+// -------------------------------------------------------------
+
+function SearchFilter($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+
+add_filter('pre_get_posts','SearchFilter');
 
 // -------------------------------------------------------------
 // 02. Ultra geeky wp_head indentation
