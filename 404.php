@@ -10,7 +10,7 @@
 			<div class="section-title"><h1>Oh Rats!</h1></div>
 			<div class="section-description">
 				
-				<p>Seems like you just stumbled on a zero page site!</p>
+				<p>Seems like you've stumbled on a zero page site!</p>
 
 			</div>
 
@@ -20,13 +20,7 @@
 
 	<div class="section-content">
 
-		<div class="pages-content">
-
-			<p>Try the search bar top right or browse by category using the top dropdown menu.</p>
-
-			<p>Can't find anything? Mail us: <a href="mailto:support@onepagelove.com">support@onepagelove.com</a> or tweet: <a href="https://twitter.com/OnePageLove">@OnePageLove</a></p>
-
-		</div>
+		<?php include('frontend/inc/no-results.php'); ?>
 		
 	</div>
       

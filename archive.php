@@ -15,16 +15,30 @@
 
 					// Tags			
 					if (function_exists('is_tag') && is_tag()) {
-					    echo 'You are browsing ';
-					    echo $seo_count;
-					    echo $seo_plural;
-					    echo ' tagged with: ';	
-						echo $seo_title;
+
+						if ($seo_count > 0) {
+						    echo 'You are browsing ';
+						    echo $seo_count;
+						    echo $seo_plural;
+						    echo ' tagged with: ';	
+							echo $seo_title;
+						}
+
+						// Zero Results Tag
+						else {
+							echo 'No results tagged with: ';
+							echo $seo_title;
+						};
+
 					}
+
+					
+
+
 					
 						// Gallery Home			
 					elseif (is_category('Gallery')) {
-				  	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' unique One Page websites';	
+				  		echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' unique One Page websites';	
 					}		
 
 				  		// Most loved			
@@ -166,7 +180,8 @@
       <?php get_template_part('loop'); ?>
 
     <?php endwhile; else: ?>
-       <p>Sorry, no posts matched your criteria.</p>
+
+		<?php include('frontend/inc/no-results.php'); ?>
 
     <?php endif; ?>
 

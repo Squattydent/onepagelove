@@ -45,13 +45,7 @@
 
 			<?php endwhile; else: ?>
 
-				<div class="no-results">
-
-					<p>Sorry, no posts matched your search term - try browse using the categories in the top header menu.</p>
-
-					<p>If you get stuck, please mail me on <a href="mailto:rob@onepagelove.com">rob@onepagelove.com</a> and I'd be happy to assist!</p>
-
-				</div>
+				<?php include('frontend/inc/no-results.php'); ?>
 
 			<?php endif; ?>
 
