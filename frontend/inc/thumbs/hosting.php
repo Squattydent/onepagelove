@@ -1,7 +1,7 @@
 <div class="thumb-image">
 
 	<a href="https://onepagelove.com/go/bluehost" title="Host One Page websites for only $2.95/mo">
-	<img src="<?php echo get_template_directory_uri(); ?>/img/hustle/thumb-bluehost-screens.jpg" alt="Exclusive Hosting Special" width="400" height="211" /></a>
+	<img src="<?php echo get_template_directory_uri(); ?>/img/hustle/hosting/<?php $thumbs = array('1.jpg', '2.jpg', '3.jpg' ); $thumbfile = $thumbs[rand(0, count($thumbs) - 1)]; echo($thumbfile); ?>" alt="Exclusive Hosting Special" width="400" height="211" /></a>
 
 </div>
 
