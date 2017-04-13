@@ -29,6 +29,8 @@
 
 				</div>
 
+				<?php include ("frontend/inc/search-suggestions.php"); ?>
+
 			</div>
 
 		</div><!--  /.archive-header-info -->
