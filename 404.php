@@ -21,7 +21,7 @@
 	<div class="section-content">
 
 		<?php include('frontend/inc/no-results.php'); ?>
-		
+
 	</div>
       
 </div><!-- /.pages  -->

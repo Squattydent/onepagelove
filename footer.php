@@ -126,7 +126,7 @@
 				</div>	
 
 				<div id="footer-credit">
-					<span class="hitdelete">Built by <a href="https://twitter.com/hitdelete" target="_blank" title="🌵">@hitdelete</a></span>
+					<span class="hitdelete">Curated by <a href="https://twitter.com/hitdelete" target="_blank" title="🌵">@hitdelete</a></span>
 				</div>	
 
 			</div>

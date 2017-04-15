@@ -47,7 +47,7 @@
 
 			<?php endwhile; else: ?>
 
-				<?php include('frontend/inc/no-results.php'); ?>
+				<?php include ("frontend/inc/no-results.php"); ?>
 
 			<?php endif; ?>
 

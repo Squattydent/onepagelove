@@ -380,3 +380,15 @@
 		text-align: left;
 	}	
 }
+
+body.search-no-results p.no-results {
+	margin-top: $spacing-big;
+}
+
+// Search Suggestions
+.search-suggestions {
+	display: inline-block;
+	margin-top: $spacing-big;
+	padding: $spacing-medium;
+	background-color: #fbfcc6;
+}

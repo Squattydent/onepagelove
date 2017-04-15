@@ -31,10 +31,6 @@
 						};
 
 					}
-
-					
-
-
 					
 						// Gallery Home			
 					elseif (is_category('Gallery')) {
