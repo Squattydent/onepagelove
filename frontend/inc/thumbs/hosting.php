@@ -1,7 +1,7 @@
 <div class="thumb-image">
 
-	<a href="https://onepagelove.com/go/bluehost" title="Host One Page websites for only $2.95/mo">
-	<img src="<?php echo get_template_directory_uri(); ?>/img/hustle/hosting/<?php $thumbs = array('1.jpg', '2.jpg', '3.jpg' ); $thumbfile = $thumbs[rand(0, count($thumbs) - 1)]; echo($thumbfile); ?>" alt="Exclusive Hosting Special" width="400" height="211" /></a>
+	<a href="http://www.bluehost.com/track/onepagelove/thumb-<?php echo strtolower(date('M')) ?>" title="Host One Page websites for only $2.95/mo">
+	<img src="<?php echo get_template_directory_uri(); ?>/img/hustle/hosting/1.jpg" alt="Exclusive Hosting Special" width="400" height="211" /></a>
 
 </div>
 
@@ -11,13 +11,13 @@
 
 		<div class="thumb-name">
 
-			<h2><a href="https://onepagelove.com/go/bluehost" title="Host One Page websites for only $2.95/month">Host websites for only $2.95/month</a></h2>
+			<h2><a href="http://www.bluehost.com/track/onepagelove/thumb-<?php echo strtolower(date('M')) ?>" title="Host One Page websites for only $2.95/month">Host websites for only $2.95/month</a></h2>
 
 		</div>
 
 		<div class="thumb-cat">
 
-			<a href="https://onepagelove.com/go/bluehost">Exclusive One Page Love promotion (Save 63%)</a>
+			<a href="http://www.bluehost.com/track/onepagelove/thumb-<?php echo strtolower(date('M')) ?>">Exclusive One Page Love promotion (Save 63%)</a>
 
 		</div>
 
