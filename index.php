@@ -13,7 +13,7 @@
 						<span class="grey-shadow">
 							Browse <a href="<?php print get_home_url(); ?>/gallery">One Page Websites</a>, 
 							find <a href="<?php print get_home_url(); ?>/templates">One Page Templates</a> 
-							or get <a href="<?php print get_home_url(); ?>/hosting">Website Hosting</a>
+							or get <a href="https://www.bluehost.com/track/onepagelove/intro-<?php echo strtolower(date('M')) ?>">Website Hosting</a>
 						</span>	
 
 					</div>

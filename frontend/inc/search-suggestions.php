@@ -1,10 +1,4 @@
 <?php 
-/**
- *
- * @package onepagelove
- * @since clutterless 6.9.23
- * 
- */
 
 	$keyword 	= get_search_query();
 	$open		= '<p class="search-suggestions">';
@@ -56,6 +50,16 @@
 
 	}
 
+	// if string contains any of these words
+	elseif ( strpos($keyword, 'iphone') !== false ) {
+
+		echo $tagprefix;
+		echo '<a href="/tag/iphone-app">iPhone App</a><br />';
+		echo '<a href="/tag/iphone">iPhone Devices</a><br />';
+		echo '<a href="/gallery/app">App One Page websites</a>';
+
+	}
+
 # -------------------------------------------------------------
 # Colors
 # -------------------------------------------------------------
@@ -66,10 +70,28 @@
 		echo $tagprefix;
 		echo '<a href="/tag/blue-color">Blue Color</a><br />';
 		echo '<a href="/tag/navy-blue-color">Navy Blue Color</a><br />';
-		echo '<a href="/tag//tag/baby-blue-color">Baby Blue Color</a><br />';
+		echo '<a href="/tag/baby-blue-color">Baby Blue Color</a><br />';
 		echo '<a href="/tag/dark-blue-color">Dark Blue Color</a><br />';
 		echo '<a href="/tag/light-blue-color">Light Blue Color</a>';
 								
+	}
+
+	// if string contains this word among the letters
+	elseif ( strpos($keyword, 'white') !== false ) {
+
+		echo $tagprefix;
+		echo '<a href="/tag/white-color">White Color</a><br />';
+		echo '<a href="/tag/black-and-white-scheme">Black &amp; White Color Scheme</a><br />';
+		echo '<a href="/tag/whitespace">Whitespace (breathing room)</a>';
+								
+	}
+
+	// if string contains this word among the letters
+	elseif ( strpos($keyword, 'purple') !== false ) {
+
+		echo $tagprefix;
+		echo '<a href="/tag/purple-color">Purple Color</a>';
+
 	}
 
 # -------------------------------------------------------------

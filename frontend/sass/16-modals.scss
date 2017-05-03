@@ -97,6 +97,10 @@
             border-radius: 4px;
         }
 
+        @media (max-width: $bp-mobile) {
+            display: none;
+        }
+
 
     }
 
@@ -158,6 +162,71 @@
 .hd-close:hover {
     color: #111;
     background: #FFFFFF;
+
+}
+
+//-------------------------------------------------------------------------------
+// Newsletter
+//-------------------------------------------------------------------------------
+
+// global styles here reused in site footer
+
+.modal-newsletter-bottom {
+
+    .newsletter-form {
+
+        .email-octopus-form-wrapper {
+
+            .email-octopus-form-row {
+                color: #333;
+
+                input {
+                    border: 1px solid #CCC;
+                    background-color: #EEE;
+                    color: #555;
+           
+                }
+
+                input:focus {
+                    color: #333;
+                    background-color: #f2f2f2;
+                }
+
+            }
+
+            .fn  input { // First Name
+            }
+
+            .ea  input { // Email Address
+            
+
+                    @media (max-width: $bp-tablet) {
+                        border: 1px solid #CCC;
+                    }
+
+            }
+
+            .email-octopus-form-row-subscribe {
+
+                button {
+                    border: 1px solid $color-main-link;
+                    background-color: $color-main-link;
+                    color: #FFF;
+
+ 
+                }
+
+                button:hover {
+                    background-color: $color-main-link-hover;
+                    border: 1px solid $color-main-link-hover;
+                }
+
+            }
+
+        }
+
+    }
+
 
 }
 
@@ -225,5 +294,10 @@
          -o-transition: 500ms opacity 500ms ease;
             transition: 500ms opacity 500ms ease;
 }
+
+
+
+
+
 
 
