@@ -32,8 +32,7 @@ elseif (is_archive() && is_category('Gallery')) {
 
 	// Gallery - Most Loved			
 	elseif (is_archive() && is_category('Most Loved')) {
-		echo 'The Top';
-		echo $seo_plural;	
+		echo 'The Top One Page Website Awards';
 	}					
 
 	// Gallery - Submissions		

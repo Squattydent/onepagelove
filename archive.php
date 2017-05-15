@@ -40,7 +40,7 @@
 				  		// Most loved			
 						elseif (is_category('Most Loved')) {
 				      	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';							
-				      	echo ' "Most Loved" One Page Websites';		
+				      	echo ' "Most Loved" One Page Website Awards';		
 						}					
 
 				  		// Submissions			

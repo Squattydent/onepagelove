@@ -82,7 +82,7 @@
 
 	<ul>
 
-		<li><strong>Need Hosting?</strong> We highly recommend <a href="https://www.bluehost.com/track/onepagelove/reviews">Bluehost</a></li>
+		<li><strong>Need Hosting?</strong> We highly recommend <a href="https://onepagelove.com/go/bluehost">Bluehost</a></li>
 
 		<li><strong>Reviewed:</strong>  <?php echo get_the_date(); ?></li>
 
