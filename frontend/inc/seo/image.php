@@ -8,7 +8,13 @@ if ( is_single() && ($promo_image != '') ) {
 
 }
 
-elseif (is_home()) {
+elseif (is_page('Feedback')) {
+
+	echo '' . get_template_directory_uri() . '/img/hustle/feedback/share.jpg';
+
+}
+
+elseif (is_home() || is_page('About')) {
 
 	echo '' . get_template_directory_uri() . '/img/one-page-love-website-screenshot.jpg';
 
