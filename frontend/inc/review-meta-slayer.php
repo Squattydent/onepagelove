@@ -8,15 +8,11 @@
 
 				$ads  = array(
 						'ads/newsletter.php', 
-						// 'ads/critique.php', 
+						'ads/critique.php', 
 						'ads/feedback.php', 
-						// 'ads/hosting.php', 
-						'ads/sqsp1.php', 	
-						'ads/sqsp2.php',										
-						//'ads/tips.php', 
+						'ads/storytelling.php', 										
 						'ads/tighten.php', 
-						'ads/2016.php', 
-						'ads/about.php', 												
+						'ads/2016.php', 											
 						'ads/woo.php' // no comma on last one
 					);
 

@@ -6,7 +6,7 @@ Template Name: Feedback
 
 <?php get_header(); ?>
 
-<!-- Include Sendowl magic needed for PayPal payments -->
+<!-- Include Sendowl magic needed for Stripe or PayPal payments -->
 <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js" ></script>
 		
 <div class="pages currl-bundle private-feedback" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/feedback/footer.jpg');">	
@@ -17,7 +17,7 @@ Template Name: Feedback
 
 			<div class="section-tagline">A One Page Love Service</div>
 			<div class="section-title">Private Feedback</div>
-			<div class="section-description">10 minute video analysis of your Landing Page covering design, code, performance & more.</div>
+			<div class="section-description">15 minute video analysis of your Landing Page covering design, code, performance & more.</div>
 
 			<div class="section-buttons">
 				
@@ -26,7 +26,7 @@ Template Name: Feedback
 
 			</div>
 
-			<div class="button-paypal">Payment handled with PayPal</div>
+			<div class="button-paypal">Payment handled with Stripe or PayPal</div>
 
 		</div>
 		
@@ -88,7 +88,7 @@ Template Name: Feedback
 
 			</div>
 
-			<div class="button-paypal">Payment handled with PayPal</div>
+			<div class="button-paypal">Payment handled with Stripe or PayPal</div>
 
 		</div>
 
@@ -110,7 +110,7 @@ Template Name: Feedback
 							<h3>How is payment handled?</h3>
 						</div>
 						<div class="answer">
-							<p>Payment is securely handled with PayPal. We offer a 100% money back guarantee if you feel the review wasn't worth the money.</p>
+							<p>Payment is securely handled with Stripe or PayPal. We offer a 100% money back guarantee if you feel the review wasn't worth the money.</p>
 						</div>
 					</div>
 
@@ -141,7 +141,7 @@ Template Name: Feedback
 							<h3>What exactly does the review look like?</h3>
 						</div>
 						<div class="answer">
-							<p>The review is presented in a 10 minute+ YouTube video. Rob talks while interacting with your Landing Page. Below the video is a summary of review crits, suggestions and links.</p>
+							<p>The review is presented in a 15 minute+ YouTube video. Rob talks while interacting with your Landing Page. Below the video is a summary of review crits, suggestions and links.</p>
 						</div>
 					</div>
 
@@ -176,7 +176,7 @@ Template Name: Feedback
 
 			</div>
 
-			<div class="button-paypal">Payment handled with PayPal</div>
+			<div class="button-paypal">Payment handled with Stripe or PayPal</div>
 			
 			<div class="quote">
 				

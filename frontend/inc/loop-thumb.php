@@ -1,5 +1,16 @@
 <div class="thumb">
 
-<?php include('thumbs/hosting.php'); ?>
+	<?php 
+
+		$thumbs  = array(
+				'thumbs/hosting.php', 											
+				'thumbs/feedback.php' // no comma on last one
+			);
+
+		$thumb = $thumbs[rand(0, count($thumbs) - 1)];
+
+		include($thumb);
+
+	?>
           
 </div>		
