@@ -3,8 +3,8 @@
 	<?php 
 
 		$thumbs  = array(
-				'thumbs/hosting.php', 											
-				'thumbs/feedback.php' // no comma on last one
+				'thumbs/themeforest.php', 											
+				'thumbs/themeforest.php' // no comma on last one
 			);
 
 		$thumb = $thumbs[rand(0, count($thumbs) - 1)];
