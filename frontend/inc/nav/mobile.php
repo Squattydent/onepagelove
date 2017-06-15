@@ -15,6 +15,18 @@
 
 	</li> 
 
+	<li><a href="#">Resources</a>
+
+		<?php include('resources.php'); ?>	
+
+	</li>	
+
+	<li><a href="#">Read</a>
+
+		<?php include('blog.php'); ?>	
+
+	</li>	
+
 	<li><a href="<?php print get_home_url(); ?>/gallery">One Page Website Inspiration</a>
 
 		<?php include('gallery.php'); ?>         
@@ -26,12 +38,6 @@
 		<?php include('templates.php'); ?>                     
 
 	</li> 
-
-	<li><a href="#">Read</a>
-
-		<?php include('blog.php'); ?>	
-
-	</li>		
 
 	<li><a href="#">Subscribe to One Page Love</a>
 

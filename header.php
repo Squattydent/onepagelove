@@ -66,8 +66,6 @@
 			<div id="header-navigation">
 				
 				<ul>
-
-					<li><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a></li>
 				
 				    <li id="nav-info"><a href="#">Info</a>
 						
@@ -93,9 +91,9 @@
 
 		            </li> 
 
-		            <li id="nav-styl" class="nav-wide"><a href="#">Styles</a>
+		            <li id="nav-reso" class="nav-wide-single"><a href="#">Resources</a>
 
-    					<?php include('frontend/inc/nav/styles.php'); ?>     
+    					<?php include('frontend/inc/nav/resources.php'); ?>     
 
 		            </li> 		            
 
