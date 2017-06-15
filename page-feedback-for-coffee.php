@@ -49,7 +49,7 @@ Template Name: Feedback For Coffee
 							<h3>How does this thing work? </h3>
 						</div>
 						<div class="answer">
-							<p>I love giving website feedback. I also love coffee. You send me $5, I'll buy a delicious coffee and  deliver you a solid critique of your website.</p>
+							<p>I love giving website feedback. I also love coffee. You send me $5, I'll buy a delicious brew and  deliver you a solid critique of your website.</p>
 						</div>
 					</div>
 
