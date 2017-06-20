@@ -7,12 +7,10 @@
 			<?php 
 
 				$ads  = array(
-						'ads/newsletter.php', 
-						'ads/critique.php', 
-						'ads/feedback.php', 
+						'ads/coffee1.php', 
+						'ads/coffee2.php', 						
 						'ads/storytelling.php', 										
-						'ads/tighten.php', 
-						'ads/2016.php', 											
+						'ads/tips.php', 											
 						'ads/woo.php' // no comma on last one
 					);
 

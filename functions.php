@@ -17,7 +17,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.9.31' );
+define( 'OPL_THEME_VERSION' , '6.9.32' );
 
 // Content Width
 global $content_width;

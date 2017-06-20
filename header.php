@@ -91,7 +91,7 @@
 
 		            </li> 
 
-		            <li id="nav-reso" class="nav-wide-single"><a href="#">Resources</a>
+		            <li id="nav-reso" class="nav-wide-single"><a href="#">Services</a>
 
     					<?php include('frontend/inc/nav/resources.php'); ?>     
 

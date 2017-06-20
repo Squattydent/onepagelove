@@ -17,7 +17,7 @@ Template Name: Feedback For Coffee
 
 			<div class="section-tagline">A One Page Love Service</div>
 			<div class="section-title">Feedback For Coffee ☕️</div>
-			<div class="section-description">A short but sweet 3-5 minute Audio feedback of your One Page website covering first impressions, design, code & suggestions.</div>
+			<div class="section-description">A short but sweet 3-5 minute Audio feedback of your One Pager or Landing Page covering first impressions, design, code &amp; suggestions.</div>
 
 			<div class="section-buttons">
 				
