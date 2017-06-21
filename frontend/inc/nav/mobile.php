@@ -15,7 +15,7 @@
 
 	</li> 
 
-	<li><a href="#">Resources</a>
+	<li><a href="#">Services</a>
 
 		<?php include('resources.php'); ?>	
 
