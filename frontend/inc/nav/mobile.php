@@ -17,13 +17,13 @@
 
 	<li><a href="#">Services</a>
 
-		<?php include('resources.php'); ?>	
+		<?php include('services.php'); ?>	
 
 	</li>	
 
 	<li><a href="#">Read</a>
 
-		<?php include('blog.php'); ?>	
+		<?php include('read.php'); ?>	
 
 	</li>	
 

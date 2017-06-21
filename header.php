@@ -67,9 +67,9 @@
 				
 				<ul>
 				
-				    <li id="nav-info"><a href="#">Info</a>
+				    <li id="nav-info"><a href="#">Home</a>
 						
-						<?php include('frontend/inc/nav/info.php'); ?>	
+						<?php include('frontend/inc/nav/home.php'); ?>	
 
 				 	</li>	
 	
@@ -85,21 +85,15 @@
 
 		            </li> 
 
-		            <li id="nav-free"><a href="#">Free</a>
-
-    					<?php include('frontend/inc/nav/free.php'); ?>     
-
-		            </li> 
-
 		            <li id="nav-reso" class="nav-wide-single"><a href="#">Services</a>
 
-    					<?php include('frontend/inc/nav/resources.php'); ?>     
+    					<?php include('frontend/inc/nav/services.php'); ?>     
 
 		            </li> 		            
 
 		            <li id="nav-read"><a href="#">Read</a>
 
-						<?php include('frontend/inc/nav/blog.php'); ?>	
+						<?php include('frontend/inc/nav/read.php'); ?>	
 
 				 	</li>			
 											   
@@ -108,7 +102,13 @@
 						<?php include('frontend/inc/nav/subscribe.php'); ?>
 
 		            </li>
-	
+
+		            <li id="nav-free"><a href="#">Free 🎉</a>
+
+    					<?php include('frontend/inc/nav/free.php'); ?>     
+
+		            </li> 
+		            
 	           </ul>
 				
 		    </div>
