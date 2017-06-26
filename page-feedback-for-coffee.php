@@ -89,7 +89,7 @@ Template Name: Feedback For Coffee
 							<h3>How private is the feedback?</h3>
 						</div>
 						<div class="answer">
-							<p>You are sent the link to the AudioNote feedback where you can play on any device. The link is however easily shared if you wish - this is great for teams. Only you have the link and it is cannot be indexed by Google.</p>
+							<p>You are sent the link to the AudioNote feedback where you can play on any device. The link is however easily shared if you wish - this is great for teams. Only you have the link and it cannot be indexed by Google.</p>
 						</div>
 					</div>
 
@@ -126,10 +126,11 @@ Template Name: Feedback For Coffee
 
 			<div class="quote">
 				
-				<div class="quoted">"You'll be getting many more coffees from me mate - this is priceless quick advice for my side projects."</div>
-				<div class="quoter">James Elliot - Entrepreneur</div>
+				<div class="quoted">"Thank you so much for the clear feedback! It's been a very long time since I had the chance to get such constructive advice on my work."</div>
+				<div class="quoter">Natalie Axten - Designer</div>
 					
 			</div>
+
 
 		</div>
 
