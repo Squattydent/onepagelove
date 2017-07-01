@@ -103,7 +103,7 @@
 
 		            </li>
 
-		            <li id="nav-free"><a href="#">Free 🎉</a>
+		            <li id="nav-free"><a href="#">Free</a>
 
     					<?php include('frontend/inc/nav/free.php'); ?>     
 

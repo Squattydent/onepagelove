@@ -11,13 +11,13 @@
 
 		<div class="thumb-name">
 
-			<h2><a href="https://onepagelove.com/go/bluehost" title="Host One Page websites for only $2.95/month">Host websites for only $2.95/month</a></h2>
+			<h2><a href="https://onepagelove.com/go/bluehost" title="Host One Page websites for only $2.95/month">Host websites for only $2.95/month 🎉</a></h2>
 
 		</div>
 
 		<div class="thumb-cat">
 
-			<a href="https://onepagelove.com/go/bluehost">Exclusive One Page Love promotion (Save 63%)</a>
+			<a href="https://onepagelove.com/go/bluehost">Exclusive <?php echo date("F"); ?> promotion (Save 63%)</a>
 
 		</div>
 
