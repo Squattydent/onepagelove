@@ -42,12 +42,22 @@ Thanks for your One Page template submission
 Thanks for your order of a Private Video Feedback 🎞
 {% endif %}
 
-<!-- ///////////////////////// New Subject ///////////////////////// -->
+<!-- ///////////////////////// Subject ///////////////////////// -->
 
 {% for cart_item in order.cart.cart_items %}Thanks for your {{ cart_item.product.name }} order 🎉 {% endfor %} (#{{ order.id }})
 
-<!-- ///////////////////////// New HTML Email Reference ///////////////////////// -->
+<!-- ///////////////////////// Subject - Order ID ///////////////////////// -->
 
+You rock {{ order.buyer_name }}! {% for cart_item in order.cart.cart_items %}Thanks for your {{ cart_item.product.name }} order {% endfor %}🎉 
+
+<!-- ///////////////////////// Text Mail ///////////////////////// -->
+
+If you see this text, please email support@onepagelove.com
+
+Cheers,
+Rob
+
+<!-- ///////////////////////// Custom Field Reference ///////////////////////// -->
 
 <p>Hey {% for custom_checkout_fields in order.order_custom_checkout_fields %}
 
@@ -59,6 +69,9 @@ Thanks for your order of a Private Video Feedback 🎞
 
 {% endfor %}</p> 
 
+<!-- ///////////////////////// New HTML Email Reference ///////////////////////// -->
+
+<p>Hey {% if order.buyer_name %} {{ order.buyer_name }}{% endif %}</p> 
 
 {% assign product_ids = order.cart.cart_items | map: 'product' | map: 'id' %} 
 
@@ -153,4 +166,4 @@ Thanks for your order of a Private Video Feedback 🎞
 {% endif %}
 
 <p>Chat soon,<br />Rob</p>
-<p>ps. I've sent the receipt in another email</p>	
+<p>ps. I've sent the receipt in another email and your order ID is #{{ order.id }}</p>	
