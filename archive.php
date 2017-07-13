@@ -43,6 +43,12 @@
 				      	echo ' "Most Loved" One Page Website Awards';		
 						}					
 
+				  		// One Page Blog			
+						elseif (is_category('One Page Blog')) {
+				      	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).'';							
+				      	echo ' One Page Blog websites';		
+						}	
+
 				  		// Submissions			
 						elseif (is_category('Submissions')) {
 				      	echo 'Community Submissions';		

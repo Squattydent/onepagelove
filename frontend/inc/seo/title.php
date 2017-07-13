@@ -35,6 +35,11 @@ elseif (is_archive() && is_category('Gallery')) {
 		echo 'The Top One Page Website Awards';
 	}					
 
+	// Gallery - One Page Blog		
+	elseif (is_archive() && is_category('One Page Blog')) {
+		echo 'One Page Blog Websites';
+	}
+
 	// Gallery - Submissions		
 	elseif (is_category('Submissions')) {
   	echo 'Community Submissions';		

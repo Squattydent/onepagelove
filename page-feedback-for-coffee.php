@@ -116,11 +116,25 @@ Template Name: Feedback For Coffee
 			</div>
 
 			<div class="button-paypal">Payment handled with Stripe or PayPal</div>
-			
+
 			<div class="quote">
 				
-				<div class="quoted">"Really impressive feedback! You've been generous with your time and it's super insightful."</div>
+				<div class="quoted">"Phenomenal - love the audio format, everything was very clear. I just ordered another, this is super helpful."</div>
+				<div class="quoter">Sarah Shewey - Entrepreneur</div>
+					
+			</div>
+
+			<div class="quote">
+				
+				<div class="quoted">"Really impressive! You've been generous with your time and the feedback is super insightful."</div>
 				<div class="quoter">Will Messiha - Product Bake</div>
+					
+			</div>
+
+			<div class="quote">
+				
+				<div class="quoted">"Thank you so much! I’m going to listen to your audio several more times, share it with colleagues and  implement your suggestions. I wonder why it is that I trust your input, a total stranger. You’ll be hearing from me again."</div>
+				<div class="quoter">Kimberly Hughes - Small Business Consultant</div>
 					
 			</div>
 
