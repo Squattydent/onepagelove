@@ -1,6 +1,6 @@
 <div class="thumb-image">
 
-	<a href="https://onepagelove.com/go/bluehost" title="Host One Page websites for only $2.95/mo">
+	<a href="https://onepagelove.com/go/bluehost" title="Host One Page websites for only $2.65/mo">
 	<img src="<?php echo get_template_directory_uri(); ?>/img/hustle/hosting/1.jpg" alt="Exclusive Hosting Special" width="400" height="211" /></a>
 
 </div>
@@ -11,7 +11,7 @@
 
 		<div class="thumb-name">
 
-			<h2><a href="https://onepagelove.com/go/bluehost" title="Host One Page websites for only $2.95/month">Host websites for only $2.95/month 🎉</a></h2>
+			<h2><a href="https://onepagelove.com/go/bluehost" title="Host One Page websites for only $2.65/month">Host websites for only $2.65/month 🎉</a></h2>
 
 		</div>
 

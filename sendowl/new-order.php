@@ -7,6 +7,9 @@ https://www.sendowl.com/products/597112/edit
 Clutterless Pro
 https://www.sendowl.com/products/568245/edit
 
+FullSingle Pro
+https://www.sendowl.com/products/489045/edit
+
 eBook: 10 Landing Page Design Tips 
 https://www.sendowl.com/products/512413/edit
 
