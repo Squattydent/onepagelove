@@ -49,7 +49,11 @@ Thanks for your order of a Private Video Feedback 🎞
 
 {% for cart_item in order.cart.cart_items %}Thanks for your {{ cart_item.product.name }} order 🎉 {% endfor %} (#{{ order.id }})
 
-<!-- ///////////////////////// Subject - Order ID ///////////////////////// -->
+<!-- ///////////////////////// Subject - Name ///////////////////////// -->
+
+#{{ order.id }} - {% for cart_item in order.cart.cart_items %}Thanks for your {{ cart_item.product.name }} order {% endfor %}🎉 
+
+<!-- ///////////////////////// Subject - Name ///////////////////////// -->
 
 You rock {{ order.buyer_name }}! {% for cart_item in order.cart.cart_items %}Thanks for your {{ cart_item.product.name }} order {% endfor %}🎉 
 
@@ -60,21 +64,19 @@ If you see this text, please email support@onepagelove.com
 Cheers,
 Rob
 
-<!-- ///////////////////////// Custom Field Reference ///////////////////////// -->
+<!-- ///////////////////////// Reference: Custom Field  ///////////////////////// -->
 
-<p>Hey {% for custom_checkout_fields in order.order_custom_checkout_fields %}
+<p>Hey {% for custom_checkout_fields in order.order_custom_checkout_fields %}{% if custom_checkout_fields.name contains 'First Name:' %}{{ custom_checkout_fields.value }} {% endif %}{% endfor %}</p> 
 
-	{% if custom_checkout_fields.name contains 'Your First Name:' %}
+<!-- ///////////////////////// Reference: Order Buyer Name ///////////////////////// -->
 
-		{{ custom_checkout_fields.value }} 
+<p>Hey {% if order.buyer_name %} {{ order.buyer_name }}{% endif %}</p> 
 
-	{% endif %}
 
-{% endfor %}</p> 
 
 <!-- ///////////////////////// New HTML Email Reference ///////////////////////// -->
 
-<p>Hey {% if order.buyer_name %} {{ order.buyer_name }}{% endif %}</p> 
+<p>Hey {% for custom_checkout_fields in order.order_custom_checkout_fields %}{% if custom_checkout_fields.name contains 'First Name:' %}{{ custom_checkout_fields.value }} {% endif %}{% endfor %}</p> 
 
 {% assign product_ids = order.cart.cart_items | map: 'product' | map: 'id' %} 
 
