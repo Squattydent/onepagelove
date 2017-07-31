@@ -8,8 +8,7 @@
 
 				$ads  = array(
 						'ads/coffee1.php', 
-						'ads/coffee2.php', 						
-						'ads/storytelling.php', 										
+						'ads/coffee2.php', 															
 						'ads/tips.php', 											
 						'ads/woo.php' // no comma on last one
 					);

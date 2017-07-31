@@ -23,7 +23,7 @@
 	<meta name="twitter:image" content="<?php include('frontend/inc/seo/image.php'); ?>" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@onepagelove" />
-	<meta name="twitter:creator" content="@hitdelete" />
+	<meta name="twitter:creator" content="@robhope" />
 
 	<!-- Typekit Fonts -->
 	<script type="text/javascript" src="//use.typekit.net/spx0udh.js"></script>
