@@ -1,3 +1,15 @@
+<?php 
+
+/**
+ *
+ * @package onepagelove
+ * @since onepagelove 6.9.44
+ * @license GPL 2.0
+ * 
+ */
+
+?>
+
 <!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
 
@@ -9,7 +21,7 @@
 	<!-- SEO Yo! -->
 	<title><?php include('frontend/inc/seo/title.php'); ?></title>
 	<meta name="description" content="<?php include('frontend/inc/seo/description.php'); ?>" />
-	<meta name="author" content="One Page Love" />
+	<meta name="author" content="Rob Hope, @robhope" />
 	<meta name="robots" content="<?php include('frontend/inc/seo/robots.php'); ?>" />
 	<meta name="referrer" content="always" />
 
@@ -116,7 +128,7 @@
 			<div id="header-search">
 				
 				<form class="search" action="<?php print get_site_url(); ?>/" method="get">
-                    <div class="search-icon"><svg enable-background="new 0 0 512 512" height="512px" version="1.1" class="svg-search-icon" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M497.913,497.913c-18.782,18.782-49.225,18.782-68.008,0l-84.862-84.863c-34.889,22.382-76.13,35.717-120.659,35.717  C100.469,448.767,0,348.312,0,224.383S100.469,0,224.384,0c123.931,0,224.384,100.452,224.384,224.383  c0,44.514-13.352,85.771-35.718,120.676l84.863,84.863C516.695,448.704,516.695,479.131,497.913,497.913z M224.384,64.109  c-88.511,0-160.274,71.747-160.274,160.273c0,88.526,71.764,160.274,160.274,160.274c88.525,0,160.273-71.748,160.273-160.274  C384.657,135.856,312.909,64.109,224.384,64.109z"/></svg></div>
+                    <div class="search-icon"><svg enable-background="new 0 0 512 512" height="512px" version="1.1" class="svg-search-icon" viewBox="0 0 512 512" width="512px" xml:space="preserve" ><path d="M497.913,497.913c-18.782,18.782-49.225,18.782-68.008,0l-84.862-84.863c-34.889,22.382-76.13,35.717-120.659,35.717  C100.469,448.767,0,348.312,0,224.383S100.469,0,224.384,0c123.931,0,224.384,100.452,224.384,224.383  c0,44.514-13.352,85.771-35.718,120.676l84.863,84.863C516.695,448.704,516.695,479.131,497.913,497.913z M224.384,64.109  c-88.511,0-160.274,71.747-160.274,160.273c0,88.526,71.764,160.274,160.274,160.274c88.525,0,160.273-71.748,160.273-160.274  C384.657,135.856,312.909,64.109,224.384,64.109z"/></svg></div>
                     <div class="search-field-holder"><input type="text" class="search-field" name="s" placeholder="Search" /></div>
 				</form>
 	
@@ -125,7 +137,7 @@
 			<div id="header-button">
 
 				<a id="mobile-nav-button-link" href="javascript:toggleNav();"> 
-					<svg class="svg-mobile-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="13px" viewBox="0 0 20 13" enable-background="new 0 0 20 13" xml:space="preserve">
+					<svg class="svg-mobile-icon" version="1.1" x="0px" y="0px" width="20px" height="13px" viewBox="0 0 20 13" enable-background="new 0 0 20 13" xml:space="preserve">
 				        <g>
 				         	<path d="M1.5,3h17C19.328,3,20,2.329,20,1.5S19.328,0,18.5,0h-17C0.671,0,0,0.671,0,1.5S0.671,3,1.5,3z"/>
 				         	<path d="M18.5,5h-17C0.671,5,0,5.671,0,6.5C0,7.328,0.671,8,1.5,8h17C19.328,8,20,7.328,20,6.5C20,5.671,19.328,5,18.5,5z"/>

@@ -1,8 +1,20 @@
+<?php 
+
+/**
+ *
+ * @package onepagelove
+ * @since onepagelove 6.9.44
+ * @license GPL 2.0
+ * 
+ */
+
+?>
+
 <div class="blog-author">
 
 	 <div class="author-image">
 	    
-	    <a href="http://twitter.com/hitdelete"><img src="<?php echo get_template_directory_uri(); ?>/img/rob-hope-one-page-love.jpg" alt="Rob Hope"/></a>
+	    <a href="https://twitter.com/robhope"><img src="<?php echo get_template_directory_uri(); ?>/img/rob-hope-one-page-love.jpg" alt="Rob Hope"/></a>
 
 	</div>
 
@@ -47,7 +59,7 @@
 
 	    was reviewed by Rob Hope</p>
 	    
-	    <p class="author-bio">I started One Page Love back in 2008. It's come a long way but I want to keeping adding value to your experience. Please <a href="http://twitter.com/robhope">tweet</a> or <a href="mailto:rob@onepagelove.com">email me</a> with any questions or suggestions.</p>
+	    <p class="author-bio">I started One Page Love back in 2008. It's come a long way but I want to keeping adding value to your experience. Please <a href="https://twitter.com/robhope">tweet</a> or <a href="mailto:rob@onepagelove.com">email me</a> with any questions or suggestions.</p>
 
 	</div>
 

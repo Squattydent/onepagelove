@@ -17,7 +17,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.9.43' );
+define( 'OPL_THEME_VERSION' , '6.9.44' );
 
 // Content Width
 global $content_width;
@@ -54,7 +54,7 @@ function indented_wp_head(){
 
 // -------------------------------------------------------------
 // 03. If in parent category
-// http://wordpress.stackexchange.com/questions/155332/check-if-a-post-is-in-any-child-category-of-a-parent-category
+// https://wordpress.stackexchange.com/questions/155332/check-if-a-post-is-in-any-child-category-of-a-parent-category
 // -------------------------------------------------------------
 
 if ( ! function_exists( 'post_is_in_descendant_category' ) ) {

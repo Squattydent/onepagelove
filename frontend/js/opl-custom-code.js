@@ -1,6 +1,6 @@
 // ------------------------------------------------------------------------
 // Smooth Scrolling
-// http://codepen.io/HZaccaro/pen/zvrgLb
+// https://codepen.io/HZaccaro/pen/zvrgLb
 // ------------------------------------------------------------------------
 
 $(function smoothScrollYo() {

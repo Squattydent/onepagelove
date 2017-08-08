@@ -106,7 +106,7 @@ Template Name: Currl Bundle
 
 			<div class="section-buttons">
 				
-				<div class="button"><a href="http://demo.currl.com/alto" target="_blank">See Demo</a></div>
+				<div class="button"><a href="https://demo.currl.com/alto" target="_blank">See Demo</a></div>
 				<div class="button"><a href="https://transactions.sendowl.com/products/429985/7BCCD6AB/add_to_cart" rel="nofollow">Buy Alto $19</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
@@ -131,7 +131,7 @@ Template Name: Currl Bundle
 			
 			<div class="section-buttons">
 				
-				<div class="button"><a href="http://demo.currl.com/verb" target="_blank">See Demo</a></div>
+				<div class="button"><a href="https://demo.currl.com/verb" target="_blank">See Demo</a></div>
 				<div class="button"><a href="https://transactions.sendowl.com/products/429984/6A24A1C4/add_to_cart" rel="nofollow">Buy Verb $19</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
@@ -156,7 +156,7 @@ Template Name: Currl Bundle
 
 			<div class="section-buttons">
 				
-				<div class="button"><a href="http://demo.currl.com/elon" target="_blank">See Demo</a></div>
+				<div class="button"><a href="https://demo.currl.com/elon" target="_blank">See Demo</a></div>
 				<div class="button"><a href="https://transactions.sendowl.com/products/429980/CABD5B34/add_to_cart" rel="nofollow">Buy Elon $19</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/429258/0F1E8698/add_to_cart" rel="nofollow">Buy Bundle $29</a></div>
 
@@ -195,7 +195,7 @@ Template Name: Currl Bundle
 							<h3>I don't know how to code, can I still setup this theme?</h3>
 						</div>
 						<div class="answer">
-							<p>You do not need to know code at all. Everything is setup using the WordPress theme customizer. This is a friendly interface where you can select layout options, enter in social network usernames and upload images. Here is <a href="http://demo.currl.com/elon/wp-content/uploads/sites/2/2016/01/elon-customizer-preview.jpg" target="_blank">a screenshot</a> of the theme customizer panel and the 6 simple setup sections.</p>
+							<p>You do not need to know code at all. Everything is setup using the WordPress theme customizer. This is a friendly interface where you can select layout options, enter in social network usernames and upload images. Here is <a href="https://demo.currl.com/elon/wp-content/uploads/sites/2/2016/01/elon-customizer-preview.jpg" target="_blank">a screenshot</a> of the theme customizer panel and the 6 simple setup sections.</p>
 						</div>
 					</div>
 
@@ -204,7 +204,7 @@ Template Name: Currl Bundle
 							<h3>What License do the themes support?</h3>
 						</div>
 						<div class="answer">
-							<p>This theme supports the General Public License, version 2 (<a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">GPL2.0</a>) - Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.</p>
+							<p>This theme supports the General Public License, version 2 (<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">GPL2.0</a>) - Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.</p>
 						</div>
 					</div>
 
@@ -217,7 +217,7 @@ Template Name: Currl Bundle
 							<h3>Does this WordPress theme have posts or pages?</h3>
 						</div>
 						<div class="answer">
-							<p>There is no blog section, this theme is purely a One Page website aimed at providing a professional online presence for you or your brand. There is a “page template” for any legal pages you might need to create. This is a basic page that only allows basic text. (<a href="http://demo.currl.com/elon/impressum/" target="_blank">see example</a>)</p>
+							<p>There is no blog section, this theme is purely a One Page website aimed at providing a professional online presence for you or your brand. There is a “page template” for any legal pages you might need to create. This is a basic page that only allows basic text. (<a href="https://demo.currl.com/elon/impressum/" target="_blank">see example</a>)</p>
 						</div>
 					</div>
 

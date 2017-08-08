@@ -90,7 +90,7 @@ The SendOwl
 
 <!-- ///////////////////////// HTML Email Receipt Reference ///////////////////////// -->
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 <title>{% if transaction.refund %}Refund{% else %}Receipt{% endif %} for Order #{{ order.id }} with One Page Love</title>
@@ -252,7 +252,7 @@ The SendOwl
 					<table width="300" cellpadding="0" cellspacing="0">
 					  <tr>
 					    <td width="60">
-					      <a href="http://twitter.com/hitdelete"><img src="https://onepagelove.com/wp-content/uploads/2016/11/rob-hope.png" alt="Rob Hope" width="60" height="60"></a>
+					      <a href="https://twitter.com/robhope"><img src="https://onepagelove.com/wp-content/uploads/2016/11/rob-hope.png" alt="Rob Hope" width="60" height="60"></a>
 					    </td>
 					    <td width="10">&nbsp;</td>
 					    <td width="230">
