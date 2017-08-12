@@ -86,15 +86,13 @@
 
 .thumb {
 	position: relative; 
-	//width: 25%;
-	//max-width: 400px; // no pixelation of thumbs
 	width: 400px;
 	margin: $spacing-medium; // 20
 	text-shadow: none; 
 	padding: 0;
 	border-radius: $rounded-corners;
 	box-shadow: $shadow-global;  
-	// border: none;
+	
 
 	@media (max-width: $bp-desklg) {
 		//width: 25%;
@@ -172,6 +170,8 @@
 	.thumb-image {
 		width: 100%; 
 		height: auto; 
+		max-height: 211px;
+		overflow: hidden;
 		top: 0;
 
 		img {

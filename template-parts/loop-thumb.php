@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.10.2
  *
 */ 
 ?>
@@ -35,19 +35,23 @@
 
 			<?php 
 
-				if ( in_category(array("Blog", "Journal", "Articles", "Resources", "Interviews", "Round Ups"))) { 
+				$seo_gallery_id = get_cat_ID('Gallery');
+				$seo_templates_id = get_cat_ID('Templates');
+
+				if ( post_is_in_descendant_category( array($seo_gallery_id,$seo_templates_id) ) ) {
+					$thumbstring = get_the_content();   
+					$thumbresult = strip_tags($thumbstring, '<img>');
+					echo $thumbresult;
+				}
+
+				else { 
 					if ( has_post_thumbnail() ) {
 					    the_post_thumbnail();
 					}
 					else {
-					    echo '<img src="' . get_template_directory_uri() . '/img/no-thumbnail-set.jpg" alt="No Thumbnail Set"/>';
+					    echo '<img src="' . get_template_directory_uri() . '/img/no-thumbnail-set.jpg" alt="No Thumbnail Set" />';
 					} 
-				} 
-				else {
-					$string = get_the_content();   
-					$result = strip_tags($string, '<img>');
-					echo $result;
-				}
+				};
 
 			?>
 
