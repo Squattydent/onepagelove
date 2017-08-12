@@ -7,7 +7,7 @@ Template Name: Feedback For Coffee
 <?php
 /**
  * @package onepagelove
- * @version 6.10
+ * @version 6.10.3
  *
 */ 
 get_header(); ?>
@@ -73,7 +73,7 @@ get_header(); ?>
 							<h3>Who gives the feedback?</h3>
 						</div>
 						<div class="answer">
-							<p><a href="https://twitter.com/hitdelete">Rob Hope</a>, the founder of One Page Love, who has over a decade of website design and development experience. Every day, he adds his commentary to websites featured on One Page Love, now over 6000.</p>
+							<p><a href="https://twitter.com/robhope">Rob Hope</a>, the founder of One Page Love, who has over a decade of website design and development experience. Every day, he adds his commentary to websites featured on One Page Love, now over 6000.</p>
 						</div>
 					</div>
 
