@@ -1,11 +1,8 @@
-WordPress Theme for the One Page Love website.
+Hey!
 
-Unfortunately very customized to category structure and not reusable as a WordPress theme.
-
-But feel free to take a look!
+This is the custom WordPress Theme for the [One Page Love](https://onepagelove.com) website.
 
 Cheers,
 Rob
 
-rob@onepagelove.com
-@hitdelete
+@robhope

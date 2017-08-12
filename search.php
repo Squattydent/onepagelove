@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10
+ *
+*/ 
+get_header(); ?>
 
 	<div class="archive-header">
 

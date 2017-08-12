@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10
+ *
+*/ 
+get_header(); ?>
 
 <!-- Include Sendowl magic needed for Stripe and PayPal payments -->
 <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js" ></script>

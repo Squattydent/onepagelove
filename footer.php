@@ -1,4 +1,11 @@
-		</div><!-- / #content -->		
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10
+ *
+*/ 
+?>		
+</div><!-- / #content -->		
 		
 		<div class="clear"></div>
 

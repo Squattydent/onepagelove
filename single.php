@@ -1,4 +1,9 @@
 <?php
+/**
+ * @package onepagelove
+ * @version 6.10
+ *
+*/ 
 
 	$post = $wp_query->post;
 

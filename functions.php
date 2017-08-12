@@ -1,4 +1,9 @@
 <?php
+/**
+ * @package onepagelove
+ * @version 6.10
+ *
+*/ 
 
 // functions.php index:
 // 01. Remove Pages from Search Results
@@ -17,7 +22,7 @@
 // -------------------------------------------------------------
 
 // Theme Version
-define( 'OPL_THEME_VERSION' , '6.9.44' );
+define( 'OPL_THEME_VERSION' , '6.10' );
 
 // Content Width
 global $content_width;

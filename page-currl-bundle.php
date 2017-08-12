@@ -4,7 +4,13 @@ Template Name: Currl Bundle
 */ 
 ?>
 
-<?php get_header(); ?>
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10
+ *
+*/ 
+get_header(); ?>
 
 <!-- Include Sendowl magic needed for PayPal payments -->
 <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js" ></script>
