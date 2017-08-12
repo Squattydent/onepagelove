@@ -1,4 +1,9 @@
-<?php 
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10.1
+ *
+*/ 
 
 //---------------------------------------------------------------
 // Variables used in all SEO php files and archive titles

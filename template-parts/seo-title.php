@@ -1,7 +1,12 @@
-<?php 
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10.1
+ *
+*/ 
 
 // Get the variables
-include('variables.php');
+include('seo-variables.php');
 
 //---------------------------------------------------------------
 // Home

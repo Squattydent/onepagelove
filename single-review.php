@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10
+ * @version 6.10.1
  *
 */ 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<div class="review-meta-right">
 
-				<?php include ('frontend/inc/review-meta-right.php'); ?>
+				<?php get_template_part('template-parts/review','meta'); ?>
 
 			</div>	
 
@@ -114,7 +114,7 @@ get_header(); ?>
 
 		<div class="review-screenshot">
 
-			<?php include ('frontend/inc/pagination-floating.php'); ?>
+			<?php get_template_part('template-parts/pagination','floating'); ?>
 
 			<a href="<?php print get_post_meta($post->ID, 'site_url', true) ?>" target="_blank" class="noBorder">
 
@@ -137,7 +137,7 @@ get_header(); ?>
 
 		<div class="review-notes">
 
-			<?php include ('frontend/inc/review-author.php'); ?>
+			<?php get_template_part('template-parts/review','author'); ?>
 
 			<div class="clear"></div>
 
@@ -152,6 +152,6 @@ get_header(); ?>
 <?php endif; ?>
 
 	<?php wp_reset_query(); ?>
-	<?php include ('frontend/inc/similar-gallery.php'); ?>
+	<?php get_template_part('template-parts/similar','gallery'); ?>
 
 <?php get_footer(); ?>

@@ -1,4 +1,9 @@
-<?php 
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10.1
+ *
+*/ 
 
 	$keyword 	= get_search_query();
 	$open		= '<p class="search-suggestions">';

@@ -1,3 +1,10 @@
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10.1
+ *
+*/ 
+?>
 <div class="similar">
 
 	<div class="similar-title">Similar One Page Websites</div>
@@ -6,7 +13,7 @@
 
 	<div class="archive-container">
 	
-		<?php include ("loop-thumb.php"); ?>
+		<?php get_template_part('template-parts/loop','thumb'); ?>
 
 		<?php
 		$categories = get_the_category($post->ID);

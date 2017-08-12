@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10
+ * @version 6.10.1
  *
 */ 
 get_header(); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 				
 			</div>
 		           
-			<?php include ('frontend/inc/pagination-floating.php'); ?>
+			<?php get_template_part('template-parts/pagination','floating'); ?>
 	           
 	      	<?php the_content(''); ?>
 		           
@@ -33,6 +33,6 @@ get_header(); ?>
 	<?php endif; ?>
 
 	<?php wp_reset_query(); ?>
-	<?php include ('frontend/inc/similar-other.php'); ?>
+	<?php get_template_part('template-parts/similar','other'); ?>
 
 <?php get_footer(); ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10
+ * @version 6.10.1
  *
 */ 
 get_header(); ?>
@@ -36,7 +36,7 @@ get_header(); ?>
 
 			 <div class="archive-header-info">
 
-				<div class="archive-title"><span class="grey-shadow"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo 'You are browsing page '.$paged.' of '.$wp_query->max_num_pages.' in our '; ?> <?php include("frontend/inc/random-naming-archives.php"); ?></span></div>
+				<div class="archive-title"><span class="grey-shadow"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo 'You are browsing page '.$paged.' of '.$wp_query->max_num_pages.' in our '; ?> <?php get_template_part('template-parts/random','naming-archives'); ?></span></div>
 
 				<div class="archive-description">
 					<span class="grey-shadow">
@@ -55,19 +55,20 @@ get_header(); ?>
 
 	<div class="archive-container">
 
-	   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-   
-	    <?php get_template_part('loop'); ?>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	   <?php endwhile; else: ?>
-	   <p>Sorry, no posts matched your criteria.</p>
+		<?php get_template_part('template-parts/loop','thumb'); ?>
 
-	   <?php endif; ?>
+		<?php endwhile; else: ?>
 
-	   	<?php include ("frontend/inc/loop-thumb.php"); ?>
+		<p>Sorry, no posts matched your criteria.</p>
 
-   </div>
+	<?php endif; ?>
 
-   <?php include ("frontend/inc/pagination.php"); ?>
+	<?php get_template_part('template-parts/loop','thumb-promo'); ?>
+
+	</div>
+
+   <?php get_template_part('template-parts/pagination','numbers'); ?>
 
 <?php get_footer(); ?>

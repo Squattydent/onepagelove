@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10
+ * @version 6.10.1
  *
 */ 
 get_header(); ?>
@@ -26,7 +26,7 @@ get_header(); ?>
 
 	<div class="section-content">
 
-		<?php include('frontend/inc/no-results.php'); ?>
+		<?php get_template_part('template-parts/message','no-results'); ?>
 
 	</div>
       

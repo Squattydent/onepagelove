@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10
+ * @version 6.10.1
  *
 */ 
 ?>
@@ -15,20 +15,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 	<!-- SEO Yo! -->
-	<title><?php include('frontend/inc/seo/title.php'); ?></title>
-	<meta name="description" content="<?php include('frontend/inc/seo/description.php'); ?>" />
+	<title><?php get_template_part('template-parts/seo','title'); ?></title>
+	<meta name="description" content="<?php get_template_part('template-parts/seo','description'); ?>" />
 	<meta name="author" content="Rob Hope, @robhope" />
-	<meta name="robots" content="<?php include('frontend/inc/seo/robots.php'); ?>" />
+	<meta name="robots" content="<?php get_template_part('template-parts/seo','robots'); ?>" />
 	<meta name="referrer" content="always" />
 
 	<!-- Social -->
-	<meta property="og:title" content="<?php include('frontend/inc/seo/title.php'); ?>" />
-	<meta property="og:description" content="<?php include('frontend/inc/seo/description.php'); ?>" />
-	<meta property="og:image" content="<?php include('frontend/inc/seo/image.php'); ?>">
-	<meta property="og:url" content="<?php include('frontend/inc/seo/permalink.php'); ?>" />
-	<meta name="twitter:title" content="<?php include('frontend/inc/seo/title.php'); ?>" >
-	<meta name="twitter:description" content="<?php include('frontend/inc/seo/description.php'); ?>" />
-	<meta name="twitter:image" content="<?php include('frontend/inc/seo/image.php'); ?>" />
+	<meta property="og:title" content="<?php get_template_part('template-parts/seo','title'); ?>" />
+	<meta property="og:description" content="<?php get_template_part('template-parts/seo','description'); ?>" />
+	<meta property="og:image" content="<?php get_template_part('template-parts/seo','image'); ?>">
+	<meta property="og:url" content="<?php get_template_part('template-parts/seo','permalink'); ?>" />
+	<meta name="twitter:title" content="<?php get_template_part('template-parts/seo','title'); ?>" >
+	<meta name="twitter:description" content="<?php get_template_part('template-parts/seo','description'); ?>" />
+	<meta name="twitter:image" content="<?php get_template_part('template-parts/seo','image'); ?>" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@onepagelove" />
 	<meta name="twitter:creator" content="@robhope" />
@@ -73,51 +73,7 @@
 			
 			<div id="header-navigation">
 				
-				<ul>
-				
-				    <li id="nav-info"><a href="#">Home</a>
-						
-						<?php include('frontend/inc/nav/home.php'); ?>	
-
-				 	</li>	
-	
-					<li id="nav-insp" class="nav-wider"><a href="#">Inspiration</a>
-
-    					<?php include('frontend/inc/nav/gallery.php'); ?>
-
-		            </li>
-		             					
-		            <li id="nav-temp" class="nav-wide"><a href="#">Templates</a>
-
-    					<?php include('frontend/inc/nav/templates.php'); ?>     
-
-		            </li> 
-
-		            <li id="nav-reso" class="nav-wide-single"><a href="#">Services</a>
-
-    					<?php include('frontend/inc/nav/services.php'); ?>     
-
-		            </li> 		            
-
-		            <li id="nav-read"><a href="#">Read</a>
-
-						<?php include('frontend/inc/nav/read.php'); ?>	
-
-				 	</li>			
-											   
-		            <li id="nav-subs"><a href="#">Subscribe</a>
-
-						<?php include('frontend/inc/nav/subscribe.php'); ?>
-
-		            </li>
-
-		            <li id="nav-free"><a href="#">Free</a>
-
-    					<?php include('frontend/inc/nav/free.php'); ?>     
-
-		            </li> 
-		            
-	           </ul>
+				<?php get_template_part('template-parts/navigation','header'); ?>
 				
 		    </div>
 			
@@ -152,7 +108,7 @@
 
 			<div class="mobile-navigation">
 
-				<?php include('frontend/inc/nav/mobile.php'); ?>	
+				<?php get_template_part('template-parts/navigation','mobile'); ?>	
 
 			</div>
 

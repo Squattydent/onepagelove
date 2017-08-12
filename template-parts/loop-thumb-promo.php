@@ -1,3 +1,10 @@
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10.1
+ *
+*/ 
+?>
 <div class="thumb">
 
 	<?php 

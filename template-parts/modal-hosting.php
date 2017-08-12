@@ -1,3 +1,10 @@
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10.1
+ *
+*/ 
+?>
 <!-- Template Download Modal -->  
 <div id="modal-content" data-download-url="<?php $downloadurl = get_post_meta($post->ID, "download_url", true); echo $downloadurl; ?>">
 
@@ -15,7 +22,7 @@
 			
 			<div class="modal-deal-pitch">Need Hosting for this <?php if (in_category('WordPress Themes')) { echo ' WordPress theme?'; } else { echo 'template?'; }; ?></div>
 
-			<p><a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">Bluehost</a> has an <a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">exclusive deal</a> for One Page Love readers at only $2.95 per month!</p>
+			<p><a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">Bluehost</a> has an <a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">Exclusive <?php echo date("F"); ?> Deal</a> for One Page Love readers at only $2.95 per month 🎉</p>
 
 			<a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo" class="modal-deal-button button-fill">See Deal</a>
 

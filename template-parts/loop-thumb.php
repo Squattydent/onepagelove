@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10
+ * @version 6.10.1
  *
 */ 
 ?>
@@ -35,8 +35,13 @@
 
 			<?php 
 
-				if ( in_category(array("Blog","Journal","Articles","Resources","Interviews","Round Ups","Sponsored"))) { //  
-					the_post_thumbnail();   
+				if ( in_category(array("Blog", "Journal", "Articles", "Resources", "Interviews", "Round Ups"))) { 
+					if ( has_post_thumbnail() ) {
+					    the_post_thumbnail();
+					}
+					else {
+					    echo '<img src="' . get_template_directory_uri() . '/img/no-thumbnail-set.jpg" alt="No Thumbnail Set"/>';
+					} 
 				} 
 				else {
 					$string = get_the_content();   
@@ -56,9 +61,7 @@
 
 	        <div class="thumb-name">
 
-				<h2>
-
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+				<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					
 						<?php the_title(); ?>
 						

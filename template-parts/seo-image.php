@@ -1,4 +1,9 @@
-<?php 
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10.1
+ *
+*/ 
 
 $promo_image = get_post_meta($post->ID, "promo_image", true);
 

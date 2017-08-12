@@ -1,13 +1,9 @@
-<?php 
-
+<?php
 /**
- *
  * @package onepagelove
- * @since onepagelove 6.9.44
- * @license GPL 2.0
- * 
- */
-
+ * @version 6.10.1
+ *
+*/ 
 ?>
 
 <div class="blog-author">

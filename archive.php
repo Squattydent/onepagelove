@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10
+ * @version 6.10.1
  *
 */ 
 get_header(); ?>
@@ -17,7 +17,7 @@ get_header(); ?>
 				<h1><?php 
 
 					// Get the variables
-					include('frontend/inc/seo/variables.php');
+					include('template-parts/seo-variables.php');
 
 					// Tags			
 					if (function_exists('is_tag') && is_tag()) {
@@ -185,18 +185,18 @@ get_header(); ?>
 
    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-      <?php get_template_part('loop'); ?>
+    <?php get_template_part('template-parts/loop','thumb'); ?> 
 
     <?php endwhile; else: ?>
 
-		<?php include('frontend/inc/no-results.php'); ?>
+		<?php get_template_part('template-parts/message','no-results'); ?>
 
     <?php endif; ?>
 
-    <?php include ("frontend/inc/loop-thumb.php"); ?>   
+    <?php get_template_part('template-parts/loop','thumb-promo'); ?> 
 
 </div><!--  /.archive-container -->
 
-	<?php include ("frontend/inc/pagination.php"); ?>
+	<?php get_template_part('template-parts/pagination','numbers'); ?>
 
 <?php get_footer(); ?>

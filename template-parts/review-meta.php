@@ -1,6 +1,13 @@
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10.1
+ *
+*/ 
+?>
 <div class="review-meta-right-padding-hack">
 
-	<?php include ("modal-bluehost.php"); ?>
+	<?php get_template_part('template-parts/modal','hosting'); ?>
 
 	<div class="review-launch">
 
@@ -205,6 +212,31 @@
 
 	</ul>
 
-	<?php include ("review-meta-slayer.php"); ?>
+	<div class="review-slayer">
+
+		<div class="review-slayer-holder">
+
+			<div class="slayer">
+
+				<?php 
+
+					$ads  = array(
+							'ads/coffee1.php', 
+							'ads/coffee2.php', 															
+							'ads/tips.php', 											
+							'ads/woo.php' // no comma on last one
+						);
+
+					$adfile = $ads[rand(0, count($ads) - 1)];
+
+					include($adfile);
+
+				?>
+
+			</div>
+
+		</div>
+
+	</div>
 
 </div>

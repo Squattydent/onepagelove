@@ -1,4 +1,9 @@
-<?php 
+<?php
+/**
+ * @package onepagelove
+ * @version 6.10.1
+ *
+*/ 
 
 	// no action
 	if ( is_404() ) {
