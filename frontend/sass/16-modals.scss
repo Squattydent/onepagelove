@@ -107,11 +107,11 @@
     .modal-suggestion-right {
 
         .modal-deal-pitch {
-            @extend %font-heading;
+            @extend %font-soft;
             margin: -5px 0 $spacing-small 0;
             font-size:  1.625rem; // 26
             line-height: 2rem; // 32
-            font-weight: 500;
+            ;
         }
 
         p {
@@ -142,7 +142,7 @@
 
 .hd-close {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 12px;
 
     position: absolute;

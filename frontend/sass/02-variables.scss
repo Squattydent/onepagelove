@@ -34,10 +34,24 @@ $size-arrow-tablet		: 1.875rem; // 30px
 // Font families
 //-------------------------------------------------------------------------------
 
-$font-fam-prox			: "proxima-nova", Arial, sans-serif;
-$font-fam-prox-soft		: "proxima-nova-soft", "Arial Rounded MT", Arial, sans-serif;
+$font-fam-sans			: Arial, sans-serif;
+$font-fam-soft			: "Quicksand", "Arial Rounded MT", Arial, sans-serif;
 $font-fam-bloc			: Palatino Linotype, Palatino, Georgia, Serif;
 $font-fam-geor			: Georgia, Serif;
+
+//-------------------------------------------------------------------------------
+// Weights
+//-------------------------------------------------------------------------------
+
+//// Quicksand
+// Light 300 (not imported)
+// Regular 400 (not imported)
+// Medium 500 (not imported)
+// Bold 700
+
+//// Arial
+// Normal
+// Bold
 
 //-------------------------------------------------------------------------------
 // Images
@@ -113,7 +127,7 @@ $color-footer-text		: #444444;
 //-------------------------------------------------------------------------------
 
 $review-heart 			: 1.75rem; // 28px
-$review-body-color		: #777777;
+$review-body-color		: #888888;
 $review-meta-color		: #666666;
 $review-testi-color		: #AAAAAA;
 

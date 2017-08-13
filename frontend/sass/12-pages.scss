@@ -85,10 +85,6 @@
 
 .section-title {
     @extend %section-title;
-
-    h1 {
-        font-weight: 600;
-    }
 }
 
 .section-description {
@@ -189,7 +185,7 @@
             padding: $spacing-medium $spacing-big;
             color: #444;
             border: 2px solid #444;
-            font-weight: 600;
+            font-weight: bold;
             font-size: 1rem;
             line-height: 1rem;
             margin: 0 $spacing-small $spacing-medium $spacing-small;
@@ -328,7 +324,7 @@
                 h3 {
                     display: block;
                     margin-bottom: $spacing-small;
-                    font-weight: 700;
+                    font-weight: bold;
                     font-size: 1.125rem;
                     line-height: 1.5rem;
                     color: #333;
@@ -419,7 +415,7 @@
                 margin-bottom: $spacing-small;
 
                 h3 {
-                    font-weight: 700;
+                    font-weight: bold;
                     font-size: 1.125rem;
                     line-height: 1.5rem;
                     color: #333;

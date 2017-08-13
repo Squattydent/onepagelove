@@ -92,6 +92,7 @@
 
 			.review-launch {
 				margin-bottom: 20px;
+				font-weight: bold;
 
 				a { 
 					border-radius: $rounded-corners;
@@ -137,14 +138,14 @@
 			}
 
 			.review-title {
-				@extend %font-heading;
 
 				a {
 					border: none;
 				}
 
 				h1 {
-					@extend %font-heading;
+					@extend %font-soft;
+					@extend %no-font-smoothing;
 					font-size: 2.375rem; 
 					line-height: 2.625rem; 
 					margin-bottom: $spacing-medium; 
@@ -240,13 +241,13 @@
 //-------------------------------------------------------------------------------
 
 .similar-title {
-	@extend %font-heading;
+	@extend %font-soft;
 	letter-spacing: -0.5px;
 	text-align: center;
 	margin: $spacing-big 0 $spacing-medium;
 	font-size: 1.125rem; 
 	line-height: 1.125rem; 
-	font-weight: 300;
+	;
 }
 
 .similar-submit {
@@ -258,8 +259,6 @@
 		border-bottom: 1px;
 		border-bottom-style: dotted;
 		border-bottom-color: $color-body-font; 
-
-		// text-decoration: underline;
 	}
 
 	a:hover {
@@ -335,7 +334,8 @@
 		padding-left: $spacing-medium;
 
 		.author-name {
-			font-weight: bold;
+			@extend %font-soft;
+			;
 			display: block;
 			margin-bottom: $spacing-small;
 		}
@@ -418,7 +418,7 @@
 
 			a {
 				color: #333;
-				font-weight: 700;
+				font-weight: bold;
 			}
 
 			a:hover {

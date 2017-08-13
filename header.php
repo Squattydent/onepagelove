@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.10.4
  *
 */ 
 ?>
@@ -33,9 +33,8 @@
 	<meta name="twitter:site" content="@onepagelove" />
 	<meta name="twitter:creator" content="@robhope" />
 
-	<!-- Typekit Fonts -->
-	<script type="text/javascript" src="//use.typekit.net/spx0udh.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
 
 	<!-- Pingbacks -->
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />

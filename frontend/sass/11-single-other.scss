@@ -40,11 +40,10 @@
 
 	h1 {
 		@extend %section-title;
-		font-weight: 600;
 		text-align: center;
 		text-transform: none;
 		letter-spacing: -0.125rem;
-		font-family: $font-fam-prox-soft;
+		font-family: $font-fam-soft;
 	}
 
 	h2 {
@@ -289,11 +288,10 @@ a.button-border {
 	border-width: 2px !important; // to override the 1px global border styles
 	border-style: solid !important; // to override the dotted global border styles
 	border-color: $color-main-link;
-	font-weight: 600;  
+	font-weight: bold;  
 	text-decoration: none;
 	padding: $spacing-small $spacing-medium;
 	margin-right: $spacing-small;
-	font-weight: 600;
 }
 
 a.roundup-buy, // needs to get phased out
@@ -333,7 +331,7 @@ body.postid-26235 .similar {
 	border: 2px dashed $color-main-link; 
 	font-size: 2rem;
 	line-height: 2rem;
-	font-weight: 600;
+	font-weight: bold;
 	color: $color-main-link;
 	padding: $spacing-medium $spacing-big;
 
