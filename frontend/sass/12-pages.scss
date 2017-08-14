@@ -225,7 +225,7 @@
 // ------------------------------------------------ 
 
 .quote {
-    @extend %font-g;
+    @extend %font-bloc;
     display: block;
     width: 80%; 
     margin: $spacing-huge auto;

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.10.6
  *
 */ 
 ?>
@@ -32,6 +32,7 @@
 				}
 				elseif (in_category('HTML Templates') || in_category('Muse Templates') || in_category('WordPress Themes') || in_category('Tumblr Themes') || in_category('PSD Templates') || in_category('Unbounce Templates') || in_category('Joomla Templates')  || in_category('Bundle Deals')) {
 					echo 'Buy';  
+
 				}                    
 				else {
 					echo '';           
@@ -70,6 +71,12 @@
 					echo 'Launch Website';            
 				};
 
+			?><?php 
+			$siteprice = get_post_meta($post->ID, "site_price", true); 
+			if ($siteprice != null) {
+				echo ' $'. $siteprice; 
+			};
+			
 			?></a>
 
 	</div>
@@ -89,7 +96,7 @@
 
 	<ul>
 
-		<li><strong>Need Hosting?</strong> We highly recommend <a href="https://onepagelove.com/go/bluehost">Bluehost</a></li>
+		<li class="hosting"><strong>Need Hosting?</strong> We highly recommend <a href="https://onepagelove.com/go/bluehost">Bluehost</a></li>
 
 		<li><strong>Reviewed:</strong>  <?php echo get_the_date(); ?></li>
 
@@ -128,60 +135,6 @@
 				}                  
 				else {
 					echo 'No, this is a custom built website';           
-				};
-
-			?>
-
-		</li>
-
-		<li>
-
-			<?php    
-
-				$siteprice = get_post_meta($post->ID, "site_price", true);  
-				if (in_category('Free Templates')) {
-					echo '<strong>Price:</strong> ';   
-					echo 'Free';  
-				}
-				elseif (in_category('HTML Templates')) {
-					echo '<strong>Price:</strong> $';  
-					echo $siteprice;             
-				}   
-				elseif (in_category('Muse Templates')) {
-					echo '<strong>Price:</strong> $';   
-					echo $siteprice;              
-				}  
-				elseif (in_category('WordPress Themes')) {
-					echo '<strong>Price:</strong> $';   
-					echo $siteprice;              
-				}     
-				elseif (in_category('Tumblr Themes')) {
-					echo '<strong>Price:</strong> $';   
-					echo $siteprice;               
-				}       
-				elseif (in_category('PSD Templates')) {
-					echo '<strong>Price:</strong> $';   
-					echo $siteprice;    
-				} 
-				elseif (in_category('Squarespace Templates')) {
-					echo '<strong>Price:</strong> Free 14-day trial, then $';   
-					echo $siteprice;    
-					echo ' per month.';                          
-				}     
-				elseif (in_category('Unbounce Templates')) {
-					echo '<strong>Price:</strong> $';   
-					echo $siteprice;    
-				}     
-				elseif (in_category('Joomla Templates')) {
-					echo '<strong>Price:</strong> $';   
-					echo $siteprice;    
-				}       
-				elseif (in_category('Bundle Deals')) {
-					echo '<strong>Price:</strong> $';   
-					echo $siteprice;    
-				}     
-				else {
-					echo '';           
 				};
 
 			?>

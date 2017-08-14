@@ -206,13 +206,6 @@ a.noBorder:hover {
 }
 
 //-------------------------------------------------------------------------------
-// CSS3 Transitions
-//-------------------------------------------------------------------------------
-
-.thumb .thumb-image img       {transition:1s;}
-.thumb .thumb-image img:hover {transition:.1s;}
-
-//-------------------------------------------------------------------------------
 // Z-index 
 //-------------------------------------------------------------------------------
 
@@ -244,13 +237,6 @@ a.noBorder:hover {
 	background: $color-white; 
 	color: #222; 
 }
-
-//-------------------------------------------------------------------------------
-// Promo 
-//-------------------------------------------------------------------------------
-
-// Hides the big OPL heart placed after body open tag for social sharing.
-#promo {display: none;}
 
 //-------------------------------------------------------------------------------
 // Highlights notice within paragraph text - horrible style - need to sort this shit out, seriously

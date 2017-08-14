@@ -40,12 +40,8 @@
 %font-bloc {
 	font-family: $font-fam-bloc;
 	font-style: italic;
-	-webkit-font-smoothing: subpixel-antialiased;
+	letter-spacing: -0.2px;
 } 
-
-%font-g {
-	font-family: $font-fam-geor;
-}
 
 //-------------------------------------------------------------------------------
 // Pagination
@@ -69,7 +65,6 @@
 	line-height: 18px; 
 	text-decoration: none; 
 	letter-spacing: 0;	
-	 ;
 } 
 
 //-------------------------------------------------------------------------------
@@ -109,7 +104,6 @@
 // @extend %archive-title-burst;
 %archive-title-burst {
 	background: radial-gradient(ellipse at center,  rgba(226,226,226,0.8) 0%,rgba(226,226,226,0.6) 80%);
-	// Previous // background: radial-gradient(ellipse at center,  rgba(226,226,226,0.8) 0%,rgba(226,226,226,0.4) 50%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce2e2e2', endColorstr='#33e2e2e2',GradientType=1 );
 }
 
@@ -126,7 +120,7 @@
 }		
 
 %section-tagline {
-    @extend %font-g;
+    @extend %font-bloc;
     color: #999;
     margin-bottom: $spacing-medium;
     font-style: italic;     
@@ -192,6 +186,7 @@
 	line-height: 1.75rem; // 28	
 	margin: 0 0 $spacing-medium 0; 
 	padding: 0;
+	color: #666;
 }
 
 %typography-h1 {
@@ -200,6 +195,7 @@
 	margin-bottom: $spacing-m-b;
 	font-size: 2.625rem; // 42
 	line-height: 2.625rem; // 42
+	color: #222;
 }
 %typography-h2 {
 	@extend %font-soft;
@@ -207,12 +203,14 @@
 	margin-bottom: $spacing-m-b;
 	font-size:  2.125rem; // 34
 	line-height: 2.375rem; // 38	
+	color: #444;
 }
 %typography-h3 {
 	@extend %font-soft;
 	margin: $spacing-huge 0 $spacing-medium 0;
 	font-size:  1.625rem; // 26
 	line-height: 2rem; // 32
+	color: #444;
 
 	@media (max-width: $bp-desksm) {
 		margin-top: $spacing-big;
@@ -230,6 +228,7 @@
 	padding-left: $spacing-m-b; 
 	font-size: 1.25rem; // 20
 	line-height: 1.75rem; // 28
+	color: #666;
 
 	li {
 		list-style-type: circle; 
@@ -241,7 +240,7 @@
 	padding-left: $spacing-m-b; 
 	font-size: 1.25rem; // 20
 	line-height: 1.75rem; // 28
-
+	color: #666;
 
 	li {
 		list-style-type: decimal-leading-zero; 

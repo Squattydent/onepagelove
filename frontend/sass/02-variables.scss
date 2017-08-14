@@ -35,10 +35,9 @@ $size-arrow-tablet		: 1.875rem; // 30px
 //-------------------------------------------------------------------------------
 
 $font-fam-post			: -apple-system, BlinkMacSystemFont, Arial, Helvetica Neue, Helvetica, sans-serif;
-$font-fam-sans			: Arial, Helvetica Neue, Helvetica, sans-serif;
+$font-fam-sans			: Arial, Helvetica Neue, Helvetica, sans-serif; // Arial more consistent as small font
 $font-fam-soft			: Quicksand, Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
-$font-fam-bloc			: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
-$font-fam-geor			: Georgia, Times, Times New Roman, serif;
+$font-fam-bloc			: Georgia, Times, Times New Roman, serif;
 
 //-------------------------------------------------------------------------------
 // Weights
@@ -88,11 +87,11 @@ $color-code			 	: #F8F8F8;
 $color-body-font     	: #999999;
 $color-white     		: #FFFFFF;
 $color-main-link     	: #FD6CA3; // Pink from logo
-$color-main-link-hover  : #EC3D80; 
 $color-darker-link   	: #EC3D80;
 $color-darkest-link  	: #D52468;
 $color-blue-link     	: #11C1f4;
 $color-blue-link-hover  : #11acf4;
+$color-blue-link-darker : #0480bA;
 
 // Logo
 $color-logo-text		: #FFFFFF;
@@ -113,13 +112,6 @@ $color-search-svg		: #BBBBBB;
 $color-search-text		: #CCCCCC;
 $color-search-focus		: #666666;
 
-// Testing
-$test1		 		 	: #ff33cc;
-$test2		 			: #cc33ff;
-$test3		 			: #33ccff;
-$test4		 			: #ccff33;
-$test5		 			: #ffcc33;
-
 // Footer 
 $color-footer-text		: #444444;
 
@@ -130,7 +122,7 @@ $color-footer-text		: #444444;
 $review-heart 			: 1.75rem; // 28px
 $review-body-color		: #888888;
 $review-meta-color		: #666666;
-$review-testi-color		: #AAAAAA;
+$review-testi-color		: #BBBBBB;
 
 //-------------------------------------------------------------------------------
 // Rounded Corners

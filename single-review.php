@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.10.6
  *
 */ 
 get_header(); ?>
@@ -18,48 +18,48 @@ get_header(); ?>
 
 			</div>	
 
-			<div class="review-meta-left">
-
-			    <div class="review-type">
-
-					<?php  			
-					if (in_category('HTML Templates')) {
-			      	echo 'One Page HTML Template Review';							
-					}		
-					elseif (in_category('Muse Templates')) {
-			      	echo 'One Page Adobe Muse Template Review';							
-					}										
-					elseif (in_category('WordPress Themes')) {
-			      	echo 'One Page WordPress Theme Review';							
-					}		
-					elseif (in_category('PSD Templates')) {
-			      	echo 'One Page PSD Template Review';							
-					}
-			        elseif (in_category('Tumblr Themes')) {
-			        echo 'One Page Tumblr Theme Review';              
-			        }                
-			        elseif (in_category('Squarespace Templates')) {
-			        echo 'One Page Squarespace Template Review';              
-			        }  	
-			        elseif (in_category('Unbounce Templates')) {
-			        echo 'One Page Unbounce Template Review';              
-			        } 							        		
-			        elseif (in_category('Joomla Templates')) {
-			        echo 'One Page Joomla Template Review';              
-			        }  
-					elseif (in_category('Bundle Deals')) {
-			        echo 'Bundle Deal Review';              
-			        } 		        							        																					
-					else {
-			      	echo 'One Page Website Review';						
-					};
-					?>
-
-				</div>         
+			<div class="review-meta-left">      
 
 			    <div class="review-title">
 
-			    	<h1><?php the_title(); ?></h1>
+			    	<h1>
+
+			    		<?php the_title(); ?>
+
+			    		<?php  			
+							if (in_category('HTML Templates')) {
+					      		echo 'One Page HTML Template';							
+							}		
+							elseif (in_category('Muse Templates')) {
+					      		echo 'One Page Adobe Muse Template';							
+							}										
+							elseif (in_category('WordPress Themes')) {
+					      		echo 'One Page WordPress Theme';							
+							}		
+							elseif (in_category('PSD Templates')) {
+					      		echo 'One Page PSD Template';							
+							}
+					        elseif (in_category('Tumblr Themes')) {
+					        	echo 'One Page Tumblr Theme';              
+					        }                
+					        elseif (in_category('Squarespace Templates')) {
+					        	echo 'One Page Squarespace Template';              
+					        }  	
+					        elseif (in_category('Unbounce Templates')) {
+					        	echo 'One Page Unbounce Template';              
+					        } 							        		
+					        elseif (in_category('Joomla Templates')) {
+					        	echo 'One Page Joomla Template';              
+					        }  
+							elseif (in_category('Bundle Deals')) {
+					        	echo 'Bundle Deal';              
+					        } 		        							        																					
+							else {
+					      		echo '';						
+							};
+						?>
+			    		
+			    	</h1>
 
 			    </div> 
 
@@ -138,8 +138,6 @@ get_header(); ?>
 		<div class="review-notes">
 
 			<?php get_template_part('template-parts/review','author'); ?>
-
-			<div class="clear"></div>
 
 		</div>
 

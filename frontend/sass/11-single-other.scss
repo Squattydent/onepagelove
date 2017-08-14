@@ -39,11 +39,12 @@
 	}
 
 	h1 {
+		font-family: $font-fam-soft;
 		@extend %section-title;
+		color: #222;
 		text-align: center;
 		text-transform: none;
 		letter-spacing: -0.125rem;
-		font-family: $font-fam-soft;
 	}
 
 	h2 {
@@ -191,7 +192,7 @@
 	}
 
 	blockquote  {
-	 	@extend %font-g;
+	 	@extend %font-bloc;
 	    display: block;
 	    width: 80%; 
 	    margin: $spacing-huge auto;
@@ -265,14 +266,14 @@
 // Roundup Buttons
 // ------------------------------------------------ 
 
-a.roundup-buy { // needs to get phased out
-	float: left; 
-	@extend %margin-buttons;
-}
+.roundup-buttons {
+	display: block;
+	height: $spacing-big;
+	margin-bottom: $spacing-big;
 
-a.roundup-demo { // needs to get phased out
-	float: left; 
-	margin-top: -1.75rem; // 28
+	.roundup-demo {
+		margin-top: 0;
+	}
 }
 
 a.roundup-buy, // needs to get phased out
@@ -294,19 +295,28 @@ a.button-border {
 	margin-right: $spacing-small;
 }
 
-a.roundup-buy, // needs to get phased out
-a.button-fill {
-	background-color: $color-main-link;
-	color: $color-white !important;
+a.roundup-buy { // needs to get phased out
+	float: left; 
+	@extend %margin-buttons;
+	color: #FFF; 
+	background: $color-main-link;
+
+	&:hover {
+		color: #FFF; 
+		background: $color-darker-link;
+		border-color: $color-darker-link;
+	}
 }
 
-.roundup-buttons {
-	display: block;
-	height: $spacing-big;
-	margin-bottom: $spacing-big;
+a.roundup-demo { // needs to get phased out
+	float: left; 
+	margin-top: -1.75rem; // 28
+	border: 2px solid $color-main-link; 
+	color: $color-main-link;
 
-	.roundup-demo {
-		margin-top: 0;
+	&:hover {
+		border: 2px solid $color-darker-link; 
+		color: $color-darker-link;
 	}
 }
 

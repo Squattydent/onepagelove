@@ -128,8 +128,8 @@
         }
 
         .modal-deal-button:hover {
-            background-color: $color-main-link-hover;
-            border-color: $color-main-link-hover;
+            background-color: $color-darker-link;
+            border-color: $color-darker-link;
         }
         
 
@@ -217,8 +217,8 @@
                 }
 
                 button:hover {
-                    background-color: $color-main-link-hover;
-                    border: 1px solid $color-main-link-hover;
+                    background-color: $color-darker-link;
+                    border: 1px solid $color-darker-link;
                 }
 
             }
