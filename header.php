@@ -1,11 +1,10 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.5
+ * @version 6.10.10
  *
 */ 
 ?>
-
 <!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
 

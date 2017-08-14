@@ -101,7 +101,6 @@
             display: none;
         }
 
-
     }
 
     .modal-suggestion-right {
@@ -109,9 +108,9 @@
         .modal-deal-pitch {
             @extend %font-soft;
             margin: -5px 0 $spacing-small 0;
-            font-size:  1.625rem; // 26
+            font-size:  1.5rem; // 26
             line-height: 2rem; // 32
-            ;
+            color: #222;
         }
 
         p {
@@ -124,12 +123,18 @@
         }
 
         .modal-deal-button {
+            color: #FFF; 
             margin-top: -1px;
+            background:$color-main-link; 
+            border-bottom: 2px solid $color-darker-link;
         }
 
         .modal-deal-button:hover {
-            background-color: $color-darker-link;
-            border-color: $color-darker-link;
+            color: #FFF; 
+            background: $color-darker-link; 
+            text-shadow: 0 1px 0 $color-darkest-link;
+            border: 2px solid $color-darker-link;
+            border-bottom: 2px solid $color-darkest-link;
         }
         
 
