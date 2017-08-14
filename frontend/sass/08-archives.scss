@@ -1,4 +1,4 @@
-// This section includes Search at the bottom as well
+// This section includes Search Results at the bottom as well
 
 //-------------------------------------------------------------------------------
 // Archive Header
@@ -14,17 +14,12 @@
 		color: #333;
 		width: 100%;
 		text-align: center;
-		padding: $spacing-medium $spacing-medium $spacing-small $spacing-medium;
+		padding: 0 $spacing-medium $spacing-small $spacing-medium;
 
 		@media (max-width: $bp-mobile) {
 			text-align: left;
 			padding-top: $spacing-small;
 		}	
-
-		.grey-shadow {
-			// @extend %archive-title-burst;
-			// display: inline-block;
-		}
 
 		.archive-title {
 			@extend %font-soft;
@@ -49,7 +44,6 @@
 			font-size: 1.25rem; 
 			line-height: 1.5rem; 
 			letter-spacing: -0.2px;
-			 ;
 
 			@media (max-width: $bp-desksm) {
 				max-width: 80%;
