@@ -16,6 +16,7 @@
 		color: $review-meta-color;
  
 		.review-meta-left { 
+			margin-top: -7px;
 			margin-right: $spacing-medium;
 		}
 
@@ -148,6 +149,7 @@
 			ul {
 				margin-bottom: $spacing-medium;
 				letter-spacing: -0.3px;
+				color: $review-meta-color;
 
 				li {
 					margin-bottom: $spacing-small;
@@ -199,33 +201,41 @@
 			}
 
 			.review-content {
-				font-family: $font-fam-post;
-				font-size: 1.25rem; 
-				line-height: 1.75rem;
-				margin-bottom: $spacing-medium; 
-				color: $review-body-color;
 
-				a {
-					color: $color-main-link;
-					border-bottom: 1px dotted $color-main-link;
-				}
-
-				a:hover {
-					color: $color-main-link;
-					border-bottom: 1px solid $color-main-link;
-				}
-
-				blockquote {
-					font-size: 1.125rem; // 18 
-					line-height: 1.625rem; // 26
-					color: $review-testi-color;
+				.author-review {
+					font-family: $font-fam-post;
+					font-size: 1.313rem; // 21 
+					line-height:  1.813rem; // 29
+					letter-spacing: -0.3px;
+					color: $review-body-color;
+					margin-bottom: 0; 
 
 					a {
-						color: $review-testi-color;
-						border-bottom: 1px dotted $review-testi-color;
+						color: $color-main-link;
+						border-bottom: 1px dotted $color-main-link;
+
+						&:hover {
+							color: $color-main-link;
+							border-bottom: 1px solid $color-main-link;
+						}
 					}
 				}
 
+				.build-notes {
+
+					blockquote {
+						margin-top: $spacing-medium;
+						margin-bottom: $spacing-m-b;
+						font-size: 1.125rem; // 18 
+						line-height: 1.625rem; // 26
+						color: $review-testi-color;
+
+						a {
+							color: $review-testi-color;
+							border-bottom: 1px dotted $review-testi-color;
+						}
+					}
+				}
 			}			
 
 			.review-tags {

@@ -65,9 +65,9 @@ get_header(); ?>
 
 			    <div class="review-content">
 
-			    	<div id="oplReview">
+			    	<div class="author-review">
                                               
-						<?php // One Page Review
+						<?php 
 
 							$oplreview = get_post_meta($post->ID, "opl_review", true);
 
@@ -82,11 +82,11 @@ get_header(); ?>
 
 					</div>
 
-					<div id="oplBuild">
+					<div class="build-notes">
 
 						<blockquote>
 	                   
-							<?php // Build Notes
+							<?php 
 			
 								$oplbuild = get_post_meta($post->ID, "opl_build", true);
 
@@ -106,6 +106,7 @@ get_header(); ?>
 				</div>
 
 				<div class="review-tags"><strong>Categories:</strong> <?php the_category(' ', 'parents' ); ?></div> 
+				
 				<div class="review-tags"><strong>Tags:</strong> <?php the_tags('', ' ', ' '); ?></div>
 
 			</div>	

@@ -153,67 +153,14 @@ body.single #container-outer #container {
 @media (max-width: $bp-desklg) {
 
 	#container-outer {
-		// width: 100%;
-
-		#header-container {
-
-			#header {
-				// width: $container-standard; 
-
-				#header-navigation{
-
-				}
-
-				#header-search {
-
-				}
-
-			}
-
-		
-
-		}
 
 		#container {
 			width: 100%; 
-
-
-
-			#content {
-
-
-				.single-container {
-
-					// background: #666;
-	
-				}
-
-				.review {
-
-
-					.review-meta {
-
-
-						.review-meta-right {
-
-						}
-
-					}
-
-					.review-screenshot img {
-
-					}
-
-				}	
-
-			}
-
 		}
 
 		#footer-container {
 
 			#footer-quote-container {
-
 
 				#footer-quote {
 					width: $container-standard; 
@@ -222,7 +169,6 @@ body.single #container-outer #container {
 			}
 
 			#footer-bottom-container {
-
 
 				#footer-lists { 
 					width: $container-standard; 
@@ -247,12 +193,7 @@ body.single #container-outer #container {
 
 		#header-container {
 
-
 			#header {
-
-
-				#header-navigation {
-				}
 
 				#header-search {
 					width: 12.5rem; // 200
@@ -264,7 +205,6 @@ body.single #container-outer #container {
 		}
 
 		#container {
-
 
 			#content {
 
@@ -322,46 +262,13 @@ body.single #container-outer #container {
 	#container-outer {
 		width: 100%;
 
-		#header-container {
-			
-		}
-
 		#container {
 
-
 			#content {
-
-				.single-container {
-					// background: #111;
-	
-				}
 
 				.review {
 					margin: 0;		
 				}	
-
-			}
-
-		}
-
-		#footer-container {
-
-			#footer-quote-container {
-
-
-				#footer-quote {
-					
-				}
-
-			}
-
-
-			#footer-bottom-container {
-
-
-				#footer-lists { 
-					padding-bottom: 0;
-				}
 
 			}
 
