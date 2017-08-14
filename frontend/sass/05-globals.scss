@@ -216,14 +216,14 @@ a.noBorder:hover {
 // Z-index 
 //-------------------------------------------------------------------------------
 
-.thumb .thumb-inner                 {z-index: 100}
+.thumb .thumb-inner               {z-index: 100}
 .thumb .thumb-image             	{z-index: 200}
 .thumb .thumb-label             	{z-index: 400}
 .floating-pagi                		{z-index: 1000}
-#footer-container                   {z-index: 2000} // To hide the floating nav over footer
-#header-navigation ul               {z-index: 3000}
-#mobile-nav-button 					{z-index: 4000}
-.mobile-navigation 					{z-index: 5000}
+#footer-container                 {z-index: 2000} // To hide the floating nav over footer
+#header-navigation ul             {z-index: 3000}
+#mobile-nav-button 					      {z-index: 4000}
+.mobile-navigation 					      {z-index: 5000}
 
 //-------------------------------------------------------------------------------
 // Text Select
@@ -261,6 +261,6 @@ a.noBorder:hover {
 	border: 1px solid #feb0ce; 
 	color: #EC3D80;
 	width: 1240px; 
-	padding: $spacing-s-m $spacing-medium ; 
+	padding: $spacing-s-m $spacing-medium; 
 	margin-bottom: $spacing-big;
 }

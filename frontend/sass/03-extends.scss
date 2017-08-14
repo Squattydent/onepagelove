@@ -27,7 +27,7 @@
 	text-shadow: none;	
 	font-weight: normal;
 	font-style: normal;
-	letter-spacing: -0.1px;
+	letter-spacing: -0.2px;
 	@extend %font-smoothing;
 }
 
@@ -166,7 +166,6 @@
 }
 
 %section-description {
-    @extend %font-smoothing;
     font-size: 2.25rem;
     line-height: 3rem;
     display: block;
@@ -188,6 +187,7 @@
 
 // @extend %typography-p;
 %typography-p {
+	font-family: $font-fam-post;
 	font-size: 1.25rem; // 20
 	line-height: 1.75rem; // 28	
 	margin: 0 0 $spacing-medium 0; 

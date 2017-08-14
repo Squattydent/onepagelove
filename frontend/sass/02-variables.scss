@@ -34,10 +34,11 @@ $size-arrow-tablet		: 1.875rem; // 30px
 // Font families
 //-------------------------------------------------------------------------------
 
-$font-fam-sans			: Arial, sans-serif;
-$font-fam-soft			: "Quicksand", "Arial Rounded MT", Arial, sans-serif;
-$font-fam-bloc			: Palatino Linotype, Palatino, Georgia, Serif;
-$font-fam-geor			: Georgia, Serif;
+$font-fam-post			: -apple-system, BlinkMacSystemFont, Arial, Helvetica Neue, Helvetica, sans-serif;
+$font-fam-sans			: Arial, Helvetica Neue, Helvetica, sans-serif;
+$font-fam-soft			: Quicksand, Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
+$font-fam-bloc			: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+$font-fam-geor			: Georgia, Times, Times New Roman, serif;
 
 //-------------------------------------------------------------------------------
 // Weights

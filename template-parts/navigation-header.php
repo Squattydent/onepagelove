@@ -1,14 +1,14 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.10.5
  *
 */ 
 ?>
 
 <ul>
 
-    <li id="nav-info"><a href="#">Home</a>
+    <li id="nav-info"><a href="<?php print get_home_url(); ?>">Home</a>
 		
         <?php include('navs/home.php'); ?>  	
 

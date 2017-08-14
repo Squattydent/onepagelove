@@ -41,13 +41,14 @@
 		}
 
 		.archive-description {
+			font-family: $font-fam-post;
 			color: #777;
 			max-width: 60%;
 			margin-right: auto;
 			margin-left: auto;
 			font-size: 1.25rem; 
 			line-height: 1.5rem; 
-			letter-spacing: -0.5px;
+			letter-spacing: -0.2px;
 			 ;
 
 			@media (max-width: $bp-desksm) {
@@ -132,15 +133,13 @@
 		border-radius: 1.5rem; // 24
 		text-align: center;
 		box-shadow: $shadow-global;  
-		 @extend %font-smoothing;
-
+		letter-spacing: 0px; 
 	}
 
 	.thumb-label-loved {
 		text-transform: uppercase; 
 		font-size: 0.6875rem; // 11
 		line-height: 0.625rem; // 10
-		letter-spacing: 0px; 
 
 		.thumb-label-loved-position {
 			display: block; 
@@ -150,8 +149,7 @@
 
 	.thumb-label-template {
 		text-transform: uppercase; 
-		font-size: 1.25rem ; 
-		letter-spacing: 0.0625rem;
+		font-size: 1.25rem; 
 
 		.thumb-label-template-position {
 			display: block; 
@@ -163,7 +161,6 @@
 	.thumb-label-free {
 		text-transform: uppercase; 
 		font-size: 0.875rem; 
-		letter-spacing: 0.0625rem;
 
 		.thumb-label-free-position {
 			display: block; 
@@ -207,17 +204,13 @@
 					font-size: 1.125rem; 
 					line-height: 1.25rem; 
 					margin-bottom: 0.25rem;
-					letter-spacing: 0;
+					letter-spacing: -0.2px;
 
 					svg.thumb-launch-svg {
 						max-width: 1.125rem; 
 						height: auto; 
 						margin-bottom: -0.1875rem; 
 					}
-				}
-
-				a {
-
 				}
 
 				a:hover {
@@ -234,8 +227,6 @@
 				max-width: 360px; // 22.5rem ?
 				white-space: nowrap;
 				overflow: hidden;
-				// @extend %font-smoothing;
-				 ;
 
 				a {
 					text-decoration: none;
@@ -370,8 +361,6 @@
 		}
 	}
 }
-
-
 
 .no-results {
 	@extend %typography-p;
