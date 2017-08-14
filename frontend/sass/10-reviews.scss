@@ -12,7 +12,7 @@
 
 	.review-meta {
 		display: block; 
-		padding: $spacing-big; 
+		padding: $spacing-big $spacing-big $spacing-medium $spacing-big; 
 		color: $review-meta-color;
  
 		.review-meta-left { 
@@ -21,9 +21,10 @@
 		}
 
 		.review-meta-right {
+			border-radius: $rounded-corners;
 			padding: $spacing-medium $spacing-medium 0 $spacing-medium; 
 			margin-left: $spacing-big; 
-			margin-bottom: $spacing-medium;
+			margin-bottom: $spacing-big;
 			background: $color-code;
 		}
 
@@ -71,7 +72,7 @@
 
 				.review-meta-right-padding-hack {
 					padding: 20px;
-					padding-bottom: 0;
+					padding-bottom: $spacing-medium;
 				}
 			}
 
@@ -90,7 +91,6 @@
 	.review-meta {
 
 		.review-meta-right {
-			border-radius: $rounded-corners;
 
 			.review-launch {
 				margin-bottom: 20px;
@@ -266,6 +266,7 @@
 	}
 
 	.review-screenshot {
+		// margin-top: $spacing-big;
 
 		img {
 			min-width: 100%;

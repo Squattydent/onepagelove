@@ -56,7 +56,6 @@
 		margin: 0.1875rem 0 0 0.25rem; // 3 0 0 4
 		text-transform: uppercase;
 
-
 		a {
 			@extend %font-soft;
 			@extend %no-font-smoothing;
@@ -64,7 +63,7 @@
 			font-size:  1.125rem; // 18
 			line-height:  1.25rem; // 20
 			text-shadow: 0 1px 0 #000;
-			letter-spacing: 0;
+			letter-spacing: 0.2px; // N looks funny
 		}
 
 		a:hover {

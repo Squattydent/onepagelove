@@ -46,7 +46,6 @@ body.single #container-outer #container {
 			padding: 0 $spacing-small;
 			color: #FFF;
 
-
 			#header-logo {
 
 			}
@@ -63,8 +62,9 @@ body.single #container-outer #container {
 				margin: 0; 
 				padding: 0;
 			}
-
-			#header-button { // tablet + mobile hamburger icon
+			
+			// tablet + mobile hamburger icon
+			#header-button { 
 				padding-top: 0.125rem;
 			}
 
@@ -101,13 +101,15 @@ body.single #container-outer #container {
 
 					.review-meta-right {
 						float: right; 
-						width: 320px; 
+						width: 318px; 
 						vertical-align: top;
+						border: 1px solid #eee;
 					}
 
 				}
 
 				.review-screenshot img {
+					border-top: 1px solid #EEE;
 					max-width: 100%;
 					height: auto;
 				}
