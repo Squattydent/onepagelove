@@ -28,11 +28,13 @@
 			line-height: 2.625rem;
 			margin-bottom: $spacing-small;
 			letter-spacing: -2px;
+			max-width: 80%;
+			margin-right: auto;
+			margin-left: auto;
 
-			h1 {
-				@extend %font-soft;
-				color: #333;
-			}
+			@media (max-width: $bp-tablet) {
+				max-width: none;
+			}			
 		}
 
 		.archive-description {

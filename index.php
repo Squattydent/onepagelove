@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.10.11
  *
 */ 
 get_header(); ?>
@@ -17,9 +17,9 @@ get_header(); ?>
 					<div class="archive-description">
 
 						<span class="grey-shadow">
-							Browse <a href="<?php print get_home_url(); ?>/gallery">One Page Websites</a>, 
-							find <a href="<?php print get_home_url(); ?>/templates">One Page Templates</a> 
-							or get <a href="https://onepagelove.com/go/bluehost">Website Hosting</a>
+							Browse <a href="<?php print get_home_url(); ?>/gallery">Website Inspiration</a>, 
+							find <a href="<?php print get_home_url(); ?>/templates">Templates</a> 
+							or see our <a href="https://onepagelove.com/go/bluehost"><?php echo date("F"); ?> Hosting Special</a> 🎉
 						</span>	
 
 					</div>

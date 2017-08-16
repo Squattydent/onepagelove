@@ -1,11 +1,10 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.5
+ * @version 6.10.11
  *
 */ 
 ?>
-
 <ul>
 
     <li id="nav-info"><a href="<?php print get_home_url(); ?>">Home</a>
@@ -14,13 +13,13 @@
 
  	</li>	
 
-	<li id="nav-insp" class="nav-wider"><a href="#">Inspiration</a>
+	<li id="nav-insp" class="nav-wider"><a href="<?php print get_home_url(); ?>/gallery">Inspiration</a>
 
         <?php include('navs/gallery.php'); ?>  
 
     </li>
      					
-    <li id="nav-temp" class="nav-wide"><a href="#">Templates</a>
+    <li id="nav-temp" class="nav-wide"><a href="<?php print get_home_url(); ?>/templates">Templates</a>
 
         <?php include('navs/templates.php'); ?>      
 
@@ -44,9 +43,9 @@
 
     </li>
 
-    <li id="nav-free"><a href="#">Free</a>
+    <li id="nav-free" class="nav-wide-single"><a href="<?php print get_home_url(); ?>/hosting">Hosting</a>
 
-        <?php include('navs/free.php'); ?>      
+        <?php include('navs/hosting.php'); ?>      
 
     </li> 
     
