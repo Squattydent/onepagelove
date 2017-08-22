@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.10.13
  *
 */ 
 
@@ -9,7 +9,7 @@
 	$open		= '<p class="search-suggestions">';
 	$close		= '</p>';
 	$tagprefix  = $open . '<strong>Suggestion!</strong> Rather browse by these official tags:<br />';
-	$catprefix  = $open . '<strong>Suggestion!</strong> Rather browse by our official category:<br />';
+	$catprefix  = $open . '<strong>Suggestion!</strong> Rather browse by these official categories:<br />';
 
 	// if these exact words array example 
 	// if ( in_array( $keyword, array( 'parallax', 'parallax scrolling' ) ) ) {
@@ -38,7 +38,7 @@
 # Misc Tags
 # -------------------------------------------------------------
 
-	// if string contains any of these words
+	// if string contains any of these words, combos and typos
 	elseif(preg_match('(parallax|paralax)', $keyword) === 1)  {
 
 		echo $tagprefix;
@@ -47,7 +47,7 @@
 
 	}
 
-	// if string contains any of these words
+	// if string contains any of these words, combos and typos
 	elseif(preg_match('(ngo|nonprofit|non profit|government)', $keyword) === 1)  {
 
 		echo $catprefix;
@@ -55,7 +55,16 @@
 
 	}
 
-	// if string contains any of these words
+	// if string contains any of these words, combos and typos
+	elseif(preg_match('(portfolio|porfolio|PORTFOLIO)', $keyword) === 1)  {
+
+		echo $catprefix;
+		echo '<a href="/gallery/portfolio">Portfolio One Page Websites</a><br />';
+		echo '<a href="/templates/portfolio-templates">Portfolio One Page Templates</a>';
+
+	}
+
+	// if string contains this word
 	elseif ( strpos($keyword, 'iphone') !== false ) {
 
 		echo $tagprefix;
@@ -63,6 +72,33 @@
 		echo '<a href="/tag/iphone">iPhone Devices</a><br />';
 		echo '<a href="/gallery/app">App One Page websites</a>';
 
+	}
+
+	// if string contains this word
+	elseif ( strpos($keyword, 'business') !== false ) {
+
+		echo $catprefix;
+		echo '<a href="/gallery/landing-page">Landing Page Website References</a><br />';
+		echo '<a href="/templates/landing-page-templates">Landing Page Templates</a>';
+
+	}
+
+	// if string contains this word
+	elseif ( strpos($keyword, 'personal') !== false ) {
+
+		echo $catprefix;
+		echo '<a href="/gallery/personal">Personal One Page Websites</a><br />';
+		echo '<a href="/templates/personal-templates">Personal One Page Templates</a>';
+
+	}
+
+	// if string contains this word
+	elseif ( strpos($keyword, 'blog') !== false ) {
+
+		echo $catprefix;
+		echo '<a href="/gallery/one-page-blog">One Page Blogs</a><br />';
+		echo '<a href="/templates/blog-themes">One Page WordPress Themes</a><br />';
+		echo '<a href="/blog/journal">The One Page Love Journal</a>';
 	}
 
 # -------------------------------------------------------------
