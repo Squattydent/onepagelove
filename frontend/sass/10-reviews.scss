@@ -134,12 +134,20 @@
 			.review-demo a {
 				background-color: $color-blue-link;
 				text-shadow: 0 1px 0 $color-blue-link-hover;
-				// border-bottom: 2px solid $color-blue-link-hover;
 
 				&:hover {
 					background-color: $color-blue-link-hover;
 					text-shadow: 0 1px 0 $color-blue-link-darker;
-					// border-bottom: 2px solid $color-blue-link-darker;
+				}
+			}
+
+			.review-license a {
+				background-color: $color-license-link;
+				text-shadow: 0 1px 0 $color-license-link-hover;
+
+				&:hover {
+					background-color: $color-license-link-hover;
+					text-shadow: 0 1px 0 $color-license-link-darker;
 				}
 			}
 

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.6
+ * @version 6.10.14
  *
 */ 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<div class="review-meta-right">
 
-				<?php get_template_part('template-parts/review','meta'); ?>
+				<?php get_template_part('template-parts/review','meta-box'); ?>
 
 			</div>	
 
@@ -105,7 +105,9 @@ get_header(); ?>
 
 				</div>
 
-				<div class="review-tags"><strong>Categories:</strong> <?php the_category(' ', 'parents' ); ?></div> 
+				<div class="review-tags"><strong>Categories:</strong><?php // onepagelove_exclude_post_categories('1668,12'); // remove license category ?>  <?php the_category(' ', 'parents' ); ?></div> 
+
+				
 				
 				<div class="review-tags"><strong>Tags:</strong> <?php the_tags('', ' ', ' '); ?></div>
 

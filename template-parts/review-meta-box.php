@@ -1,13 +1,25 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.6
+ * @version 6.10.14
  *
 */ 
 ?>
 <div class="review-meta-right-padding-hack">
 
-	<?php get_template_part('template-parts/modal','hosting'); ?>
+	<?php 
+
+		if (in_category('License Templates')) {
+			get_template_part('template-parts/modal','license');             
+		} 
+		elseif (in_category('Free Templates')) {
+			get_template_part('template-parts/modal','hosting'); 
+		}
+		else {
+			echo '';
+		};
+	
+	?>
 
 	<div class="review-launch">
 
@@ -27,55 +39,53 @@
 			?>"><?php     
 
 				$siteprice = get_post_meta($post->ID, "site_price", true);  
+
 				if (in_category('Free Templates')) {
-					echo 'Download ';  
+					echo 'Download Free';  
 				}
+
 				elseif (in_category('HTML Templates') || in_category('Muse Templates') || in_category('WordPress Themes') || in_category('Tumblr Themes') || in_category('PSD Templates') || in_category('Unbounce Templates') || in_category('Joomla Templates')  || in_category('Bundle Deals')) {
 					echo 'Buy';  
 
-				}                    
-				else {
-					echo '';           
-				};
+					if (in_category('Bundle Deals')) {
+						echo 'Bundle Deal';              
+					}  
+					elseif (in_category('HTML Templates')) {
+						echo ' HTML Template';             
+					}   
+					elseif (in_category('Muse Templates')) {
+						echo ' Muse Template';             
+					}          
+					elseif (in_category('WordPress Themes')) {
+						echo ' WordPress Theme';             
+					}   
+					elseif (in_category('Tumblr Themes')) {
+						echo ' Tumblr Theme';              
+					}          
+					elseif (in_category('PSD Templates')) {
+						echo ' PSD Template';              
+					}        
+					elseif (in_category('Squarespace Templates')) {
+						echo 'Get This Template';              
+					}   
+					elseif (in_category('Unbounce Templates')) {
+						echo 'Unbounce Template';              
+					}         
+					elseif (in_category('Joomla Templates')) {
+						echo 'Joomla Template';              
+					};  
 
-			?><?php      
+				}
 
-				if (in_category('Bundle Deals')) {
-					echo 'Bundle Deal';              
-				}  
-				elseif (in_category('HTML Templates')) {
-					echo ' HTML Template';             
-				}   
-				elseif (in_category('Muse Templates')) {
-					echo ' Muse Template';             
-				}          
-				elseif (in_category('WordPress Themes')) {
-					echo ' WordPress Theme';             
-				}   
-				elseif (in_category('Tumblr Themes')) {
-					echo ' Tumblr Theme';              
-				}          
-				elseif (in_category('PSD Templates')) {
-					echo ' PSD Template';              
-				}        
-				elseif (in_category('Squarespace Templates')) {
-					echo 'Get This Template';              
-				}   
-				elseif (in_category('Unbounce Templates')) {
-					echo 'Unbounce Template';              
-				}         
-				elseif (in_category('Joomla Templates')) {
-					echo 'Joomla Template';              
-				}                                               
 				else {
 					echo 'Launch Website';            
-				};
+				};	                                                             
+ 
+				$siteprice = get_post_meta($post->ID, "site_price", true); 
 
-			?><?php 
-			$siteprice = get_post_meta($post->ID, "site_price", true); 
-			if ($siteprice != null) {
-				echo ' $'. $siteprice; 
-			};
+				if ($siteprice != null) {
+					echo ' $'. $siteprice; 
+				};
 			
 			?></a>
 
@@ -94,9 +104,35 @@
 
 	?>
 
+	<?php 
+
+		$licenseurl = get_post_meta($post->ID, "license_url", true);
+
+		if ($licenseurl != null) {
+			echo '<div class="review-launch review-license"><a href="' . $licenseurl . '" target="_blank">Buy $5 License To Remove Credit</a></div>';		
+		}
+		else {
+		    echo '';
+		}; 
+
+	?>	
+
 	<ul>
 
 		<li class="hosting"><strong>Need Hosting?</strong> We highly recommend <a href="https://onepagelove.com/go/bluehost">Bluehost</a></li>
+
+		<?php 
+
+			$licenseurl = get_post_meta($post->ID, "license_url", true);
+
+			if ($licenseurl != null) {
+				echo '<li><strong>License?</strong> <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons 3.0 License">CC3.0</a> (<a href="' . $licenseurl . '">remove</a>)</li>';		
+			}
+			else {
+			    echo '';
+			}; 
+
+		?>	
 
 		<li><strong>Reviewed:</strong>  <?php echo get_the_date(); ?></li>
 
