@@ -170,5 +170,6 @@ Rob
 
 {% endif %}
 
+<p>Thanks so much for helping support One Page Love!</p>
 <p>Chat soon,<br />Rob</p>
 <p>ps. I've sent the receipt in another email and your order ID is #{{ order.id }}</p>	

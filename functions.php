@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.14
+ * @version 6.10.15
  *
 */ 
 
@@ -9,7 +9,7 @@
 // Theme Defining
 // -------------------------------------------------------------
 
-define( 'OPL_THEME_VERSION' , '6.10.14' );                                                      # Theme Version
+define( 'OPL_THEME_VERSION' , '6.10.15' );                                                      # Theme Version
 global $content_width; if ( ! isset( $content_width ) ) $content_width = 1600;                  # Content Width
 
 # ------------------------------------------------------------------------
@@ -25,4 +25,4 @@ require_once( get_template_directory() . '/backend/functions-category-descendant
 require_once( get_template_directory() . '/backend/functions-page-excerpts.php'             );  # Add excerpt support to Pages
 require_once( get_template_directory() . '/backend/functions-images-paragraphs.php'         );  # Remove <p> around images in Blog category
 require_once( get_template_directory() . '/backend/functions-submissions.php'               );  # Hide Discontinued Submissions Category
-require_once( get_template_directory() . '/backend/functions-remove-license-cat.php'        );  # Remove Visibility of License Category
+require_once( get_template_directory() . '/backend/functions-remove-cats.php'        		);  # Remove Visibility of Certain Categories

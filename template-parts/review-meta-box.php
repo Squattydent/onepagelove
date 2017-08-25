@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.14
+ * @version 6.10.15
  *
 */ 
 ?>
@@ -12,6 +12,9 @@
 		if (in_category('License Templates')) {
 			get_template_part('template-parts/modal','license');             
 		} 
+		if (in_category('Pixelarity Templates')) {
+			get_template_part('template-parts/modal','pixelarity');             
+		} 		
 		elseif (in_category('Free Templates')) {
 			get_template_part('template-parts/modal','hosting'); 
 		}
@@ -108,7 +111,10 @@
 
 		$licenseurl = get_post_meta($post->ID, "license_url", true);
 
-		if ($licenseurl != null) {
+		if (($licenseurl != null) and (in_category('Pixelarity Templates'))) {
+			echo '<div class="review-launch review-license"><a href="' . $licenseurl . '" target="_blank">Visit Pixelarity To Remove Credit</a></div>';		
+		}
+		elseif ($licenseurl != null) {
 			echo '<div class="review-launch review-license"><a href="' . $licenseurl . '" target="_blank">Buy $5 License To Remove Credit</a></div>';		
 		}
 		else {
