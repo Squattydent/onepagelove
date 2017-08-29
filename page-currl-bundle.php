@@ -7,13 +7,12 @@ Template Name: Currl Bundle
 <?php
 /**
  * @package onepagelove
- * @version 6.10
+ * @version 6.10.17
  *
 */ 
 get_header(); ?>
 
-<!-- Include Sendowl magic needed for PayPal payments -->
-<script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js" ></script>
+<?php get_template_part('template-parts/include','sendowl'); ?>
 		
 <div class="pages currl-bundle" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/feedback/footer.jpg');">	
 

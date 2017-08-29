@@ -131,6 +131,16 @@
 
 			}
 
+			.buy-button a {
+				background-color: $color-license-link;
+				text-shadow: 0 1px 0 $color-license-link-hover;
+
+				&:hover {
+					background-color: $color-license-link-hover;
+					text-shadow: 0 1px 0 $color-license-link-darker;
+				}
+			}
+
 			.review-demo a {
 				background-color: $color-blue-link;
 				text-shadow: 0 1px 0 $color-blue-link-hover;

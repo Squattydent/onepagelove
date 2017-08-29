@@ -46,11 +46,7 @@ Thanks for your order of a Private Video Feedback 🎞
 {% endif %}
 
 
-<!-- ///////////////////////// Body ///////////////////////// -->
-
-
-
-
+<!-- ///////////////////////// Text Body ///////////////////////// -->
 
 Hi{% if order.receiver_name %} {{ order.receiver_first_name }}{% endif %},
 
@@ -77,15 +73,7 @@ You have ordered service goods. The merchant will be in contact to arrange the c
 {% endif %}
 
 Thanks,
-
 The SendOwl
-
-
-
-
-
-
-
 
 
 <!-- ///////////////////////// HTML Email Receipt Reference ///////////////////////// -->
@@ -120,23 +108,23 @@ The SendOwl
 			border-width: 1px; 
 			border-style: solid; 
 			border-color: #CCCCCC; 
-			-moz-border-radius: 3px; 
-			-webkit-border-radius: 3px; 
-			border-radius: 3px;
+			-moz-border-radius: 8px; 
+			-webkit-border-radius: 8px; 
+			border-radius: 8px;
 			">
 				
 				<tr>
-				<td style="width: 100%; padding-top: 5px; padding-bottom: 5px;">
+				<td style="width: 100%; padding-top: 21px; padding-bottom: 5px;">
 
 					<div>
 
-						<p>Hi{% if order.buyer_name %} {{ order.buyer_first_name }}{% endif %},</p>
+						<p>Hi {% if order.buyer_name %} {{ order.buyer_first_name }}{% endif %},</p>
 
 						<p>
 						{% if transaction.refund %}
 						Your refund has been made, here are all the details for your records:
 						{% else %}
-						Awesome! Your payment has cleared for Order #{{ order.id }} - here is the receipt for your records:
+						Awesome! Your payment has cleared for Order #{{ order.id }} - here is your receipt:
 						{% endif %}
 						</p>
 
@@ -150,7 +138,7 @@ The SendOwl
 							Order ID: <br />              
 							{{ order.id }}<br />
 							<br />
-							PayPal Gateway Transaction ID:<br /> 
+							Gateway Transaction ID:<br /> 
 							{{ transaction.gateway_transaction_id }}<br />
 							<br />
 
@@ -252,11 +240,11 @@ The SendOwl
 					<table width="300" cellpadding="0" cellspacing="0">
 					  <tr>
 					    <td width="60">
-					      <a href="https://twitter.com/robhope"><img src="https://onepagelove.com/wp-content/uploads/2016/11/rob-hope.png" alt="Rob Hope" width="60" height="60"></a>
+					      <a href="https://twitter.com/robhope"><img src="https://onepagelove.com/wp-content/uploads/2017/08/rob-hope.jpg" alt="Rob Hope" width="60" height="60"></a>
 					    </td>
 					    <td width="10">&nbsp;</td>
-					    <td width="230">
-					      Much Love,<br>Rob 
+					    <td width="230" style="color: #777777;">
+					      <p>Much Love,<br>Rob</p>
 					    </td>
 					  </tr>
 					</table>

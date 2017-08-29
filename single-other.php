@@ -1,13 +1,12 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.10.17
  *
 */ 
 get_header(); ?>
 
-<!-- Include Sendowl magic needed for Stripe and PayPal payments -->
-<script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js" ></script>
+<?php get_template_part('template-parts/include','sendowl'); ?>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
  

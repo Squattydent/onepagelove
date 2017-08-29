@@ -1,13 +1,10 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.14
+ * @version 6.10.17
  *
 */ 
 ?>
-
-<!-- Include Sendowl magic needed for PayPal payments -->
-<script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js" ></script>
 
 <!-- License Upgrade Modal -->  
 <div id="modal-content" data-download-url="<?php $downloadurl = get_post_meta($post->ID, "download_url", true); echo $downloadurl; ?>">

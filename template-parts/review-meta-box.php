@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.15
+ * @version 6.10.17
  *
 */ 
 ?>
@@ -9,10 +9,16 @@
 
 	<?php 
 
+		// Modals and SendOwl functionality
+
 		if (in_category('License Templates')) {
+			get_template_part('template-parts/include','sendowl');  
 			get_template_part('template-parts/modal','license');             
 		} 
-		if (in_category('Pixelarity Templates')) {
+		elseif (in_category('Buy Templates')) {
+			get_template_part('template-parts/include','sendowl');           
+		} 
+		elseif (in_category('Pixelarity Templates')) {
 			get_template_part('template-parts/modal','pixelarity');             
 		} 		
 		elseif (in_category('Free Templates')) {
@@ -24,77 +30,87 @@
 	
 	?>
 
-	<div class="review-launch">
+	<div class="review-launch <?php if ( in_category('Buy Templates') ) { echo 'buy-button'; }; ?>">
 
-		<a href="<?php 
+		<?php 
 
+			// open link
+			echo '<a href="';
+
+			// download link or launch link
+			$buyurl 	 = get_post_meta($post->ID, "buy_url", true);
 			$downloadurl = get_post_meta($post->ID, "download_url", true);
 			$siteurl 	 = get_post_meta($post->ID, "site_url", 	true);
 
 			if ($downloadurl != null) {
-				echo 'javascript:void(0);" id="trigger';
+				echo 'javascript:void(0);" id="trigger">';
+			}
+			elseif ($buyurl != null) {
+				echo $buyurl;
+				echo '">';
 			}
 			else {
 			    echo $siteurl;
-			    echo '" target="_blank';
-			}; 
+			    echo '" target="_blank">';
+			};  
 
-			?>"><?php     
+			// free download or category to buy
+			$siteprice = get_post_meta($post->ID, "site_price", true);  
 
-				$siteprice = get_post_meta($post->ID, "site_price", true);  
+			if (in_category('Free Templates')) {
+				echo 'Download Free';  
+			}
+			elseif (in_category('HTML Templates') || in_category('Muse Templates') || in_category('WordPress Themes') || in_category('Tumblr Themes') || in_category('PSD Templates') || in_category('Unbounce Templates') || in_category('Joomla Templates')  || in_category('Bundle Deals')) {
+				echo 'Buy';  
 
-				if (in_category('Free Templates')) {
-					echo 'Download Free';  
-				}
+				if (in_category('Bundle Deals')) {
+					echo 'Bundle Deal';              
+				}  
+				elseif (in_category('HTML Templates')) {
+					echo ' HTML Template';             
+				}   
+				elseif (in_category('Muse Templates')) {
+					echo ' Muse Template';             
+				}          
+				elseif (in_category('WordPress Themes')) {
+					echo ' WordPress Theme';             
+				}   
+				elseif (in_category('Tumblr Themes')) {
+					echo ' Tumblr Theme';              
+				}          
+				elseif (in_category('PSD Templates')) {
+					echo ' PSD Template';              
+				}        
+				elseif (in_category('Squarespace Templates')) {
+					echo 'Get This Template';              
+				}   
+				elseif (in_category('Unbounce Templates')) {
+					echo 'Unbounce Template';              
+				}         
+				elseif (in_category('Joomla Templates')) {
+					echo 'Joomla Template';              
+				};  
+			}
+			else {
+				echo 'Launch Website';            
+			};	                                                             
 
-				elseif (in_category('HTML Templates') || in_category('Muse Templates') || in_category('WordPress Themes') || in_category('Tumblr Themes') || in_category('PSD Templates') || in_category('Unbounce Templates') || in_category('Joomla Templates')  || in_category('Bundle Deals')) {
-					echo 'Buy';  
+			$siteprice = get_post_meta($post->ID, "site_price", true); 
 
-					if (in_category('Bundle Deals')) {
-						echo 'Bundle Deal';              
-					}  
-					elseif (in_category('HTML Templates')) {
-						echo ' HTML Template';             
-					}   
-					elseif (in_category('Muse Templates')) {
-						echo ' Muse Template';             
-					}          
-					elseif (in_category('WordPress Themes')) {
-						echo ' WordPress Theme';             
-					}   
-					elseif (in_category('Tumblr Themes')) {
-						echo ' Tumblr Theme';              
-					}          
-					elseif (in_category('PSD Templates')) {
-						echo ' PSD Template';              
-					}        
-					elseif (in_category('Squarespace Templates')) {
-						echo 'Get This Template';              
-					}   
-					elseif (in_category('Unbounce Templates')) {
-						echo 'Unbounce Template';              
-					}         
-					elseif (in_category('Joomla Templates')) {
-						echo 'Joomla Template';              
-					};  
+			if ($siteprice != null) {
+				echo ' $'. $siteprice; 
+			};
 
-				}
-
-				else {
-					echo 'Launch Website';            
-				};	                                                             
- 
-				$siteprice = get_post_meta($post->ID, "site_price", true); 
-
-				if ($siteprice != null) {
-					echo ' $'. $siteprice; 
-				};
+			// close link
+			echo '</a>'; 
 			
-			?></a>
+		?>
 
 	</div>
 
 	<?php 
+
+		// If has Demo URL add Demo button
 
 		$demourl = get_post_meta($post->ID, "demo_url", true);
 
@@ -109,17 +125,23 @@
 
 	<?php 
 
-		$licenseurl = get_post_meta($post->ID, "license_url", true);
+		// If has License URL add License button
 
-		if (($licenseurl != null) and (in_category('Pixelarity Templates'))) {
-			echo '<div class="review-launch review-license"><a href="' . $licenseurl . '" target="_blank">Visit Pixelarity To Remove Credit</a></div>';		
-		}
-		elseif ($licenseurl != null) {
-			echo '<div class="review-launch review-license"><a href="' . $licenseurl . '" target="_blank">Buy $5 License To Remove Credit</a></div>';		
-		}
-		else {
-		    echo '';
-		}; 
+		if ((in_category('License Templates')) OR (in_category('Pixelarity Templates'))) {
+          
+			$licenseurl = get_post_meta($post->ID, "license_url", true);
+
+			if (($licenseurl != null) and (in_category('Pixelarity Templates'))) {
+				echo '<div class="review-launch review-license"><a href="' . $licenseurl . '" target="_blank">Visit Pixelarity To Remove Credit</a></div>';		
+			}
+			elseif ($licenseurl != null) {
+				echo '<div class="review-launch review-license"><a href="' . $licenseurl . '" target="_blank">Buy $5 License To Remove Credit</a></div>';		
+			}
+			else {
+			    echo '';
+			}; 
+
+		};	
 
 	?>	
 
@@ -129,10 +151,25 @@
 
 		<?php 
 
+			// If has Buy info, state them
+
+			$buyinfo = get_post_meta($post->ID, "buy_info", true);
+
+			if ($buyinfo != null) {
+				echo '<li><strong>Payments Methods:</strong> PayPal or Credit Card</li>';
+				echo $buyinfo;		
+			};
+
+		?>	
+
+		<?php 
+
+			// If has License, add note about CC3.0 License 
+
 			$licenseurl = get_post_meta($post->ID, "license_url", true);
 
 			if ($licenseurl != null) {
-				echo '<li><strong>License?</strong> <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons 3.0 License">CC3.0</a> (<a href="' . $licenseurl . '">remove</a>)</li>';		
+				echo '<li><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons 3.0 License">CC3.0</a> (<a href="' . $licenseurl . '">remove</a>)</li>';		
 			}
 			else {
 			    echo '';
@@ -140,70 +177,45 @@
 
 		?>	
 
+		<?php      
+
+			// If in Gallery, add notice about it not being a template
+
+			$seo_gallery_id = get_cat_ID('Gallery');
+
+			if (post_is_in_descendant_category( $seo_gallery_id )) {
+				echo '<li><strong>Template?</strong> No, this is a custom built website</li>';             
+			};  
+		?>
+
+		<?php
+
+			// If Template credit Template Author, if Gallery say Built By
+
+			$seo_template_id = get_cat_ID('Templates');
+			$dev_name = get_post_meta($post->ID, "dev_name", true);
+			$dev_url = get_post_meta($post->ID, "dev_url", true);
+
+			if ( (post_is_in_descendant_category( $seo_template_id )) and ($dev_name != '')) {
+				echo '<li><strong>Template Author:</strong> <a href="';
+				echo $dev_url;
+				echo '" target="_blank">';
+				echo $dev_name;
+				echo '</a></li>';
+			}
+			elseif ($dev_name != '') {
+				echo '<li><strong>Built by:</strong> <a href="';
+				echo $dev_url;
+				echo '" target="_blank">';
+				echo $dev_name;
+				echo '</a></li>';
+			};
+
+		?>
+
+		
+
 		<li><strong>Reviewed:</strong>  <?php echo get_the_date(); ?></li>
-
-		<li>
-
-			<strong>Template?</strong> 
-
-			<?php      
-
-				if (in_category('HTML Templates')) {
-					echo 'Yes, this is an HTML template';             
-				}   
-				elseif (in_category('Muse Templates')) {
-					echo 'Yes, this is an Adobe Muse Template';              
-				} 
-				elseif (in_category('WordPress Themes')) {
-					echo 'Yes, this is a WordPress theme';              
-				}     
-				elseif (in_category('Tumblr Themes')) {
-					echo 'Yes, this is a Tumblr theme';              
-				}       
-				elseif (in_category('PSD Templates')) {
-					echo 'Yes, this is a PSD template';              
-				}         
-				elseif (in_category('Squarespace Templates')) {
-					echo 'Yes, this is a Squarespace template';              
-				}   
-				elseif (in_category('Unbounce Templates')) {
-					echo 'Yes, this is an Unbounce Template';              
-				}   
-				elseif (in_category('Joomla Templates')) {
-					echo 'Yes, this is an Joomla Template';              
-				}  
-				elseif (in_category('Bundle Deals')) {
-					echo 'Yes, this is a Bundle Deal';              
-				}                  
-				else {
-					echo 'No, this is a custom built website';           
-				};
-
-			?>
-
-		</li>
-
-		<li>
-
-			<?php
-
-				$dev_name = get_post_meta($post->ID, "dev_name", true);
-				$dev_url = get_post_meta($post->ID, "dev_url", true);
-
-				if ($dev_name != '') {
-					echo '<strong>Built by:</strong> <a href="';
-					echo $dev_url;
-					echo '" target="_blank">';
-					echo $dev_name;
-					echo '</a>';
-				}
-				else {
-					echo '';
-				};
-
-			?>
-
-		</li>
 
 	</ul>
 
