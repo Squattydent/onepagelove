@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.17
+ * @version 6.10.18
  *
 */ 
 ?>
@@ -25,7 +25,7 @@
 			
 			<div class="modal-deal-pitch">Remove the footer credit for only $5</div>
 
-			<p><?php the_title(); ?> has a <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons 3.0 License">CC3.0 License</a> meaning you have to keep the footer link back to One Page Love. Simply buy a Premium License to legally remove it... and help support One Page Love 🙏</p>
+			<p><?php the_title(); ?> has a <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons 3.0 License">CCA 3.0 License</a> meaning you have to keep the footer link back to One Page Love. Simply buy a Premium License to legally remove it... and help support One Page Love 🙏</p>
 
 			<a href="<?php $licenseurl = get_post_meta($post->ID, "license_url", true); echo $licenseurl; ?>" title="Buy a $5 Premium License" class="modal-license-button button-fill">Buy $5 License</a>
 

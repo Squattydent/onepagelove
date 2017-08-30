@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.17
+ * @version 6.10.18
  *
 */ 
 ?>
@@ -156,7 +156,7 @@
 			$buyinfo = get_post_meta($post->ID, "buy_info", true);
 
 			if ($buyinfo != null) {
-				echo '<li><strong>Payments Methods:</strong> PayPal or Credit Card</li>';
+				echo '<li><strong>Payment Methods:</strong> PayPal or Credit Card</li>';
 				echo $buyinfo;		
 			};
 
@@ -169,7 +169,7 @@
 			$licenseurl = get_post_meta($post->ID, "license_url", true);
 
 			if ($licenseurl != null) {
-				echo '<li><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons 3.0 License">CC3.0</a> (<a href="' . $licenseurl . '">remove</a>)</li>';		
+				echo '<li><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons 3.0 License">CCA 3.0</a> (<a href="' . $licenseurl . '">remove</a>)</li>';		
 			}
 			else {
 			    echo '';
