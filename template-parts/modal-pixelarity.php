@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.16
+ * @version 6.10.19
  *
 */ 
 ?>
@@ -25,7 +25,7 @@
 			
 			<div class="modal-deal-pitch">Want to remove credit or get support?</div>
 
-			<p><?php the_title(); ?> has a <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons 3.0 License">CC3.0 License</a> meaning you have to keep the footer credit to HTML5 UP. When you join <a href="<?php $licenseurl = get_post_meta($post->ID, "license_url", true); echo $licenseurl; ?>" title="Visit Pixelarity">Pixelarity</a> (the Premium Tier of HTML5 UP) you can legally remove the credit, get support and access another 96 beautiful HTML templates.</p>
+			<p><?php the_title(); ?> has a <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons 3.0 License">CCA 3.0 License</a> meaning you have to keep the footer credit to HTML5 UP. When you join <a href="<?php $licenseurl = get_post_meta($post->ID, "license_url", true); echo $licenseurl; ?>" title="Visit Pixelarity">Pixelarity</a> (the Premium Tier of HTML5 UP) you can legally remove the credit, get support and access another 96 beautiful HTML templates.</p>
 
 			<a href="<?php $licenseurl = get_post_meta($post->ID, "license_url", true); echo $licenseurl; ?>" title="Visit Pixelarity" class="modal-license-button button-fill">Visit Pixelarity</a>
 

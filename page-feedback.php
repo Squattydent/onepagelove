@@ -7,7 +7,7 @@ Template Name: Feedback
 <?php
 /**
  * @package onepagelove
- * @version 6.10.17
+ * @version 6.10.19
  *
 */ 
 get_header(); ?>
@@ -22,12 +22,12 @@ get_header(); ?>
 
 			<div class="section-tagline">A One Page Love Service</div>
 			<div class="section-title">Private Feedback</div>
-			<div class="section-description">15 minute video analysis of your Landing Page covering design, code, performance & more.</div>
+			<div class="section-description">10-15 minute video analysis of your Landing Page covering design, code, performance &amp; more.</div>
 
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#title-features" class="smoothScroll">See Features</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $29</a></div>
 
 			</div>
 
@@ -89,7 +89,7 @@ get_header(); ?>
 			<div class="section-buttons">
 
 				<div class="button"><a href="#title-faq" class="smoothScroll">Read FAQs</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $29</a></div>
 
 			</div>
 
@@ -177,7 +177,7 @@ get_header(); ?>
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#container-outer" class="smoothScroll">Back to top</a></div>	
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $29</a></div>
 
 			</div>
 
