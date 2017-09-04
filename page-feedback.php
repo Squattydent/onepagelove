@@ -7,7 +7,7 @@ Template Name: Feedback
 <?php
 /**
  * @package onepagelove
- * @version 6.10.19
+ * @version 6.10.21
  *
 */ 
 get_header(); ?>
@@ -27,7 +27,7 @@ get_header(); ?>
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#title-features" class="smoothScroll">See Features</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $29</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
 
 			</div>
 
@@ -89,7 +89,7 @@ get_header(); ?>
 			<div class="section-buttons">
 
 				<div class="button"><a href="#title-faq" class="smoothScroll">Read FAQs</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $29</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
 
 			</div>
 
@@ -146,7 +146,7 @@ get_header(); ?>
 							<h3>What exactly does the review look like?</h3>
 						</div>
 						<div class="answer">
-							<p>The review is presented in a 15 minute+ YouTube video. Rob talks while interacting with your Landing Page. Below the video is a summary of review crits, suggestions and links.</p>
+							<p>The review is presented in a 10-15 minute video. Rob talks while interacting with your Landing Page. Below the video is a summary of review crits and links. If you want a quicker Audio-only feedback for $5, <a href="<?php print get_home_url(); ?>/feedback-for-coffee">head here</a>.</p>
 						</div>
 					</div>
 
@@ -164,7 +164,7 @@ get_header(); ?>
 							<h3>I have a pre-sale question not answered here?</h3>
 						</div>
 						<div class="answer">
-							<p>Please feel free to email us on <a href="mailto:support@onepagelove.com">support@onepagelove.com</a> and we'd be happy to answer your questions:)</p>
+							<p>Please email us on <a href="mailto:support@onepagelove.com">support@onepagelove.com</a> and we'd be happy to answer your questions:)</p>
 						</div>
 					</div>
 
@@ -177,7 +177,7 @@ get_header(); ?>
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#container-outer" class="smoothScroll">Back to top</a></div>	
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $29</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
 
 			</div>
 

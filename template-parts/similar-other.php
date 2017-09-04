@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.10.20
  *
 */ 
 ?>
@@ -11,7 +11,7 @@
 	
 	<div class="archive-container">
 
-		<?php get_template_part('template-parts/loop','thumb'); ?>
+		<?php get_template_part('template-parts/loop','thumb-promo'); ?>
 			
 		<?php if (have_posts()) : $count = 0; 
 		$categories = get_the_category();
