@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.22
+ * @version 6.10.23
  *
 */ 
 ?>
@@ -30,7 +30,7 @@
 
 	<div class="note-info">
 
-	    <p class="note-name">Impressed by this Retina-optimized screenshot?</p>
+	    <p class="note-name">Impressed by this Retina-Optimized Screenshot?</p>
 	    
 	    <p class="note-bio"><a href="<?php print get_home_url(); ?>/screenshots" title="Learn more about Screenshot Concierge">Screenshot Concierge</a> delivers beautiful screenshots of your Landing Page in multiple resolutions and devices - perfect for a website launch.</p>
 

@@ -1,27 +1,15 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.22
+ * @version 6.10.23
  *
 */ 
 
 $promo_image = get_post_meta($post->ID, "promo_image", true);
 
-if ( is_single() && ($promo_image != '') ) {
+if ( is_singular() && ($promo_image != '') ) {
 
 	echo $promo_image;
-
-}
-
-elseif (is_page('Private Video Feedback')) {
-
-	echo '' . get_template_directory_uri() . '/img/social/feedback.jpg';
-
-}
-
-elseif (is_page('Feedback For Coffee')) {
-
-	echo '' . get_template_directory_uri() . '/img/social/feedback-for-coffee.jpg';
 
 }
 

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.22
+ * @version 6.10.23
  *
 */ 
 ?>
@@ -228,8 +228,10 @@
 				<?php 
 
 					$ads  = array(
-							'ads/coffee1.php', 
-							'ads/coffee2.php', 															
+							'ads/templates.php', 
+							'ads/feedback.php', 
+							'ads/coffee.php', 
+							'ads/concierge.php', 															
 							'ads/tips.php', 											
 							'ads/woo.php' // no comma on last one
 						);

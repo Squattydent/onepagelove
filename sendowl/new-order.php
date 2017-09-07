@@ -22,6 +22,9 @@ https://www.sendowl.com/products/507826/edit
 Private Video Feedback
 https://www.sendowl.com/products/490123/edit
 
+Screenshot Concierge
+https://www.sendowl.com/products/627090/edit
+
 <!-- ///////////////////////// If Then Statements  ///////////////////////// -->
 
 {% assign product_ids = order.cart.cart_items | map: 'product' | map: 'id' %} 
@@ -79,6 +82,19 @@ Rob
 <p>Hey {% for custom_checkout_fields in order.order_custom_checkout_fields %}{% if custom_checkout_fields.name contains 'First Name:' %}{{ custom_checkout_fields.value }} {% endif %}{% endfor %}</p> 
 
 {% assign product_ids = order.cart.cart_items | map: 'product' | map: 'id' %} 
+
+{% if product_ids contains 627090 %} 
+<p>Thanks for the ordering screenshots from Screenshot Concierge! 📸</p>
+<p>The service takes 1 working day. We are going to begin shortly based on this URL: <br/>{% for custom_checkout_fields in order.order_custom_checkout_fields %}
+
+	{% if custom_checkout_fields.name contains 'Screenshot URL:' %}
+
+		{{ custom_checkout_fields.value }}<br />
+
+	{% endif %}
+
+{% endfor %}</p>
+{% endif %} 
 
 {% if product_ids contains 597112 %} 
 <p>Thanks for the coffee! ☕️</p>
