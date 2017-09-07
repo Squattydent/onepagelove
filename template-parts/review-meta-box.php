@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.18
+ * @version 6.10.22
  *
 */ 
 ?>
@@ -215,7 +215,7 @@
 
 		
 
-		<li><strong>Reviewed:</strong>  <?php echo get_the_date(); ?></li>
+		<li><strong>Reviewed:</strong>  <?php echo get_the_date(); ?> by <a href="https://twitter.com/robhope">Rob Hope</a></li>
 
 	</ul>
 

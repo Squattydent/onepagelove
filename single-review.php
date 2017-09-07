@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.14
+ * @version 6.10.22
  *
 */ 
 get_header(); ?>
@@ -109,7 +109,7 @@ get_header(); ?>
 
 				
 				
-				<div class="review-tags"><strong>Tags:</strong> <?php the_tags('', ' ', ' '); ?></div>
+				<div class="review-tags"><strong>Features:</strong> <?php the_tags('', ' ', ' '); ?></div>
 
 			</div>	
 
@@ -140,6 +140,7 @@ get_header(); ?>
 
 		<div class="review-notes">
 
+			<?php get_template_part('template-parts/review','screenshot-concierge'); ?>
 			<?php get_template_part('template-parts/review','author'); ?>
 
 		</div>
