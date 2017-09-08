@@ -381,7 +381,6 @@
 
 			ul { // Section headings eg. Browse, One Page Website Gallery
 				overflow: auto; 
-				// width: 100% !important; 
 				top: -1px;
 				height: auto; 
 				margin: 0; 
@@ -390,7 +389,6 @@
 				text-shadow: none; 
 				background:  $color-header; 
 				border-top: 1px solid #222;  
-				// box-shadow: 0 -1px 0 #000;
 
 				li {
 					display: block; 
@@ -401,12 +399,9 @@
 					margin: 0; 
 					padding: 0;
 					border: none; 
-					// border-bottom: 1px solid #ff33cc;  // this is doubling up giving a thick black line
 					box-shadow: 0 1px 0 #222;
 
-
 					a {
-
 						display: block; 
 						margin: 0 !important;  
 						border: none; 

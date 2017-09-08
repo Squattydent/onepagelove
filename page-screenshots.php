@@ -7,7 +7,7 @@ Template Name: Screenshot Concierge
 <?php
 /**
  * @package onepagelove
- * @version 6.10.22
+ * @version 6.10.24
  *
 */ 
 get_header(); ?>
@@ -126,20 +126,6 @@ get_header(); ?>
 				
 				<div class="quoted">"You never get a second chance to make a first impression."</div>
 				<div class="quoter">Andrew Grant</div>
-					
-			</div>
-
-			<div class="quote">
-				
-				<div class="quoted">"Never forget that you only have one opportunity to make a first impression - with investors, with customers, with PR, and with marketing. "</div>
-				<div class="quoter">Natalie Massenet</div>
-					
-			</div>
-
-			<div class="quote">
-				
-				<div class="quoted">"A good first impression can work wonders."</div>
-				<div class="quoter">J. K. Rowling</div>
 					
 			</div>
 
