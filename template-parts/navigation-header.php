@@ -1,25 +1,25 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.11
+ * @version 6.11.4
  *
 */ 
 ?>
 <ul>
 
-    <li id="nav-info"><a href="<?php print get_home_url(); ?>">Home</a>
+    <li id="nav-info"><a href="#">Home</a>
 		
         <?php include('navs/home.php'); ?>  	
 
  	</li>	
 
-	<li id="nav-insp" class="nav-wider"><a href="<?php print get_home_url(); ?>/gallery">Inspiration</a>
+	<li id="nav-insp" class="nav-wider"><a href="#">Inspiration</a>
 
         <?php include('navs/gallery.php'); ?>  
 
     </li>
      					
-    <li id="nav-temp" class="nav-wide"><a href="<?php print get_home_url(); ?>/templates">Templates</a>
+    <li id="nav-temp" class="nav-wide"><a href="#">Templates</a>
 
         <?php include('navs/templates.php'); ?>      
 

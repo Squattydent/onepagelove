@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.1
+ * @version 6.11.4
  *
 */ 
 get_header(); ?>
@@ -69,7 +69,16 @@ get_header(); ?>
                                               
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-							<?php the_content(); ?>
+							<?php 
+
+								if ( !empty( get_the_content() ) ) {
+									the_content(); 
+								}
+								else {
+									echo 'No detailed review.';
+								};
+						
+							?>
 
 						<?php endwhile; else: ?>
 

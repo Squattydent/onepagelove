@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.10
+ * @version 6.11.4
  *
 */ 
 ?>
@@ -14,20 +14,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
 	<!-- SEO Yo! -->
-	<title><?php get_template_part('template-parts/seo','title'); ?></title>
-	<meta name="description" content="<?php get_template_part('template-parts/seo','description'); ?>" />
+	<title><?php get_template_part('template-parts/seo/seo','title'); ?></title>
+	<meta name="description" content="<?php get_template_part('template-parts/seo/seo','description'); ?>" />
 	<meta name="author" content="Rob Hope, @robhope" />
-	<meta name="robots" content="<?php get_template_part('template-parts/seo','robots'); ?>" />
+	<meta name="robots" content="<?php get_template_part('template-parts/seo/seo','robots'); ?>" />
 	<meta name="referrer" content="always" />
 
 	<!-- Social -->
-	<meta property="og:title" content="<?php get_template_part('template-parts/seo','title'); ?>" />
-	<meta property="og:description" content="<?php get_template_part('template-parts/seo','description'); ?>" />
-	<meta property="og:image" content="<?php get_template_part('template-parts/seo','image'); ?>">
-	<meta property="og:url" content="<?php get_template_part('template-parts/seo','permalink'); ?>" />
-	<meta name="twitter:title" content="<?php get_template_part('template-parts/seo','title'); ?>" >
-	<meta name="twitter:description" content="<?php get_template_part('template-parts/seo','description'); ?>" />
-	<meta name="twitter:image" content="<?php get_template_part('template-parts/seo','image'); ?>" />
+	<meta property="og:title" content="<?php get_template_part('template-parts/seo/seo','title'); ?>" />
+	<meta property="og:description" content="<?php get_template_part('template-parts/seo/seo','description'); ?>" />
+	<meta property="og:image" content="<?php get_template_part('template-parts/seo/seo','image'); ?>">
+	<meta property="og:url" content="<?php get_template_part('template-parts/seo/seo','permalink'); ?>" />
+	<meta name="twitter:title" content="<?php get_template_part('template-parts/seo/seo','title'); ?>" >
+	<meta name="twitter:description" content="<?php get_template_part('template-parts/seo/seo','description'); ?>" />
+	<meta name="twitter:image" content="<?php get_template_part('template-parts/seo/seo','image'); ?>" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@onepagelove" />
 	<meta name="twitter:creator" content="@robhope" />

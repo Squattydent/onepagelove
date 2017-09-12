@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.0
+ * @version 6.11.4
  *
 */ 
 
@@ -244,9 +244,10 @@ elseif (is_page()) {
 
 elseif (is_single() && ( post_is_in_descendant_category( $seo_gallery_id ) ) ||  post_is_in_descendant_category( $seo_templates_id ) ) {
 
-	$seo_review_raw = get_post_meta($post->ID, "opl_review", true);
+	global $post;
+	$seo_review_raw = $post->post_content;
 
-		if ($seo_review_raw != '') {
+		if ( !empty( $seo_review_raw ) ) {
 
 			$seo_review_strip = htmlspecialchars(strip_tags($seo_review_raw));
 
@@ -267,8 +268,8 @@ elseif (is_single() && ( post_is_in_descendant_category( $seo_gallery_id ) ) || 
 
 		else {
 			 
-			echo 'Review of';
-			echo $seo_title;
+			echo 'Website review of ';
+			echo ltrim($seo_title);
 			echo ' - includes screenshots and highlighted features.';		
 		};
 
