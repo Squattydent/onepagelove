@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.11.0
  *
 */ 
 
@@ -248,7 +248,7 @@ elseif (is_single() && ( post_is_in_descendant_category( $seo_gallery_id ) ) || 
 
 		if ($seo_review_raw != '') {
 
-			$seo_review_strip = strip_tags($seo_review_raw);
+			$seo_review_strip = htmlspecialchars(strip_tags($seo_review_raw));
 
 			if (strlen($seo_review_strip) > 180) {
 

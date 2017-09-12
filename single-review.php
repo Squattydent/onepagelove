@@ -67,18 +67,7 @@ get_header(); ?>
 
 			    	<div class="author-review">
                                               
-						<?php 
-
-							$oplreview = get_post_meta($post->ID, "opl_review", true);
-
-							if ($oplreview != '') {
-								echo $oplreview;
-							}
-							else {
-								echo 'No detailed review.';
-							}
-
-						?>
+						<?php the_content(''); ?>
 
 					</div>
 

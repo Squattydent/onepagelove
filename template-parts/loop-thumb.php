@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.2
+ * @version 6.11.0
  *
 */ 
 ?>
@@ -39,9 +39,14 @@
 				$seo_templates_id = get_cat_ID('Templates');
 
 				if ( post_is_in_descendant_category( array($seo_gallery_id,$seo_templates_id) ) ) {
-					$thumbstring = get_the_content();   
-					$thumbresult = strip_tags($thumbstring, '<img>');
-					echo $thumbresult;
+					$smallScreenshot = get_post_meta($post->ID, "screenshot_sm", true);    
+					
+					if ($smallScreenshot != '') {
+					   	echo '<img src="' . $smallScreenshot . '"  alt="Screenshot Small"/>';
+					}
+					else {
+					    echo '<img src="' . get_template_directory_uri() . '/img/no-thumbnail-set.jpg" alt="No Thumbnail Set" />';
+					};
 				}
 
 				else { 

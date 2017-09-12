@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.23
+ * @version 6.11.0
  *
 */ 
 
@@ -18,10 +18,6 @@ elseif (is_home() || is_page('About')) {
 	echo '' . get_template_directory_uri() . '/img/social/screenshot.jpg';
 
 }
-
-// elseif (is_single() && ( post_is_in_descendant_category( $seo_gallery_id ) ) ||  post_is_in_descendant_category( $seo_templates_id ) ) {
-	// use Greg's new custom image
-// }
 
 else {
 
