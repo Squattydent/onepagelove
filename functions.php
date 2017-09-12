@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.2
+ * @version 6.11.3
  *
 */ 
 
@@ -9,7 +9,7 @@
 // Theme Defining
 // -------------------------------------------------------------
 
-define( 'OPL_THEME_VERSION' , '6.11.2' );                                                       # Theme Version
+define( 'OPL_THEME_VERSION' , '6.11.3' );                                                       # Theme Version
 global $content_width; if ( ! isset( $content_width ) ) $content_width = 1600;                  # Content Width
 
 # ------------------------------------------------------------------------
@@ -27,4 +27,3 @@ require_once( get_template_directory() . '/backend/functions-images-paragraphs.p
 require_once( get_template_directory() . '/backend/functions-submissions.php'               );  # Hide Discontinued Submissions Category
 require_once( get_template_directory() . '/backend/functions-remove-cats.php'        		);  # Remove Visibility of Certain Categories
 require_once( get_template_directory() . '/backend/functions-shortcodes.php'        		);  # Shortcodes innit
-require_once( get_template_directory() . '/backend/functions-analytics.php'        			);  # Insert Google Analytics if not on Localhost

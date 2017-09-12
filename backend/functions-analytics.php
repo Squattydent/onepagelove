@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.2
+ * @version 6.11.3
  *
 */ 
 
@@ -9,9 +9,16 @@
 # Add Google Analytics if not on localhost
 #-------------------------------------------------------------------------------
 
-if (strpos($_SERVER['REQUEST_URI'], "localhost") !== false){
+// detect current URL
+
+
+if ( strpos("https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "locallhost") !== false){
+
+
 
 	function onepagelove_analytics() { ?>
+
+<?php $localhost_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; echo $localhost_link; ?>
 
 	<!-- Google Analytics -->
 	<script>
@@ -27,4 +34,10 @@ if (strpos($_SERVER['REQUEST_URI'], "localhost") !== false){
 
 	add_action( 'wp_head', 'onepagelove_analytics' );
 
+
+
 }
+
+else {
+	echo 'nope.';
+};
