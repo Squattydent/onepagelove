@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.20
+ * @version 6.11.1
  *
 */ 
 ?>
@@ -32,7 +32,7 @@
 				while ($my_query->have_posts()) {
 					$my_query->the_post();
 				?>
-					<?php get_template_part('loop'); ?>
+					<?php get_template_part('template-parts/loop','thumb'); ?>
 				<?php
 				}
 			}

@@ -1,12 +1,12 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.22
+ * @version 6.11.1
  *
 */ 
 get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
  
 	<div class="review">
 	             
@@ -67,7 +67,15 @@ get_header(); ?>
 
 			    	<div class="author-review">
                                               
-						<?php the_content(''); ?>
+						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+							<?php the_content(); ?>
+
+						<?php endwhile; else: ?>
+
+							<p>Nope, no posts matched your criteria.</p>
+
+						<?php endif; ?>
 
 					</div>
 
@@ -118,7 +126,7 @@ get_header(); ?>
 						echo '<img src="'.$bigScreenshot.'" alt="'.get_the_title().' Big Screenshot" />';
 					}
 					else {
-						the_content();
+						echo 'No screenshot'; // this should be the small screenshot
 					};
 
 				?>
@@ -135,12 +143,6 @@ get_header(); ?>
 		</div>
 
 	</div>
-
-<?php endwhile; else: ?>
-
-	<p>Nope, no posts matched your criteria.</p>
-
-<?php endif; ?>
 
 	<?php wp_reset_query(); ?>
 	<?php get_template_part('template-parts/similar','gallery'); ?>
