@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.23
+ * @version 6.11.8
  *
 */ 
 ?>
@@ -13,16 +13,16 @@
 
 		if (in_category('License Templates')) {
 			get_template_part('template-parts/include','sendowl');  
-			get_template_part('template-parts/modal','license');             
+			get_template_part('template-parts/reviews/modals/modal','license');             
 		} 
 		elseif (in_category('Buy Templates')) {
 			get_template_part('template-parts/include','sendowl');           
 		} 
 		elseif (in_category('Pixelarity Templates')) {
-			get_template_part('template-parts/modal','pixelarity');             
+			get_template_part('template-parts/reviews/modals/modal','pixelarity');             
 		} 		
 		elseif (in_category('Free Templates')) {
-			get_template_part('template-parts/modal','hosting'); 
+			get_template_part('template-parts/reviews/modals/modal','hosting'); 
 		}
 		else {
 			echo '';

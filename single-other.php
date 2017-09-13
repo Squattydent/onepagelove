@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.17
+ * @version 6.11.8
  *
 */ 
 get_header(); ?>
@@ -32,6 +32,6 @@ get_header(); ?>
 	<?php endif; ?>
 
 	<?php wp_reset_query(); ?>
-	<?php get_template_part('template-parts/similar','other'); ?>
+	<?php get_template_part('template-parts/review/similar','other'); ?>
 
 <?php get_footer(); ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.11.8
  *
 */ 
 get_header(); ?>
@@ -17,7 +17,7 @@ get_header(); ?>
 				<h1><?php 
 
 					// Get the variables
-					include('template-parts/seo-variables.php');
+					include('template-parts/seo/seo-variables.php');
 
 					// Tags			
 					if (function_exists('is_tag') && is_tag()) {
