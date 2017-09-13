@@ -1,12 +1,12 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.2
+ * @version 6.11.6
  *
 */ 
 
 #-------------------------------------------------------------------------------
-# Add Bluehost Round Up Sponsor Shortcode
+# Add Bluehost Round Up Sponsor Shortcode [bluehost-sponsor]
 #-------------------------------------------------------------------------------
 
 function onepagelove_bh_shortcode() {
@@ -22,13 +22,29 @@ function onepagelove_bh_shortcode() {
 add_shortcode('bluehost-sponsor', 'onepagelove_bh_shortcode');
 
 #-------------------------------------------------------------------------------
-# Add Flyleaf Promo Shortcode
+# Add FullSingle Promo on WordPress theme posts [fullsingle-wp]
 #-------------------------------------------------------------------------------
 
-function onepagelove_flyleaf_shortcode() {
+function onepagelove_fullsingle_wp_shortcode() {
 
-	return '&#39;Flyleaf&rsquo; is a Layout in the free <a href="https://onepagelove.com/go/fullsingle">FullSingle WordPress plugin</a> (the new flagship product by One Page Love that I&#39;ll be announcing in the near future 🎉). All you need is WordPress on your own hosting (<a href="https://onepagelove.com/hosting">recommendations</a>) and this Layout will work with <em>any</em> existing WordPress theme. Watch the <a href="https://onepagelove.com/go/fullsingle-setup">FullSingle 60s setup video</a>.';
+	$postTitle = get_the_title();
+
+	return '' . $postTitle . ' is a layout in the free <a href="https://onepagelove.com/go/fullsingle">FullSingle WordPress plugin</a> (the new flagship product by One Page Love that I&#39;ll be announcing in the near future 🎉). All you need is WordPress on your own hosting (<a href="https://onepagelove.com/hosting">recommendations</a>) and this Layout will work with <em>any</em> existing WordPress theme. Watch the <a href="https://onepagelove.com/go/fullsingle-setup">FullSingle 60s setup video</a>.';
 
 }
 
-add_shortcode('flyleaf', 'onepagelove_flyleaf_shortcode');
+add_shortcode('fullsingle-wp', 'onepagelove_fullsingle_wp_shortcode');
+
+
+#-------------------------------------------------------------------------------
+# Add FullSingle Promo on HTML templates [fullsingle-html]
+#-------------------------------------------------------------------------------
+
+function onepagelove_fullsingle_html_shortcode() {
+
+	$postTitle = get_the_title();
+	return 'Want to use WordPress? ' . $postTitle . ' is a layout in the <a href="https://onepagelove.com/go/fullsingle">FullSingle WordPress Plugin</a>.';
+
+}
+
+add_shortcode('fullsingle-html', 'onepagelove_fullsingle_html_shortcode');
