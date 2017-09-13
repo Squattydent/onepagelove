@@ -31,36 +31,33 @@
 
 	<div class="thumb-image">
 
-		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php 
 
-			<?php 
+			$seo_gallery_id = get_cat_ID('Gallery');
+			$seo_templates_id = get_cat_ID('Templates');
 
-				$seo_gallery_id = get_cat_ID('Gallery');
-				$seo_templates_id = get_cat_ID('Templates');
-
-				if ( post_is_in_descendant_category( array($seo_gallery_id,$seo_templates_id) ) ) {
-					$smallScreenshot = get_post_meta($post->ID, "screenshot_sm", true);    
-					
-					if ($smallScreenshot != '') {
-					   	echo '<img src="' . $smallScreenshot . '"  alt="Screenshot Small"/>';
-					}
-					else {
-					    echo '<img src="' . get_template_directory_uri() . '/img/no-thumbnail-set.jpg" alt="No Thumbnail Set" />';
-					};
+			if ( post_is_in_descendant_category( array($seo_gallery_id,$seo_templates_id) ) ) {
+				$smallScreenshot = get_post_meta($post->ID, "screenshot_sm", true);    
+				$postTitle = get_the_title();
+				
+				if ($smallScreenshot != '') {
+				   	echo '<img src="' . $smallScreenshot . '" alt="' . $postTitle . '"/>';
 				}
-
-				else { 
-					if ( has_post_thumbnail() ) {
-					    the_post_thumbnail();
-					}
-					else {
-					    echo '<img src="' . get_template_directory_uri() . '/img/no-thumbnail-set.jpg" alt="No Thumbnail Set" />';
-					} 
+				else {
+				    echo '<img src="' . get_template_directory_uri() . '/img/no-thumbnail-set.jpg" alt="No Thumbnail Set" />';
 				};
+			}
 
-			?>
+			else { 
+				if ( has_post_thumbnail() ) {
+				    the_post_thumbnail();
+				}
+				else {
+				    echo '<img src="' . get_template_directory_uri() . '/img/no-thumbnail-set.jpg" alt="No Thumbnail Set" />';
+				} 
+			};
 
-		</a>
+		?></a>
 
 	</div>
 
@@ -70,39 +67,31 @@
 
 	        <div class="thumb-name">
 
-				<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					
-						<?php the_title(); ?>
-						
-						<?php  		
+				<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?> <?php  		
 
-							if (in_category('PSD Templates')) {
-				          		echo 'PSD Template';							
-							}	
-							elseif (in_category('HTML Templates')) {
-				          		echo 'HTML Template';							
-							}
-							elseif (in_category('Muse Templates')) {
-				          		echo 'Muse Template';							
-							}		
-							elseif (in_category('Joomla Templates')) {
-				          		echo 'Joomla Template';							
-							}	
-							elseif (in_category('Bundle Deals')) {
-					        	echo '';              
-					        } 									
-							elseif (in_category('WordPress Themes')) {
-				          		echo 'WordPress Theme';							
-							}									
-							else {
-				          		echo '';							
-							};
+					if (in_category('PSD Templates')) {
+		          		echo 'PSD Template';							
+					}	
+					elseif (in_category('HTML Templates')) {
+		          		echo 'HTML Template';							
+					}
+					elseif (in_category('Muse Templates')) {
+		          		echo 'Muse Template';							
+					}		
+					elseif (in_category('Joomla Templates')) {
+		          		echo 'Joomla Template';							
+					}	
+					elseif (in_category('Bundle Deals')) {
+			        	echo '';              
+			        } 									
+					elseif (in_category('WordPress Themes')) {
+		          		echo 'WordPress Theme';							
+					}									
+					else {
+		          		echo '';							
+					};
 
-						?>
-						
-					</a>	
-
-					<?php 
+					?></a><?php 
 
 				   	$siteurl = get_post_meta($post->ID, "site_url", true);
 
@@ -125,9 +114,7 @@
 
 					    }
 
-				    ?>
-					
-				</h2>
+				?></h2>
 								
 			</div>
 
@@ -161,8 +148,6 @@
 				?>
 
 		    </div>
-
-	    	<div class="clear"></div>
 
 	  	</div>
 
