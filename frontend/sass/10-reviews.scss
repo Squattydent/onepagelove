@@ -82,197 +82,280 @@
 }
 
 //-------------------------------------------------------------------------------
-// Review Content - mainly styles, see above for container stuff
+// Review Top Left Section
 //-------------------------------------------------------------------------------
 
-.review {
+.review-meta-left {
 
-	.review-meta {
+	.review-title {
 
-		.review-meta-right {
+		a {
+			border: none;
+		}
 
-			.review-launch {
-				margin-bottom: 20px;
-				font-weight: bold;
-				letter-spacing: -0.5px;
-				margin-top: 0px !important; 
-				padding: 0;
+		h1 {
+			@extend %font-soft;
+			@extend %no-font-smoothing;
+			font-size: 2.375rem; 
+			line-height: 2.625rem; 
+			margin-bottom: $spacing-medium; 
+			// letter-spacing: -1.5px;
+			color: #222;
+		}
+
+	}
+
+	.review-content {
+
+		.author-review {
+			font-family: $font-fam-post;
+			font-size: 1.313rem; // 21 
+			line-height:  1.813rem; // 29
+			letter-spacing: -0.1px;
+			color: $review-body-color;
+			margin-bottom: 0; 
+
+			a {
+				color: $color-main-link;
+				border-bottom: 1px dotted $color-main-link;
+
+				&:hover {
+					color: $color-main-link;
+					border-bottom: 1px solid $color-main-link;
+				}
+			}
+		}
+
+		.build-notes {
+
+			blockquote {
+				margin-top: $spacing-medium;
+				margin-bottom: $spacing-m-b;
+				font-size: 1.125rem; // 18 
+				line-height: 1.625rem; // 26
+				color: $review-testi-color;
 
 				a {
-					transition: 1s;
-					text-decoration: none;  
-					vertical-align: top;
-					display: block; 
-					width: 100%; 
-					color: #FFF; 
-					height: 40px; 
-					padding:20px 0px 0px 0px; 
-					text-align: center;
-					text-decoration:none;
-					text-shadow: 0 1px 0 $color-darker-link;
-					font-size: 16px; 
-					line-height: 20px;  
-					background:$color-main-link; 
+					color: $review-testi-color;
+					border-bottom: 1px dotted $review-testi-color;
+				}
+			}
+		}
+	}			
+
+	.review-tags {
+		margin-bottom: 20px;
+
+		a {
+			color: #AAA; 
+			@extend %button;
+		}
+
+		a:hover { 
+			color: $color-main-link;
+			border: 1px solid $color-main-link;
+		}
+
+		strong {
+			display: block; 
+			font-size: 10px; 
+			text-transform: uppercase; 
+			line-height: 10px; 
+			margin-bottom: 5px;
+		}
+
+	}
+
+}
+
+//-------------------------------------------------------------------------------
+// META Box - top right
+//-------------------------------------------------------------------------------
+
+.review-meta-right {
+
+	ul {
+		margin-bottom: $spacing-medium;
+		letter-spacing: -0.3px;
+		color: $review-meta-color;
+
+		li {
+			margin-bottom: $spacing-small;
+
+			a {
+				color: $review-meta-color;
+				border-bottom: none;
+			}
+
+			a:hover {
+				color: $review-meta-color;
+				border-bottom: 1px solid $review-meta-color;
+			}
+		}
+
+		li.hosting {
+
+			a {
+				color: $color-main-link;
+			}
+
+			a:hover {
+				color: $color-main-link;
+				border-bottom: 1px solid $color-main-link;
+			}
+		}
+
+	}
+
+}
+
+	//-------------------------------------------------------------------------------
+	// Buttons
+	//-------------------------------------------------------------------------------
+
+	.review-launch {
+		margin-bottom: 20px;
+		font-weight: bold;
+		letter-spacing: -0.5px;
+		margin-top: 0px !important; 
+		padding: 0;
+
+		a {
+			transition: 1s;
+			text-decoration: none;  
+			vertical-align: top;
+			display: block; 
+			width: 100%; 
+			color: #FFF; 
+			height: 40px; 
+			padding:20px 0px 0px 0px; 
+			text-align: center;
+			text-decoration:none;
+			text-shadow: 0 1px 0 $color-darker-link;
+			font-size: 16px; 
+			line-height: 20px;  
+			background:$color-main-link; 
+			border-radius: $rounded-corners;
+			border: none;
+			
+			@media (max-width: $bp-tablet) {	
+				width: 100%;
+			}	
+		}
+
+		a:hover {
+			transition: 0.1s;
+			color: #FFF; 
+			background: $color-darker-link; 
+			text-shadow: 0 1px 0 $color-darkest-link;
+			
+		}
+
+	}
+
+	.buy-button a {
+		background-color: $color-license-link;
+		text-shadow: 0 1px 0 $color-license-link-hover;
+
+		&:hover {
+			background-color: $color-license-link-hover;
+			text-shadow: 0 1px 0 $color-license-link-darker;
+		}
+	}
+
+	.review-demo a {
+		background-color: $color-blue-link;
+		text-shadow: 0 1px 0 $color-blue-link-hover;
+
+		&:hover {
+			background-color: $color-blue-link-hover;
+			text-shadow: 0 1px 0 $color-blue-link-darker;
+		}
+	}
+
+	.review-license a {
+		background-color: $color-license-link;
+		text-shadow: 0 1px 0 $color-license-link-hover;
+
+		&:hover {
+			background-color: $color-license-link-hover;
+			text-shadow: 0 1px 0 $color-license-link-darker;
+		}
+	}
+
+	//-------------------------------------------------------------------------------
+	// Review - Advertisting
+	//-------------------------------------------------------------------------------
+
+	.review-slayer-holder {
+	    box-shadow: 0 -1px 0 #DDD;
+		border-top: 1px solid #FFF;
+		height: 150px;
+		display: block; 
+		clear: both;
+
+		@media (max-width: $bp-notebook ) {
+			height: 105px;
+		}
+		@media (max-width: $bp-tablet ) {
+			height: 75px;
+		}
+
+		.slayer {
+			display: flex;
+			flex-direction: row;
+			height: 150px;
+			align-items: center;
+
+				@media (max-width: $bp-notebook ) {
+					flex : 0 0 120px;
+					height: 105px;
+				}
+				@media (max-width: $bp-tablet ) {
+					flex : 0 0 85px;
+					height: 70px;
+				}
+
+			.slayer-img {
+				vertical-align: top;
+				flex : 0 0 140px;
+
+					@media (max-width: $bp-notebook ) {
+						flex : 0 0 120px;
+					}
+					@media (max-width: $bp-tablet ) {
+						flex : 0 0 85px;
+					}
+
+				img {
+					width: 130px; 
+					height: auto; 
 					border-radius: $rounded-corners;
-					border: none;
-					
-					@media (max-width: $bp-tablet) {	
-						width: 100%;
-					}	
+
+					@media (max-width: $bp-notebook ) {
+						width: 100px;
+					}
+					@media (max-width: $bp-tablet ) {
+						width: 65px;
+					}
+				}
+
+			}
+
+			.slayer-info {
+				color: #666; 
+				font-size: 0.8125rem; 
+				line-height: 1.063rem; 
+				flex : 1 1 auto;
+
+				a {
+					color: #333;
+					font-weight: bold;
 				}
 
 				a:hover {
-					transition: 0.1s;
-					color: #FFF; 
-					background: $color-darker-link; 
-					text-shadow: 0 1px 0 $color-darkest-link;
-					
-				}
-
-			}
-
-			.buy-button a {
-				background-color: $color-license-link;
-				text-shadow: 0 1px 0 $color-license-link-hover;
-
-				&:hover {
-					background-color: $color-license-link-hover;
-					text-shadow: 0 1px 0 $color-license-link-darker;
-				}
-			}
-
-			.review-demo a {
-				background-color: $color-blue-link;
-				text-shadow: 0 1px 0 $color-blue-link-hover;
-
-				&:hover {
-					background-color: $color-blue-link-hover;
-					text-shadow: 0 1px 0 $color-blue-link-darker;
-				}
-			}
-
-			.review-license a {
-				background-color: $color-license-link;
-				text-shadow: 0 1px 0 $color-license-link-hover;
-
-				&:hover {
-					background-color: $color-license-link-hover;
-					text-shadow: 0 1px 0 $color-license-link-darker;
-				}
-			}
-
-			ul {
-				margin-bottom: $spacing-medium;
-				letter-spacing: -0.3px;
-				color: $review-meta-color;
-
-				li {
-					margin-bottom: $spacing-small;
-
-					a {
-						color: $review-meta-color;
-						border-bottom: none;
-					}
-
-					a:hover {
-						color: $review-meta-color;
-						border-bottom: 1px solid $review-meta-color;
-					}
-				}
-
-				li.hosting {
-
-					a {
-						color: $color-main-link;
-					}
-
-					a:hover {
-						color: $color-main-link;
-						border-bottom: 1px solid $color-main-link;
-					}
-				}
-
-			}
-
-		}
-
-		.review-meta-left {
-
-			.review-title {
-
-				a {
-					border: none;
-				}
-
-				h1 {
-					@extend %font-soft;
-					@extend %no-font-smoothing;
-					font-size: 2.375rem; 
-					line-height: 2.625rem; 
-					margin-bottom: $spacing-medium; 
-					// letter-spacing: -1.5px;
-					color: #222;
-				}
-
-			}
-
-			.review-content {
-
-				.author-review {
-					font-family: $font-fam-post;
-					font-size: 1.313rem; // 21 
-					line-height:  1.813rem; // 29
-					letter-spacing: -0.1px;
-					color: $review-body-color;
-					margin-bottom: 0; 
-
-					a {
-						color: $color-main-link;
-						border-bottom: 1px dotted $color-main-link;
-
-						&:hover {
-							color: $color-main-link;
-							border-bottom: 1px solid $color-main-link;
-						}
-					}
-				}
-
-				.build-notes {
-
-					blockquote {
-						margin-top: $spacing-medium;
-						margin-bottom: $spacing-m-b;
-						font-size: 1.125rem; // 18 
-						line-height: 1.625rem; // 26
-						color: $review-testi-color;
-
-						a {
-							color: $review-testi-color;
-							border-bottom: 1px dotted $review-testi-color;
-						}
-					}
-				}
-			}			
-
-			.review-tags {
-				margin-bottom: 20px;
-
-				a {
-					color: #AAA; 
-					@extend %button;
-				}
-
-				a:hover { 
 					color: $color-main-link;
-					border: 1px solid $color-main-link;
-				}
-
-				strong {
-					display: block; 
-					font-size: 10px; 
-					text-transform: uppercase; 
-					line-height: 10px; 
-					margin-bottom: 5px;
+					border-bottom: none;
 				}
 
 			}
@@ -281,88 +364,42 @@
 
 	}
 
-	.review-screenshot {
+//-------------------------------------------------------------------------------
+// Review Big Screenshot
+//-------------------------------------------------------------------------------
 
-		img {
-			border-top: 1px solid #EEE;
-			border-bottom: 1px solid #EEE;
-			min-width: 100%;
-			height: auto;
+.review-screenshot {
 
-			@media (max-width: $bp-desksm) {
-				width: 100%; 
-			}
+	img {
+		border-top: 1px solid #EEE;
+		border-bottom: 1px solid #EEE;
+		min-width: 100%;
+		height: auto;
 
+		@media (max-width: $bp-desksm) {
+			width: 100%; 
 		}
 
-		a.noBorder:hover {
-			opacity: 1;
-		}
-
 	}
 
-	.review-notes { // Author + Screenshot Concierge
-		padding: $spacing-big $spacing-big 0 $spacing-big;
-		display: flex;
-
-		@media (max-width: 768px) {
-			flex-direction: column;
-		}
+	a.noBorder:hover {
+		opacity: 1;
 	}
 
-}
-
-
-
-//-------------------------------------------------------------------------------
-// Similar Posts
-//-------------------------------------------------------------------------------
-
-.similar-title {
-	@extend %font-soft;
-	letter-spacing: -0.5px;
-	text-align: center;
-	margin: $spacing-big 0 $spacing-medium;
-	font-size: 1.125rem; 
-	line-height: 1.125rem; 
-	color: #333;
-}
-
-.similar-submit {
-	text-align: center; 
-	display: block;
-
-	a {
-		color: $color-body-font; 
-		border-bottom: 1px;
-		border-bottom-style: dotted;
-		border-bottom-color: $color-body-font; 
-	}
-
-	a:hover {
-		color: #333333;
-		border-bottom-style: solid;
-		border-bottom-color: #333333; 
-	}
-}
-
-//-------------------------------------------------------------------------------
-// Review notice - https://localhost/wordpress/onepagelove/how-to-achieve-a-parallax-scrolling-effect-with-petr-tichy
-//-------------------------------------------------------------------------------
-
-.review-notice {
-	font-size: 18px; 
-	line-height: 24px; 
-	background: #ffc3da; 
-	color: $color-darker-link; 
-	border: 1px solid #feb0ce; 
-	padding: 10px 20px;
-	margin-bottom: 20px;
 }
 
 //-------------------------------------------------------------------------------
 // Review Notes: Author + Screenshot Concierge
 //-------------------------------------------------------------------------------
+
+.review-notes { 
+	padding: $spacing-big $spacing-big 0 $spacing-big;
+	display: flex;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
 
 .review-note {
 	display: flex;
@@ -413,37 +450,16 @@
 		}
 
 		@keyframes ani {
-		  0% {
-		    left: 0;
-		  }
-		  50% {
-		    left: -54px;
-		  }
-		  100% {
-		    left: 0;
-		  }
-		}
+			0% {
+				left: 0;
+			}
+			50% {
+				left: -54px;
+			}
+			100% {
+				left: 0;
+			}
 
-		img.concierge-old {
-			position: absolute;
-			width: 60px; 
-			height: auto; 
-			top: 0;
-			x-transition: all 1s ease-in-out;
-  			animation: ani-old 10s infinite;
-
-		}
-
-		@keyframes ani-old {
-		  0% {
-		    top: 0;
-		  }
-		  50% {
-		    top: -100%;
-		  }
-		  100% {
-		    top: 0;
-		  }
 		}
 
 	}
@@ -470,86 +486,36 @@
 }
 
 //-------------------------------------------------------------------------------
-// Review - Advertisting
+// Review Similar Posts - at bottom
 //-------------------------------------------------------------------------------
 
-.review-slayer-holder {
-    box-shadow: 0 -1px 0 #DDD;
-	border-top: 1px solid #FFF;
-	height: 150px;
-	display: block; 
-	clear: both;
-
-	@media (max-width: $bp-notebook ) {
-		height: 105px;
-	}
-	@media (max-width: $bp-tablet ) {
-		height: 75px;
-	}
-
-	.slayer {
-		display: flex;
-		flex-direction: row;
-		height: 150px;
-		align-items: center;
-
-			@media (max-width: $bp-notebook ) {
-				flex : 0 0 120px;
-				height: 105px;
-			}
-			@media (max-width: $bp-tablet ) {
-				flex : 0 0 85px;
-				height: 70px;
-			}
-
-		.slayer-img {
-			vertical-align: top;
-			flex : 0 0 140px;
-
-				@media (max-width: $bp-notebook ) {
-					flex : 0 0 120px;
-				}
-				@media (max-width: $bp-tablet ) {
-					flex : 0 0 85px;
-				}
-
-			img {
-				width: 130px; 
-				height: auto; 
-				border-radius: $rounded-corners;
-
-				@media (max-width: $bp-notebook ) {
-					width: 100px;
-				}
-				@media (max-width: $bp-tablet ) {
-					width: 65px;
-				}
-			}
-
-		}
-
-		.slayer-info {
-			color: #666; 
-			font-size: 0.8125rem; 
-			line-height: 1.063rem; 
-			flex : 1 1 auto;
-
-			a {
-				color: #333;
-				font-weight: bold;
-			}
-
-			a:hover {
-				color: $color-main-link;
-				border-bottom: none;
-			}
-
-		}
-
-	}
-
+.similar-title {
+	@extend %font-soft;
+	letter-spacing: -0.5px;
+	text-align: center;
+	margin: $spacing-big 0 $spacing-medium;
+	font-size: 1.125rem; 
+	line-height: 1.125rem; 
+	color: #333;
 }
 
+.similar-submit {
+	text-align: center; 
+	display: block;
+
+	a {
+		color: $color-body-font; 
+		border-bottom: 1px;
+		border-bottom-style: dotted;
+		border-bottom-color: $color-body-font; 
+	}
+
+	a:hover {
+		color: #333333;
+		border-bottom-style: solid;
+		border-bottom-color: #333333; 
+	}
+}
 
 //-------------------------------------------------------------------------------
 // Floating pagination: arrows on sides of browser 

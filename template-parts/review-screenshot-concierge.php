@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.23
+ * @version 6.11.7
  *
 */ 
 ?>
@@ -12,14 +12,10 @@
 	    
 	    <a href="<?php print get_home_url(); ?>/screenshots" title="Learn more about Screenshot Concierge"><?php 
 
-	    $bigScreenshot = get_post_meta($post->ID, "screenshot", true); 
 	    $smallScreenshot = get_post_meta($post->ID, "screenshot_sm", true); 
 
 	    if ($smallScreenshot != '') {
 	    	echo '<img src="' . $smallScreenshot . '" class="concierge" alt="Screenshot Concierge"/>';
-	    }
-	    elseif ($bigScreenshot != '') {
-	    	echo '<img src="' . $bigScreenshot . '" class="concierge-old "alt="Screenshot Concierge"/>';
 	    }
 	    else {
 	    	echo '';

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.1
+ * @version 6.11.7
  *
 */ 
 ?>
@@ -12,6 +12,5 @@
 	<li><a class="sub-y" href="https://www.youtube.com/channel/UCZG5er2inmZntGb4X_jx6Wg" target="_blank">YouTube</a></li>
 	<li><a class="sub-f" href="https://www.facebook.com/onepagelove" target="_blank">Facebook</a></li>
 	<li><a class="sub-p" href="https://pinterest.com/onepagelove/" target="_blank">Pinterest</a></li>
-	<li><a class="sub-h" href="https://www.producthunt.com/posts/onepagelove " target="_blank">Product Hunt</a></li> 
 	<li><a class="sub-g" href="https://plus.google.com/101808922664177427937" target="_blank" rel="publisher">Google+</a></li>
 </ul>
