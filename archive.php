@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.9
+ * @version 6.11.10
  *
 */ 
 get_header(); ?>
@@ -169,7 +169,22 @@ get_header(); ?>
 
 			<span class="grey-shadow">
 
-				<?php echo category_description(); ?><?php get_template_part('template-parts/snippets/hosting','special'); ?> 
+				<?php // promote hosting only in templates category
+
+					$seo_templates_id = get_cat_ID('Templates');
+
+					if (is_archive() && (post_is_in_descendant_category( $seo_templates_id ) )) {
+
+						echo category_description();
+						get_template_part('template-parts/snippets/hosting','special'); 
+
+					}
+
+					else {
+						echo category_description();
+					};
+
+				?> 
 
 			</span><!--  /.grey-shadow -->
 
