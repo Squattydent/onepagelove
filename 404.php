@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.11.9
  *
 */ 
 get_header(); ?>
@@ -16,7 +16,7 @@ get_header(); ?>
 			<div class="section-title"><h1>Oh Rats!</h1></div>
 			<div class="section-description">
 				
-				<p>Seems like you've stumbled on a zero page site!</p>
+				<p>You stumbled upon a Zero Page site 🤔</p>
 
 			</div>
 
@@ -26,7 +26,7 @@ get_header(); ?>
 
 	<div class="section-content">
 
-		<?php get_template_part('template-parts/message','no-results'); ?>
+		<?php get_template_part('template-parts/snippets/no','search-results'); ?>
 
 	</div>
       

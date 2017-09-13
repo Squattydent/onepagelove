@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.11
+ * @version 6.11.9
  *
 */ 
 get_header(); ?>
@@ -36,7 +36,7 @@ get_header(); ?>
 
 			 <div class="archive-header-info">
 
-				<div class="archive-title"><span class="grey-shadow"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo 'You are browsing page '.$paged.' of '.$wp_query->max_num_pages.' in our '; ?> <?php get_template_part('template-parts/random','naming-archives'); ?></span></div>
+				<div class="archive-title"><span class="grey-shadow"><?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; echo 'You are browsing page '.$paged.' of '.$wp_query->max_num_pages.' in our '; ?> <?php get_template_part('template-parts/snippets/random','naming-archives'); ?></span></div>
 
 				<div class="archive-description">
 					<span class="grey-shadow">

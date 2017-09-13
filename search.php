@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.11.9
  *
 */ 
 get_header(); ?>
@@ -35,7 +35,7 @@ get_header(); ?>
 
 				</div>
 
-				<?php get_template_part('template-parts/search','suggestions'); ?>
+				<?php get_template_part('template-parts/snippets/search','suggestions'); ?>
 
 			</div>
 
@@ -53,7 +53,7 @@ get_header(); ?>
 
 			<?php endwhile; else: ?>
 
-				<?php get_template_part('template-parts/message','no-results'); ?>
+				<?php get_template_part('template-parts/snippets/no','search-results'); ?>
 
 			<?php endif; ?>
 

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.8
+ * @version 6.11.9
  *
 */ 
 get_header(); ?>
@@ -38,7 +38,7 @@ get_header(); ?>
 
 					}
 					
-						// Gallery Home			
+					// Gallery Home			
 					elseif (is_category('Gallery')) {
 				  		echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' unique One Page websites';	
 					}		
@@ -60,7 +60,7 @@ get_header(); ?>
 				      	echo 'Community Submissions';		
 						}	
 
-						// Templates Home			
+					// Templates Home			
 					elseif (is_category('Templates')) {
 				  	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' One Page Templates';							
 					}
@@ -169,7 +169,7 @@ get_header(); ?>
 
 			<span class="grey-shadow">
 
-				<?php echo category_description(); ?>
+				<?php echo category_description(); ?><?php get_template_part('template-parts/snippets/hosting','special'); ?> 
 
 			</span><!--  /.grey-shadow -->
 
@@ -185,11 +185,11 @@ get_header(); ?>
 
    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <?php get_template_part('template-parts/loop','thumb'); ?> 
+    	<?php get_template_part('template-parts/loop','thumb'); ?> 
 
     <?php endwhile; else: ?>
 
-		<?php get_template_part('template-parts/message','no-results'); ?>
+		<?php get_template_part('template-parts/snippets/no','search-results'); ?>
 
     <?php endif; ?>
 
