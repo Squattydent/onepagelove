@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.8
+ * @version 6.11.13
  *
 */ 
 ?>
@@ -151,13 +151,16 @@
 
 		<?php 
 
-			// If has Buy info, state them
+			// If has extra info
 
 			$buyinfo = get_post_meta($post->ID, "buy_info", true);
 
-			if ($buyinfo != null) {
+			if ( ( $buyinfo != null ) and ( in_category('Templates')) ) {
 				echo '<li><strong>Payment Methods:</strong> PayPal or Credit Card</li>';
 				echo $buyinfo;		
+			}
+			elseif ( $buyinfo != null ) {
+				echo $buyinfo;	
 			};
 
 		?>	
@@ -176,17 +179,6 @@
 			}; 
 
 		?>	
-
-		<?php      
-
-			// If in Gallery, add notice about it not being a template
-
-			$seo_gallery_id = get_cat_ID('Gallery');
-
-			if (post_is_in_descendant_category( $seo_gallery_id )) {
-				echo '<li><strong>Template?</strong> No, this is a custom built website</li>';             
-			};  
-		?>
 
 		<?php
 
@@ -213,7 +205,16 @@
 
 		?>
 
-		
+		<?php      
+
+			// If in Gallery, add notice about it not being a template
+
+			$seo_gallery_id = get_cat_ID('Gallery');
+
+			if (post_is_in_descendant_category( $seo_gallery_id )) {
+				echo '<li><strong>Template?</strong> No, this is a custom built website</li>';             
+			};  
+		?>		
 
 		<li><strong>Reviewed:</strong>  <?php echo get_the_date(); ?> by <a href="https://twitter.com/robhope">Rob Hope</a></li>
 
