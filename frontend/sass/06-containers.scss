@@ -42,7 +42,7 @@ body.single #container-outer #container {
 		position: fixed;
 
 		#header {
-			margin:0 auto; 
+			margin: 0 auto; 
 			padding: 0 $spacing-small;
 			color: #FFF;
 
@@ -265,9 +265,14 @@ body.single #container-outer #container {
 	#container-outer {
 		width: 100%;
 
+	#header-container {
+		position: relative;
+	}
+		
 		#container {
 
 			#content {
+				padding-top: 0;
 
 				.review {
 					margin: 0;		
