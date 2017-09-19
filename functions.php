@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.13
+ * @version 6.11.14
  *
 */ 
 
@@ -9,7 +9,7 @@
 // Theme Defining
 // -------------------------------------------------------------
 
-define( 'OPL_THEME_VERSION' , '6.11.13' );                                                      # Theme Version
+define( 'OPL_THEME_VERSION' , '6.11.14' );                                                      # Theme Version
 global $content_width; if ( ! isset( $content_width ) ) $content_width = 1600;                  # Content Width
 
 # ------------------------------------------------------------------------
