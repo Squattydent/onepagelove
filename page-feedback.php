@@ -7,7 +7,7 @@ Template Name: Feedback
 <?php
 /**
  * @package onepagelove
- * @version 6.10.21
+ * @version 6.11.16
  *
 */ 
 get_header(); ?>
@@ -26,12 +26,12 @@ get_header(); ?>
 
 			<div class="section-buttons">
 				
-				<div class="button"><a href="#title-features" class="smoothScroll">See Features</a></div>
+				<div class="button"><a href="#" class="modal-vid">Watch Preview</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
 
 			</div>
 
-			<div class="button-paypal">Payment handled with Stripe or PayPal</div>
+			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-features" class="smoothScroll">See Features</a></div>
 
 		</div>
 		
@@ -88,12 +88,12 @@ get_header(); ?>
 
 			<div class="section-buttons">
 
-				<div class="button"><a href="#title-faq" class="smoothScroll">Read FAQs</a></div>
+				<div class="button"><a href="#" class="modal-vid">Watch Preview</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
 
 			</div>
 
-			<div class="button-paypal">Payment handled with Stripe or PayPal</div>
+			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq" class="smoothScroll">Read FAQs</a></div>
 
 		</div>
 
@@ -176,12 +176,12 @@ get_header(); ?>
 
 			<div class="section-buttons">
 				
-				<div class="button"><a href="#container-outer" class="smoothScroll">Back to top</a></div>	
+				<div class="button"><a href="#" class="modal-vid">Watch Preview</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
 
 			</div>
 
-			<div class="button-paypal">Payment handled with Stripe or PayPal</div>
+			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-features" class="smoothScroll">See Features</a></div>
 			
 			<div class="quote">
 				
