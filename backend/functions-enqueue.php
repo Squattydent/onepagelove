@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.16
+ * @version 6.11.18
  *
 */ 
 
@@ -32,7 +32,7 @@ function onepagleove_enqueue_scripts(){
         wp_enqueue_script('opl-modal-js');
 
     }
-    elseif (is_page('Feedback For Coffee') || is_page('Feedback')) {
+    elseif (is_page('Feedback For Coffee') || is_page('Private Video Feedback')) {
 
         // Script: Services Modal
         wp_register_script('opl-services-modal-js', get_template_directory_uri().'/frontend/js/services-modal-min.js', array(), OPL_THEME_VERSION, true ); 
