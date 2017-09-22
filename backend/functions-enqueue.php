@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.11
+ * @version 6.11.16
  *
 */ 
 
@@ -24,12 +24,19 @@ function onepagleove_enqueue_scripts(){
     wp_register_script('opl-custom-js', get_template_directory_uri().'/frontend/js/opl-custom-code-min.js', array(), OPL_THEME_VERSION, true ); 
     wp_enqueue_script('opl-custom-js');
 
+    // Script: Modals
     if (is_single() && in_category('Free Templates')) {    
 
         // Script: Template Modal
         wp_register_script('opl-modal-js', get_template_directory_uri().'/frontend/js/template-modal-min.js', array(), OPL_THEME_VERSION, true ); 
         wp_enqueue_script('opl-modal-js');
 
+    }
+    elseif (is_page('Feedback For Coffee') || is_page('Feedback')) {
+
+        // Script: Services Modal
+        wp_register_script('opl-services-modal-js', get_template_directory_uri().'/frontend/js/services-modal-min.js', array(), OPL_THEME_VERSION, true ); 
+        wp_enqueue_script('opl-services-modal-js');
     };
 
 }

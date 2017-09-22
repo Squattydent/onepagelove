@@ -7,7 +7,7 @@ Template Name: Feedback For Coffee
 <?php
 /**
  * @package onepagelove
- * @version 6.10.17
+ * @version 6.11.16
  *
 */ 
 get_header(); ?>
@@ -26,12 +26,12 @@ get_header(); ?>
 
 			<div class="section-buttons">
 				
-				<div class="button"><a href="#title-faq" class="smoothScroll">Read FAQs</a></div>
+				<div class="button"><a href="#" class="modal-msg">Audio Preview</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/597112/C49B7EE0/add_to_cart" rel="nofollow">Send Coffee $5</a></div>
 
 			</div>
 
-			<div class="button-paypal">Payment handled with Stripe or PayPal</div>
+			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq" class="smoothScroll">Read FAQs</a></div>
 
 		</div>
 		
@@ -85,7 +85,7 @@ get_header(); ?>
 							<h3>What exactly does the feedback look like?</h3>
 						</div>
 						<div class="answer">
-							<p>The feedback is presented in a 3-5 minute AudioNote. I talk while interacting with your Landing Page. Here is <a href="https://audionot.es/p1qHWyXJZNa" target="_blank">an example of a feedback AudioNote</a>.</p>
+							<p>The feedback is presented in a 3-5 minute AudioNote. I talk while interacting with your Landing Page. Here is <a href="#" class="modal-msg">an example of a feedback AudioNote</a>.</p>
 						</div>
 					</div>
 
@@ -114,13 +114,13 @@ get_header(); ?>
 			</div>
 
 			<div class="section-buttons">
-				
-				<div class="button"><a href="#container-outer" class="smoothScroll">Back to top</a></div>	
+
+				<div class="button"><a href="#" class="modal-msg">Audio Preview</a></div>
 				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/597112/C49B7EE0/add_to_cart" rel="nofollow">Send Coffee $5</a></div>
 
 			</div>
 
-			<div class="button-paypal">Payment handled with Stripe or PayPal</div>
+			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq"  class="smoothScroll">Read FAQs</a></div>
 
 			<div class="quote">
 				

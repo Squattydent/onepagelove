@@ -25,6 +25,9 @@ https://www.sendowl.com/products/490123/edit
 Screenshot Concierge
 https://www.sendowl.com/products/627090/edit
 
+One Page Love Template Boost Package
+https://www.sendowl.com/products/680506/edit
+
 <!-- ///////////////////////// If Then Statements  ///////////////////////// -->
 
 {% assign product_ids = order.cart.cart_items | map: 'product' | map: 'id' %} 
@@ -94,6 +97,19 @@ Rob
 	{% endif %}
 
 {% endfor %}</p>
+{% endif %} 
+
+{% if product_ids contains 680506 %} 
+<p>Thanks for the ordering a Template Boost 🚀</p>
+<p>I'm going to get back to you shortly with a Boost Date after I've assessed {% for custom_checkout_fields in order.order_custom_checkout_fields %}
+
+	{% if custom_checkout_fields.name contains 'Template To Boost:' %}
+
+		{{ custom_checkout_fields.value }}
+
+	{% endif %}
+
+{% endfor %} and the current queue.</p>
 {% endif %} 
 
 {% if product_ids contains 597112 %} 
