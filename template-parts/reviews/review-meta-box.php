@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.13
+ * @version 6.11.19
  *
 */ 
 ?>
@@ -155,7 +155,7 @@
 
 			$buyinfo = get_post_meta($post->ID, "buy_info", true);
 
-			if ( ( $buyinfo != null ) and ( in_category('Templates')) ) {
+			if ( ( $buyinfo != null ) and ( in_category('Buy Templates')) ) {
 				echo '<li><strong>Payment Methods:</strong> PayPal or Credit Card</li>';
 				echo $buyinfo;		
 			}
