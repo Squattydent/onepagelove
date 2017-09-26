@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.20
+ * @version 6.11.21
  *
 */ 
 
@@ -9,7 +9,7 @@
 // Enqueue Scripts and Styles
 // -------------------------------------------------------------
 
-function onepagleove_enqueue_scripts(){
+function onepagelove_enqueue_scripts(){
     
     // jQuery
     wp_deregister_script('jquery');
@@ -41,4 +41,4 @@ function onepagleove_enqueue_scripts(){
 
 }
 
-add_action('wp_enqueue_scripts', 'onepagleove_enqueue_scripts');
+add_action('wp_enqueue_scripts', 'onepagelove_enqueue_scripts');
