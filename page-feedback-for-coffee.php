@@ -7,7 +7,7 @@ Template Name: Feedback For Coffee
 <?php
 /**
  * @package onepagelove
- * @version 6.11.16
+ * @version 6.11.20
  *
 */ 
 get_header(); ?>
@@ -22,7 +22,7 @@ get_header(); ?>
 
 			<div class="section-tagline">A One Page Love Service</div>
 			<div class="section-title">Feedback For Coffee ☕️</div>
-			<div class="section-description">A short but sweet 3-5 minute Audio feedback of your One Pager or Landing Page covering first impressions, design, code &amp; suggestions.</div>
+			<div class="section-description">A short but sweet 3-5 minute Audio Critique of your One Pager or Landing Page covering first impressions, design, code &amp; suggestions.</div>
 
 			<div class="section-buttons">
 				
@@ -54,13 +54,13 @@ get_header(); ?>
 							<h3>How does this thing work? </h3>
 						</div>
 						<div class="answer">
-							<p>I love giving website feedback. I also love coffee. You send me $5, I'll buy a delicious brew and  deliver you a solid critique of your website.</p>
+							<p>I love giving website feedback. I also love coffee. You send me $5, I'll buy a delicious brew and deliver you a solid critique of your website.</p>
 						</div>
 					</div>
 
 					<div class="faq">
 						<div class="question">
-							<h3>Do you give feedback on multiple page websites?</h3>
+							<h3>Do you give critique on multiple page websites?</h3>
 						</div>
 						<div class="answer">
 							<p>I only give feedback on One Page Websites and not multiple page websites with big navigations. Marketing "Landing Pages" within bigger websites are allowed.</p>
@@ -69,7 +69,7 @@ get_header(); ?>
 
 					<div class="faq">
 						<div class="question">
-							<h3>Who gives the feedback?</h3>
+							<h3>Who gives the critique?</h3>
 						</div>
 						<div class="answer">
 							<p><a href="https://twitter.com/robhope">Rob Hope</a>, the founder of One Page Love, who has over a decade of website design and development experience. Every day, he adds his commentary to websites featured on One Page Love, now over 6000.</p>
@@ -82,28 +82,28 @@ get_header(); ?>
 
 					<div class="faq">
 						<div class="question">
-							<h3>What exactly does the feedback look like?</h3>
+							<h3>What exactly does the critique look like?</h3>
 						</div>
 						<div class="answer">
-							<p>The feedback is presented in a 3-5 minute AudioNote. I talk while interacting with your Landing Page. Here is <a href="#" class="modal-msg">an example of a feedback AudioNote</a>.</p>
+							<p>The critique is presented in a 3-5 minute AudioNote. I talk while interacting with your Landing Page. Here is <a href="#" class="modal-msg">an example of the AudioNote</a>.</p>
 						</div>
 					</div>
 
 					<div class="faq">
 						<div class="question">
-							<h3>How private is the feedback?</h3>
+							<h3>How private is the critique?</h3>
 						</div>
 						<div class="answer">
-							<p>You are sent the link to the AudioNote feedback where you can play on any device. The link is however easily shared if you wish - this is great for teams. Only you have the link and it cannot be indexed by Google.</p>
+							<p>You are sent the link to the Audio Critique where you can play on any device. The link is however easily shared if you wish - this is great for teams. Only you have the link and it cannot be indexed by Google.</p>
 						</div>
 					</div>
 
 					<div class="faq">
 						<div class="question">
-							<h3>Do you offer a more detailed feedback?</h3>
+							<h3>Do you offer a more detailed critique?</h3>
 						</div>
 						<div class="answer">
-							<p>You bet! I offer a <a href="/feedback">Private Video Feedback</a> for $49 where I interact with your Landing Page while giving constructive feedback.</p>
+							<p>You bet! I offer a <a href="/feedback">Private Video Critique</a> for $49 where I interact with your Landing Page while giving constructive feedback.</p>
 						</div>
 					</div>
 

@@ -7,7 +7,7 @@ Template Name: Feedback
 <?php
 /**
  * @package onepagelove
- * @version 6.11.16
+ * @version 6.11.20
  *
 */ 
 get_header(); ?>
@@ -21,8 +21,8 @@ get_header(); ?>
 		<div>
 
 			<div class="section-tagline">A One Page Love Service</div>
-			<div class="section-title">Private Feedback</div>
-			<div class="section-description">10-15 minute video analysis of your Landing Page covering design, code, performance &amp; more.</div>
+			<div class="section-title">Private Website Critique 💬</div>
+			<div class="section-description">A 15 minute video analysis of your One Pager or Landing Page covering first impressions, design, code, performance &amp; more.</div>
 
 			<div class="section-buttons">
 				
@@ -41,12 +41,12 @@ get_header(); ?>
 
 		<div class="section-grey">
 				
-			<div class="section-tagline">Private Video Feedback</div>				
+			<div class="section-tagline">Private Website Critique</div>				
 			<div class="section-title">Features</div>
 
 			<div class="quote">
 				
-				<div class="quoted">"The feedback was very helpful and pointed out areas that I can now see need improving. It was also good that you provided links to explanations for further investigation."</div>
+				<div class="quoted">"The critique was very helpful and pointed out areas that I can now see need improving. It was also good that you provided links to explanations for further investigation."</div>
 				<div class="quoter">Peter Nunn - Designer, Founder</div>
 					
 			</div>
@@ -59,17 +59,17 @@ get_header(); ?>
 				</div>
 
 				<div class="feature">
-					<div class="feature-copy"><h3>User Experience (UX)</h3>"User experience" encompasses all aspects of the end-user's interaction with the One Page website. UX feedback covers: Language tone, Trust, Transparency, Navigation and Consistency.</div>
+					<div class="feature-copy"><h3>User Experience (UX)</h3>"User experience" encompasses all aspects of the end-user's interaction with the One Page website. UX critique covers: Language tone, Trust, Transparency, Navigation and Consistency.</div>
 					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/feedback/ux.gif" /></div>
 				</div>
 
 				<div class="feature feature-left">			
 					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/feedback/design.jpg" /></div>
-					<div class="feature-copy"><h3>Design</h3>Suggestions that come from a subjective point of view. Design feedback covers: Logo, Branding, Responsive adaption, Spacing and more.</div>
+					<div class="feature-copy"><h3>Design</h3>Suggestions that come from a subjective point of view. Design critique covers: Logo, Branding, Responsive adaption, Spacing and more.</div>
 				</div>
 
 				<div class="feature">			
-					<div class="feature-copy"><h3>Code</h3>Suggestions based on reports from online services but also include experienced suggestions for good practice. Code feedback covers: PageSpeed Insights, Source Code inspection, Search Engine Optimization, Heading hierarchies and more.</div>
+					<div class="feature-copy"><h3>Code</h3>Suggestions based on reports from online services but also include experienced suggestions for good practice. Code critique covers: PageSpeed Insights, Source Code inspection, Search Engine Optimization, Heading hierarchies and more.</div>
 					<div class="feature-image"><img src="<?php echo get_template_directory_uri(); ?>/img/feedback/code.jpg" /></div>
 
 				</div>
@@ -115,25 +115,25 @@ get_header(); ?>
 							<h3>How is payment handled?</h3>
 						</div>
 						<div class="answer">
-							<p>Payment is securely handled with Stripe or PayPal. We offer a 100% money back guarantee if you feel the review wasn't worth the money.</p>
+							<p>Payment is securely handled with Stripe or PayPal. We offer a 100% money back guarantee if you feel the critique wasn't worth the money.</p>
 						</div>
 					</div>
 
 					<div class="faq">
 						<div class="question">
-							<h3>Do you review multiple page websites?</h3>
+							<h3>Do you give critiques on multiple-page websites?</h3>
 						</div>
 						<div class="answer">
-							<p>We only give feedback on One Page Websites and not multiple page websites with big navigations. Marketing "Landing Pages" within bigger websites are allowed.</p>
+							<p>We only give critiques on One Page Websites and not multiple page websites with big navigations. Marketing "Landing Pages" within bigger websites are allowed.</p>
 						</div>
 					</div>
 
 					<div class="faq">
 						<div class="question">
-							<h3>Who does the review?</h3>
+							<h3>Who does the critique?</h3>
 						</div>
 						<div class="answer">
-							<p><a href="https://twitter.com/robhope">Rob Hope</a>, the founder of One Page Love, who has over a decade of website design and development experience. Every day, he adds his commentary to websites featured on One Page Love, now over 6000.</p>
+							<p><a href="https://twitter.com/robhope">Rob Hope</a>, the founder of One Page Love, who has over a decade of website design and development experience. Every day, he adds his commentary to websites featured on One Page Love, nearing 7000.</p>
 						</div>
 					</div>
 
@@ -143,19 +143,19 @@ get_header(); ?>
 
 					<div class="faq">
 						<div class="question">
-							<h3>What exactly does the review look like?</h3>
+							<h3>What exactly does the critique look like?</h3>
 						</div>
 						<div class="answer">
-							<p>The review is presented in a 10-15 minute video. Rob talks while interacting with your Landing Page. Below the video is a summary of review crits and links. If you want a quicker Audio-only feedback for $5, <a href="<?php print get_home_url(); ?>/feedback-for-coffee">head here</a>.</p>
+							<p>The critique is presented in a 10-15 minute video. Rob talks while interacting with your Landing Page. Below the video is a summary of the critique with links. If you want a quicker Audio-only critique for $5, <a href="<?php print get_home_url(); ?>/feedback-for-coffee">head here</a>.</p>
 						</div>
 					</div>
 
 					<div class="faq">
 						<div class="question">
-							<h3>How private is the review?</h3>
+							<h3>How private is the critique?</h3>
 						</div>
 						<div class="answer">
-							<p>You are sent the private "unlisted" YouTube video link where only you see the feedback. The link is however easily shared if you wish - this is great for teams. Only you have the link.</p>
+							<p>You are sent the private "unlisted" YouTube video link where only you see the critique. The link is however easily shared if you wish - this is great for teams. Only you have the link.</p>
 						</div>
 					</div>
 
@@ -185,21 +185,21 @@ get_header(); ?>
 			
 			<div class="quote">
 				
-				<div class="quoted">"Thanks a lot, the feedback was very good and our developers will take a closer look and make some fixes. A good service idea and the price is worth it."</div>
+				<div class="quoted">"Thanks a lot, the critique was very good and our developers will take a closer look and make some fixes. A good service idea and the price is worth it."</div>
 				<div class="quoter">Michael Gattereder - Creative Director</div>
 					
 			</div>
 
 			<div class="quote">
 				
-				<div class="quoted">"Your video feedback was very useful to me and left me enthusiastic to make changes. The way you clearly criticized each part gives me the motivation to improve!"</div>
+				<div class="quoted">"Your video critique was very useful to me and left me enthusiastic to make changes. The way you clearly criticized each part gives me the motivation to improve!"</div>
 				<div class="quoter">Federico Guzzardi - Designer</div>
 					
 			</div>
 
 			<div class="quote">
 				
-				<div class="quoted">"Thank you for the video review - it is really helpful for us. Not only for this One Page WordPress theme but we will improve all our Single Page themes going forward"</div>
+				<div class="quoted">"Thank you for the video critique - it is really helpful for us. Not only for this One Page WordPress theme but we will improve all our Single Page themes going forward"</div>
 				<div class="quoter">Harmeet Singh - Theme Developer</div>
 					
 			</div>
