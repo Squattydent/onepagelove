@@ -8,6 +8,19 @@
 	line-height: 1.75rem; // 28
 	border-radius: $rounded-corners;
 	box-shadow: $shadow-global;
+	width: $container-standard - 80px; // 1200 = 80px less than #container as 40px padding 
+    margin: $spacing-medium auto $spacing-huge auto;
+	padding: $spacing-huge 0; 
+	height: auto;			
+
+	// Small Desktop
+	@media (max-width: $bp-desk) {
+		width: 94%;  
+        margin: 20px auto 40px auto;
+		padding: 40px 3% 40px 3%; 
+		height: auto;	
+
+	}
 
 	.blog-intro {
         padding-top: $spacing-medium;
@@ -328,7 +341,6 @@ a.roundup-demo { // needs to get phased out
 body.postid-26235 .similar {
 	display: none;
 }
-
 
 // ------------------------------------------------
 // Squarespace article coupon

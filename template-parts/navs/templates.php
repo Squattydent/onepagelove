@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.17
+ * @version 6.11.22
  *
 */ 
 ?>
@@ -20,5 +20,4 @@
 	    $nav_template_variable 	= preg_replace( '/<a href=\"([^\"]+)\"/', '<a href="$1"', $nav_template_variable );
 	    echo $nav_template_variable; 
     ?>      
-    <li><a href="<?php print get_home_url(); ?>/submit">Submit Template 📩</a></li>
 </ul>  

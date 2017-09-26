@@ -18,8 +18,6 @@
 	display: none;
 }
 
-
-
 //-------------------------------------------------------------------------------
 // Logo
 //-------------------------------------------------------------------------------
@@ -56,6 +54,10 @@
 		margin: 0.1875rem 0 0 0.25rem; // 3 0 0 4
 		text-transform: uppercase;
 
+		@media (max-width: 1130px) {
+			display: none;
+		}
+
 		a {
 			@extend %font-soft;
 			@extend %no-font-smoothing;
@@ -69,6 +71,8 @@
 		a:hover {
 			text-decoration: none;
 		}
+
+
 	}
 
 }
@@ -106,7 +110,6 @@
 				border: none; 
 				text-decoration: none; 
 				height: 1.25rem; // 20
-				// padding: 0.6875rem 2.813rem 1.188rem 0.3125rem; // 11 45 19 5
 				padding: 0.6875rem 2.813rem 0.5625rem 0.3125rem; // 11 45 9 5
 				white-space: nowrap;
 				color: #999; // parent link color
@@ -115,10 +118,8 @@
 				letter-spacing: 0; 
 
 				@media (max-width: 1130px) {
-
 					padding-right: 0.875rem;
 					padding-left:  0.875rem;
-
 				}
 			} 
 
@@ -131,23 +132,17 @@
 				color: #CCC; // parent link color on hover 
 			}
 
-			&#nav-free {
-				@media (max-width: $bp-notebook) {
-					display: none;
-				}
-			} 
-
-			&#nav-reso {
-				@media (max-width: 930px) {
-					display: none;
-				}
-			} 
-
-			&#nav-subs {
-				@media (max-width: 1250px) {
+			&#nav-serv {
+				@media (max-width: 1200px) {
 					display: none;
 				}
 			}
+
+			&#nav-host {
+				@media (max-width: $bp-desksm) {
+					display: none;
+				}
+			} 
 
 			ul {
 				left: -0.9375rem; // -15
@@ -200,8 +195,6 @@
 					background: $color-main-link; 
 					color: $color-white !important;
 				}
-
-					
 
 				a.sub-t:hover {background: $color-twitter;}
 				a.sub-y:hover {background: $color-youtube;}
@@ -317,6 +310,26 @@
 
 }
 
+#container-outer {
+
+	#header-container {
+
+		#header {
+
+			#header-search {
+
+				@media (max-width: 1310px ) { // with the new addition of the about and submit to main nav
+					width: 12.5rem; // 200
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
 #header-search {
 	float: left;
 
@@ -359,155 +372,130 @@
 	// Show some things
 	//-------------------------------------------------------------------------------
 
-		#header-button,
-		.mobile-navigation {
-			display: block
-		}
-
-	//-------------------------------------------------------------------------------
-	// Mobile Navigation
-	//-------------------------------------------------------------------------------
-
-	// Show nav icon
-	#mobile-navigation-toggle {
-		position: relative;
-
-		.mobile-navigation {
-			position: relative; 
-			clear: both; 
-			float: none; 
-			text-shadow: none; 
-			margin: 0;
-			background: $color-header;
-
-			ul { // Section headings eg. Browse, One Page Website Gallery
-				overflow: auto; 
-				top: -1px;
-				height: auto; 
-				margin: 0; 
-				padding: 0 $spacing-small; 
-				list-style: none; 
-				text-shadow: none; 
-				background:  $color-header; 
-				border-top: 1px solid #222;  
-
-				li {
-					display: block; 
-					position: relative; 
-					float: none;  
-					font-size: 0.75rem; // 12
-					line-height: 0.75rem; // 12
-					margin: 0; 
-					padding: 0;
-					border: none; 
-					box-shadow: 0 1px 0 #222;
-
-					a {
-						display: block; 
-						margin: 0 !important;  
-						border: none; 
-						text-decoration: none; 
-						height: 1rem; 
-						padding: 0.8125rem 0 0.6875rem 0; // 13 0 11 0
-						white-space: nowrap;
-						color: #CCC; 
-						font-weight: bold;
-					} 
-
-					a:hover {
-						text-decoration: none;
-						color: $color-main-link;
-					}
-
-					ul { // Child menu background eg. Home, About...
-						width: 100%; 
-						padding: 0; 
-						margin-left: 0;
-						background: $color-header;
-						display: flex;
-	  					flex-wrap: wrap;
-						border-bottom: 0; 
-						// box-shadow: 0 0 0 $test1;
-
-
-						li { // child list item background set at top of stylesheet
-							flex: 1 0 33%; 
-	 						box-sizing: border-box;
-
-							a { // dropdown list item link color
-								height: 1rem; // 16
-								padding: 0.8125rem 0 0.6875rem 0; // 13 0 11 0
-								color: #999 !important; 
-								font-size: 0.75rem; // 12
-								font-weight: normal;
-								letter-spacing: 0px;
-							}
-
-							ul {
-
-								li {
-									display: none;
-								}
-							}
-						} 
-
-						li:hover {
-							padding: 0;
-						}
-
-					} 
-
-				}
-
-				li:hover {
-
-					a { // parent link color when hovering on dropdown
-						color: #DDD;
-					} 
-
-					li {
-
-						a:hover { // dropdown list item background & link color on hover 
-							color: $color-main-link !important; 
-
-						}
-
-					}
-
-				}
-				
-			}
-
-		}
-
+	#header-button,
+	.mobile-navigation {
+		display: block
 	}
 
 }
 
+//-------------------------------------------------------------------------------
+// Mobile Navigation
+//-------------------------------------------------------------------------------
 
-@media (max-width: $bp-mobile) {
+// Show nav icon
+#mobile-navigation-toggle {
+	position: relative;
 
-	#mobile-navigation-toggle {
+	.mobile-navigation {
+		position: relative; 
+		clear: both; 
+		float: none; 
+		text-shadow: none; 
+		margin: 0;
+		background: $color-header;
 
-		.mobile-navigation {
+		ul { // Section headings eg. Browse, One Page Website Gallery
+			overflow: auto; 
+			top: -1px;
+			height: auto; 
+			margin: 0; 
+			padding: 0 $spacing-small; 
+			list-style: none; 
+			text-shadow: none; 
+			background:  $color-header; 
+			border-top: 1px solid #222;  
 
-			ul { // Section headings eg. Browse, One Page Website Gallery
+			li {
+				display: block; 
+				position: relative; 
+				float: none;  
+				font-size: 0.75rem; // 12
+				line-height: 0.75rem; // 12
+				margin: 0; 
+				padding: 0;
+				border: none; 
+				box-shadow: 0 1px 0 #222;
+
+				a {
+					display: block; 
+					margin: 0 !important;  
+					border: none; 
+					text-decoration: none; 
+					height: 1rem; 
+					padding: 0.8125rem 0 0.6875rem 0; // 13 0 11 0
+					white-space: nowrap;
+					color: #CCC; 
+					font-weight: bold;
+				} 
+
+				a:hover {
+					text-decoration: none;
+					color: $color-main-link;
+				}
+
+				ul { // Child menu background eg. Home, About...
+					width: 100%; 
+					padding: 0; 
+					margin-left: 0;
+					background: $color-header;
+					display: flex;
+  					flex-wrap: wrap;
+					border-bottom: 0; 
+					// box-shadow: 0 0 0 $test1;
+
+
+					li { // child list item background set at top of stylesheet
+						flex: 1 0 33%; 
+ 						box-sizing: border-box;
+
+ 						@media (max-width: $bp-mobile) {
+							flex: 1 0 50%; 
+						}
+
+						a { // dropdown list item link color
+							height: 1rem; // 16
+							padding: 0.8125rem 0 0.6875rem 0; // 13 0 11 0
+							color: #999 !important; 
+							font-size: 0.75rem; // 12
+							font-weight: normal;
+							letter-spacing: 0px;
+						}
+
+						ul {
+
+							li {
+								display: none;
+							}
+						}
+					} 
+
+					li:hover {
+						padding: 0;
+					}
+
+				} 
+
+			}
+
+			li:hover {
+
+				a { // parent link color when hovering on dropdown
+					color: #DDD;
+				} 
 
 				li {
 
-					ul { // Child menu background eg. Home, About...
+					a:hover { // dropdown list item background & link color on hover 
+						color: $color-main-link !important; 
 
-						li { // child list item background set at top of stylesheet
-							flex: 1 0 50%; 
-	 					}
+					}
 
-	 				}
+				}
 
-	 			}
-
-	 		}
-
-	 	}
+			}
+			
+		}
 
 	}
 

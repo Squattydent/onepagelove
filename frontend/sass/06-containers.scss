@@ -16,7 +16,7 @@
 //		#content {}
 
 //   #footer-container {}
-//		 #footer-top-container {}
+//		#footer-top-container {}
 //	 	#footer-bottom-container {}
 		
 //-------------------------------------------------------------------------------
@@ -30,8 +30,28 @@ body.single #container-outer #container {
 	background-repeat: repeat-x; 
 }
 
+body.single #container-outer #container { 
+  max-width: none; 
+  // to prevent 5th column on massive monitors
+  // set at 1800px on archive
+}
+
+//-------------------------------------------------------------------------------
+// Outer Container
+//-------------------------------------------------------------------------------	
+
 #container-outer {
 	width: 100%;
+
+	// Small Desktop
+	@media (max-width: $bp-desk) {
+		width: 100%;
+	}
+
+
+//-------------------------------------------------------------------------------
+// Header
+//-------------------------------------------------------------------------------	
 
 	#header-container {
 		width: 100%; 
@@ -40,6 +60,11 @@ body.single #container-outer #container {
 		padding: 0; 
 		display: block;
 		position: fixed;
+
+		// Tablet
+		@media (max-width: $bp-tablet) {
+			position: relative;
+		}
 
 		#header {
 			margin: 0 auto; 
@@ -72,6 +97,10 @@ body.single #container-outer #container {
 
 	}
 
+//-------------------------------------------------------------------------------
+// Container
+//-------------------------------------------------------------------------------	
+
 	#container {
 		width: 100%;
 		max-width: 1800px; // to prevent 5th column on massive monitors
@@ -79,50 +108,27 @@ body.single #container-outer #container {
 		padding: 0;
 		padding-top: 2.5rem; // 40
 
+		// Large Desktop
+		@media (max-width: $bp-desklg) {
+			width: 100%; 
+		}
 
 		#content {
 			padding: $spacing-big 0 0 0; 
 			margin: 0; 
 
-			.single-container {
-				width: $container-standard - 80px; // 1200 = 80px less than #container as 40px padding 
-	            margin: $spacing-medium auto $spacing-huge auto;
-				padding: $spacing-huge 0; 
-				height: auto;			
+			// Tablet
+			@media (max-width: $bp-tablet) {
+				padding-top: 0;
 			}
-
-			.review {
-				width: $container-standard; /* same as #container with no padding */
-				margin: 0 auto $spacing-big auto;
-				padding: 0px; /* different to single with big screenshot touching edge */	
-
-				.review-meta {
-					// width: 1200px;
-
-					.review-meta-right {
-						float: right; 
-						width: 318px; 
-						vertical-align: top;
-						border: 1px solid #eee;
-					}
-
-				}
-
-				.review-screenshot img {
-					max-width: 100%;
-					height: auto;
-				}
-
-			}	
-
-			.similar {
-				max-width: 1600px; // prevents 4th column thumb on review pages
-				margin: 0 auto $spacing-big auto;
-			}		
 
 		}
 
 	}
+
+//-------------------------------------------------------------------------------
+// Footer
+//-------------------------------------------------------------------------------	
 
 	#footer-container {
 		position: relative; // for the z-index
@@ -138,150 +144,4 @@ body.single #container-outer #container {
 
 	}
 
-}
-
-
-
-body.single #container-outer #container { 
-  max-width: none; 
-  // to prevent 5th column on massive monitors
-  // set at 1800px on archive
-}
-
-
-//-------------------------------------------------------------------------------
-// Large Desktop
-//-------------------------------------------------------------------------------	
-
-@media (max-width: $bp-desklg) {
-
-	#container-outer {
-
-		#container {
-			width: 100%; 
-		}
-
-		#footer-container {
-
-			#footer-quote-container {
-
-				#footer-quote {
-					width: $container-standard; 
-				}
-
-			}
-
-			#footer-bottom-container {
-
-				#footer-lists { 
-					width: $container-standard; 
-				}
-
-			}
-
-		}
-
-	}
-
-}
-
-//-------------------------------------------------------------------------------
-// Small Desktop (used to be smdesktop breakpoint)
-//-------------------------------------------------------------------------------	
-
-@media (max-width: $bp-desk) {
-
-	#container-outer {
-		width: 100%;
-
-		#header-container {
-
-			#header {
-
-				#header-search {
-					width: 12.5rem; // 200
-
-				}
-
-			}
-
-		}
-
-		#container {
-
-			#content {
-
-				.single-container {
-					width: 94%;  
-		            margin: 20px auto 40px auto;
-					padding: 40px 3% 40px 3%; 
-					height: auto;		
-					// background: #333;
-				}
-
-				.review {
-					width: 100%;   
-		            margin: 20px 0 40px 0;
-					padding: 0px; /* different to single with big screenshot touching edge */			
-				}	
-
-			}
-
-		}
-
-		#footer-container {
-
-			#footer-quote-container {
-
-				#footer-quote {
-					display: flex; 
-					padding: $spacing-big $spacing-medium;
-				}
-
-			}
-
-			#footer-bottom-container {
-
-				#footer-lists { 
-					width: 100%;
-					padding: $spacing-big 0;
-				}
-
-			}
-
-		}
-
-	}		
-
-}
-
-
-//-------------------------------------------------------------------------------
-// Tablet 
-//-------------------------------------------------------------------------------	
-
-@media (max-width: $bp-tablet) {
-	
-	#container-outer {
-		width: 100%;
-
-	#header-container {
-		position: relative;
-	}
-		
-		#container {
-
-			#content {
-				padding-top: 0;
-
-				.review {
-					margin: 0;		
-				}	
-
-			}
-
-		}
-
-	}
-	
 }

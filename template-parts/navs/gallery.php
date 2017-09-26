@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.12
+ * @version 6.11.22
  *
 */ 
 ?>
@@ -13,6 +13,5 @@
 	    $nav_gallery_variable = wp_list_categories('echo=0&title_li=&sort_column=name&exclude=8205,55&optioncount=0&hierarchical=0&child_of=' . $nav_gallery_id . ''); // exclude most loved + submissions category
 	    $nav_gallery_variable = preg_replace( '/<a href=\"([^\"]+)\"/', '<a href="$1"', $nav_gallery_variable );
 	    echo $nav_gallery_variable; 
-    ?>
-    <li><a href="<?php print get_home_url(); ?>/submit" title="Submit One Page Websites">Submit 📩</a></li>                                          
+    ?>                                      
 </ul>   
