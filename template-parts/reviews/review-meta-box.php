@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.19
+ * @version 6.11.23
  *
 */ 
 ?>
@@ -20,9 +20,18 @@
 		} 
 		elseif (in_category('Pixelarity Templates')) {
 			get_template_part('template-parts/reviews/modals/modal','pixelarity');             
-		} 		
+		} 	
+		// Free WordPress Themes
+	 	elseif ( in_category('Free Templates') and in_category('WordPress Themes') ) {
+			get_template_part('template-parts/reviews/modals/modal','codeable-free-wordpress'); 
+		}	
+		// Premium WordPress Themes not in Buy Category
+	 	elseif ( !in_category('Buy Templates') && in_category('WordPress Themes') ) {
+			get_template_part('template-parts/reviews/modals/modal','codeable-premium-wordpress'); 
+		}	
+		// Free HTML Templates (not WordPress)
 		elseif (in_category('Free Templates')) {
-			get_template_part('template-parts/reviews/modals/modal','hosting'); 
+			get_template_part('template-parts/reviews/modals/modal','hosting-free'); 
 		}
 		else {
 			echo '';
@@ -42,7 +51,10 @@
 			$downloadurl = get_post_meta($post->ID, "download_url", true);
 			$siteurl 	 = get_post_meta($post->ID, "site_url", 	true);
 
-			if ($downloadurl != null) {
+			if ( in_category('WordPress Themes') ) {
+				echo 'javascript:void(0);" id="trigger">';
+			}
+			elseif ($downloadurl != null) {
 				echo 'javascript:void(0);" id="trigger">';
 			}
 			elseif ($buyurl != null) {

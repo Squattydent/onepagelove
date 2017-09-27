@@ -153,6 +153,22 @@
             border-bottom: 2px solid $color-license-link-darker;
         }        
 
+        .modal-codeable-button {
+            color: #FFF; 
+            margin-top: -1px;
+            background: $color-codeable-link; 
+            border: 2px solid $color-codeable-link;
+            border-bottom: 2px solid $color-codeable-link-hover;
+        }
+
+        .modal-codeable-button:hover {
+            color: #FFF; 
+            background: $color-codeable-link-hover; 
+            text-shadow: 0 1px 0 $color-codeable-link-darker;
+            border: 2px solid $color-codeable-link-hover;
+            border-bottom: 2px solid $color-codeable-link-darker;
+        }      
+
     }
 }
 

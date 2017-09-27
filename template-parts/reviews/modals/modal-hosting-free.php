@@ -1,20 +1,20 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.11.23
  *
 */ 
 ?>
 <!-- Template Download Modal -->  
 <div id="modal-content" data-download-url="<?php $downloadurl = get_post_meta($post->ID, "download_url", true); echo $downloadurl; ?>">
 
-	<div class="modal-title">Your download is being prepared...</div>
+	<div class="modal-title">Your <?php the_title(); ?> download is being prepared...</div>
 
 	<div class="modal-suggestion">
 		
 		<div class="modal-suggestion-left">
 			
-			<a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo"><img src="<?php echo get_template_directory_uri(); ?>/img/hustle/modal-bluehost-retina-logo.png" alt="Exclusive Hosting Special" width="180" height="150" /></a>
+			<a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo"><img src="<?php echo get_template_directory_uri(); ?>/img/hustle/modals/bluehost.png" alt="Exclusive Hosting Special" width="180" height="150" /></a>
 
 		</div>
 

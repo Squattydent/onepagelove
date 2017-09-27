@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.21
+ * @version 6.11.23
  *
 */ 
 
@@ -24,17 +24,30 @@ function onepagelove_enqueue_scripts(){
     wp_register_script('opl-custom-js', get_template_directory_uri().'/frontend/js/opl-custom-code-min.js', array(), OPL_THEME_VERSION, true ); 
     wp_enqueue_script('opl-custom-js');
 
-    // Script: Modals
-    if (is_single() && in_category('Free Templates')) {    
+    // -------------------------------------------------------------
+    // Modals
+    // -------------------------------------------------------------
 
-        // Script: Template Modal
-        wp_register_script('opl-modal-js', get_template_directory_uri().'/frontend/js/template-modal-min.js', array(), OPL_THEME_VERSION, true ); 
-        wp_enqueue_script('opl-modal-js');
-
+    // Free WordPress Themes
+    if ( is_single() && in_category('Free Templates') && in_category('WordPress Themes') ) {    
+        wp_register_script('opl-wordpress-free-modal-js', get_template_directory_uri().'/frontend/js/wordpress-free-modal-min.js', array(), OPL_THEME_VERSION, true ); 
+        wp_enqueue_script('opl-wordpress-free-modal-js');
     }
-    elseif (is_page( array( 'feedback', 'feedback-for-coffee' ))) {
 
-        // Script: Services Modal
+    // Free HTML Templates (not WordPress)
+    elseif (is_single() && in_category('Free Templates')) {    
+        wp_register_script('opl-free-modal-js', get_template_directory_uri().'/frontend/js/template-free-modal-min.js', array(), OPL_THEME_VERSION, true ); 
+        wp_enqueue_script('opl-free-modal-js');
+    }
+
+    // Premium WordPress Themes (not free)
+    elseif (is_single() && !in_category('Free Templates') && !in_category('Buy Templates') && in_category('WordPress Themes') ) {    
+        wp_register_script('opl-wordpress-premium-modal-js', get_template_directory_uri().'/frontend/js/wordpress-premium-modal-min.js', array(), OPL_THEME_VERSION, true ); 
+        wp_enqueue_script('opl-wordpress-premium-modal-js');
+    }
+
+    // Services
+    elseif (is_page( array( 'feedback', 'feedback-for-coffee' ))) {
         wp_register_script('opl-services-modal-js', get_template_directory_uri().'/frontend/js/services-modal-min.js', array(), OPL_THEME_VERSION, true ); 
         wp_enqueue_script('opl-services-modal-js');
     };

@@ -11,7 +11,7 @@ this.Modal = function() {
   // Create global element references
   this.closeButton = null;
   this.modal = null;
-  this.overlay = null;
+  this.overlay = null; 
 
   // Determine proper prefix
   this.transitionEnd = transitionSelect();
@@ -63,8 +63,8 @@ Modal.prototype.open = function() {
     var url = document.getElementById("modal-content").getAttribute("data-download-url");
     var title = this.modal.modal.querySelectorAll("div.modal-title")[0];
     location.replace(url);
-    title.innerHTML = "Your download has begun :)";
-  }, 5000);
+    title.innerHTML = "Redirecting...";
+  }, 8000);
 }
 
 // Private Methods

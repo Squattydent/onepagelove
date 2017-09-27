@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.18
+ * @version 6.11.23
  *
 */ 
 ?>
@@ -16,7 +16,7 @@
 		<div class="modal-suggestion-left">
 			
 			<a href="<?php $licenseurl = get_post_meta($post->ID, "license_url", true); echo $licenseurl; ?>" title="Buy a $5 Premium License">
-				<img src="<?php $thumburl = get_post_meta($post->ID, "screenshot_sm", true); echo $thumburl; ?>" alt="<?php get_the_title(); ?> Screenshot" width="180" height="95" />
+				<img src="<?php $thumburl = get_post_meta($post->ID, "screenshot_sm", true); echo $thumburl; ?>" alt="<?php the_title(); ?> Screenshot" width="180" height="95" />
 			</a>
 
 		</div>
