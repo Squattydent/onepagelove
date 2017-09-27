@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.23
+ * @version 6.11.24
  *
 */ 
 ?>
@@ -160,6 +160,15 @@
 	<ul>
 
 		<li class="hosting"><strong>Need Hosting?</strong> We highly recommend <a href="https://onepagelove.com/go/bluehost">Bluehost</a></li>
+
+		<?php 
+
+			// If a WordPress theme promote Codeable
+			if ( in_category('WordPress Themes') ) {
+				echo '<li class="hosting"><strong>Setup Help?</strong> Use WordPress experts <a href="https://onepagelove.com/go/codeable">Codeable</a></li>';
+			};
+
+		?>	
 
 		<?php 
 
