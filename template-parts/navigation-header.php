@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.26
+ * @version 6.11.28
  *
 */ 
 ?>
@@ -37,7 +37,11 @@
 
     </li> 
 
-    <li id="nav-abou"><a href="<?php print get_home_url(); ?>/about">About</a></li>    
+    <li id="nav-about"><a href="#">Info</a>
+
+        <?php include('navs/info.php'); ?>      
+
+    </li>  
 
     <li id="nav-subm"><a href="<?php print get_home_url(); ?>/submit">Submit</a></li>    
 
