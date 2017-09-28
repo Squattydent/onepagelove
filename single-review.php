@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.8
+ * @version 6.11.26
  *
 */ 
 get_header(); ?>

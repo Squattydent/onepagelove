@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.11.26
  *
 */ 
 
@@ -16,7 +16,7 @@ $seo_title = wp_title("", false);
 $seo_count = ($wp_query->found_posts);
 
 // ID of Parent categories
-$seo_gallery_id = get_cat_ID('Gallery');
+$seo_gallery_id = get_cat_ID('Inspiration');
 $seo_templates_id = get_cat_ID('Templates');
 
 // If more than one result, use plural

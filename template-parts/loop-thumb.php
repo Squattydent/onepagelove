@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.0
+ * @version 6.11.26
  *
 */ 
 ?>
@@ -33,7 +33,7 @@
 
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php 
 
-			$seo_gallery_id = get_cat_ID('Gallery');
+			$seo_gallery_id = get_cat_ID('Inspiration');
 			$seo_templates_id = get_cat_ID('Templates');
 
 			if ( post_is_in_descendant_category( array($seo_gallery_id,$seo_templates_id) ) ) {

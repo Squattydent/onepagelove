@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.4
+ * @version 6.11.26
  *
 */ 
 
@@ -42,24 +42,24 @@ elseif (function_exists('is_tag') && is_tag()) {
 }
 
 //---------------------------------------------------------------
-// Archive - Gallery
+// Archive - Inspiration
 //---------------------------------------------------------------
 
-// Gallery - Root			
-elseif (is_archive() && is_category('Gallery')) {
+// Inspiration - Root			
+elseif (is_archive() && is_category('Inspiration')) {
 	echo 'A collection of ';
 	echo $seo_count;
 	echo ' beautiful One Page websites for your design inspiration';
 }		
 
-	// Gallery - Most Loved			
+	// Inspiration - Most Loved			
 	elseif (is_archive() && is_category('Most Loved')) {
 		echo 'A collection of ';
 		echo $seo_count;
 		echo ' Top Awarded One Page websites for your design inspiration. These are the cream of the crop.';
 	}					
 
-	// Gallery - remaining categories			
+	// Inspiration - remaining categories			
 	elseif (is_archive() && cat_is_ancestor_of($seo_gallery_id, $cat)) {
 
 		if ($seo_category_desc != '') {

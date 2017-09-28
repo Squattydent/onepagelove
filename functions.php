@@ -9,7 +9,7 @@
 // Theme Defining
 // -------------------------------------------------------------
 
-define( 'OPL_THEME_VERSION' , '6.11.25' );                                                      # Theme Version
+define( 'OPL_THEME_VERSION' , '6.11.26' );                                                      # Theme Version
 global $content_width; if ( ! isset( $content_width ) ) $content_width = 1600;                  # Content Width
 
 # ------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.9
+ * @version 6.11.26
  *
 */ 
 get_header(); ?>
@@ -40,7 +40,7 @@ get_header(); ?>
 
 				<div class="archive-description">
 					<span class="grey-shadow">
-						You are browsing all categories. Browse just the <a href="<?php print get_home_url(); ?>/gallery">Unique Gallery</a> or    
+						You are browsing all categories. Browse just <a href="<?php print get_home_url(); ?>/gallery">Unique Inspiration</a> or    
 						 <a href="<?php print get_home_url(); ?>/templates">Find Templates</a>.
 					</span>
 				</div>

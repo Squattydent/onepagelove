@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.24
+ * @version 6.11.26
  *
 */ 
 ?>
@@ -203,7 +203,7 @@
 
 		<?php
 
-			// If Template credit Template Author, if Gallery say Built By
+			// If Template credit Template Author, if Inspiration say Built By
 
 			$seo_template_id = get_cat_ID('Templates');
 			$dev_name = get_post_meta($post->ID, "dev_name", true);
@@ -228,9 +228,9 @@
 
 		<?php      
 
-			// If in Gallery, add notice about it not being a template
+			// If in Inspiration, add notice about it not being a template
 
-			$seo_gallery_id = get_cat_ID('Gallery');
+			$seo_gallery_id = get_cat_ID('Inspiration');
 
 			if (post_is_in_descendant_category( $seo_gallery_id )) {
 				echo '<li><strong>Template?</strong> No, this is a custom built website</li>';             

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.10
+ * @version 6.11.26
  *
 */ 
 get_header(); ?>
@@ -38,8 +38,8 @@ get_header(); ?>
 
 					}
 					
-					// Gallery Home			
-					elseif (is_category('Gallery')) {
+					// Inspiration Home			
+					elseif (is_category('Inspiration')) {
 				  		echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' unique One Page websites';	
 					}		
 
@@ -152,7 +152,7 @@ get_header(); ?>
 				    echo 'You are browsing posts by One Page Love Sponsors';														
 					}
 
-						// Remaining One Page Gallery categories			
+						// Remaining One Page Inspiration categories			
 					elseif (is_archive()) {
 				  	echo 'You are browsing '.$wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts).' One Page ';							
 				  	wp_title('',true,'');

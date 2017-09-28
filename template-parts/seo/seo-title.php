@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.1
+ * @version 6.11.26
  *
 */ 
 
@@ -26,31 +26,31 @@ elseif (function_exists('is_tag') && is_tag()) {
 }
 
 //---------------------------------------------------------------
-// Archive - Gallery
+// Archive - Inspiration
 //---------------------------------------------------------------
 
-// Gallery - Root			
-elseif (is_archive() && is_category('Gallery')) {
+// Inspiration - Root			
+elseif (is_archive() && is_category('Inspiration')) {
 	echo 'Beautiful'; // No need for 6k count before
 	echo $seo_plural;	
 }		
 
-	// Gallery - Most Loved			
+	// Inspiration - Most Loved			
 	elseif (is_archive() && is_category('Most Loved')) {
 		echo 'The Top One Page Website Awards';
 	}					
 
-	// Gallery - One Page Blog		
+	// Inspiration - One Page Blog		
 	elseif (is_archive() && is_category('One Page Blog')) {
 		echo 'One Page Blog Websites';
 	}
 
-	// Gallery - Submissions		
+	// Inspiration - Submissions		
 	elseif (is_category('Submissions')) {
   	echo 'Community Submissions';		
 	}	
 
-	// Gallery - remaining categories			
+	// Inspiration - remaining categories			
 	elseif (is_archive() && cat_is_ancestor_of($seo_gallery_id, $cat)) {
 		echo ltrim($seo_title);
 		echo $seo_plural;	

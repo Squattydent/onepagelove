@@ -237,6 +237,7 @@ body.search-no-results p.no-results {
 .search-suggestions {
 	display: inline-block;
 	margin-top: $spacing-big;
+	margin-bottom: $spacing-big;
 	padding: $spacing-medium;
 	background-color: $color-notice;
 }
@@ -324,6 +325,27 @@ body.search-no-results p.no-results {
 			height: 30px;
 			text-align: right;
 
+			input[type="submit"] {
+				height: 1.5rem;  // 14
+				font-size: 0.75rem;
+				line-height: 0.75rem;
+				font-weight: bold;
+				text-transform: uppercase;
+				display: inline-block;
+				padding: 0.3125rem 0.5625rem; // 5 9
+				text-decoration: none; 
+				margin: 0 $spacing-tiny $spacing-small 0 !important; 
+				white-space: nowrap; 
+				background-color: $color-main-link; 
+				border: none;
+				color: #FFF;
+				cursor: pointer;
+
+				&:hover {
+					background-color: $color-darker-link; 
+				}
+			}
+			
 			@media (max-width: $bp-tablet) {
 				width: 100%;
 				text-align: left;
