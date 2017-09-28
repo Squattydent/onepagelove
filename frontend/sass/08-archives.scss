@@ -240,3 +240,124 @@ body.search-no-results p.no-results {
 	padding: $spacing-medium;
 	background-color: $color-notice;
 }
+
+//-------------------------------------------------------------------------------
+// Search & Filter Plugin Tweaks
+//-------------------------------------------------------------------------------
+
+.searchandfilter { 
+	// background-color: #111;
+	width: 80%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: left;
+
+	@media (max-width: $bp-desksm) {
+		width: 100%;
+	}
+
+	ul {
+		width: 100%;
+		height: auto;
+		display: block;
+
+		li { // global
+			display: inline-block;
+		}
+
+		// search form
+		li:first-child {
+			width: 100%;
+			height: 50px;
+
+			input[type="text"] {
+			    width: 96%;
+			    height: 42px;
+			    padding: 4px 2%;
+			    display: block;
+			}
+
+		}
+
+		// cat lists
+		li:nth-child(2) {
+			text-align: left;
+			width: 70%;
+			height: 30px;
+
+			@media (max-width: $bp-tablet) {
+				width: 100%;
+			}
+
+			ul { // categories 
+				display: block;
+				height: 30px;
+				padding-left: 14px;
+
+				li { // category parents, radio buttons
+					display: inline-block;
+					width: auto;
+					height: 30px;
+					font-size: 1rem;
+					line-height: 1rem;
+					padding-top: 10px;
+
+					label {
+						width: 100%;
+					}
+					input[type="radio"] {
+					}
+				}
+			}
+
+			ul.children li { // hide sub cats
+				display: none;
+				
+			}
+
+		}
+
+		// filter button
+		li:nth-child(3) {
+			width: 25%;
+			height: 30px;
+			text-align: right;
+
+			@media (max-width: $bp-tablet) {
+				width: 100%;
+				text-align: left;
+			}
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

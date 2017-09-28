@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.9
+ * @version 6.11.25
  *
 */ 
 get_header(); ?>
@@ -29,13 +29,17 @@ get_header(); ?>
 
 			<div class="archive-description">  
 
+				<?php get_template_part('template-parts/snippets/search','suggestions'); ?>
+
 				<div class="results-search">
 
-					<form class="search" action="<?php print get_site_url(); ?>/" method="get"><input type="text" class="search-field" name="s" value="<?php  if (is_search()) {esc_attr_e($s);} else {echo ('Search');} ?>" onFocus="this.value=''" /></form>
+				
 
 				</div>
 
-				<?php get_template_part('template-parts/snippets/search','suggestions'); ?>
+				<?php 
+					echo do_shortcode( '[searchandfilter fields="search,category" types=",radio" hierarchical=",1" all_items_labels=",All Posts" submit_label="Filter Results" order_by=",count"]' );
+				?>
 
 			</div>
 
