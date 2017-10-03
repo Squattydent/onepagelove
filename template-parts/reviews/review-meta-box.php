@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.32
+ * @version 6.11.33
  *
 */ 
 ?>
@@ -60,10 +60,15 @@
 
 			// open link
 			echo '<a href="';
-
+			$seo_gallery_id = get_cat_ID('Inspiration');
+			$siteurl 	 = get_post_meta($post->ID, "site_url", true);
 			$buyurl 	 = get_post_meta($post->ID, "buy_url", true);
 
-			if ($buyurl != null) {
+			if (post_is_in_descendant_category( $seo_gallery_id )) {
+				echo $siteurl;
+				echo '" target="_blank">';
+			}
+			elseif ($buyurl != null) {
 				echo $buyurl;
 				echo '">';
 			}
