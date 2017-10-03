@@ -1,11 +1,13 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.28
+ * @version 6.11.30
  *
 */ 
 ?>
 <ul>
+
+    <li id="nav-home"><a href="<?php print get_home_url(); ?>" title="Go to the home page">Home</a></li>
 
 	<li id="nav-insp" class="nav-wider"><a href="#">Inspiration</a>
 
@@ -30,12 +32,6 @@
         <?php include('navs/read.php'); ?>   
 
  	</li>			
-
-    <li id="nav-host" class="nav-wide-single"><a href="<?php print get_home_url(); ?>/hosting">Hosting</a>
-
-        <?php include('navs/hosting.php'); ?>      
-
-    </li> 
 
     <li id="nav-about"><a href="#">Info</a>
 

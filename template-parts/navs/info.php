@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.29
+ * @version 6.11.30
  *
 */ 
 ?>
@@ -13,5 +13,6 @@
     <li><a href="<?php print get_home_url(); ?>/award-ribbons">Ribbons</a></li> 
     <li><a href="<?php print get_home_url(); ?>/award-certificates">Certificates</a></li> 
     <li><a href="<?php print get_home_url(); ?>/submit">Submit</a></li> 
+    <li><a href="<?php print get_home_url(); ?>/hosting">Hosting</a></li> 
     <li><a href="#footer-container" class="smoothScroll">Newsletter</a></li>                
 </ul>

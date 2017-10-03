@@ -24,7 +24,6 @@ $(function smoothScrollYo() {
 // Personally i think 1000 is too much
 // Try 800 or below, it seems not too much but it will make a difference
 
-
 // ------------------------------------------------------------------------
 // Mobile Navigation: Menu Button
 // ------------------------------------------------------------------------

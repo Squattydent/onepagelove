@@ -27,7 +27,7 @@
 	height: 1.875rem; // 30 
 	margin: 0.4375rem 2.5rem 0 0; 
 
-	@media (max-width: 1130px) {
+	@media (max-width: 1230px) {
 		margin-right: 0.875rem;
 	}
 
@@ -54,7 +54,7 @@
 		margin: 0.1875rem 0 0 0.25rem; // 3 0 0 4
 		text-transform: uppercase;
 
-		@media (max-width: 1130px) {
+		@media (max-width: 1100px) {
 			display: none;
 		}
 
@@ -117,7 +117,7 @@
 				line-height: 1rem; // 16
 				letter-spacing: 0; 
 
-				@media (max-width: 1130px) {
+				@media (max-width: 1230px) {
 					padding-right: 0.875rem;
 					padding-left:  0.875rem;
 				}
@@ -132,13 +132,13 @@
 				color: #CCC; // parent link color on hover 
 			}
 
-			&#nav-serv {
-				@media (max-width: 1200px) {
+			&#nav-home {
+				@media (max-width: 900px) {
 					display: none;
 				}
 			}
 
-			&#nav-host {
+			&#nav-subm {
 				@media (max-width: $bp-desksm) {
 					display: none;
 				}
@@ -149,6 +149,10 @@
 				padding-bottom: 0.625rem;
 				background: $color-header; //  dropdown background 
 				@extend %border-rounded-bottom;
+
+				@media (max-width: 1230px) {
+					left: -0.4375rem; // -7
+				}
 
 				li {
 					width: 8.125rem; // 130
