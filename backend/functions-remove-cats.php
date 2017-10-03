@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.17
+ * @version 6.11.31
  *
 */ 
 
@@ -72,3 +72,25 @@ function remove_pixelarity_category_link( $categories ) {
 }
 
 add_filter( 'get_the_categories', 'remove_pixelarity_category_link' );
+
+// -------------------------------------------------------------
+// Remove visibility of Pixelarity Category
+// -------------------------------------------------------------
+
+function remove_legacy_category_link( $categories ) {
+
+    if ( is_admin() ) 
+        return $categories;
+
+    $remove = array();
+
+    foreach ( $categories as $category ) {
+
+    if ( $category->name == "Legacy Templates" ) continue;
+
+    $remove[] = $category;
+    }
+    return $remove;
+}
+
+add_filter( 'get_the_categories', 'remove_legacy_category_link' );

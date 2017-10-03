@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.26
+ * @version 6.11.31
  *
 */ 
 ?>
@@ -21,6 +21,10 @@
 		elseif (in_category('Pixelarity Templates')) {
 			get_template_part('template-parts/reviews/modals/modal','pixelarity');             
 		} 	
+		// Free WordPress Themes but old non-direct download link ie. links out
+	 	elseif ( in_category('Free Templates') and in_category('Legacy Templates') ) {
+			get_template_part('template-parts/reviews/modals/modal','codeable-free-wordpress-legacy'); 
+		}			
 		// Free WordPress Themes
 	 	elseif ( in_category('Free Templates') and in_category('WordPress Themes') ) {
 			get_template_part('template-parts/reviews/modals/modal','codeable-free-wordpress'); 

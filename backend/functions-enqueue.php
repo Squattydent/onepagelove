@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.23
+ * @version 6.11.31
  *
 */ 
 
@@ -28,8 +28,14 @@ function onepagelove_enqueue_scripts(){
     // Modals
     // -------------------------------------------------------------
 
+    // Free WordPress Themes, WordPress Themes but legacy non-direct download
+    if ( is_single() && in_category('Free Templates') && in_category('WordPress Themes') && in_category('Legacy Templates') ) {    
+        wp_register_script('opl-wordpress-free-legacy-modal-js', get_template_directory_uri().'/frontend/js/wordpress-premium-modal-min.js', array(), OPL_THEME_VERSION, true ); 
+        wp_enqueue_script('opl-wordpress-free-legacy-modal-js');
+    }
+
     // Free WordPress Themes
-    if ( is_single() && in_category('Free Templates') && in_category('WordPress Themes') ) {    
+    elseif ( is_single() && in_category('Free Templates') && in_category('WordPress Themes') ) {    
         wp_register_script('opl-wordpress-free-modal-js', get_template_directory_uri().'/frontend/js/wordpress-free-modal-min.js', array(), OPL_THEME_VERSION, true ); 
         wp_enqueue_script('opl-wordpress-free-modal-js');
     }
