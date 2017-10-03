@@ -1,26 +1,15 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.31
+ * @version 6.11.23
  *
 */ 
 ?>
 
-<!-- Codeable Modal -->  
-<div id="modal-content" data-download-url="<?php 
+<!-- Codeable Modal on Free WordPress Theme -->  
+<div id="modal-content" data-download-url="<?php $downloadurl = get_post_meta($post->ID, "download_url", true); echo $downloadurl; ?>">
 
-											$downloadurl = get_post_meta($post->ID, "download_url", true); 
-											$siteurl = get_post_meta($post->ID, "site_url", true); 
-
-											if ($downloadurl != null) {
-												echo $downloadurl; 
-											}
-											else {
-												echo $siteurl; 
-											};
-											?>">
-
-	<div class="modal-title">Directing you to the <?php the_title(); ?> download page in 5 seconds...</div>
+	<div class="modal-title">Your <?php the_title(); ?> download is being prepared...</div>
 
 	<div class="modal-suggestion">
 		

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.31
+ * @version 6.11.32
  *
 */ 
 
@@ -29,15 +29,9 @@ function onepagelove_enqueue_scripts(){
     // -------------------------------------------------------------
 
     // Free WordPress Themes, WordPress Themes but legacy non-direct download
-    if ( is_single() && in_category('Free Templates') && in_category('WordPress Themes') && in_category('Legacy Templates') ) {    
-        wp_register_script('opl-wordpress-free-legacy-modal-js', get_template_directory_uri().'/frontend/js/wordpress-premium-modal-min.js', array(), OPL_THEME_VERSION, true ); 
-        wp_enqueue_script('opl-wordpress-free-legacy-modal-js');
-    }
-
-    // Free WordPress Themes
-    elseif ( is_single() && in_category('Free Templates') && in_category('WordPress Themes') ) {    
-        wp_register_script('opl-wordpress-free-modal-js', get_template_directory_uri().'/frontend/js/wordpress-free-modal-min.js', array(), OPL_THEME_VERSION, true ); 
-        wp_enqueue_script('opl-wordpress-free-modal-js');
+    if ( is_single() && in_category('Legacy Templates') ) {    
+        wp_register_script('opl-free-legacy-modal-js', get_template_directory_uri().'/frontend/js/template-redirection-modal-min.js', array(), OPL_THEME_VERSION, true ); 
+        wp_enqueue_script('opl-free-legacy-modal-js');
     }
 
     // Free HTML Templates (not WordPress)
@@ -47,8 +41,8 @@ function onepagelove_enqueue_scripts(){
     }
 
     // Premium WordPress Themes (not free)
-    elseif (is_single() && !in_category('Free Templates') && !in_category('Buy Templates') && in_category('WordPress Themes') ) {    
-        wp_register_script('opl-wordpress-premium-modal-js', get_template_directory_uri().'/frontend/js/wordpress-premium-modal-min.js', array(), OPL_THEME_VERSION, true ); 
+    elseif (is_single() && !in_category('Free Templates') && !in_category('Buy Templates') ) {    
+        wp_register_script('opl-wordpress-premium-modal-js', get_template_directory_uri().'/frontend/js/template-redirection-modal-min.js', array(), OPL_THEME_VERSION, true ); 
         wp_enqueue_script('opl-wordpress-premium-modal-js');
     }
 

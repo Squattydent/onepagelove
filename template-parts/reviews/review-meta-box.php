@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.31
+ * @version 6.11.32
  *
 */ 
 ?>
@@ -21,22 +21,33 @@
 		elseif (in_category('Pixelarity Templates')) {
 			get_template_part('template-parts/reviews/modals/modal','pixelarity');             
 		} 	
-		// Free WordPress Themes but old non-direct download link ie. links out
-	 	elseif ( in_category('Free Templates') and in_category('Legacy Templates') ) {
-			get_template_part('template-parts/reviews/modals/modal','codeable-free-wordpress-legacy'); 
-		}			
-		// Free WordPress Themes
-	 	elseif ( in_category('Free Templates') and in_category('WordPress Themes') ) {
-			get_template_part('template-parts/reviews/modals/modal','codeable-free-wordpress'); 
+
+		// Free WordPress with reddrection link aka legacy listing
+	 	elseif ( in_category('WordPress Themes') and in_category('Legacy Templates') ) {
+			get_template_part('template-parts/reviews/modals/modal','codeable-free-legacy'); 
 		}	
-		// Premium WordPress Themes not in Buy Category
-	 	elseif ( !in_category('Buy Templates') && in_category('WordPress Themes') ) {
-			get_template_part('template-parts/reviews/modals/modal','codeable-premium-wordpress'); 
+		// Free WordPress with direct download link
+		elseif ( in_category('WordPress Themes') and in_category('Free Templates') ) {
+			get_template_part('template-parts/reviews/modals/modal','codeable-free'); 
+		}	
+		// Premium WordPress listing that links out
+	 	elseif ( in_category('WordPress Themes')) {
+			get_template_part('template-parts/reviews/modals/modal','codeable-premium'); 
+		}			
+
+		// Free Templates (Non-WP) but old non-direct download link ie. links out
+	 	elseif ( in_category('Free Templates') and in_category('Legacy Templates') ) {
+			get_template_part('template-parts/reviews/modals/modal','hosting-free-legacy'); 
+		}				
+		// Free WordPress Themes
+	 	elseif ( in_category('Free Templates')) {
+			get_template_part('template-parts/reviews/modals/modal','hosting-free'); 
 		}	
 		// Free HTML Templates (not WordPress)
-		elseif (in_category('Free Templates')) {
-			get_template_part('template-parts/reviews/modals/modal','hosting-free'); 
+		elseif (in_category('Templates')) {
+			get_template_part('template-parts/reviews/modals/modal','hosting-premium'); 
 		}
+
 		else {
 			echo '';
 		};
@@ -50,24 +61,14 @@
 			// open link
 			echo '<a href="';
 
-			// download link or launch link
 			$buyurl 	 = get_post_meta($post->ID, "buy_url", true);
-			$downloadurl = get_post_meta($post->ID, "download_url", true);
-			$siteurl 	 = get_post_meta($post->ID, "site_url", 	true);
 
-			if ( in_category('WordPress Themes') ) {
-				echo 'javascript:void(0);" id="trigger">';
-			}
-			elseif ($downloadurl != null) {
-				echo 'javascript:void(0);" id="trigger">';
-			}
-			elseif ($buyurl != null) {
+			if ($buyurl != null) {
 				echo $buyurl;
 				echo '">';
 			}
 			else {
-			    echo $siteurl;
-			    echo '" target="_blank">';
+			    echo 'javascript:void(0);" id="trigger">';
 			};  
 
 			// free download or category to buy

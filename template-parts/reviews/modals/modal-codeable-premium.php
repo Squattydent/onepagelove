@@ -1,12 +1,12 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.23
+ * @version 6.11.32
  *
 */ 
 ?>
 
-<!-- Codeable Modal -->  
+<!-- Codeable Modal on Premium WordPress Theme -->  
 <div id="modal-content" data-download-url="<?php 
 
 											$downloadurl = get_post_meta($post->ID, "download_url", true); 

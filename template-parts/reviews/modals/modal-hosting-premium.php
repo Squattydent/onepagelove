@@ -6,10 +6,21 @@
 */ 
 ?>
 
-<!-- Hosting Modal on Free Template -->  
-<div id="modal-content" data-download-url="<?php $downloadurl = get_post_meta($post->ID, "download_url", true); echo $downloadurl; ?>">
+<!-- Hosting Modal on Premium HTML or PSD Template -->  
+<div id="modal-content" data-download-url="<?php 
 
-	<div class="modal-title">Your <?php the_title(); ?> download is being prepared...</div>
+											$downloadurl = get_post_meta($post->ID, "download_url", true); 
+											$siteurl = get_post_meta($post->ID, "site_url", true); 
+
+											if ($downloadurl != null) {
+												echo $downloadurl; 
+											}
+											else {
+												echo $siteurl; 
+											};
+											?>">
+
+	<div class="modal-title">Directing you to the <?php the_title(); ?> purchase page in 5 seconds...</div>
 
 	<div class="modal-suggestion">
 		
