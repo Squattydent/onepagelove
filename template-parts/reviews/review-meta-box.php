@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.33
+ * @version 6.11.34
  *
 */ 
 ?>

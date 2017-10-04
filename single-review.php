@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.26
+ * @version 6.11.34
  *
 */ 
 get_header(); ?>
@@ -111,23 +111,44 @@ get_header(); ?>
 
 				</div>
 
-				<div class="review-tags"><strong>Categories:</strong><?php // onepagelove_exclude_post_categories('1668,12'); // remove license category ?>  <?php the_category(' ', 'parents' ); ?></div> 
+				<div class="review-tags"><strong>Categories:</strong> <?php the_category(' ', 'parents' ); ?></div> 
 
-				
-				
 				<div class="review-tags"><strong>Features:</strong> <?php the_tags('', ' ', ' '); ?></div>
 
 			</div>	
 
 		</div>
 
+		<?php // floating pagination on review pages
+
+			get_template_part('template-parts/pagination','floating'); 
+
+		?>
+
 		<div class="review-screenshot">
 
-			<?php get_template_part('template-parts/pagination','floating'); ?>
+			<?php // screenshot link opened up
 
-			<a href="<?php print get_post_meta($post->ID, 'site_url', true) ?>" target="_blank" class="noBorder">
+				echo '<a href="';
+				$seo_gallery_id = get_cat_ID('Inspiration');
+				$siteurl 	 = get_post_meta($post->ID, "site_url", true);
+				$demourl 	 = get_post_meta($post->ID, "demo_url", true);
 
-				<?php
+				if (post_is_in_descendant_category( $seo_gallery_id )) {
+					echo $siteurl;
+					echo '" target="_blank" class="noBorder">';
+				}
+				elseif ($demourl != null) {
+					echo $demourl;
+					echo '" target="_blank" class="noBorder">';
+				}
+				else {
+				    echo '#container-outer" class="smoothScroll noBorder">';
+				};  
+
+			?>
+
+				<?php // actual screenshot image
 
 					$bigScreenshot = get_post_meta($post->ID, "screenshot", true);
 
@@ -135,7 +156,7 @@ get_header(); ?>
 						echo '<img src="'.$bigScreenshot.'" alt="'.get_the_title().' Big Screenshot" />';
 					}
 					else {
-						echo 'No screenshot'; // this should be the small screenshot
+						echo 'No screenshot.'; // this should be the small screenshot
 					};
 
 				?>
