@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.8
+ * @version 6.11.36
  *
 */ 
 get_header(); ?>
@@ -22,6 +22,8 @@ get_header(); ?>
 			<?php get_template_part('template-parts/pagination','floating'); ?>
 	           
 	      	<?php the_content(''); ?>
+
+	      	<?php if (in_category('Journal')) { echo '<p>Much love,<br />Rob<br /><a href="https://twitter.com/robhope">@robhope</div></p>'; }; ?>
 		           
 		</div>
    

@@ -21,7 +21,7 @@
 	elseif ( has_tag( 'Squarespace') ) {
     	echo $built .get_home_url(). '/tag/squarespace">Squarespace</a></li>';
 	}		
-	elseif ( has_tag( 'Kirby') ) {
+	elseif ( has_tag( 'Kirby CMS') ) {
     	echo $built .get_home_url(). '/tag/kirby">Kirby CMS</a></li>';
 	}	
 	elseif ( has_tag( 'Drupal') ) {
