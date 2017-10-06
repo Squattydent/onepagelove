@@ -30,16 +30,7 @@
         	text-align: center;
         	font-size: 1rem;
 		    @extend %section-tagline;
-
-		    @media (max-width: $bp-mobile) {
-		        // padding-top: $spacing-small;
-		    }
-		}
-
-		.blog-title {
-			// h1 set further up
-		}
-                    
+		}          
     }
 
 	p {
@@ -125,44 +116,42 @@
 
 
 	.alignleft {
-		margin: 0 $spacing-big $spacing-medium $spacing-mega;
+		margin: 0 $spacing-big $spacing-medium 0;
 
-			@media (max-width: $bp-notebook) {
-			 	margin-left: $spacing-medium;
-			}
-			@media (max-width: $bp-tablet) {
-				margin-left: $spacing-big;
-			 	max-width: 300px;
-			 	height: auto;
-			}
-			@media (max-width: $bp-mobile) {
-				max-width: none;
-			 	width: 92%;
-			 	height: auto;
-			 	margin: 0 $spacing-medium $spacing-medium $spacing-medium;
-			}		
+		@media (max-width: $bp-tablet) {
+		 	max-width: 300px;
+		 	height: auto;
+		}
+		@media (max-width: $bp-mobile) {
+			max-width: 100%;
+		 	width: 100%;
+		 	height: auto;
+		 	margin: 0 0 $spacing-medium 0;
+		}		
+
 	}
 
 	.alignright {
 		margin: 0 $spacing-mega $spacing-medium $spacing-medium;
 
-			@media (max-width: $bp-notebook) {
-			 	margin-right: $spacing-medium;
-			}
-			@media (max-width: $bp-tablet) {
-				margin-right: $spacing-big;
-			 	max-width: 300px;
-			 	height: auto;
-			}
-			@media (max-width: $bp-mobile) {
-				max-width: none;
-			 	width: 92%;
-			 	height: auto;
-			 	margin: 0 $spacing-medium $spacing-medium $spacing-medium;
-			}		
+		@media (max-width: $bp-notebook) {
+		 	margin-right: $spacing-medium;
+		}
+		@media (max-width: $bp-tablet) {
+			margin-right: $spacing-big;
+		 	max-width: 300px;
+		 	height: auto;
+		}
+		@media (max-width: $bp-mobile) {
+			max-width: none;
+		 	width: 92%;
+		 	height: auto;
+		 	margin: 0 $spacing-medium $spacing-medium $spacing-medium;
+		}		
 	}
 
 	.aligncenter {
+		display: block;
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -179,31 +168,25 @@
 		border-bottom: 1px solid #EEE;
 	}
 
-
+	// Horizontal rule
 	hr {
-		border: none;
-		height: 1px;
-		display: block;
-		margin: $spacing-huge 0;
 		text-align: center;
+		border: none;
+		padding-top: $spacing-medium;
+		padding-bottom: $spacing-medium;
 
-			@media (max-width: $bp-tablet) {
-				margin: $spacing-big 0;
-			}
-
+		&:after {
+			content: '• • •';
+			display: inline-block;
+			position: relative;
+			top: 0;
+			padding: 0;
+			color: #999;
+			font-size: 24px; 
+			letter-spacing: 12px;
+		}
 	}
-	hr:after { 
-		content: '\000B7 \000B7 \000B7 '; 
-		display: inline-block; 
-		position: relative; 
-		top: -13px; 
-		padding: 0 3px; 
-		background: #fff; 
-		color: #999; 
-		font-size: 48px; 
-		letter-spacing: 12px;
-	}
-
+	
 	blockquote  {
 	 	@extend %font-bloc;
 	    display: block;
@@ -358,15 +341,14 @@ body.postid-26235 .similar {
 	color: $color-main-link;
 	padding: $spacing-medium $spacing-big;
 
-		@media (max-width: $bp-notebook ) {
-			margin-right: $spacing-big;
-			margin-bottom: $spacing-medium;
-		}
+	@media (max-width: $bp-notebook ) {
+		margin-right: $spacing-big;
+		margin-bottom: $spacing-medium;
+	}
 
-		@media (max-width: $bp-mobile ) {
-			padding: $spacing-small $spacing-medium;
-			margin-left: $spacing-medium;
-		}
+	@media (max-width: $bp-mobile ) {
+		padding: $spacing-small $spacing-medium;
+		margin-left: $spacing-medium;
+	}
+
 }
-
-
