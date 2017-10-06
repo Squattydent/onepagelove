@@ -116,17 +116,22 @@
 
 
 	.alignleft {
-		margin: 0 $spacing-big $spacing-medium 0;
+		margin: 0 $spacing-big $spacing-medium $spacing-mega;
+
+		@media (max-width: $bp-notebook) {
+		 	margin-left: $spacing-medium;
+		}
 
 		@media (max-width: $bp-tablet) {
+			margin-left: $spacing-big;
 		 	max-width: 300px;
 		 	height: auto;
 		}
 		@media (max-width: $bp-mobile) {
-			max-width: 100%;
-		 	width: 100%;
+			width: 90%;
+			max-width: 90%;
 		 	height: auto;
-		 	margin: 0 0 $spacing-medium 0;
+		 	margin: 0 5% $spacing-medium 5%;
 		}		
 
 	}
