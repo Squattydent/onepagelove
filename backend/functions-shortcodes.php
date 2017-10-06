@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.37
+ * @version 6.11.39
  *
 */ 
 
@@ -42,7 +42,7 @@ function onepagelove_fullsingle_wp_shortcode() {
 		<li>Click the <code>Layout</code> button, then select and insert the <code>'. $postTitle .'</code> layout</li>
 		<li>In the <code>Page Attibutes</code> block (to the right), set the <code>Template</code> to <code>FullSingle - '. $postTitle .'</code></li>
 		<li>Edit accordingly then click <code>Publish</code></li>
-		<li>To make your Home Page: <code>Settings</code> > <code>Reading</code> > <code>Front Page Displays</code> > <code>Front Page</code> > <code>Select Page</code> > <code>Save</code>
+		<li>To make Home Page: <code>Settings</code> > <code>Reading</code> > <code>Front Page Displays</code> > <code>Front Page</code> > <code>Select Page</code> > <code>Save</code>
 	</ol>
 	';
 
@@ -58,7 +58,9 @@ add_shortcode('fullsingle-wp', 'onepagelove_fullsingle_wp_shortcode');
 function onepagelove_fullsingle_html_shortcode() {
 
 	$postTitle = get_the_title();
-	return 'Want to use WordPress? ' . $postTitle . ' is a layout in the <a href="https://onepagelove.com/go/fullsingle">FullSingle WordPress Plugin</a>.';
+	$postLink  = strtolower ( $postTitle );
+
+	return '<strong>Want WordPress?</strong> ' . $postTitle . ' is now available as a <a href="https://onepagelove.com/fullsingle-' . $postLink . '">WordPress Layout</a> 🙏';
 
 }
 

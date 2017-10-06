@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.38
+ * @version 6.11.39
  *
 */ 
 get_header(); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
 	      	<?php the_content(''); ?>
 
 	      	<?php // add signature to Journal Posts
-	      		if (in_category('Journal')) { echo '<p>Much love,<br />Rob<br /><a href="https://twitter.com/robhope">@robhope</div></p>'; }; 
+	      		if (in_category('Journal')) { echo '<p>Much love,<br />Rob<br /><a href="https://twitter.com/robhope">@robhope</a></p>'; }; 
 	      	?>
 		           
 		</div>

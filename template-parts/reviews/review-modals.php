@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.37
+ * @version 6.11.39
  *
 */ 
 ?>
@@ -18,6 +18,10 @@
 		get_template_part('template-parts/reviews/modals/modal','pixelarity');             
 	} 	
 
+	// FullSingle category promotes Bluehost
+	elseif (in_category('FullSingle Layouts')) {
+		get_template_part('template-parts/reviews/modals/modal','hosting-free');             
+	} 
 	// Free WordPress with reddrection link aka legacy listing
  	elseif ( in_category('WordPress Themes') and in_category('Legacy Templates') ) {
 		get_template_part('template-parts/reviews/modals/modal','codeable-free-legacy'); 

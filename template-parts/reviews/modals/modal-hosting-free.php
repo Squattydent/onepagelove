@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.31
+ * @version 6.11.39
  *
 */ 
 ?>
@@ -21,7 +21,17 @@
 
 		<div class="modal-suggestion-right">
 			
-			<div class="modal-deal-pitch">Need Hosting for this <?php if (in_category('WordPress Themes')) { echo ' WordPress theme?'; } else { echo 'template?'; }; ?></div>
+			<div class="modal-deal-pitch">Need Hosting for this <?php 
+																	if (in_category('FullSingle Layouts')) { 
+																		echo ' WordPress layout?'; 
+																	} 
+																	elseif (in_category('WordPress Themes')) { 
+																		echo ' WordPress theme?'; 
+																	} 
+																	else { 
+																		echo 'template?'; 
+																	}; 
+																	?></div>
 
 			<p><a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">Bluehost</a> has an <a href="https://www.bluehost.com/track/onepagelove/modal" title="Host One Page websites for only $2.95/mo">Exclusive <?php echo date("F"); ?> Deal</a> for One Page Love readers at only $2.95 per month 🎉</p>
 
