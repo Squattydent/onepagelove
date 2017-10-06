@@ -144,6 +144,33 @@
 					border-bottom: 1px solid $color-main-link;
 				}
 			}
+
+			ol {
+				font-size: 1.125rem; // 18 
+				line-height: 1.625rem; // 26
+				letter-spacing: -0.2px;
+				padding-top: $spacing-medium;
+				margin-left: $spacing-small;
+
+				li {
+					list-style-type: decimal;
+					padding-left: $spacing-small;
+					margin-left: $spacing-small;
+				}
+				
+			}
+
+			code {
+				top: -2px;
+				position: relative;
+				font-family: $font-fam-post;
+				font-size: 0.8125rem; 
+				line-height: 0.8125rem; 
+				color: #666;
+				padding: 1px 4px 3px 4px;
+				border-radius: 4px;
+				border: 1px solid #EEE;
+			}
 		}
 
 		.build-notes {

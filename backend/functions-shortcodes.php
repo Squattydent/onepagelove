@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.6
+ * @version 6.11.37
  *
 */ 
 
@@ -29,7 +29,22 @@ function onepagelove_fullsingle_wp_shortcode() {
 
 	$postTitle = get_the_title();
 
-	return '' . $postTitle . ' is a layout in the free <a href="https://onepagelove.com/go/fullsingle">FullSingle WordPress plugin</a> (the new flagship product by One Page Love that I&#39;ll be announcing in the near future 🎉). All you need is WordPress on your own hosting (<a href="https://onepagelove.com/hosting">recommendations</a>) and this Layout will work with <em>any</em> existing WordPress theme. Watch the <a href="https://onepagelove.com/go/fullsingle-setup">FullSingle 60s setup video</a>.';
+	return ' <strong>Please note:</strong> '. $postTitle .' is a layout in the free <a href="https://onepagelove.com/go/fullsingle">FullSingle WordPress Plugin</a>. This plugin provides One Page layouts that work with any existing WordPress theme 🙌
+	<br /><br />
+	'. $postTitle .' Installation instructions:
+
+	<ol>
+		<li>Download the FullSingle WordPress plugin (pink button top-right)</li>
+		<li>Upload and activate the WordPress plugin (in your plugin section)</li>		
+		<li>Follow the next steps and activate the recommended plugins</li>		
+		<li>Create a new Page (not Post) and give it a Page Title</li>	
+		<li>Select the <code>Page Builder</code> tab top-right of your Page content edit area</li>
+		<li>Click the <code>Layout</code> button, then select and insert the <code>'. $postTitle .'</code> layout</li>
+		<li>In the <code>Page Attibutes</code> block (to the right), set the <code>Template</code> to <code>FullSingle - '. $postTitle .'</code></li>
+		<li>Edit accordingly then click <code>Publish</code></li>
+		<li>To make your Home Page: <code>Settings</code> > <code>Reading</code> > <code>Front Page Displays</code> > <code>Front Page</code> > <code>Select Page</code> > <code>Save</code>
+	</ol>
+	';
 
 }
 

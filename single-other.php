@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.36
+ * @version 6.11.37
  *
 */ 
 get_header(); ?>
@@ -23,7 +23,9 @@ get_header(); ?>
 	           
 	      	<?php the_content(''); ?>
 
-	      	<?php if (in_category('Journal')) { echo '<p>Much love,<br />Rob<br /><a href="https://twitter.com/robhope">@robhope</div></p>'; }; ?>
+	      	<?php // add signature to Journal Posts
+	      		if (in_category('Journal')) { echo '<p>Much love,<br />Rob<br /><a href="https://twitter.com/robhope">@robhope</div></p>'; }; 
+	      	?>
 		           
 		</div>
    
@@ -33,7 +35,9 @@ get_header(); ?>
 
 	<?php endif; ?>
 
-	<?php wp_reset_query(); ?>
-	<?php get_template_part('template-parts/review/similar','other'); ?>
+	<?php // similar content
+		wp_reset_query();
+		get_template_part('template-parts/similar','posts'); 
+	?>
 
 <?php get_footer(); ?>

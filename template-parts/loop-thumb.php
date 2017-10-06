@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.26
+ * @version 6.11.37
  *
 */ 
 ?>
@@ -83,7 +83,10 @@
 					}	
 					elseif (in_category('Bundle Deals')) {
 			        	echo '';              
-			        } 									
+			        } 	
+			        elseif (in_category('FullSingle Layouts')) {
+		          		echo 'WordPress Layout';							
+					}									
 					elseif (in_category('WordPress Themes')) {
 		          		echo 'WordPress Theme';							
 					}									

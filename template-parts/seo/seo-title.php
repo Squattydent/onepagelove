@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.26
+ * @version 6.11.37
  *
 */ 
 
@@ -78,6 +78,11 @@ elseif (is_archive() && is_category('Templates')) {
 	// Templates - Free
 	elseif (is_archive() && is_category('Free Templates')) {	
 		echo 'Free One Page Templates'; 								
+	}	
+
+	// Templates - FullSingle 
+	elseif (is_archive() && is_category('FullSingle Layouts')) {		
+		echo 'One Page WordPress Layouts'; 								
 	}	
 
 	// Templates - WordPress 
@@ -174,6 +179,10 @@ elseif (is_single() && in_category('Most Loved')) {
 elseif (is_single() && ( post_is_in_descendant_category( $seo_gallery_id ) )) {
 	echo ltrim($seo_title);
 	echo ' - One Page Website Award';
+}
+elseif (is_single() && in_category('FullSingle Layouts')) {
+	echo $seo_title;
+	echo ' - Free One Page WordPress Layout';
 }
 
 elseif (is_single() && in_category('Free Templates') && in_category('WordPress Themes')) {
