@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.39
+ * @version 6.11.43
  *
 */ 
 
@@ -31,18 +31,17 @@ function onepagelove_fullsingle_wp_shortcode() {
 
 	return ' <strong>Please note:</strong> '. $postTitle .' is a layout in the free <a href="https://onepagelove.com/go/fullsingle">FullSingle WordPress Plugin</a>. This plugin provides One Page layouts that work with any existing WordPress theme 🙌
 	<br /><br />
-	'. $postTitle .' Installation instructions:
+	'. $postTitle .' installation instructions: (<a href="https://onepagelove.com/go/fullsingle-setup">watch the simple setup video</a>)
 
 	<ol>
-		<li>Download the FullSingle WordPress plugin (pink button top-right)</li>
-		<li>Upload and activate the WordPress plugin (in your plugin section)</li>		
-		<li>Follow the next steps and activate the recommended plugins</li>		
-		<li>Create a new Page (not Post) and give it a Page Title</li>	
-		<li>Select the <code>Page Builder</code> tab top-right of your Page content edit area</li>
+		<li>Upload and activate the FullSingle WordPress plugin (in your plugin section)</li>		
+		<li>Activate the bonus recommended plugins</li>		
+		<li>Create a new Page (not Post) and give it a title</li>	
+		<li>Select the <code>Page Builder</code> tab top-right of your content edit area</li>
 		<li>Click the <code>Layout</code> button, then select and insert the <code>'. $postTitle .'</code> layout</li>
 		<li>In the <code>Page Attibutes</code> block (to the right), set the <code>Template</code> to <code>FullSingle - '. $postTitle .'</code></li>
 		<li>Edit accordingly then click <code>Publish</code></li>
-		<li>To make Home Page: <code>Settings</code> > <code>Reading</code> > <code>Front Page Displays</code> > <code>Front Page</code> > <code>Select Page</code> > <code>Save</code>
+		<li>Open up your Theme Customizer to change colors and access Layout specific tutorials</li>
 	</ol>
 	';
 
