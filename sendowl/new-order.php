@@ -202,6 +202,10 @@ Rob
 
 {% endif %}
 
-<p>Thanks so much for helping support One Page Love!</p>
-<p>Chat soon,<br />Rob</p>
+{% if product_ids contains 489045 %} 
+<p><strong>Important Setup Notice:</strong> The FullSingle Pro plugin adds additional functionality to the free FullSingle plugin. Both plugins need to be installed and active. Watch the simple setup video here: https://onepagelove.com/go/fullsingle-setup-pro</p>
+{% endif %}
+
+<p>Thanks so much for supporting One Page Love!</p>
+<p>Much love,<br />Rob</p>
 <p>ps. I've sent the receipt in another email and your order ID is #{{ order.id }}</p>	
