@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.10.24
+ * @version 6.11.45
  *
 */ 
 ?>		
@@ -32,37 +32,9 @@
 
 				<div class="newsletter-lower-wrapper">
 
-					<div class="newsletter-form">
+					<div class="newsletter-button">
 						
-						<div class="email-octopus-form-wrapper">
-
-							<p class="email-octopus-success-message"></p>
-							<p class="email-octopus-error-message"></p>
-
-							<form method="post" action="https://emailoctopus.com/lists/804e381c-8793-11e6-9b6d-02b6b4f78f99/members/external-add" class="email-octopus-form">
-
-								<div class="email-octopus-form-row fn" style="display: block;">
-									<input type="text" name="firstName" class="email-octopus-first-name" placeholder="First Name">
-								</div>
-
-								<div class="email-octopus-form-row ea">
-									<input type="email" name="emailAddress" class="email-octopus-email-address" placeholder="Email Address">
-								</div>
-
-								<div class="email-octopus-form-row-hp">
-									<input type="text" name="hp804e381c-8793-11e6-9b6d-02b6b4f78f99" autocomplete="off" value="">
-								</div>
-
-								<div class="email-octopus-form-row-subscribe">
-									<input type="hidden" name="successRedirectUrl" class="email-octopus-success-redirect-url" value="">
-									<button type="submit">Subscribe</button>
-								</div>
-
-								<div class="clear"></div>
-
-							</form>
-						
-						</div>
+						<a href="https://onepagelove.com/go/newsletter">Subscribe Free</a>
 
 					</div>
 

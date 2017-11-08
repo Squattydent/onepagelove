@@ -50,6 +50,40 @@
 	    	margin: 0 auto;
 		}
 
+		.newsletter-button {
+			text-align: center;
+
+			a {
+				height: 2.5rem; // 40
+				width: 12.5rem; // 200
+				padding: 0.5rem 1rem;
+				margin: 0;
+				margin-left: -0.125rem; // -2
+				border: 1px solid $color-main-link;
+				background-color: $color-main-link;
+				border-radius: 4px;
+				border-radius: 4px; 
+				color: #FFF;
+				font-weight: bold;
+				letter-spacing: -0.2px;
+
+				@media (max-width: $bp-tablet) {
+					width: 94%;
+					margin-left: 0;
+					float: none;
+					border-radius: 4px;
+
+				}
+			}
+
+			a:hover {
+				cursor: pointer;
+				background-color: $color-darker-link;
+				border: 1px solid $color-darker-link;
+			}
+
+		}
+
 		.newsletter-ebook {
 			// background:$test3; 
 			clear: both;
