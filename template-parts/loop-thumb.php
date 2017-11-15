@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.37
+ * @version 6.11.46
  *
 */ 
 ?>
@@ -98,7 +98,7 @@
 
 				   	$siteurl = get_post_meta($post->ID, "site_url", true);
 
-					   	if (in_category('Templates')) {
+					   	if ( ( in_category('Templates') ) AND ( !is_user_logged_in() ) ) {
 
 				          	echo '';	
 
