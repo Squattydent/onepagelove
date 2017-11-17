@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.35
+ * @version 6.11.47
  *
 */ 
 ?>
@@ -17,14 +17,14 @@
 
 		if (post_is_in_descendant_category( $seo_gallery_id )) {
 			echo $siteurl;
-			echo '" target="_blank">';
+			echo '" target="_blank" rel="nofollow">';
 		}
 		elseif ($buyurl != null) {
 			echo $buyurl;
-			echo '">';
+			echo '" rel="nofollow">';
 		}
 		else {
-		    echo 'javascript:void(0);" id="trigger">';
+		    echo 'javascript:void(0);" id="trigger" rel="nofollow">';
 		};  
 
 		// free download or category to buy

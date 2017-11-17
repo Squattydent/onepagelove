@@ -12,7 +12,7 @@
 	$demourl = get_post_meta($post->ID, "demo_url", true);
 
 	if ($demourl != null) {
-		echo '<div class="review-launch review-demo"><a href="' . $demourl . '" target="_blank">Launch Demo</a></div>';		
+		echo '<div class="review-launch review-demo"><a href="' . $demourl . '" target="_blank" rel="nofollow">Launch Demo</a></div>';		
 	}
 	else {
 	    echo '';
