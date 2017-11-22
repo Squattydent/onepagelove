@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.39
+ * @version 6.11.49
  *
 */ 
 ?>
@@ -17,25 +17,11 @@
 	elseif (in_category('Pixelarity Templates')) {
 		get_template_part('template-parts/reviews/modals/modal','pixelarity');             
 	} 	
-
-	// FullSingle category promotes Bluehost
-	elseif (in_category('FullSingle Layouts')) {
-		get_template_part('template-parts/reviews/modals/modal','hosting-free');             
-	} 
-	// Free WordPress with reddrection link aka legacy listing
- 	elseif ( in_category('WordPress Themes') and in_category('Legacy Templates') ) {
-		get_template_part('template-parts/reviews/modals/modal','codeable-free-legacy'); 
-	}	
-	// Free WordPress with direct download link
+	// Free WordPress with direct download link "download beginning"
 	elseif ( in_category('WordPress Themes') and in_category('Free Templates') ) {
-		get_template_part('template-parts/reviews/modals/modal','codeable-free'); 
-	}	
-	// Premium WordPress listing that links out
- 	elseif ( in_category('WordPress Themes')) {
-		get_template_part('template-parts/reviews/modals/modal','codeable-premium'); 
-	}			
-
-	// Free Templates (Non-WP) but old non-direct download link ie. links out
+		get_template_part('template-parts/reviews/modals/modal','hosting-free'); 
+	}		
+	// Free Templates (Non-WP) but old non-direct download link ie. links out "redirecting to download page"
  	elseif ( in_category('Free Templates') and in_category('Legacy Templates') ) {
 		get_template_part('template-parts/reviews/modals/modal','hosting-free-legacy'); 
 	}				
@@ -43,11 +29,6 @@
  	elseif ( in_category('Free Templates')) {
 		get_template_part('template-parts/reviews/modals/modal','hosting-free'); 
 	}	
-	// Free HTML Templates (not WordPress)
-	elseif (in_category('Templates')) {
-		get_template_part('template-parts/reviews/modals/modal','hosting-premium'); 
-	}
-
 	else {
 		echo '';
 	};

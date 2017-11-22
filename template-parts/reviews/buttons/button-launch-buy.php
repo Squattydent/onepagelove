@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.47
+ * @version 6.11.49
  *
 */ 
 ?>
@@ -9,23 +9,34 @@
 
 	<?php 
 
-		// open link
+		#-------------------------------------------------------------
+		# Open Link
+		#-------------------------------------------------------------
+
 		echo '<a href="';
-		$seo_gallery_id = get_cat_ID('Inspiration');
 		$siteurl 	 = get_post_meta($post->ID, "site_url", true);
 		$buyurl 	 = get_post_meta($post->ID, "buy_url", true);
 
-		if (post_is_in_descendant_category( $seo_gallery_id )) {
-			echo $siteurl;
-			echo '" target="_blank" rel="nofollow">';
-		}
-		elseif ($buyurl != null) {
+		// If there is a Buy URL
+		if ($buyurl != null) {
 			echo $buyurl;
 			echo '" rel="nofollow">';
 		}
-		else {
+
+		// If a Free Template
+		elseif (( in_category('Free Templates')) ) {
 		    echo 'javascript:void(0);" id="trigger" rel="nofollow">';
+		}	
+
+		// everything else	
+		else {
+			echo $siteurl;
+			echo '" rel="nofollow">';
 		};  
+
+		#-------------------------------------------------------------
+		# Link Text
+		#-------------------------------------------------------------
 
 		// free download or category to buy
 		$siteprice = get_post_meta($post->ID, "site_price", true);  
@@ -74,7 +85,10 @@
 			echo ' $'. $siteprice; 
 		};
 
-		// close link
+		#-------------------------------------------------------------
+		# Close Link
+		#-------------------------------------------------------------
+
 		echo '</a>'; 
 		
 	?>
