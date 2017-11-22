@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.49
+ * @version 6.11.50
  *
 */ 
 ?>
@@ -17,10 +17,6 @@
 	elseif (in_category('Pixelarity Templates')) {
 		get_template_part('template-parts/reviews/modals/modal','pixelarity');             
 	} 	
-	// Free WordPress with direct download link "download beginning"
-	elseif ( in_category('WordPress Themes') and in_category('Free Templates') ) {
-		get_template_part('template-parts/reviews/modals/modal','hosting-free'); 
-	}		
 	// Free Templates (Non-WP) but old non-direct download link ie. links out "redirecting to download page"
  	elseif ( in_category('Free Templates') and in_category('Legacy Templates') ) {
 		get_template_part('template-parts/reviews/modals/modal','hosting-free-legacy'); 
