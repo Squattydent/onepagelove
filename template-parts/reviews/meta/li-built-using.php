@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.35
+ * @version 6.11.51
  *
 */ 
 ?>
@@ -26,6 +26,9 @@
 	}	
 	elseif ( has_tag( 'Drupal') ) {
     	echo $built .get_home_url(). '/tag/drupal">Drupal CMS</a></li>';
+	}	
+	elseif ( has_tag( 'Readymag') ) {
+    	echo $built .get_home_url(). '/tag/readymag">Readmag</a></li>';
 	}			
 	else {
 	    echo '';
