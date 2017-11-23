@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.50
+ * @version 6.11.52
  *
 */ 
 ?>
@@ -31,7 +31,7 @@
 		// everything else	
 		else {
 			echo $siteurl;
-			echo '" rel="nofollow">';
+			echo '" rel="nofollow" target="_blank">';
 		};  
 
 		#-------------------------------------------------------------
