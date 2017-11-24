@@ -7,7 +7,7 @@ Template Name: Screenshot Concierge
 <?php
 /**
  * @package onepagelove
- * @version 6.10.24
+ * @version 6.11.56
  *
 */ 
 get_header(); ?>
@@ -121,6 +121,13 @@ get_header(); ?>
 			</div>
 
 			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq"  class="smoothScroll">Read FAQs</a></div> 
+
+			<div class="quote">
+				
+				<div class="quoted">"Love the idea behind this service, and the end product is even better than I expected. Kudos!"</div>
+				<div class="quoter">Mark Forrester, WooCommerce</div>
+					
+			</div>
 
 			<div class="quote">
 				
