@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.53
+ * @version 6.11.54
  *
 */ 
 get_header(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 						<span class="grey-shadow">
 							Browse <a href="<?php print get_home_url(); ?>/gallery">Website Inspiration</a>, 
 							find <a href="<?php print get_home_url(); ?>/templates">Templates</a> 
-							or see our <a href="https://onepagelove.com/go/bluehost">Black Friday Hosting Special</a> 🎉
+							or see our <a href="https://onepagelove.com/go/black-friday">Black Friday Hosting Special</a> 🎈
 							<!-- or see our <a href="https://onepagelove.com/go/bluehost"><?php echo date("F"); ?> Hosting Special</a> 🎉 -->
 						</span>	
 
