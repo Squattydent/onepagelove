@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.4
+ * @version 6.11.59
  *
 */ 
 ?>
@@ -9,6 +9,8 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+	
+	<?php if ( !is_user_logged_in() ) { get_template_part('template-parts/snippets/google','analytics'); }; ?>
 
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />

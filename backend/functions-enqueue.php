@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.32
+ * @version 6.11.59
  *
 */ 
 
@@ -55,3 +55,17 @@ function onepagelove_enqueue_scripts(){
 }
 
 add_action('wp_enqueue_scripts', 'onepagelove_enqueue_scripts');
+
+// -------------------------------------------------------------
+// De-Enqueue Scripts and Styles
+// -------------------------------------------------------------
+
+function onepagelove_remove_assets() {
+
+    wp_dequeue_style( array('lana-downloads-manager', 'msearchandfilter') );
+    wp_deregister_style( array('lana-downloads-manager', 'searchandfilter') );
+
+}
+
+add_action('wp_enqueue_scripts', 'onepagelove_remove_assets', 99999);
+
