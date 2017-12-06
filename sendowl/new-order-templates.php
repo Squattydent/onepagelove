@@ -3,6 +3,7 @@
 
 623557 - Split by One Page Love
 623806 - Amari by Ariel Beninca
+77694680 - Deft by Coderare
 
 <!-- ///////////////////////// If Then Statements  ///////////////////////// -->
 
@@ -73,6 +74,9 @@ The Amari HTML template was built by Ariel Beninca. If you need help with this t
 {% endif %}
 {% if product_ids contains 623557 %} 
 The Split HTML template was built by One Page Love. If you need help with this template you need to get hold of the template author on this direct email address: support@onepagelove.com - the head of support is Rob and don't forget to include the license key above:)
+{% endif %}
+{% if product_ids contains 77694680 %} 
+The Deft WordPress theme was built by Coderare. If you need help with this theme you need to get hold of the theme author here: https://www.coderare.com/contact - the head of support is Mohammad Nishat and don't forget to include the license key above:)
 {% endif %}
 </p>
 <!-- End Template specific notices -->
