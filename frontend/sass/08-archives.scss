@@ -59,6 +59,49 @@
 				font-weight: bold;
 			}
 		}
+
+		.tag-action {
+			display: block;
+			margin-top: 20px;
+			font-weight: bold;
+			letter-spacing: -0.5px;
+
+			a {
+				transition: 1s;
+				text-decoration: none;  
+				vertical-align: top;
+				display: block; 
+				width: 100%; 
+				max-width: 400px;
+				margin-left: auto;
+				margin-right: auto;
+				color: #FFF; 
+				height: 40px; 
+				padding:20px 0px 0px 0px; 
+				text-align: center;
+				text-decoration:none;
+				text-shadow: 0 1px 0 $color-darker-link;
+				font-size: 16px; 
+				line-height: 20px;  
+				background:$color-main-link; 
+				border-radius: $rounded-corners;
+				border: none;
+				
+				@media (max-width: $bp-tablet) {	
+					width: 100%;
+				}	
+			}
+
+			a:hover {
+				transition: 0.1s;
+				color: #FFF; 
+				background: $color-darker-link; 
+				border: none;
+				text-shadow: 0 1px 0 $color-darkest-link;
+				
+			}
+		}
+
 	}
 }
 

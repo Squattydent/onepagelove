@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.37
+ * @version 6.11.60
  *
 */ 
 get_header(); ?>
@@ -184,6 +184,8 @@ get_header(); ?>
 						echo category_description();
 					};
 
+					if ( !is_category() ) { get_template_part('template-parts/snippets/archive','platforms'); };
+					
 				?> 
 
 			</span><!--  /.grey-shadow -->

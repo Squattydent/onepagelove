@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.51
+ * @version 6.11.60
  *
 */ 
 ?>
@@ -29,6 +29,9 @@
 	}	
 	elseif ( has_tag( 'Readymag') ) {
     	echo $built .get_home_url(). '/tag/readymag">Readmag</a></li>';
+	}		
+	elseif ( has_tag( 'Webflow') ) {
+    	echo $built .get_home_url(). '/tag/webflow">Webflow</a></li>';
 	}			
 	else {
 	    echo '';
