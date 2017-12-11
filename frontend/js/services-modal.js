@@ -86,24 +86,3 @@
   }
 })(jQuery)
 
-// ------------------------------------------------------------------------
-// Editable Content
-// ------------------------------------------------------------------------
-
-$(function() {
-  $('.modal-msg').click(function() {
-    $.modal('<audio controls autoplay controlsList="nodownload"><source src="http://onepagelove.com/wp-content/themes/onepagelove/media/f4c.mp4" type="audio/mp4"></p><p>Your user agent does not support the HTML5 Audio element.</p></audio>');
-  });
-  $('.modal-form').click(function () {
-    var form = '<form>'+
-            '<input type="text" name="username" placeholder="username" /><br>'+
-            '<input type="text" name="password" placeholder="password" /><br>'+
-            '<div class="btn submitBtn">Submit</div>'+
-          '</form>';
-    $.modal(form);
-  });
-  
-  $('.modal-vid').click(function () {
-    $.modal('<iframe width="560" height="315" src="https://www.youtube.com/embed/aQcXTZxJlZc?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
-  });
-});

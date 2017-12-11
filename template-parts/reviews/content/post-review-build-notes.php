@@ -13,7 +13,9 @@
 
 			<?php 
 
-				if ( !empty( get_the_content() ) ) {
+				$thecontent = get_the_content();
+				
+				if (!empty($thecontent)) {
 					the_content(); 
 				}
 				else {

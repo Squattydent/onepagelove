@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.37
+ * @version 6.11.62
  *
 */ 
 get_header(); ?>
@@ -19,7 +19,8 @@ get_header(); ?>
 					?>
 
 					<?php // buttons
-						get_template_part('template-parts/reviews/buttons/button','launch-buy');  	
+						get_template_part('template-parts/reviews/buttons/button','launch-buy');  
+						get_template_part('template-parts/reviews/buttons/button','video');  							
 						get_template_part('template-parts/reviews/buttons/button','demo');  
 						get_template_part('template-parts/reviews/buttons/button','license');  
 					?>
@@ -69,6 +70,14 @@ get_header(); ?>
 
 			<?php // long screenshot
 				get_template_part('template-parts/reviews/review','screenshot'); 
+			?>
+
+		</div>
+
+		<div id="review-video-anchor" class="review-video">
+
+			<?php // video embed
+				get_template_part('template-parts/reviews/review','video'); 
 			?>
 
 		</div>
