@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.64
+ * @version 6.11.65
  *
 */ 
 
@@ -47,7 +47,7 @@ function onepagelove_enqueue_scripts(){
     }
 
     // Services
-    elseif (is_page( array( 'feedback', 'feedback-for-coffee', 'hero-videos' ))) {
+    elseif (is_page( array( 'feedback', 'feedback-for-coffee', 'explainer-videos' ))) {
         wp_register_script('opl-services-modal-js', get_template_directory_uri().'/frontend/js/services-modal-min.js', array(), OPL_THEME_VERSION, true ); 
         wp_enqueue_script('opl-services-modal-js');
     };

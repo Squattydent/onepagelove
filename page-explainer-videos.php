@@ -1,13 +1,13 @@
 <?php 
 /* 
-Template Name: Hero Videos
+Template Name: Explainer Videos
 */ 
 ?>
 
 <?php
 /**
  * @package onepagelove
- * @version 6.11.64
+ * @version 6.11.65
  *
 */ 
 get_header(); ?>
@@ -22,7 +22,7 @@ get_header(); ?>
 		<div>
 
 			<div class="section-tagline">A One Page Love &amp; MediaLuv Collaboration</div>
-			<div class="section-title">Website Hero Videos</div>
+			<div class="section-title">Explainer Videos</div>
 			<div class="section-description">A beautiful 45 second explainer video of your website, business, product or idea.</div>
 
 			<div class="section-buttons">
