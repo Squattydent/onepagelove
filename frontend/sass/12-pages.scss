@@ -254,6 +254,10 @@
             font-size: 1rem;
             line-height: 1rem;
         }
+    
+        a.source {
+            color: #666;
+        }
 
     }
 
@@ -458,6 +462,25 @@
     }
 
 }    
+
+// Reduced on Hero Videos Page
+body.page-template-page-hero-videos {
+    .section-faq {
+        padding-bottom: 100px;
+    }
+}
+
+// ------------------------------------------------
+// Form
+// ------------------------------------------------ 
+
+.section-form {
+    padding-bottom: 300px;
+
+    @media (max-width: $bp-mobile) {
+        padding-bottom: 100px;
+    }
+}
 
 // ------------------------------------------------
 // Currl Bundle

@@ -65,4 +65,9 @@ $(function() {
     $.modal('<iframe width="560" height="315" src="https://www.youtube.com/embed/aQcXTZxJlZc?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
   });
 
+  // Hero Videos
+  $('.modal-hero').click(function () {
+    $.modal('<iframe width="850" height="480" src="https://www.youtube.com/embed/-I3f4uXpBbA?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
+  });
+
 });
