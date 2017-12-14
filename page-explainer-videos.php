@@ -7,7 +7,7 @@ Template Name: Explainer Videos
 <?php
 /**
  * @package onepagelove
- * @version 6.11.66
+ * @version 6.11.67
  *
 */ 
 get_header(); ?>
@@ -164,7 +164,7 @@ get_header(); ?>
 
 			<div class="questionnaire">
 
-				<?php echo do_shortcode('[gravityform id=3 title=false description=false]'); // local is 3, online is 10 ?>
+				<?php echo do_shortcode('[gravityform id=10 title=false description=false]'); // local is 3, online is 10 ?>
 
 			</div>
 
