@@ -7,17 +7,17 @@ Template Name: Explainer Videos
 <?php
 /**
  * @package onepagelove
- * @version 6.11.65
+ * @version 6.11.66
  *
 */ 
 get_header(); ?>
 
 <?php get_template_part('template-parts/include','sendowl'); ?>
 		
-<div class="pages currl-bundle private-feedback" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/screenshot-concierge/footer.jpg');">	
+<div class="pages currl-bundle private-feedback" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/feedback/footer.jpg');">	
 
 
-	<div class="section section-padding section-intro bundle-intro" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/screenshot-concierge/intro.jpg');">
+	<div class="section section-padding section-intro bundle-intro" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/explainer-videos/intro.jpg');">
 
 		<div>
 
@@ -83,10 +83,10 @@ get_header(); ?>
 
 					<div class="faq">
 						<div class="question">
-							<h3>Where can I itegrate my video?</h3>
+							<h3>Where can I integrate my video?</h3>
 						</div>
 						<div class="answer">
-							<p>The website header background area, in the foreground as a standalone explainer video, within features, website section dividers and of course social media channels.</p>
+							<p>The website header background hero area, in the foreground as a standalone explainer video, within features, website section dividers and of course your social media channels.</p>
 						</div>
 					</div>
 
@@ -95,7 +95,7 @@ get_header(); ?>
 							<h3>Who is MediaLuv?</h3>
 						</div>
 						<div class="answer">
-							<p>MediaLuv is an established design and animation studio specialising in website videos. The Hero Video collaboration with One Page Love launched in 2017 to help One Page Love readers add intro videos to their Landing Pages.</p>
+							<p>MediaLuv is an established design and animation studio specialising in website videos. The Explainer Video collaboration with One Page Love launched in 2017 to help One Page Love readers add intro videos to their Landing Pages.</p>
 						</div>
 					</div>
 
@@ -144,6 +144,13 @@ get_header(); ?>
 					
 			</div>
 
+			<div class="quote">
+				
+				<div class="quoted">"Online shoppers who watch demo videos are 1.8x more likely to purchase products and services than non-viewers."</div>
+				<div class="quoter">DMB Adobe <a href="https://blogs.adobe.com/digitalmarketing/search-marketing/seo-for-success-in-video-marketing/" class="source">(Source)</a></div>
+					
+			</div>
+
 		</div>
 
 	</div>	
@@ -152,19 +159,18 @@ get_header(); ?>
 
 		<div class="section-gradient">
 				
-			<div class="section-tagline">Let's get started</div>				
-			<div class="section-title">Order Questionaire</div>
+			<div class="section-tagline">We need more information to quote</div>				
+			<div class="section-title">Questionnaire</div>
 
-			<div class="questionaire-form">
+			<div class="questionnaire">
 
-				[order form]
+				<?php echo do_shortcode('[gravityform id=3 title=false description=false]'); // local is 3, online is 10 ?>
 
 			</div>
 
 			<div class="quote">
 				
-				<div class="quoted">"Online shoppers who watch demo videos are 1.8x more likely to purchase products and services than non-viewers."</div>
-				<div class="quoter">DMB Adobe <a href="https://blogs.adobe.com/digitalmarketing/search-marketing/seo-for-success-in-video-marketing/" class="source">(Source)</a></div>
+				<div class="quoted">By emailing the questionnaire, you can answer in your own time with more detail. This allows us to quote more accurately.</div>
 					
 			</div>
 

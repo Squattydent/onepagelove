@@ -1,14 +1,15 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.30
+ * @version 6.11.66
  *
 */ 
 ?>
 <ul>
-	<li><a href="<?php print get_home_url(); ?>/feedback-for-coffee">$5 Website Critique (audio)</a></li>  
-	<li><a href="<?php print get_home_url(); ?>/feedback">$49 Website Critique (video)</a></li>	
-	<li><a href="<?php print get_home_url(); ?>/screenshots">$10 Screenshot Service 📸</a></li>
-	<li><a href="<?php print get_home_url(); ?>/wp-kraken">Website Customisation 🔧</a></li>
-	<li><a href="<?php print get_home_url(); ?>/go/bluehost">$2.95 Hosting Special 🎉</a></li> 
+	<li><a href="<?php print get_home_url(); ?>/feedback-for-coffee">💬 Quick Website Feedback ($5)</a></li>  
+	<li><a href="<?php print get_home_url(); ?>/feedback">🔬 In-Depth Website Critique ($49)</a></li>	
+	<li><a href="<?php print get_home_url(); ?>/screenshots">📸 Pro Website Screenshots ($10)</a></li>	
+	<li><a href="<?php print get_home_url(); ?>/explainer-videos">🎞 Explainer Videos</a></li>
+	<li><a href="<?php print get_home_url(); ?>/wp-kraken">🔧 Website Customisation</a></li>
+	<li><a href="<?php print get_home_url(); ?>/go/bluehost">🎉 <?php echo date("F"); ?> Hosting Special</a></li> 
 </ul>	
