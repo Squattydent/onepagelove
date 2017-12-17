@@ -7,7 +7,7 @@ Template Name: Screenshot Concierge
 <?php
 /**
  * @package onepagelove
- * @version 6.11.56
+ * @version 6.11.67
  *
 */ 
 get_header(); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 
 			</div>
 
-			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq"  class="smoothScroll">Read FAQs</a></div>
+			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq"  class="smoothScroll">Read FAQs</a> - <a href="#title-testi" class="smoothScroll">Testimonials</a></div>
 
 		</div>
 		
@@ -120,19 +120,12 @@ get_header(); ?>
 
 			</div>
 
-			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq"  class="smoothScroll">Read FAQs</a></div> 
+			<div class="button-paypal" id="title-testi">100% Money Back Guarantee - <a href="#title-faq"  class="smoothScroll">Read FAQs</a> - <a href="#title-testi" class="smoothScroll">Testimonials</a></div> 
 
 			<div class="quote">
 				
 				<div class="quoted">"Love the idea behind this service, and the end product is even better than I expected. Kudos!"</div>
 				<div class="quoter">Mark Forrester, WooCommerce</div>
-					
-			</div>
-
-			<div class="quote">
-				
-				<div class="quoted">"You never get a second chance to make a first impression."</div>
-				<div class="quoter">Andrew Grant</div>
 					
 			</div>
 

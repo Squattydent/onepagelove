@@ -7,7 +7,7 @@ Template Name: Feedback
 <?php
 /**
  * @package onepagelove
- * @version 6.11.20
+ * @version 6.11.67
  *
 */ 
 get_header(); ?>
@@ -22,16 +22,16 @@ get_header(); ?>
 
 			<div class="section-tagline">A One Page Love Service</div>
 			<div class="section-title">Private Website Critique 💬</div>
-			<div class="section-description">A 15 minute video analysis of your One Pager or Landing Page covering first impressions, design, code, performance &amp; more.</div>
+			<div class="section-description">A 20-30 minute video analysis of your One Pager or Landing Page covering first impressions, design, code, performance &amp; more.</div>
 
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#" class="modal-vid">Watch Preview</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $99</a></div>
 
 			</div>
 
-			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-features" class="smoothScroll">See Features</a></div>
+			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-features" class="smoothScroll">See Features</a> - <a href="#title-testi" class="smoothScroll">Testimonials</a></div>
 
 		</div>
 		
@@ -89,11 +89,11 @@ get_header(); ?>
 			<div class="section-buttons">
 
 				<div class="button"><a href="#" class="modal-vid">Watch Preview</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $99</a></div>
 
 			</div>
 
-			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq" class="smoothScroll">Read FAQs</a></div>
+			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq" class="smoothScroll">Read FAQs</a> - <a href="#title-testi" class="smoothScroll">Testimonials</a></div>
 
 		</div>
 
@@ -146,7 +146,7 @@ get_header(); ?>
 							<h3>What exactly does the critique look like?</h3>
 						</div>
 						<div class="answer">
-							<p>The critique is presented in a 10-15 minute video. Rob talks while interacting with your Landing Page. Below the video is a summary of the critique with links. If you want a quicker Audio-only critique for $5, <a href="<?php print get_home_url(); ?>/feedback-for-coffee">head here</a>.</p>
+							<p>The critique is presented in a 20-30 minute video. Rob talks while interacting with your Landing Page. Below the video is a summary of the critique with links. If you want a quicker Audio-only critique for $5, <a href="<?php print get_home_url(); ?>/feedback-for-coffee">head here</a>.</p>
 						</div>
 					</div>
 
@@ -177,11 +177,11 @@ get_header(); ?>
 			<div class="section-buttons">
 				
 				<div class="button"><a href="#" class="modal-vid">Watch Preview</a></div>
-				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $49</a></div>
+				<div class="button"><a class="maverick" href="https://transactions.sendowl.com/products/490123/5EAFF19F/add_to_cart" rel="nofollow">Order Now $99</a></div>
 
 			</div>
 
-			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-features" class="smoothScroll">See Features</a></div>
+			<div class="button-paypal" id="title-testi">100% Money Back Guarantee - <a href="#title-features" class="smoothScroll">See Features</a> - <a href="#title-testi" class="smoothScroll">Testimonials</a></div>
 			
 			<div class="quote">
 				

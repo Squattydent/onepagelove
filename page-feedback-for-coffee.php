@@ -7,7 +7,7 @@ Template Name: Feedback For Coffee
 <?php
 /**
  * @package onepagelove
- * @version 6.11.20
+ * @version 6.11.67
  *
 */ 
 get_header(); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 
 			</div>
 
-			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq" class="smoothScroll">Read FAQs</a></div>
+			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq" class="smoothScroll">Read FAQs</a> - <a href="#title-testi" class="smoothScroll">Testimonials</a></div>
 
 		</div>
 		
@@ -103,7 +103,7 @@ get_header(); ?>
 							<h3>Do you offer a more detailed critique?</h3>
 						</div>
 						<div class="answer">
-							<p>You bet! I offer a <a href="/feedback">Private Video Critique</a> for $49 where I interact with your Landing Page while giving constructive feedback.</p>
+							<p>You bet! I offer a <a href="/feedback">Private Video Critique</a> for $99 where I interact with your Landing Page while giving constructive feedback.</p>
 						</div>
 					</div>
 
@@ -120,7 +120,7 @@ get_header(); ?>
 
 			</div>
 
-			<div class="button-paypal">100% Money Back Guarantee - <a href="#title-faq"  class="smoothScroll">Read FAQs</a></div>
+			<div class="button-paypal" id="title-testi">100% Money Back Guarantee - <a href="#title-testi" class="smoothScroll">Read Testimonials</a></div>
 
 			<div class="quote">
 				
@@ -140,6 +140,13 @@ get_header(); ?>
 				
 				<div class="quoted">"Thank you so much! I’m going to listen to your audio several more times, share it with colleagues and  implement your suggestions. I wonder why it is that I trust your input, a total stranger. You’ll be hearing from me again."</div>
 				<div class="quoter">Kimberly Hughes - Small Business Consultant</div>
+					
+			</div>
+
+			<div class="quote">
+				
+				<div class="quoted">"Thank you very much for the feedback! What you said was very helpful (and reassuring). It's an awesome service, especially for just $5! You've really shown how fantastic the web design and development community can be!"</div>
+				<div class="quoter">Todd McAlinden - Front End Developer</div>
 					
 			</div>
 
