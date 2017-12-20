@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.66
+ * @version 6.11.68
  *
 */ 
 ?>
@@ -67,7 +67,7 @@
 			<div id="header-logo">
 
 				<div class="header-logo-heart"><a href="<?php print get_home_url(); ?>" title="Go to the home page"></a></div>
-				<div class="header-logo-name"><a href="<?php print get_home_url(); ?>" title="Go to the home page">One Page Love</a></div>	
+				<div class="header-logo-name"><a href="<?php print get_home_url(); ?>" title="Go to the home page"><?php if (is_home()) {echo '<h1>One Page Love</h1>';} else {echo'One Page Love';}; ?></a></div>	
 
 			</div>
 			

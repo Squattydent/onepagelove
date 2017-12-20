@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.60
+ * @version 6.11.68
  *
 */ 
 ?>
@@ -32,7 +32,10 @@
 	}		
 	elseif ( has_tag( 'Webflow') ) {
     	echo $built .get_home_url(). '/tag/webflow">Webflow</a></li>';
-	}			
+	}	
+	elseif ( has_tag( 'Cargo Collective') ) {
+    	echo $built .get_home_url(). '/tag/cargo-collective">Cargo Collective</a></li>';
+	}				
 	else {
 	    echo '';
 	};

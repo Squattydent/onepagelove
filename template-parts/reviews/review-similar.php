@@ -1,15 +1,15 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.1
+ * @version 6.11.68
  *
 */ 
 ?>
 <div class="similar">
 
-	<div class="similar-title">Similar One Page Websites</div>
+	<div class="similar-title"><?php if (in_category('Templates')) {echo 'Similar One Page Templates';} else {echo 'Similar One Page Websites';};?></div>
  
-	<div class="similar-submit"><a href="<?php print get_home_url(); ?>/submit">Submit</a></div>
+	<div class="similar-submit"><a href="<?php print get_home_url(); ?>/submit"><?php if (in_category('Templates')) {echo 'Submit Template';} else {echo 'Submit';};?></a></div>
 
 	<div class="archive-container">
 	
