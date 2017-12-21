@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.47
+ * @version 6.11.69
  *
 */ 
 ?>
@@ -72,6 +72,9 @@
 					if (in_category('PSD Templates')) {
 		          		echo 'PSD Template';							
 					}	
+					elseif ((in_category('HTML Templates')) and (in_category('Multipurpose Templates'))) {
+		          		echo 'Multipurpose HTML Template';							
+					}					
 					elseif (in_category('HTML Templates')) {
 		          		echo 'HTML Template';							
 					}
@@ -86,7 +89,10 @@
 			        } 	
 			        elseif (in_category('FullSingle Layouts')) {
 		          		echo 'WordPress Layout';							
-					}									
+					}	
+					elseif ((in_category('WordPress Themes')) and (in_category('Multipurpose Templates'))) {
+		          		echo 'Multipurpose WordPress Theme';							
+					}														
 					elseif (in_category('WordPress Themes')) {
 		          		echo 'WordPress Theme';							
 					}									
