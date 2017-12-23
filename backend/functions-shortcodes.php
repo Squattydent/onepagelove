@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.48
+ * @version 6.11.71
  *
 */ 
 
@@ -51,3 +51,15 @@ function onepagelove_fullsingle_html_shortcode() {
 }
 
 add_shortcode('fullsingle-html', 'onepagelove_fullsingle_html_shortcode');
+
+#-------------------------------------------------------------------------------
+# Affiliate Deal: Visual Inspector [affiliate-vi]
+#-------------------------------------------------------------------------------
+
+function onepagelove_visual_inspector() {
+
+	return '<strong>Exclusive Special:</strong> the kind folk at CanvasFlip are offering <a href="https://onepagelove.com/go/visual-inspector">One Page Love readers Lifetime access of Visual Inspector for just $49 using the coupon <strong>OPL49</strong></a> - that&rsquo;s unlimited editing, commenting, collaboration and stakeholder reviews - everything for lifetime, no renewals 🙌';
+
+}
+
+add_shortcode('affiliate-vi', 'onepagelove_visual_inspector');
