@@ -1,7 +1,7 @@
 <?php
 /**
  * @package onepagelove
- * @version 6.11.68
+ * @version 6.11.73
  *
 */ 
 ?>		
@@ -105,7 +105,7 @@
 				</div>	
 
 				<div id="footer-credit">
-					<span class="hitdelete">Curated by <a href="https://twitter.com/robhope" title="Rob Hope Twitter Account">@robhope</a></span>
+					<span class="hitdelete">Curated by <a href="https://robhope.com" title="Rob Hope">Rob Hope</a></span>
 				</div>	
 
 			</div>
